@@ -3,7 +3,8 @@
 # 每日自动化编排（Linux / macOS / WSL 通用）
 #   步骤1：多类别 GitHub 热门日报   -> python src/main.py
 #   步骤2：11 板块 AI 项目深潜测试  -> python src/board_workflow.py
-# 两步骤每日都跑；脚本路径无关（按本文件位置推导仓库根）。
+#   步骤3：Ollama DeepSeek 学习+链接 -> python src/learn_link.py（best-effort）
+# 三步骤每日都跑；脚本路径无关（按本文件位置推导仓库根）。
 #
 # 用法：
 #   bash src/run_daily.sh
@@ -62,9 +63,15 @@ echo ">>> [步骤2] 11 板块深潜" | tee -a "$LOG"
 RC2=$?
 echo "<<< 步骤2 退出码=$RC2" | tee -a "$LOG"
 
-echo "=== $(date '+%F %T') 完成 (步骤1=$RC1 步骤2=$RC2) ===" | tee -a "$LOG"
+echo ">>> [步骤3] Ollama DeepSeek 学习+链接（best-effort，失败不阻断）" | tee -a "$LOG"
+"$PY" src/learn_link.py >>"$LOG" 2>&1
+RC3=$?
+echo "<<< 步骤3 退出码=$RC3" | tee -a "$LOG"
 
-# 任一脚本崩溃（非 0）则整体非 0，便于 cron / 监控系统告警
+echo "=== $(date '+%F %T') 完成 (步骤1=$RC1 步骤2=$RC2 步骤3=$RC3) ===" | tee -a "$LOG"
+
+# 步骤1/2 是主流程，必须成功；步骤3 为模型学习增强（best-effort），
+# 即使 Ollama/DeepSeek 不可用也不影响当日数据采集与推送。
 if [ "$RC1" -eq 0 ] && [ "$RC2" -eq 0 ]; then
   exit 0
 fi
