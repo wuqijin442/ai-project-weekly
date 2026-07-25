@@ -23,6 +23,11 @@
 ```
 src/
   main.py              每日工作流入口（仅标准库 + 系统 git）
+  board_workflow.py    11 板块 × TOP5 测试入口（复用 main.py 真实运行函数）
+  run_daily.sh         每日编排：先跑 main 再跑 board_workflow（cron / systemd 友好）
+deploy/
+  setup-linux.sh       Linux 一键部署（装依赖 + HTTPS clone + 配置 token + 写 crontab）
+  LINUX-README.md      Linux 服务器运行完整说明
 reports/
   daily/               每日真实日报（Markdown）
   weekly/              周日周报
@@ -47,12 +52,28 @@ cloned_projects/       历史落地的项目（gitignore）
 
 ```bash
 pip install -r requirements.txt   # 本脚本仅依赖 Python 标准库 + 系统 git
-python src/main.py                 # 每日 TOP5 工作流
+python src/main.py                 # 每日 TOP5 工作流（Linux 上用 python3）
 python src/board_workflow.py       # 11 板块 × TOP5 测试（耗时较长）
+bash src/run_daily.sh              # 一键跑完上面两步（推荐用于 crontab / 自动化）
 ```
 
-环境变量：`GITHUB_TOKEN`（推送用）、`GITHUB_REPO`（默认 wuqijin442/ai-project-weekly）、
-`INSTALL_TIMEOUT`（默认 200s）、`RUN_TIMEOUT`（默认 45s）、`CLONE_DEPTH`（默认 1）。
+环境变量：`GITHUB_TOKEN`（**推送必填**，有 `repo` 写权限的 token，优先用其注入 HTTPS 推送）、`GITHUB_REPO`（默认 wuqijin442/ai-project-weekly）、
+`INSTALL_TIMEOUT`（默认 200s）、`RUN_TIMEOUT`（默认 45s）、`CLONE_DEPTH`（默认 1）、
+`BOARD_INSTALL_TIMEOUT`（默认 120s）、`BOARD_RUN_TIMEOUT`（默认 40s）、`BOARD_API_PACE`（默认 7s，板间间隔）、`BOARD_MIN_STARS`（默认 50）。
+
+> 脚本自动探测 `python` / `python3`，Windows / Linux / macOS 通用；推送优先走 `GITHUB_TOKEN` 注入的 HTTPS，**不依赖 SSH key**。
+
+## Linux 服务器部署
+
+在 headless Linux 服务器上完整跑每日自动化（两步骤每日都跑），推荐直接用 crontab：
+
+```bash
+git clone --depth 1 https://github.com/wuqijin442/ai-project-weekly.git ~/ai-project-weekly
+cd ~/ai-project-weekly
+GITHUB_TOKEN=ghp_你的token  bash deploy/setup-linux.sh   # 装依赖 + HTTPS clone + 写 .env + 每日 07:40 crontab
+```
+
+详见 [`deploy/LINUX-README.md`](deploy/LINUX-README.md)。前提：服务器可访问 `github.com`（HTTPS 443），且 `GITHUB_TOKEN` 有本仓库写权限。
 
 ## 提交规范
 

@@ -50,6 +50,14 @@ INSTALL_TIMEOUT = int(os.environ.get("INSTALL_TIMEOUT", "200"))
 RUN_TIMEOUT = int(os.environ.get("RUN_TIMEOUT", "45"))
 CLONE_DEPTH = int(os.environ.get("CLONE_DEPTH", "1"))
 
+# 跨平台 Python 解释器：Linux 通常为 python3，Windows 通常为 python，两者都尝试
+def _resolve_python_bin():
+    for cand in ("python", "python3"):
+        if shutil.which(cand):
+            return cand
+    return "python"
+PYTHON_BIN = _resolve_python_bin()
+
 # 多维度分类：从纯 AI 扩展到更广泛的 GitHub 热门技术领域
 CATEGORIES = {
     "AI/LLM/Agent": ["ai", "llm", "agent", "gpt", "claude", "cursor", "rag", "mcp", "langchain",
@@ -258,10 +266,10 @@ def install_project(p, path, build):
         # 优先 requirements.txt；用 list 调用避免 shell=True 下子进程管道阻止超时生效
         if (Path(path) / "requirements.txt").exists():
             rc, out, err = run_cmd(
-                ["python", "-m", "pip", "install", "-r", "requirements.txt"], cwd=path, timeout=INSTALL_TIMEOUT)
+                [PYTHON_BIN, "-m", "pip", "install", "-r", "requirements.txt"], cwd=path, timeout=INSTALL_TIMEOUT)
         else:
             rc, out, err = run_cmd(
-                ["python", "-m", "pip", "install", "-e", "."], cwd=path, timeout=INSTALL_TIMEOUT)
+                [PYTHON_BIN, "-m", "pip", "install", "-e", "."], cwd=path, timeout=INSTALL_TIMEOUT)
         dt = round(time.time() - t0, 1)
         if rc == 0:
             return "success", out[-500:], dt
@@ -288,7 +296,7 @@ def smoke_run(p, path, build):
         for entry in ["main.py", "cli.py", "app.py", "run.py"]:
             if (pth / entry).exists():
                 rc, out, err = run_cmd(
-                    ["python", entry, "--help"], cwd=path, timeout=RUN_TIMEOUT)
+                    [PYTHON_BIN, entry, "--help"], cwd=path, timeout=RUN_TIMEOUT)
                 dt = round(time.time() - t0, 1)
                 if rc == 0:
                     return "success", (out or err)[:400], dt
@@ -381,32 +389,30 @@ def write_report(date, top, results, scanned, filtered):
 # ----------------------------------------------------------------------------
 def sync_to_github(date):
     try:
-        run_cmd("git add -A", cwd=ROOT, timeout=60)
+        run_cmd(["git", "add", "-A"], cwd=ROOT, timeout=60)
         # 只在有变更时提交；避免空提交失败
-        rc, _, _ = run_cmd("git diff --cached --quiet", cwd=ROOT, timeout=30)
+        rc, _, _ = run_cmd(["git", "diff", "--cached", "--quiet"], cwd=ROOT, timeout=30)
         if rc != 0:
             msg = f"[{date.isoformat()}] Daily AI Project Update"
-            run_cmd(f'git commit -m "{msg}"', cwd=ROOT, timeout=60)
+            run_cmd(["git", "commit", "-m", msg], cwd=ROOT, timeout=60)
         # 统一分支名为 main（git init 默认可能为 master）
-        run_cmd("git branch -M main", cwd=ROOT, timeout=30)
-        # 配置 remote：优先保留现有 origin；没有则添加默认 SSH
-        rc, _, _ = run_cmd("git remote get-url origin", cwd=ROOT, timeout=30)
-        if rc != 0:
-            push_url = GITHUB_REMOTE
-            if GITHUB_TOKEN and push_url.startswith("https://"):
-                push_url = push_url.replace("https://", f"https://{GITHUB_TOKEN}@")
-            run_cmd(["git", "remote", "add", "origin", push_url], cwd=ROOT, timeout=30)
+        run_cmd(["git", "branch", "-M", "main"], cwd=ROOT, timeout=30)
+        # 推送策略（headless Linux 服务器友好）：
+        #   1) 若设置 GITHUB_TOKEN，直接用 token 注入的 HTTPS URL 推送，不依赖 SSH key，
+        #      且 token 不写入 .git/config（仅本次 push 命令内联），更安全。
+        #   2) 否则回退到 origin 远程（需 SSH key 或已配置凭据）。
+        if GITHUB_TOKEN:
+            push_url = f"https://{GITHUB_TOKEN}@github.com/wuqijin442/ai-project-weekly.git"
         else:
-            # 若用户给了 token 且远程是 https，则临时注入 token
-            rc, cur_url, _ = run_cmd("git remote get-url origin", cwd=ROOT, timeout=30)
-            if GITHUB_TOKEN and cur_url.startswith("https://"):
-                run_cmd(["git", "remote", "set-url", "origin",
-                         cur_url.replace("https://", f"https://{GITHUB_TOKEN}@")], cwd=ROOT, timeout=30)
-        rc, out, err = run_cmd("git push -u origin main", cwd=ROOT, timeout=120)
+            rc, _, _ = run_cmd(["git", "remote", "get-url", "origin"], cwd=ROOT, timeout=30)
+            if rc != 0:
+                run_cmd(["git", "remote", "add", "origin", GITHUB_REMOTE], cwd=ROOT, timeout=30)
+            push_url = "origin"
+        rc, out, err = run_cmd(["git", "push", "-u", push_url, "main"], cwd=ROOT, timeout=120)
         if rc == 0:
             log("✅ 已推送到 wuqijin442/main")
             return True, out
-        log(f"⚠️ push 失败（可能需要 GITHUB_TOKEN 或 SSH）：{err[:300]}")
+        log(f"⚠️ push 失败（检查 GITHUB_TOKEN 或 origin 远程）：{err[:300]}")
         return False, err
     except Exception as e:  # noqa
         log(f"sync 异常：{e}")
