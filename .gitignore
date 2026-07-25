@@ -24,6 +24,5 @@ target/
 Obsidian_Vault/
 储能知识库/
 video-pipeline-guide/
-# 例外：保留自动化日志目录
-!Logs/
-!Logs/**
+# 运行时日志不纳入版本管理（避免多机 cron 互相拉取冲突、弄脏工作树）
+Logs/
