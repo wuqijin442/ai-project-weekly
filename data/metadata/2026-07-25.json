@@ -7,13 +7,13 @@
       "url": "https://github.com/mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 187124,
+      "stars": 187126,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 1.6,
+    "clone_time": 1.5,
     "clone_err": "",
     "build": {
       "python": false,
@@ -26,8 +26,8 @@
       ]
     },
     "install": "success",
-    "install_log": "\nadded 111 packages, and audited 112 packages in 3s\n\n11 packages are looking for funding\n  run `npm fund` for details\n\n1 high severity vulnerability\n\nTo address all issues, run:\n  npm audit fix\n\nRun `npm audit` for details.\n",
-    "install_time": 2.9,
+    "install_log": "\nadded 111 packages, and audited 112 packages in 2s\n\n11 packages are looking for funding\n  run `npm fund` for details\n\n1 high severity vulnerability\n\nTo address all issues, run:\n  npm audit fix\n\nRun `npm audit` for details.\n",
+    "install_time": 1.6,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
@@ -62,7 +62,7 @@
     },
     "install": "success",
     "install_log": "\nadded 37 packages, and audited 38 packages in 5s\n\n14 packages are looking for funding\n  run `npm fund` for details\n\n4 vulnerabilities (3 moderate, 1 high)\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n",
-    "install_time": 5.3,
+    "install_time": 5.1,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
@@ -77,13 +77,13 @@
       "url": "https://github.com/Pumpkin-MC/Pumpkin",
       "description": "Empowering everyone to host fast and efficient Minecraft servers.",
       "language": "Rust",
-      "stars": 9410,
+      "stars": 9411,
       "categories": [
         "Backend/DevOps"
       ]
     },
     "clone": true,
-    "clone_time": 6.3,
+    "clone_time": 6.8,
     "clone_err": "",
     "build": {
       "python": false,
@@ -114,13 +114,13 @@
       "url": "https://github.com/ruvnet/RuView",
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
       "language": "Rust",
-      "stars": 86048,
+      "stars": 86050,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 9.0,
+    "clone_time": 10.1,
     "clone_err": "",
     "build": {
       "python": true,
@@ -135,7 +135,7 @@
     },
     "install": "failed",
     "install_log": "   If you wish to install a non-Debian-packaged Python package,\n    create a virtual environment using python3 -m venv path/to/venv.\n    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make\n    sure you have python3-full installed.\n    \n    If you wish to install a non-Debian packaged Python application,\n    it may be easiest to use pipx install xyz, which will manage a\n    virtual environment for you. Make sure you have pipx installed.\n    \n    See /usr/share/doc/python3.12/README.venv for more information.\n\nnote: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.\nhint: See PEP 668 for the detailed specification.\n",
-    "install_time": 0.4,
+    "install_time": 0.1,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
@@ -150,13 +150,13 @@
       "url": "https://github.com/koala73/worldmonitor",
       "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
       "language": "TypeScript",
-      "stars": 73518,
+      "stars": 73519,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 6.3,
+    "clone_time": 6.6,
     "clone_err": "",
     "build": {
       "python": false,
@@ -170,13 +170,13 @@
         "docker-compose.yml"
       ]
     },
-    "install": "failed",
-    "install_log": "TIMEOUT after 200s",
-    "install_time": 200.1,
+    "install": "success",
+    "install_log": "\n2 high severity vulnerabilities\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n\nadded 1674 packages, and audited 1675 packages in 32s\n\n256 packages are looking for funding\n  run `npm fund` for details\n\n43 vulnerabilities (1 low, 14 moderate, 28 high)\n\nTo address issues that do not require attention, run:\n  npm audit fix\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n",
+    "install_time": 32.8,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
-    "score": 44,
+    "score": 60,
     "stars": "★★★☆☆"
   }
 ]

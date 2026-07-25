@@ -13,3 +13,21 @@
 [13:56:31] --- 处理 koala73/worldmonitor ---
 [13:56:38]   clone OK koala73/worldmonitor (6.3s)
 [13:59:58] 日报已生成：/home/taoyan/ai-project-weekly/reports/daily/2026-07-25.md
+[13:59:58] ⚠️ push 失败（检查 GITHUB_TOKEN 或 origin 远程）：fatal: could not read Username for 'https://github.com': 没有那个设备或地址
+
+[13:59:58] === 完成 | 扫描 16 / 过滤 11 / TOP5 / 推荐 0 / 推送 FAIL ===
+[14:01:06] === GitHub 热门项目每日工作流启动 2026-07-25 ===
+[14:01:07] trending 抓取完成，共 16 个仓库
+[14:01:07] 分类过滤后保留 11 个（覆盖 6 个类别）
+[14:01:07] 选取 TOP5（平日），覆盖类别：AI/LLM/Agent, Backend/DevOps, Frontend/Web
+[14:01:07] --- 处理 mattpocock/skills ---
+[14:01:08]   clone OK mattpocock/skills (1.5s)
+[14:01:10] --- 处理 chrislgarry/Apollo-11 ---
+[14:01:12]   clone OK chrislgarry/Apollo-11 (2.1s)
+[14:01:17] --- 处理 Pumpkin-MC/Pumpkin ---
+[14:01:24]   clone OK Pumpkin-MC/Pumpkin (6.8s)
+[14:01:24] --- 处理 ruvnet/RuView ---
+[14:01:34]   clone OK ruvnet/RuView (10.1s)
+[14:01:34] --- 处理 koala73/worldmonitor ---
+[14:01:43]   clone OK koala73/worldmonitor (6.6s)
+[14:02:15] 日报已生成：/home/taoyan/ai-project-weekly/reports/daily/2026-07-25.md
