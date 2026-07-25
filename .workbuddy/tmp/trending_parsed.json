@@ -1,0 +1,152 @@
+[
+  {
+    "full": "block/buzz",
+    "owner": "block",
+    "repo": "buzz",
+    "desc": "A hive mind communication platform",
+    "stars": "6,857",
+    "today": 2162,
+    "week": null,
+    "lang": "Rust"
+  },
+  {
+    "full": "koala73/worldmonitor",
+    "owner": "koala73",
+    "repo": "worldmonitor",
+    "desc": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+    "stars": "71,557",
+    "today": 3175,
+    "week": null,
+    "lang": "TypeScript"
+  },
+  {
+    "full": "shiyu-coder/Kronos",
+    "owner": "shiyu-coder",
+    "repo": "Kronos",
+    "desc": "Kronos: A Foundation Model for the Language of Financial Markets",
+    "stars": "33,045",
+    "today": 401,
+    "week": null,
+    "lang": "Python"
+  },
+  {
+    "full": "sponsors/Pumpkin-MC",
+    "owner": "sponsors",
+    "repo": "Pumpkin-MC",
+    "desc": "Empowering everyone to host fast and efficient Minecraft servers.",
+    "stars": null,
+    "today": 565,
+    "week": null,
+    "lang": "Rust"
+  },
+  {
+    "full": "citrolabs/ego-lite",
+    "owner": "citrolabs",
+    "repo": "ego-lite",
+    "desc": "The best browser for both you and your AI agents work in parallel.",
+    "stars": "1,624",
+    "today": 247,
+    "week": null,
+    "lang": "JavaScript"
+  },
+  {
+    "full": "sponsors/chrislgarry",
+    "owner": "sponsors",
+    "repo": "chrislgarry",
+    "desc": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+    "stars": null,
+    "today": 592,
+    "week": null,
+    "lang": "Assembly"
+  },
+  {
+    "full": "sponsors/diegosouzapw",
+    "owner": "sponsors",
+    "repo": "diegosouzapw",
+    "desc": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
+    "stars": null,
+    "today": 1929,
+    "week": null,
+    "lang": "TypeScript"
+  },
+  {
+    "full": "ComposioHQ/awesome-claude-skills",
+    "owner": "ComposioHQ",
+    "repo": "awesome-claude-skills",
+    "desc": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+    "stars": "69,415",
+    "today": 636,
+    "week": null,
+    "lang": "Python"
+  },
+  {
+    "full": "earthtojake/text-to-cad",
+    "owner": "earthtojake",
+    "repo": "text-to-cad",
+    "desc": "A collection of agent skills for CAD, robotics and hardware design",
+    "stars": "9,970",
+    "today": 230,
+    "week": null,
+    "lang": "JavaScript"
+  },
+  {
+    "full": "agegr/pi-web",
+    "owner": "agegr",
+    "repo": "pi-web",
+    "desc": "Web UI for the pi coding agent",
+    "stars": "2,352",
+    "today": 315,
+    "week": null,
+    "lang": "TypeScript"
+  },
+  {
+    "full": "alibaba/open-code-review",
+    "owner": "alibaba",
+    "repo": "open-code-review",
+    "desc": "Open-source &amp; free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI &amp; Anthropic compatible.",
+    "stars": "11,498",
+    "today": 180,
+    "week": null,
+    "lang": "Go"
+  },
+  {
+    "full": "ruvnet/RuView",
+    "owner": "ruvnet",
+    "repo": "RuView",
+    "desc": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+    "stars": "85,196",
+    "today": 1708,
+    "week": null,
+    "lang": "Rust"
+  },
+  {
+    "full": "sponsors/likec4",
+    "owner": "sponsors",
+    "repo": "likec4",
+    "desc": "Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code",
+    "stars": null,
+    "today": 472,
+    "week": null,
+    "lang": "TypeScript"
+  },
+  {
+    "full": "Automattic/harper",
+    "owner": "Automattic",
+    "repo": "harper",
+    "desc": "Offline, privacy-first grammar checker. Fast, open-source, Rust-powered",
+    "stars": "12,282",
+    "today": 624,
+    "week": null,
+    "lang": "Rust"
+  },
+  {
+    "full": "jellyfin/jellyfin",
+    "owner": "jellyfin",
+    "repo": "jellyfin",
+    "desc": "The Free Software Media System - Server Backend &amp; API",
+    "stars": "54,728",
+    "today": 66,
+    "week": null,
+    "lang": "C#"
+  }
+]

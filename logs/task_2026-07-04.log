@@ -1,0 +1,55 @@
+====================================
+GitHub AI 项目周报任务日志
+日期: 2026-07-04（周六）
+模式: 周末（全赛道 Top 10）
+====================================
+
+[08:20] 任务启动
+[08:21] 判断今日模式：周六 → 周末模式，抓取周榜前10名
+[08:22] 尝试获取 GitHub AI 周榜 https://github.com/trending/ai?since=weekly → 返回空结果
+[08:23] 改用 GitHub 总周榜 https://github.com/trending?since=weekly → 成功获取21个项目
+[08:25] 筛选AI相关项目，按本周新增Star降序取前10名
+[08:28-08:35] 逐个获取10个项目详细信息（README、技术栈等）
+[08:36] 创建周报索引 Weekly/AI-Weekly-2026-07-04.md
+[08:37-08:42] 创建9个新项目详情页 + 更新1个已有详情页（browser-use/video-use）
+[08:43] 更新全局索引 _Index.md（归档记录 + 项目索引 + 统计）
+[08:44] 尝试企业微信推送 → 失败（连接器已断开）
+
+====================================
+抓取项目列表（Top 10）
+====================================
+1. calesthio/OpenMontage — 10,199 ⭐本周 | 32,402 总 | Python
+2. DeusData/codebase-memory-mcp — 9,873 ⭐本周 | 25,531 总 | C
+3. msitarzewski/agency-agents — 9,484 ⭐本周 | 126,470 总 | Shell/Markdown
+4. xbtlin/ai-berkshire — 6,989 ⭐本周 | 9,138 总 | Python
+5. google-labs-code/design.md — 6,240 ⭐本周 | 24,630 总 | TypeScript
+6. JCodesMore/ai-website-cloner-template — 4,843 ⭐本周 | 25,289 总 | TypeScript
+7. usestrix/strix — 4,743 ⭐本周 | 34,582 总 | Python
+8. topoteretes/cognee — 4,531 ⭐本周 | 26,814 总 | Python
+9. browser-use/video-use — 3,389 ⭐本周 | 14,373 总 | Python
+10. stablyai/orca — 3,574 ⭐本周 | 11,666 总 | TypeScript
+
+====================================
+生成文件列表
+====================================
+[NEW] Weekly/AI-Weekly-2026-07-04.md
+[NEW] Projects/calesthio_OpenMontage.md
+[NEW] Projects/DeusData_codebase-memory-mcp.md
+[NEW] Projects/msitarzewski_agency-agents.md
+[NEW] Projects/xbtlin_ai-berkshire.md
+[NEW] Projects/google-labs-code_design.md
+[NEW] Projects/JCodesMore_ai-website-cloner-template.md
+[NEW] Projects/usestrix_strix.md
+[NEW] Projects/topoteretes_cognee.md
+[NEW] Projects/stablyai_orca.md
+[UPD] Projects/browser-use_video-use.md（更新为周报版）
+[UPD] _Index.md（新增归档记录 + 项目索引）
+
+====================================
+失败项
+====================================
+- 企业微信推送：连接器已断开（wecom: disconnected），无法发送
+
+====================================
+任务完成：2026-07-04 08:45
+====================================

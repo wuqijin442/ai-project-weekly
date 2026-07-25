@@ -1,0 +1,94 @@
+{
+  "details": [
+    {
+      "full_name": "usestrix/strix",
+      "owner": "usestrix",
+      "html_url": "https://github.com/usestrix/strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "stargazers_count": 36032,
+      "language": "Python",
+      "topics": ["agents", "ai-hacking", "ai-penetration-testing", "ai-pentesting", "ai-security", "artificial-intelligence", "bug-bounty", "code-quality", "ctf-tools", "cybersecurity", "cybersecurity-tools", "ethical-hacking", "hacking", "llm-security", "offensive-security", "penetration-testing", "pentesting-tools", "red-teaming", "security", "security-automation"]
+    },
+    {
+      "full_name": "xbtlin/ai-berkshire",
+      "owner": "xbtlin",
+      "html_url": "https://github.com/xbtlin/ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
+      "stargazers_count": 9661,
+      "language": "Python",
+      "topics": ["ai", "ai-agent", "anthropic", "berkshire-hathaway", "charlie-munger", "china-stock", "claude", "claude-code", "financial-analysis", "fintech", "fundamental-analysis", "investment", "investment-research", "llm", "mcp", "portfolio-management", "stock-analysis", "stock-market", "value-investing", "warren-buffett"]
+    },
+    {
+      "full_name": "diegosouzapw/OmniRoute",
+      "owner": "diegosouzapw",
+      "html_url": "https://github.com/diegosouzapw/OmniRoute",
+      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+      "stargazers_count": 11304,
+      "language": "TypeScript",
+      "topics": ["a2a", "ai-agents", "ai-gateway", "anthropic", "claude", "claude-code", "cline", "codex", "copilot", "cursor", "deepseek", "free-ai", "gemini", "gemini-cli", "llm-gateway", "mcp", "openai", "openai-proxy", "qwen", "token-saver"]
+    },
+    {
+      "full_name": "DeusData/codebase-memory-mcp",
+      "owner": "DeusData",
+      "html_url": "https://github.com/DeusData/codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "stargazers_count": 26167,
+      "language": "C",
+      "topics": ["aider", "ast", "claude-code", "code-analysis", "code-intelligence", "codex", "cursor", "cypher", "developer-tools", "gemini-cli", "graph-visualization", "kilocode", "knowledge-graph", "mcp", "mcp-server", "model-context-protocol", "opencode", "sqlite", "tree-sitter", "windsurf"]
+    },
+    {
+      "full_name": "ogulcancelik/herdr",
+      "owner": "ogulcancelik",
+      "html_url": "https://github.com/ogulcancelik/herdr",
+      "description": "agent multiplexer that lives in your terminal.",
+      "stargazers_count": 11432,
+      "language": "Rust",
+      "topics": ["agent", "agent-orchestration", "ai", "ai-agents", "claude-code", "cli", "codex", "coding-agents", "developer-tools", "devtools", "multiplexer", "rust", "terminal", "terminal-multiplexer", "terminal-ui", "tmux", "tui", "workspace-manager"]
+    },
+    {
+      "full_name": "logto-io/logto",
+      "owner": "logto-io",
+      "html_url": "https://github.com/logto-io/logto",
+      "description": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
+      "stargazers_count": 13728,
+      "language": "TypeScript",
+      "topics": ["authentication", "authorization", "email", "identity", "jwt", "login", "logto", "mfa", "oauth2", "openid-connect", "password", "passwordless", "rbac", "saml", "signup", "sms", "social-login", "sso", "totp", "typescript"]
+    },
+    {
+      "full_name": "browser-use/video-use",
+      "owner": "browser-use",
+      "html_url": "https://github.com/browser-use/video-use",
+      "description": "Edit videos with coding agents",
+      "stargazers_count": 14685,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "full_name": "msitarzewski/agency-agents",
+      "owner": "msitarzewski",
+      "html_url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "stargazers_count": 127033,
+      "language": "Shell",
+      "topics": []
+    },
+    {
+      "full_name": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "html_url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "stargazers_count": 33106,
+      "language": "Python",
+      "topics": ["agent", "agentic-ai", "ai", "claude", "copilot", "cursor", "elevenlabs", "ffmpeg", "flux", "image-generation", "open-source", "openai", "python", "remotion", "stable-diffusion", "text-to-speech", "text-to-video", "video-generation", "video-production"]
+    },
+    {
+      "full_name": "JCodesMore/ai-website-cloner-template",
+      "owner": "JCodesMore",
+      "html_url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "description": "Clone any website with one command using AI coding agents",
+      "stargazers_count": 25553,
+      "language": "TypeScript",
+      "topics": ["ai", "ai-agents", "ai-tools", "automation", "boilerplate", "claude", "claude-code", "clone", "developer-tools", "nextjs", "react", "reverse-engineering", "shadcn-ui", "skills", "tailwindcss", "template", "typescript", "web-scraping", "website-clone"]
+    }
+  ]
+}

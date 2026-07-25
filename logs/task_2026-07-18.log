@@ -1,0 +1,50 @@
+================================================================
+GitHub AI 项目归档任务 — 执行日志
+日期：2026-07-18（周六）
+模式：工作日（Vibe Coding 赛道 Top 5）
+执行时间（本地）：2026-07-18 ~08:45 GMT+8
+================================================================
+
+[1] 模式判定
+- 周一至周六 = 工作日 → Vibe Coding 赛道，取前 5。
+- 今日为周六 → 工作日模式。
+
+[2] 连通性与数据源
+- curl 直连 https://github.com/trending?since=daily → HTTP:000 / 超时（沙箱网络阻断，与历史一致）。
+- WebFetch 抓取 Trending 日榜成功，但 summarizer 硬截断于第 14 个仓库（OpenCut-app/OpenCut），共应 25 个；第 15–25 位尾部不可达。
+- GitHub REST API（api.github.com）经 WebFetch 可达：成功补全 5 项目 created_at / stars / language / topics / homepage。
+- 第三方 Trending API 镜像（gtrend.yapie.me、api.gitterapp.com、github-trending-api.de.a9sapp.eu）均不可用（fetch failed / 404 / site not found）。
+- 结论：以 WebFetch 兜底为唯一可用数据源，符合任务「curl 阻断时仅用 WebFetch + 记录日志继续」规则。
+
+[3] Vibe Coding 筛选（基于已获取 14 仓，按今日新增 Star 降序重排）
+- 严格关键词命中 3 个：
+  * Nutlope/hallmark — 简介含 cursor → +1,486 ⭐ / 总 12.0k / CSS
+  * openinterpreter/openinterpreter — 语义匹配 open-interpreter（仓库名无连字符，按意图计入）→ +431 ⭐ / 总 66.4k / Rust
+  * github/copilot-sdk — 项目名/简介含 copilot → +234 ⭐ / 总 9.8k / Java
+- 生态扩充 2 个（严格不足 5）：
+  * tirth8205/code-review-graph — topics 含 ai-coding/claude-code/mcp → +57 ⭐ / 总 19.7k / Python
+  * anthropics/cwc-workshops — anthropics 官方 Claude Code 工作坊（Skills/MCP/Managed Agents）→ +37 ⭐ / 总 1.6k / TypeScript
+- 边界排除：PostHog（产品分析，非编码 Agent，虽提 MCP/agents 排除）；HKUDS/DeepTutor、maths-cs-ai-compendium（AI 学习类，非 Vibe Coding，排除）。
+- 数据完整性风险：第 15–25 位尾部不可见，#4/#5 排名基于 14 仓，可能漏掉尾部更高新增的 Vibe Coding 项目。
+
+[4] 生成 Obsidian 知识库
+- 日报：Obsidian_Vault/Daily/Vibe-Coding-2026-07-18.md（新建，含 Frontmatter、🔝今日最佳高亮、Top5 表格、趋势解读、严格关键词命中说明）
+- 项目页更新 3：Nutlope_hallmark.md、openinterpreter_openinterpreter.md、github_copilot-sdk.md（更新 stars/today_growth/date_accessed + 反向链接）
+- 项目页新建 2：tirth8205_code-review-graph.md、anthropics_cwc-workshops.md
+- 全局索引：Obsidian_Vault/_Index.md（新增日期行 2026-07-18 + 2 个新项目索引行）
+
+[5] 推送
+- 企业微信：跳过（连接器 disconnected，自 2026-07-04 起暂停）。
+- GitHub：跳过（工作区非 git 仓库，无 remote）。
+
+[6] 失败/风险项
+- WebFetch 对 Trending 页截断（14/25）→ 已记录，不阻塞。
+- 既有页并行编辑竞争：Nutlope_hallmark.md 与 _Index.md 首编辑曾报「modified since read」，已重读补修完成。
+
+[7] Top 5 汇总（今日新增降序）
+1. Nutlope/hallmark        +1,486  ⭐12.0k  CSS      [严格: cursor]
+2. openinterpreter/openinterpreter +431  ⭐66.4k  Rust     [严格: open-interpreter]
+3. github/copilot-sdk      +234    ⭐9.8k   Java     [严格: copilot]
+4. tirth8205/code-review-graph +57  ⭐19.7k  Python   [扩充: MCP+CLI]
+5. anthropics/cwc-workshops +37     ⭐1.6k   TypeScript [扩充: Claude Code]
+================================================================

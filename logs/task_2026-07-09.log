@@ -1,0 +1,31 @@
+=== 自动化任务日志 task_2026-07-09 ===
+执行时间：2026-07-09 08:20 CST
+模式：工作日（Vibe Coding 赛道）
+
+[1] 模式判断：周四 → 工作日，聚焦 Vibe Coding 赛道
+[2] 数据获取：
+    - GitHub AI 专属榜单 /trending/ai?since=daily 返回空（已知问题，自 2026-07-05 起持续）
+    - 改用总日榜 /trending?since=daily，curl 抓取并解析 15 个 Trending 仓库
+    - 严格关键词（cursor/cline/aider/copilot...）当日 0 命中，按既定"Vibe Coding / Agent 生态"口径扩充筛选
+    - 剔除 sponsors/* 伪条目（GitHub Sponsors spotlight，API 404 非真实仓库）
+    - 命中 Top 5（按今日新增 Star 降序）：
+        1. addyosmani/agent-skills        (+1,297, ⭐74,014, JavaScript)
+        2. bradautomates/claude-video     (+951,   ⭐6,041,  Python)
+        3. TencentCloud/CubeSandbox       (+564,   ⭐8,915,  Rust)
+        4. mvanhorn/last30days-skill      (+352,   ⭐50,733, Python)
+        5. TencentCloud/TencentDB-Agent-Memory (+318, ⭐7,620, TypeScript)
+    - 通过 GitHub REST API（GITHUB_TOKEN）补充 stars / language / topics / README（15 次额度内）
+[3] Obsidian 归档：
+    - 新建 Daily/Vibe-Coding-2026-07-09.md
+    - 更新 Projects/addyosmani_agent-skills.md（stars 72,097→74,014，今日 +1,297，date_accessed→07-09）
+    - 更新 Projects/bradautomates_claude-video.md（stars 5,128→6,041，今日 +951，status→热门）
+    - 新建 Projects/TencentCloud_CubeSandbox.md
+    - 新建 Projects/TencentCloud_TencentDB-Agent-Memory.md
+    - 新建 Projects/mvanhorn_last30days-skill.md
+    - 更新 _Index.md（新增 07-09 日报 + 3 个新项目）
+[4] 推送：
+    - 企业微信推送：跳过（自 2026-07-04 起暂停，连接器断开）
+    - GitHub 推送：跳过（工作区无 git remote，github 连接器断开，未配置目标仓库）
+[5] 状态：完成（本地 Obsidian 归档完成；外部推送跳过）
+
+错误/重试：无（addyosmani 首轮 frontmatter 编辑因文件读取时序报错，已重读后修正，无其他失败）

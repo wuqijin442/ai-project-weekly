@@ -1,0 +1,26 @@
+# ===== 大型/非报告资产（不纳入 GitHub 同步） =====
+cloned_projects/
+node_modules/
+.venv/
+venv/
+__pycache__/
+dist/
+build/
+target/
+.next/
+.cache/
+*.log
+.env
+*.env
+# IDE / 工具元数据
+.trae/
+.codebuddy/
+.uploads/
+.trae-html-share-packages/
+# 其它无关知识库目录
+Obsidian_Vault/
+储能知识库/
+video-pipeline-guide/
+# 例外：保留自动化日志目录
+!Logs/
+!Logs/**

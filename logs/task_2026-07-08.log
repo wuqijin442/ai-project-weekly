@@ -1,0 +1,72 @@
+# 自动化任务日志 — 2026-07-08
+
+## 执行概要
+
+- **执行时间**：2026-07-08 08:21 CST
+- **模式**：工作日（Vibe Coding 赛道）
+- **状态**：完成（Obsidian 归档完成，企微推送跳过）
+
+## 完成项
+
+### 数据获取
+- GitHub AI Trending 日榜（https://github.com/trending/ai?since=daily）返回空，改用总日榜（https://github.com/trending?since=daily）
+- 从 13 个 Trending 项目中筛选 Vibe Coding 相关项目（含 Claude Code / Cursor / Copilot / Agent 等生态）
+- 命中 5 个项目（达到上限），按今日新增 Star 降序排列
+
+### 筛选结果（Top 5）
+
+| 排名 | 项目 | 作者 | 今日新增 | 语言 |
+|------|------|------|---------:|------|
+| 1 | ai-job-search | MadsLorentzen | +2,402 | TypeScript |
+| 2 | system_prompts_leaks | asgeirtj | +1,704 | JavaScript |
+| 3 | agent-skills | addyosmani | +1,311 | JavaScript |
+| 4 | claude-video | bradautomates | +953 | Python |
+| 5 | CodexBar | steipete | +377 | Swift |
+
+### 文件生成
+- 创建日报索引 `Daily/Vibe-Coding-2026-07-08.md`
+- 创建/更新 5 个项目详情页：
+  - `Projects/MadsLorentzen_ai-job-search.md`（新建）
+  - `Projects/asgeirtj_system_prompts_leaks.md`（更新）
+  - `Projects/addyosmani_agent-skills.md`（新建）
+  - `Projects/bradautomates_claude-video.md`（新建）
+  - `Projects/steipete_CodexBar.md`（新建）
+- 更新全局索引 `_Index.md`（添加今日条目 + 5 个新项目）
+
+### README 信息获取
+通过 WebFetch 获取 5 个项目的 GitHub 页面信息（描述、技术栈、安装说明、功能特性等）
+
+## 失败项
+
+- **企业微信推送**：跳过（自 2026-07-04 起暂停，连接器持续断开）
+
+## 数据说明
+
+### 今日趋势
+
+1. **Claude Code 生态持续扩张**：今日 Top 5 中 4 个项目与 Claude Code 直接相关
+   - `ai-job-search`：基于 Claude Code 构建的求职申请框架
+   - `system_prompts_leaks`：收录 Claude Code 系统提示词
+   - `agent-skills`：优先支持 Claude Code（兼容 70+ 工具）
+   - `claude-video`：为 Claude 添加视频多模态能力
+
+2. **AI Agent 技能标准化**：`agent-skills` 将资深工程师工作流编码化为 24 个可复用技能，覆盖开发生命周期 8 个阶段，预示 AI 编程工具链走向成熟
+
+3. **系统提示词研究热度不减**：`system_prompts_leaks` 连续三日上榜（07-06 +981、07-07 +1,386、07-08 +1,704），累计 +4,071 stars / 3 天
+
+### 项目详情
+
+- **ai-job-search**（⭐10,725，今日 +2,402）：基于 Claude Code 的求职申请框架，支持简历定制、求职信撰写、面试准备，核心工作流语言无关
+- **system_prompts_leaks**（⭐52,944，今日 +1,704）：收录 50+ AI 产品系统提示词，被华盛顿邮报报道，605 次提交持续更新
+- **agent-skills**（⭐72,097，今日 +1,311）：24 个生产级工程技能，融入 Google 工程文化，兼容 70+ AI 编程工具
+- **claude-video**（⭐5,128，今日 +953）：赋予 Claude 观看视频能力，支持帧提取、字幕转录、多模态分析，37/37 测试通过
+- **CodexBar**（⭐17,021，今日 +377）：macOS 菜单栏应用，支持 50+ AI 编码服务商使用量监控，3,317 次提交
+
+## 下一步行动
+
+- 待企业微信连接器重新授权后，恢复推送功能
+- 考虑在自动化 prompt 中指定企业微信群 chatid，避免每次都需要查找
+
+## 执行时长
+
+约 5 分钟（含 WebFetch 调用 6 次、文件写入 7 个）

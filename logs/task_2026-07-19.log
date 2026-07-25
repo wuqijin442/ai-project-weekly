@@ -1,0 +1,28 @@
+# 自动化执行日志 — 2026-07-19（第17次执行）
+
+- **时间**：2026-07-19 08:20 (GMT+8)
+- **模式**：周末（全赛道 Top 10）— 周日 → 全赛道，不施加 Vibe Coding 关键词筛选
+- **状态**：完成（Obsidian 归档完成；企微 / GitHub 推送跳过）
+- **数据源**：GitHub Trending 周榜 https://github.com/trending?since=weekly（主数据源=飙升榜，按本周新增降序）
+- **连通性**：curl 直连 github.com 仍被沙箱阻断（HTTP:000）；WebFetch 抓取 Trending 周榜成功，但 summarizer 硬截断于前 15 仓（共应 25 个），第 16–25 位尾部不可达；GitHub REST API（api.github.com）经 WebFetch 可达，补全 10 项目 created_at / stars / 语言 / topics / homepage。第三方 Trending 镜像不可用。
+- **Top 10（按本周新增 Star 降序，单位 ⭐）**：
+  1. OpenCut-app/OpenCut (+12,718 / 总 75.4k，TS) 🔝 本周最佳
+  2. mattpocock/skills (+11,325 / 176.6k，Shell)
+  3. Graphify-Labs/graphify (+8,379 / 90.9k，Python)
+  4. Nutlope/hallmark (+8,075 / 12.8k，CSS)
+  5. Shubhamsaboo/awesome-llm-apps (+6,252 / 124.0k，Python)
+  6. HKUDS/Vibe-Trading (+5,616 / 25.0k，Python)
+  7. stablyai/orca (+5,409 / 21.8k，TypeScript)
+  8. iOfficeAI/OfficeCLI (+4,611 / 19.3k，C#)
+  9. openai/codex (+2,250 / 99.4k，Rust)
+  10. openinterpreter/openinterpreter (+2,009 / 66.7k，Rust)
+- **归档**：
+  - 新建周报 Weekly/AI-Weekly-2026-07-19.md（含「本周最佳🔝」高亮、Top10 表格、趋势解读、关键词说明）
+  - 新建 4 个项目页：OpenCut-app_OpenCut、Shubhamsaboo_awesome-llm-apps、stablyai_orca、openai_codex
+  - 更新 6 个项目页（mattpocock_skills / Nutlope_hallmark / Graphify-Labs_graphify / HKUDS_Vibe-Trading / openinterpreter_openinterpreter / iOfficeAI_OfficeCLI）：刷新 stars、today_growth→weekly_growth、date_accessed，并补回链至本周报
+  - 更新 _Index.md：日期表新增 07-19 行 + 项目索引新增 4 个项目行
+- **失败项**：
+  - 企业微信推送：跳过（连接器断开，自 2026-07-04 起暂停）
+  - GitHub 推送：跳过（工作区非 git 仓库，无 remote）
+- **数据完整性风险**：WebFetch 截断致 Trending 周榜第 16–25 位不可见；Top 10 基于已捕获 15 仓按本周新增降序排定，第 10 名 +2,009，尾部仓通常更低，排名可靠；若尾部存在更高本周新增项目，可能进入 #9/#10 区间。
+- **数据说明**：视频创作去平台化（OpenCut 登顶）+ 技能层全面成熟（skills/graphify/hallmark 三箭齐发）+ 终端编码 Agent 双雄（codex/openinterpreter 稳固）+ Agent 基础设施向办公/金融/创作外溢（orca/OfficeCLI/Vibe-Trading）+ LLM 应用导航库长青（awesome-llm-apps 12.4 万 Star）。

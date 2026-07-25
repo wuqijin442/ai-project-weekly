@@ -1,0 +1,42 @@
+=== GitHub AI 项目归档任务日志 ===
+日期：2026-07-20（周一）
+模式：工作日（Vibe Coding 赛道）
+执行时间：08:20 GMT+8
+状态：完成（Obsidian 归档完成；企微/GitHub 推送跳过）
+
+【连通性】
+- curl 直连 github.com/trending?since=daily 恢复：HTTP:200，SIZE:671344（19 仓库解析）
+- GitHub REST API（api.github.com，Bearer Token）可达：补全 5 项目 stars/forks/lang/created_at/topics/homepage
+- README 经 API 获取（kimi-cli / jcode 成功；wigolo README 返回空，以 API 描述+topics 补足）
+
+【数据源】主数据源 = GitHub Trending 日榜（飙升榜，按当日新增 Star 降序）。/trending/ai 未使用（长期空）。
+
+【严格关键词命中】1 个：github/copilot-sdk（copilot）
+【生态扩充】4 个（Vibe Coding / AI 编码 Agent 生态，按当日新增降序）：
+  - tirth8205/code-review-graph (+663, ⭐21.2k, #1 今日最佳🔝)
+  - KnockOutEZ/wigolo (+595, ⭐1.8k)
+  - MoonshotAI/kimi-cli (+410, ⭐9.9k)
+  - 1jehuang/jcode (+235, ⭐8.9k)
+【已排除】PostHog/posthog (+411，产品分析/可观测性平台，非核心编码 Agent 工具)；
+  bojieli/ai-agent-book、rohitg00/ai-engineering-from-scratch、codecrafters-io/build-your-own-x 等为 AI/编程学习资料，非编码 Agent 工具。
+
+【Top 5（当日新增降序）】
+1. tirth8205/code-review-graph  +663  ⭐21.2k  Python  (今日最佳🔝)
+2. KnockOutEZ/wigolo            +595  ⭐1.8k   TypeScript
+3. MoonshotAI/kimi-cli          +410  ⭐9.9k   Python
+4. 1jehuang/jcode               +235  ⭐8.9k   Rust
+5. github/copilot-sdk            +39  ⭐9.9k   Java    (严格关键词命中)
+
+【归档动作】
+- 新建日报：Daily/Vibe-Coding-2026-07-20.md（Frontmatter + 🔝高亮 + 表格 + 趋势解读 + 严格命中说明）
+- 新建项目页 3：Projects/KnockOutEZ_wigolo.md、Projects/MoonshotAI_kimi-cli.md、Projects/1jehuang_jcode.md
+- 更新项目页 2：Projects/tirth8205_code-review-graph.md（stars 19732→21157、today_growth 57→663、加 7-20 回链）、Projects/github_copilot-sdk.md（stars 9790→9953、today_growth 234→39、加 7-20 回链）
+- 更新全局索引 _Index.md（日期表新增 7-20 行；项目索引新增 3 行）
+- 保存日志 logs/task_2026-07-20.log
+
+【失败项】
+- 企业微信推送：跳过（连接器断开；自 2026-07-04 起暂停）
+- GitHub 推送：跳过（工作区非 git 仓库，无 remote）
+
+【数据说明】
+今日主线「编码 Agent 底座三件套」：代码智能图谱（code-review-graph，本地优先、MCP+CLI、38×–528× 上下文缩减）登顶；Agent 检索本地化（wigolo，local-first MCP web 研究、零 API 成本）居亚；CLI 编码 Agent 双雄（kimi-cli / jcode）入榜，代表头部模型厂商与独立团队在终端编码 Agent 赛道落子；copilot-sdk（GitHub 官方多平台 SDK）作严格命中项守 #5，标志「编码 Agent」标准化。

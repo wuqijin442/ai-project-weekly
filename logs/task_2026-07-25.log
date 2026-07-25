@@ -1,0 +1,46 @@
+# 任务日志 — 2026-07-25（第23次执行）
+
+## 基本信息
+- 日期：2026-07-25（周六）
+- 模式：工作日 → Vibe Coding 赛道（Top 5，实际命中 2）
+- 更新时间：08:30（固定）
+- 执行状态：完成（Obsidian 归档完成；ima 推送成功）
+
+## 连通性
+- GitHub Trending 日榜 curl：HTTP:200（642KB，16 仓库解析，剔除 5 个 sponsors/* 伪条目 → 11 真实仓库）
+- GitHub REST API（GITHUB_TOKEN Bearer）：HTTP:200，补全 2 项目 stars/lang/created_at/topics/homepage；API /readme 可达，提炼定位
+
+## 严格关键词命中
+- 严格关键词（cursor/cline/aider/continue/swe-agent/open-interpreter/browser-use/gpt-engineer/meta-gpt/devin/autocode/copilot/cli-agent/code-generator/llm-dev）：**0 个命中**
+- 按 Vibe Coding / AI 编码 Agent 生态（Claude Code / Codex / Cursor / MCP / 编码 Agent / 技能）扩充，取当日新增 Star 降序：
+  - ComposioHQ/awesome-claude-skills（+663，⭐70.0k）— 清晰命中（今日最佳🔝，三度上榜 #1）
+  - OtterMind/Chat2DB（+82，⭐26.3k）— 生态边缘（AI text2sql 开发工具）
+- 边界排除：citrolabs/ego-lite（+880，依 07-24 边界口径排除，通用 Agent 浏览器）；koala73/worldmonitor（+2,184，地缘政治 OSINT 看板）；ruvnet/RuView（+1,022，WiFi 空间智能）；Automattic/harper（+876，语法检查器）；shiyu-coder/Kronos（+499，金融大模型）；Pumpkin-MC/Pumpkin（+473，Minecraft）；yorukot/superfile（+338，终端文件管理器）；Lordog/dive-into-llms（+328，大模型教程）；block/buzz（+3,270，hive mind 通信平台）；sponsors/* 伪条目已剔除
+
+## 入选项目（按当日新增降序）
+1. ComposioHQ/awesome-claude-skills — owner: ComposioHQ | 今日 +663 | ⭐70,043（70.0k）| Python | 开源 2025-10-17
+   - 简介：1000+ 生产级 Claude Skills / 插件精选清单，覆盖 Claude.ai、Claude Code 及 Codex/Cursor/Gemini CLI 等编码 Agent，含 MCP/自动化实践
+2. OtterMind/Chat2DB — owner: OtterMind | 今日 +82 | ⭐26,321（26.3k）| Java | 开源 2023-06-20
+   - 简介：AI 驱动数据库客户端 / SQL 工作区：接入自有模型，自然语言生成/解释/优化 SQL，支持 30+ 数据库与 MCP CLI（生态边缘）
+
+## 归档
+- 新建日报：Obsidian_Vault/Daily/Vibe-Coding-2026-07-25.md
+- 更新项目页：Projects/ComposioHQ_awesome-claude-skills.md（stars 69,416→70,043、today_growth 636→663、加 07-25 回链与 #1 备注）
+- 新建项目页：Projects/OtterMind_Chat2DB.md
+- 更新全局索引：_Index.md（日期表 +1 行 2026-07-25 / 2 项；项目索引 +1 行 Chat2DB）
+- ima 摘要载体：.workbuddy/tmp/ima_GitHub_VibeCoding_2026-07-25.md（4,778 字节）+ 同名 GitHub_AI_VibeCoding_2026-07-25.md（用于上传）
+
+## ima 推送结果：✅ 成功
+- 目标库：共享知识库「github daily log」（id 7485494204062117，can_add_knowledge=true，已动态校验存在）
+- create_media → media_id: markdown_890280cec11ce364b934fc466e7471b2_e1c2a9c47be1e139efc5e710f232cdb97485494204062117
+- COS 上传：cos-upload.cjs HTTP 200，exit 0
+- add_knowledge：成功
+- search_knowledge 校验：命中，media_state=2（PARSE_SUCCESS），parse_progress=100%
+
+## 失败项
+- 企业微信推送：跳过（push_to_wechat=false，连接器断开，自 2026-07-04 起暂停）
+- GitHub 推送：跳过（工作区非 git 仓库，无 remote）
+
+## 数据说明
+- 今日 Vibe Coding 赛道极度稀疏：GitHub Trending 日榜 Top 16（剔除 5 sponsors 伪条目）中仅 2 项落入选定生态；awesome-claude-skills 独挑大梁登顶 #1（三度上榜：07-23 #5、07-24 #2、07-25 #1），总 Star 升破 70k；Chat2DB 以 AI text2sql 把 Vibe Coding 范式外溢到数据工程/DBA 场景（生态边缘）。
+- 「技能层 / Claude Skills 精选社区化」成稳定长线主线；其余高增量项目均为非编码 Agent 方向（hive mind 通信、地缘政治看板、WiFi 空间智能、语法检查、金融大模型、Minecraft、文件管理器、大模型教程）。

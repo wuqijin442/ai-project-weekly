@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-05",
+  "mode": "weekend",
+  "weekday": "周日",
+  "count": 10,
+  "repos": [
+    {
+      "full_name": "usestrix/strix",
+      "owner": "usestrix",
+      "repo": "strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+      "language": "Python",
+      "stars_text": "Python36,0313,652Built by9,362 stars this week"
+    },
+    {
+      "full_name": "xbtlin/ai-berkshire",
+      "owner": "xbtlin",
+      "repo": "ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
+      "language": "Python",
+      "stars_text": "Python9,6611,226Built by5,984 stars this week"
+    },
+    {
+      "full_name": "diegosouzapw/OmniRoute",
+      "owner": "diegosouzapw",
+      "repo": "OmniRoute",
+      "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+      "language": "TypeScript",
+      "stars_text": "TypeScript11,3041,637Built by4,133 stars this week"
+    },
+    {
+      "full_name": "DeusData/codebase-memory-mcp",
+      "owner": "DeusData",
+      "repo": "codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "language": "C",
+      "stars_text": "C26,1671,938Built by9,517 stars this week"
+    },
+    {
+      "full_name": "ogulcancelik/herdr",
+      "owner": "ogulcancelik",
+      "repo": "herdr",
+      "description": "agent multiplexer that lives in your terminal.",
+      "language": "Rust",
+      "stars_text": "Rust11,432669Built by3,506 stars this week"
+    },
+    {
+      "full_name": "logto-io/logto",
+      "owner": "logto-io",
+      "repo": "logto",
+      "description": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
+      "language": "TypeScript",
+      "stars_text": "TypeScript13,728942Built by1,488 stars this week"
+    },
+    {
+      "full_name": "browser-use/video-use",
+      "owner": "browser-use",
+      "repo": "video-use",
+      "description": "Edit videos with coding agents",
+      "language": "Python",
+      "stars_text": "Python14,6851,750Built by4,174 stars this week"
+    },
+    {
+      "full_name": "msitarzewski/agency-agents",
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "stars_text": "Shell127,03320,614Built by10,976 stars this week"
+    },
+    {
+      "full_name": "calesthio/OpenMontage",
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "language": "Python",
+      "stars_text": "Python33,1063,795Built by8,447 stars this week"
+    },
+    {
+      "full_name": "JCodesMore/ai-website-cloner-template",
+      "owner": "JCodesMore",
+      "repo": "ai-website-cloner-template",
+      "description": "Clone any website with one command using AI coding agents",
+      "language": "TypeScript",
+      "stars_text": "TypeScript25,5533,598Built by3,730 stars this week"
+    }
+  ]
+}

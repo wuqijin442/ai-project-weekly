@@ -1,0 +1,51 @@
+=== GitHub AI 项目归档自动化 · 执行日志 ===
+日期：2026-07-17（周五，工作日 / Vibe Coding 赛道）
+触发时间：2026-07-17 08:42 (GMT+8)
+固定更新时间：08:30（参考实现口径；本次为定时触发二次执行）
+
+--- Step 1: 模式判断 ---
+- 周几：周五 → 工作日
+- 模式：Vibe Coding 赛道（严格关键词 + 生态扩充，取 Top 5）
+
+--- Step 2: 数据源抓取 ---
+- curl github.com/trending?since=daily → HTTP:000（沙箱网络拦截，EXIT 56）→ 回退 WebFetch
+- WebFetch Trending 日榜 → 成功解析 17 个仓库（按当日新增 Star 降序）
+- curl GitHub REST API → HTTP:000（拦截）→ 回退 WebFetch api.github.com/repos/{owner}/{repo}
+- WebFetch REST API × 5 → 成功补全 created_at / stargazers_count / language / topics
+- WebFetch 仓库页 README × 5 → 4 成功；graphify 触发内容安全拦截（两次），改用 API 描述 + topics 补足
+
+--- Step 3: 关键词筛选（严格关键词 + 生态扩充）---
+严格关键词列表：cursor, cline, aider, continue, swe-agent, open-interpreter, browser-use, gpt-engineer, meta-gpt, devin, autocode, copilot, cli-agent, code-generator, llm-dev
+- ✅ Nutlope/hallmark — 简介含 "Cursor"（严格）
+- ✅ Graphify-Labs/graphify — 简介含 "Cursor"（严格）
+- ✅ openinterpreter/openinterpreter — 语义匹配 "open-interpreter"（严格，标注）
+- ✅ github/copilot-sdk — 项目名含 "copilot"（严格）
+- （严格命中 4 个 < 5 → 生态扩充）
+- 生态扩充：mattpocock/skills（Claude Code 技能集，.claude 目录，+2,073 居当日第二）→ 入选 #2
+
+最终 Top 5（当日新增降序）：
+1. Nutlope/hallmark           | CSS  | 总 10,857 (10.9k) | 今日 +3,181 | 2026-04-27
+2. mattpocock/skills          | Shell| 总 174,226 (174.2k)| 今日 +2,073 | 2026-02-03
+3. Graphify-Labs/graphify     | Python|总 89,035 (89.0k) | 今日 +1,138 | 2026-04-03
+4. openinterpreter/openinterpreter | Rust | 总 65,971 (66.0k) | 今日 +633 | 2023-07-14
+5. github/copilot-sdk         | Java | 总 9,637 (9.6k)   | 今日 +62    | 2026-01-14
+
+落选：ibelick/ui-skills (+141，设计技能，名额/纯度)、Shubhamsaboo/awesome-llm-apps (+935，通用 AI 应用清单非编码工具)
+
+--- Step 4: 生成 Obsidian 知识库 ---
+- 新建：Daily/Vibe-Coding-2026-07-17.md
+- 更新：Projects/Nutlope_hallmark.md（stars 10857 / today_growth 3181 / +07-17 链接）
+- 更新：Projects/mattpocock_skills.md（stars 174226 / today_growth 2073 / +07-17 链接）
+- 更新：Projects/Graphify-Labs_graphify.md（stars 89035 / today_growth 1138 / +07-17 链接）
+- 更新：Projects/openinterpreter_openinterpreter.md（stars 65971 / today_growth 633 / +07-17 链接）
+- 新建：Projects/github_copilot-sdk.md
+- 更新：_Index.md（日期表 + 项目索引新增 copilot-sdk 行）
+
+--- Step 5: 推送与反馈 ---
+- 企业微信推送：跳过（连接器 disconnected，自 2026-07-04 起暂停）
+- GitHub 推送：跳过（工作区非 git 仓库，无 remote）
+- 消息输出：按第四步严格结构输出至自动化响应
+
+--- 结论 ---
+状态：完成。Obsidian 归档成功，5 个项目页（4 更新 + 1 新建）+ 日报 + 索引全部落地。
+网络：curl 直连被拦截，全程 WebFetch 兜底，未阻塞。
