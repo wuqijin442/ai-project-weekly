@@ -1,13 +1,13 @@
 # AI 开源项目日报自动化（Daily AI Project Update）
 
-自动采集 GitHub Trending → 过滤 AI/LLM/Agent 项目 → 真实 Clone / 安装 / 冒烟运行 → 生成中文日报 → 同步到 `wuqijin442/main`。
+自动采集 GitHub Trending → 按多维度类别（AI/LLM/Agent、前端/Web、后端/DevOps、数据库、开发工具、安全、移动、数据/ML）过滤 → 真实 Clone / 安装 / 冒烟运行 → 生成中文日报 → 同步到 `wuqijin442/main`。
 
 > 所有结论均基于**真实运行结果**，不根据 README 推测。失败记录日志后继续，不中断、不编造。
 
 ## 工作流
 
 1. `src/main.py` — 每日 TOP5 工作流（平日 TOP5 / 周日 TOP10）
-   - 抓取 GitHub Trending（每日），按 AI 关键词过滤，排除 Awesome/Tutorial/Course/Demo/Fork
+   - 抓取 GitHub Trending（每日），按 8 大类别多维过滤（AI/LLM/Agent、前端/Web、后端/DevOps、数据库、开发工具、安全、移动、数据/ML），排除 Awesome/Tutorial/Course/Demo/Fork，按类别轮询选 TOP5 保证多样性
    - 对每个项目：真实 Clone → 检测构建系统 → 真实安装（pip/npm）→ 真实冒烟运行
    - 生成 `reports/daily/YYYY-MM-DD.md`（中文，真实数据）+ `data/metadata/YYYY-MM-DD.json`
    - 本地 `git commit` 并 `_sync_to_github` 推 `main`
@@ -60,8 +60,9 @@ python src/board_workflow.py       # 11 板块 × TOP5 测试（耗时较长）
 - 分支：`main`（不新建分支）
 - 仅追加，不覆盖已有内容
 
-## 最近一次运行（2026-07-25）
+## 最近一次验证（2026-07-25 多类别改造）
 
-- 扫描 16 / AI 过滤 9 / Clone 成功 5 / 安装成功 2 / 运行成功 0 / 推荐 0
-- 详见 [reports/daily/2026-07-25.md](reports/daily/2026-07-25.md)
-- GitHub 同步状态：✅ 已推送到 [`wuqijin442/ai-project-weekly`](https://github.com/wuqijin442/ai-project-weekly) 的 `main` 分支（SSH 密钥认证）
+- 多类别 dry-run：扫描 16 / 多类别过滤 11（覆盖 6 类：AI/LLM/Agent、Frontend/Web、Backend/DevOps 等）/ TOP5 跨类别多样
+- 分类逻辑已从「纯 AI 关键词」扩展为「8 大类别多维过滤」，覆盖更广的 GitHub 每日热门
+- 完整每日真实运行（Clone/安装/冒烟）由自动化任务执行，输出见 `reports/daily/YYYY-MM-DD.md`
+- GitHub 同步状态：✅ 推送到 [`wuqijin442/ai-project-weekly`](https://github.com/wuqijin442/ai-project-weekly) 的 `main` 分支（HTTPS + GITHUB_TOKEN 认证）

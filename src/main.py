@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-AI 开源项目每日工作流（真实运行版）
+GitHub 热门项目每日工作流（多维分类真实运行版）
 
 设计原则：
 - 所有结论必须基于真实运行结果，禁止根据 README 推测或编造数据。
@@ -10,8 +10,8 @@ AI 开源项目每日工作流（真实运行版）
 
 流程：
   1. 抓取 GitHub Trending（每日）真实页面
-  2. 按 AI/LLM/Agent 等关键词过滤，排除 Awesome/Tutorial/Course/Demo/Fork
-  3. 选 TOP5（周一~周六）/ TOP10（周日）
+  2. 按多维度类别（AI/前端/后端/数据库/工具/安全/移动/数据）分类，排除 Awesome/Tutorial/Course/Demo/Fork
+  3. 按类别轮询选 TOP5（周一~周六）/ TOP10（周日），保证多样性
   4. 对每个项目：真实 Clone -> 检测构建系统 -> 真实安装 -> 真实冒烟运行
   5. AI 评分（热度/创新/完整度/运行成功/价值）
   6. 生成 reports/daily/YYYY-MM-DD.md（中文，真实数据）
@@ -50,15 +50,29 @@ INSTALL_TIMEOUT = int(os.environ.get("INSTALL_TIMEOUT", "200"))
 RUN_TIMEOUT = int(os.environ.get("RUN_TIMEOUT", "45"))
 CLONE_DEPTH = int(os.environ.get("CLONE_DEPTH", "1"))
 
-AI_KEYWORDS = [
-    "ai", "llm", "agent", "gpt", "claude", "cursor", "rag", "mcp", "langchain",
-    "diffusion", "stable-diffusion", "whisper", "tts", "ocr", "comfyui", "vibe",
-    "coding", "local-ai", "embedding", "transformer", "neural", "chatbot",
-    "copilot", "autonomous", "workflow", "vision", "image", "video", "speech",
-    "prompt", "fine-tun", "model", "deepseek", "qwen", "llama", "gemini",
-    "ollama", "multimodal", "aigc", "genai", "assistant",
-]
-EXCLUDE_KEYWORDS = ["awesome", "tutorial", "course", "demo", "fork", "book", "cheat-sheet", "list"]
+# 多维度分类：从纯 AI 扩展到更广泛的 GitHub 热门技术领域
+CATEGORIES = {
+    "AI/LLM/Agent": ["ai", "llm", "agent", "gpt", "claude", "cursor", "rag", "mcp", "langchain",
+                     "diffusion", "stable-diffusion", "whisper", "tts", "ocr", "comfyui", "vibe",
+                     "coding", "local-ai", "embedding", "transformer", "neural", "chatbot",
+                     "copilot", "autonomous", "workflow", "vision", "image", "video", "speech",
+                     "prompt", "fine-tun", "model", "deepseek", "qwen", "llama", "gemini",
+                     "ollama", "multimodal", "aigc", "genai", "assistant"],
+    "Frontend/Web": ["react", "vue", "frontend", "nextjs", "nuxt", "svelte", "angular",
+                     "tailwind", "web", "ui", "component", "css", "html", "browser"],
+    "Backend/DevOps": ["backend", "server", "api", "docker", "kubernetes", "devops",
+                       "microservice", "graphql", "grpc", "nginx", "gateway", "lambda"],
+    "Database": ["database", "sql", "postgres", "mysql", "redis", "mongodb", "sqlite",
+                 "vector", "vector-database", "elasticsearch", "clickhouse", "duckdb"],
+    "DevTools": ["cli", "tool", "vscode", "extension", "developer", "debugger",
+                 "linter", "formatter", "build", "vite", "webpack", "esbuild"],
+    "Security": ["security", "pentest", "vulnerability", "cryptography", "oauth",
+                 "siem", "forensics", "reverse", "malware"],
+    "Mobile": ["ios", "android", "flutter", "react-native", "swift", "kotlin", "mobile"],
+    "Data/ML": ["data", "machine-learning", "ml", "pandas", "pytorch", "tensorflow",
+                "notebook", "analytics", "jupyter", "dataset"],
+}
+EXCLUDE_KEYWORDS = ["awesome", "tutorial", "course", "demo", "fork", "book", "cheat-sheet", "list", "examples"]
 
 
 # ----------------------------------------------------------------------------
@@ -142,29 +156,60 @@ def fetch_trending(since="daily"):
 
 
 # ----------------------------------------------------------------------------
-# 步骤2：过滤 AI 项目
+# 步骤2：多维度分类与过滤
 # ----------------------------------------------------------------------------
-def is_ai_project(p):
+def classify_project(p):
+    """返回项目命中的所有类别；若名称命中排除词则返回空列表。"""
     text = (p["name"] + " " + p["description"] + " " + p["language"]).lower()
     if any(k in p["name"].lower() for k in EXCLUDE_KEYWORDS):
-        return False
-    return any(k in text for k in AI_KEYWORDS)
+        return []
+    return [cat for cat, kws in CATEGORIES.items() if any(k in text for k in kws)]
 
 
-def filter_ai(projects):
-    filtered = [p for p in projects if is_ai_project(p)]
-    log(f"AI 过滤后保留 {len(filtered)} 个")
+def filter_projects(projects):
+    filtered = []
+    for p in projects:
+        cats = classify_project(p)
+        if cats:
+            p["categories"] = cats
+            filtered.append(p)
+    log(f"分类过滤后保留 {len(filtered)} 个（覆盖 {len({c for p in filtered for c in p['categories']})} 个类别）")
     return filtered
 
 
 def select_top(projects, date):
-    # 周日 TOP10，其余 TOP5
+    # 周日 TOP10，其余 TOP5；按类别轮询，保证多样性
     weekday = date.weekday()  # Mon=0 .. Sun=6
     n = 10 if weekday == 6 else 5
-    # 按 star 降序
-    top = sorted(projects, key=lambda p: p["stars"], reverse=True)[:n]
-    log(f"选取 TOP{n}（{'周日' if weekday==6 else '平日'}）")
-    return top, n
+    # 按主类别（命中的第一个）分组，每组按 star 降序
+    by_cat = {}
+    for p in projects:
+        cat = p.get("categories", ["Other"])[0]
+        by_cat.setdefault(cat, []).append(p)
+    for cat in by_cat:
+        by_cat[cat].sort(key=lambda x: x["stars"], reverse=True)
+    # 类别按组内最高 star 排序
+    cat_order = sorted(by_cat.keys(),
+                       key=lambda c: by_cat[c][0]["stars"] if by_cat[c] else 0,
+                       reverse=True)
+    selected = []
+    used = set()
+    while len(selected) < n:
+        added = False
+        for cat in cat_order:
+            if len(selected) >= n:
+                break
+            for p in by_cat.get(cat, []):
+                if p["full"] not in used:
+                    selected.append(p)
+                    used.add(p["full"])
+                    added = True
+                    break
+        if not added:
+            break
+    covered = sorted({c for p in selected for c in p.get("categories", [])})
+    log(f"选取 TOP{len(selected)}（{'周日' if weekday==6 else '平日'}），覆盖类别：{', '.join(covered)}")
+    return selected, len(selected)
 
 
 # ----------------------------------------------------------------------------
@@ -282,7 +327,7 @@ def score_project(p, install_status, run_status):
 # ----------------------------------------------------------------------------
 def write_report(date, top, results, scanned, filtered):
     md = []
-    md.append(f"# AI 开源项目日报 — {date.isoformat()}\n")
+    md.append(f"# GitHub 热门项目日报 — {date.isoformat()}\n")
     md.append("> 本报告所有结论基于真实 Clone/安装/运行结果，未根据 README 推测。\n")
     weekday = "周日" if date.weekday() == 6 else "平日"
     md.append(f"**模式**：{weekday}（TOP{len(top)}）  ")
@@ -297,6 +342,7 @@ def write_report(date, top, results, scanned, filtered):
         md.append(f"\n## {i}. {p['full']}")
         md.append(f"- **地址**：{p['url']}")
         md.append(f"- **语言**：{p['language']}  **Star**：{p['stars']}")
+        md.append(f"- **类别**：{', '.join(p.get('categories', []))}")
         md.append(f"- **简介**：{p['description'] or '（无描述）'}")
         md.append(f"- **Clone**：{'✅ '+str(r['clone_time'])+'s' if r['clone'] else '❌ '+r['clone_err'][:120]}")
         md.append(f"- **构建系统**：{', '.join(r['build']['files']) or '未识别'}")
@@ -311,15 +357,17 @@ def write_report(date, top, results, scanned, filtered):
         md.append("")
 
     md.append("\n---\n")
-    md.append("### AI 趋势观察（基于今日真实落地项目）\n")
+    md.append("### 多维度趋势观察（基于今日真实落地项目）\n")
     langs = {}
+    cats = {}
     for r in results:
         l = r["project"]["language"]
         langs[l] = langs.get(l, 0) + 1
+        for c in r["project"].get("categories", []):
+            cats[c] = cats.get(c, 0) + 1
     md.append("- 语言分布：" + ", ".join(f"{k}×{v}" for k, v in sorted(langs.items(), key=lambda x: -x[1])))
-    md.append(f"- 今日 TOP{len(top)} 关键词命中："
-              + ", ".join(sorted({w for r in results for w in AI_KEYWORDS
-                                  if w in (r['project']['name']+r['project']['description']).lower()}))[:400])
+    md.append("- 类别分布：" + ", ".join(f"{k}×{v}" for k, v in sorted(cats.items(), key=lambda x: -x[1])))
+    md.append(f"- 今日覆盖领域：{', '.join(sorted(cats.keys()))}")
     report = "\n".join(md)
 
     out = DAILY_DIR / f"{date.isoformat()}.md"
@@ -370,13 +418,13 @@ def sync_to_github(date):
 # ----------------------------------------------------------------------------
 def main():
     date = datetime.date.today()
-    log(f"=== AI 项目每日工作流启动 {date.isoformat()} ===")
+    log(f"=== GitHub 热门项目每日工作流启动 {date.isoformat()} ===")
     # 步骤1+2
     projects = fetch_trending("daily")
     scanned = len(projects)
-    ai_projects = filter_ai(projects)
-    filtered = len(ai_projects)
-    top, n = select_top(ai_projects, date)
+    filtered_projects = filter_projects(projects)
+    filtered = len(filtered_projects)
+    top, n = select_top(filtered_projects, date)
 
     results = []
     for p in top:
