@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # ============================================================================
 # 每日自动化编排（Linux / macOS / WSL 通用）
-#   步骤1：多类别 GitHub 热门日报   -> python src/main.py
+#   步骤1：多类别 GitHub 热门日报   -> python src/main.py    （内含 git 推送）
 #   步骤2：11 板块 AI 项目深潜测试  -> python src/board_workflow.py
 #   步骤3：Ollama DeepSeek 学习+链接 -> python src/learn_link.py（best-effort）
-# 三步骤每日都跑；脚本路径无关（按本文件位置推导仓库根）。
+#   步骤4：把步骤3（及本日新增）同步推送 -> git pull+add+commit+push（best-effort）
+# 四步骤每日都跑；脚本路径无关（按本文件位置推导仓库根）。
 #
 # 用法：
 #   bash src/run_daily.sh
@@ -68,10 +69,39 @@ echo ">>> [步骤3] Ollama DeepSeek 学习+链接（best-effort，失败不阻�
 RC3=$?
 echo "<<< 步骤3 退出码=$RC3" | tee -a "$LOG"
 
+# ---- 步骤4：把「学习+链接」产物（及本日任何新增）同步推送（best-effort）----
+# 先拉远端最新（容忍 DGX→GitHub 的 GnuTLS TLS 抖动，最多 3 次重试+退避），
+# 再提交并推送，避免多机基于旧 HEAD 的 non-fast-forward。
+# 推送鉴权：优先用 .env 的 GITHUB_TOKEN 内联 HTTPS URL（headless 服务器无 SSH key 缓存）。
+echo ">>> [步骤4] 同步推送学习产物（best-effort）" | tee -a "$LOG"
+if [ -n "${GITHUB_TOKEN:-}" ]; then
+  PUSH_URL="https://${GITHUB_TOKEN}@github.com/wuqijin442/ai-project-weekly.git"
+else
+  PUSH_URL="origin"
+fi
+PUSHED=0
+for attempt in 1 2 3; do
+  if git pull --rebase --autostash origin main >>"$LOG" 2>&1 \
+     && git add -A >>"$LOG" 2>&1 \
+     && { git diff --cached --quiet && echo "（无新增改动，跳过提交）" || \
+          git commit -m "chore: 每日学习消化报告 $(date +%Y-%m-%d)" >>"$LOG" 2>&1; } \
+     && git push -u "$PUSH_URL" main >>"$LOG" 2>&1; then
+    PUSHED=1
+    break
+  fi
+  echo "步骤4 第 $attempt/3 次推送失败，重试" | tee -a "$LOG"
+  [ "$attempt" -lt 3 ] && sleep $((attempt * 5))
+done
+if [ "$PUSHED" -eq 1 ]; then
+  echo "<<< 步骤4 已推送学习产物" | tee -a "$LOG"
+else
+  echo "<<< 步骤4 推送未成功（不影响主流程）" | tee -a "$LOG"
+fi
+
 echo "=== $(date '+%F %T') 完成 (步骤1=$RC1 步骤2=$RC2 步骤3=$RC3) ===" | tee -a "$LOG"
 
-# 步骤1/2 是主流程，必须成功；步骤3 为模型学习增强（best-effort），
-# 即使 Ollama/DeepSeek 不可用也不影响当日数据采集与推送。
+# 步骤1/2 是主流程，必须成功；步骤3/4 为增强与同步（best-effort），
+# 即使 Ollama/DeepSeek 不可用或推送失败，也不影响当日数据采集。
 if [ "$RC1" -eq 0 ] && [ "$RC2" -eq 0 ]; then
   exit 0
 fi
