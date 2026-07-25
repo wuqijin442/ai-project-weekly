@@ -96,12 +96,21 @@ def clean_text(s: str) -> str:
 # ----------------------------------------------------------------------------
 def fetch_trending(since="daily"):
     url = f"https://github.com/trending?since={since}"
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            html = resp.read().decode("utf-8", errors="ignore")
-    except Exception as e:  # noqa
-        log(f"trending 抓取失败: {e}")
+    html = ""
+    last_err = ""
+    for attempt in range(1, 4):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=45) as resp:
+                html = resp.read().decode("utf-8", errors="ignore")
+            if html:
+                break
+        except Exception as e:  # noqa
+            last_err = str(e)
+            log(f"trending 抓取第{attempt}次失败: {e}，重试...")
+            time.sleep(3)
+    if not html:
+        log(f"trending 抓取失败（已重试3次）: {last_err}")
         return []
 
     articles = re.findall(r'<article class="Box-row">(.*?)</article>', html, re.S)
