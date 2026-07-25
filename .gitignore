@@ -17,7 +17,8 @@ target/
 .trae/
 .codebuddy/
 .uploads/
-.workbuddy/
+.workbuddy/tmp/
+.workbuddy/automations/
 .trae-html-share-packages/
 # 其它无关知识库目录
 Obsidian_Vault/
