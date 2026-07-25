@@ -387,6 +387,25 @@ def write_report(date, top, results, scanned, filtered):
 # ----------------------------------------------------------------------------
 # 步骤7：GitHub 同步
 # ----------------------------------------------------------------------------
+def pre_sync_pull():
+    """先拉取远端最新提交，避免多台机器（Linux 服务器 / Windows）基于旧 HEAD 推送
+    导致 non-fast-forward 失败或 rebase 冲突。best-effort：失败不影响后续生成。
+
+    关键点：本函数在报告生成之前调用，拉取后 write_report 会用本地结果覆盖
+    reports/daily/YYYY-MM-DD.md，因此不会产生内容合并冲突，commit 直接基于远端
+    HEAD，推送为 fast-forward。"""
+    try:
+        rc, out, err = run_cmd(
+            ["git", "pull", "--rebase", "--autostash", "origin", "main"],
+            cwd=ROOT, timeout=120)
+        if rc == 0:
+            log("✅ 已先拉取远端最新（pre-pull），避免推送冲突")
+        else:
+            log(f"⚠️ pre-pull 失败（忽略，继续生成）：{err[:200]}")
+    except Exception as e:  # noqa
+        log(f"pre-pull 异常（忽略）：{e}")
+
+
 def sync_to_github(date):
     try:
         run_cmd(["git", "add", "-A"], cwd=ROOT, timeout=60)
@@ -427,6 +446,8 @@ def sync_to_github(date):
 def main():
     date = datetime.date.today()
     log(f"=== GitHub 热门项目每日工作流启动 {date.isoformat()} ===")
+    # 先拉远端最新（多机部署安全：避免基于旧 HEAD 推送冲突）
+    pre_sync_pull()
     # 步骤1+2
     projects = fetch_trending("daily")
     scanned = len(projects)
