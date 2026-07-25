@@ -189,12 +189,28 @@ def append_index(date, text):
     LINK_INDEX.parent.mkdir(parents=True, exist_ok=True)
     summary = text.replace("\n", " ").strip()
     summary = summary[:200] + ("…" if len(text) > 200 else "")
-    block = f"\n## {date.isoformat()}\n- {summary}\n- 🔗 详情：reports/learnings/{date.isoformat()}.md\n"
+    block = (
+        f"\n## {date.isoformat()}\n"
+        f"- {summary}\n"
+        f"- 🔗 详情：reports/learnings/{date.isoformat()}.md\n"
+    )
     if not LINK_INDEX.exists():
         LINK_INDEX.write_text(
             "# 累积知识库（左膀右臂记忆）\n\n"
             "本文件由 learn_link.py 每日追加，沉淀 GitHub 热门的「学习 + 链接」洞察，"
             "供模型跨日连接知识。\n" + block, encoding="utf-8")
+        return
+    # 同日重跑（多机/重跑）时替换旧块，避免累积知识库出现重复日期条目
+    cur = LINK_INDEX.read_text(encoding="utf-8")
+    date_hdr = f"## {date.isoformat()}"
+    if date_hdr in cur:
+        idx = cur.index(date_hdr)
+        before = cur[:idx].rstrip()
+        after = cur[idx:]
+        nxt = after.find("\n## ", 1)  # 跳过当前日期块自身的标题
+        after = after[nxt:] if nxt != -1 else ""
+        LINK_INDEX.write_text(before + block.rstrip() + "\n" + after.lstrip(),
+                              encoding="utf-8")
     else:
         with LINK_INDEX.open("a", encoding="utf-8") as f:
             f.write(block)
