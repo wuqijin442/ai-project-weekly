@@ -168,7 +168,8 @@ def clone_repo(p):
         shutil.rmtree(dest)
     t0 = time.time()
     rc, out, err = run_cmd(
-        f"git clone --depth {CLONE_DEPTH} https://github.com/{p['full']}.git {dest}",
+        ["git", "clone", "--depth", str(CLONE_DEPTH),
+         f"https://github.com/{p['full']}.git", str(dest)],
         timeout=180,
     )
     dt = round(time.time() - t0, 1)
@@ -326,6 +327,8 @@ def sync_to_github(date):
         run_cmd("git add -A", cwd=ROOT, timeout=60)
         msg = f"[{date.isoformat()}] Daily AI Project Update"
         run_cmd(f'git commit -m "{msg}"', cwd=ROOT, timeout=60)
+        # 统一分支名为 main（git init 默认可能为 master）
+        run_cmd("git branch -M main", cwd=ROOT, timeout=30)
         # 配置 remote
         run_cmd(f"git remote remove origin", cwd=ROOT, timeout=30)
         push_url = GITHUB_REMOTE
