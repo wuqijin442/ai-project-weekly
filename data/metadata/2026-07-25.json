@@ -7,10 +7,13 @@
       "url": "https://github.com/mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
-      "stars": 186743
+      "stars": 187124,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
     },
     "clone": true,
-    "clone_time": 2.8,
+    "clone_time": 1.6,
     "clone_err": "",
     "build": {
       "python": false,
@@ -23,12 +26,84 @@
       ]
     },
     "install": "success",
-    "install_log": "\nadded 111 packages in 9s\n\n11 packages are looking for funding\n  run `npm fund` for details\n",
-    "install_time": 9.5,
+    "install_log": "\nadded 111 packages, and audited 112 packages in 3s\n\n11 packages are looking for funding\n  run `npm fund` for details\n\n1 high severity vulnerability\n\nTo address all issues, run:\n  npm audit fix\n\nRun `npm audit` for details.\n",
+    "install_time": 2.9,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
     "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "chrislgarry",
+      "name": "Apollo-11",
+      "full": "chrislgarry/Apollo-11",
+      "url": "https://github.com/chrislgarry/Apollo-11",
+      "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+      "language": "Assembly",
+      "stars": 71440,
+      "categories": [
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.1,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nadded 37 packages, and audited 38 packages in 5s\n\n14 packages are looking for funding\n  run `npm fund` for details\n\n4 vulnerabilities (3 moderate, 1 high)\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n",
+    "install_time": 5.3,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Pumpkin-MC",
+      "name": "Pumpkin",
+      "full": "Pumpkin-MC/Pumpkin",
+      "url": "https://github.com/Pumpkin-MC/Pumpkin",
+      "description": "Empowering everyone to host fast and efficient Minecraft servers.",
+      "language": "Rust",
+      "stars": 9410,
+      "categories": [
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 6.3,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": true,
+      "go": false,
+      "docker": true,
+      "files": [
+        "Cargo.toml",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "skipped",
+    "install_log": "Rust 项目，未执行 cargo build（资源/耗时限制）",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 42.8,
     "stars": "★★★☆☆"
   },
   {
@@ -39,10 +114,13 @@
       "url": "https://github.com/ruvnet/RuView",
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
       "language": "Rust",
-      "stars": 85942
+      "stars": 86048,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
     },
     "clone": true,
-    "clone_time": 15.1,
+    "clone_time": 9.0,
     "clone_err": "",
     "build": {
       "python": true,
@@ -55,13 +133,13 @@
         "pyproject.toml"
       ]
     },
-    "install": "success",
-    "install_log": "-1.5.3 mpmath-1.3.0 narwhals-2.24.0 networkx-3.6.1 opencv-python-5.0.0.93 paho-mqtt-2.1.0 passlib-1.7.4 prometheus-client-0.26.0 psutil-7.2.2 pyasn1-0.6.4 pydantic-2.13.4 pydantic-core-2.46.4 pydantic-settings-2.14.2 python-dotenv-1.2.2 python-jose-3.5.0 python-multipart-0.0.32 redis-8.0.1 rsa-4.9.1 scikit-learn-1.9.0 scipy-1.18.0 six-1.17.0 sqlalchemy-2.0.51 starlette-1.3.1 sympy-1.14.0 threadpoolctl-3.6.0 torch-2.13.0 torchvision-0.28.0 typing-inspection-0.4.2 uvicorn-0.51.0 websockets-16.1.1\n",
-    "install_time": 124.0,
+    "install": "failed",
+    "install_log": "   If you wish to install a non-Debian-packaged Python package,\n    create a virtual environment using python3 -m venv path/to/venv.\n    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make\n    sure you have python3-full installed.\n    \n    If you wish to install a non-Debian packaged Python application,\n    it may be easiest to use pipx install xyz, which will manage a\n    virtual environment for you. Make sure you have pipx installed.\n    \n    See /usr/share/doc/python3.12/README.venv for more information.\n\nnote: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.\nhint: See PEP 668 for the detailed specification.\n",
+    "install_time": 0.4,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
-    "score": 60,
+    "score": 44,
     "stars": "★★★☆☆"
   },
   {
@@ -72,10 +150,13 @@
       "url": "https://github.com/koala73/worldmonitor",
       "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
       "language": "TypeScript",
-      "stars": 73276
+      "stars": 73518,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
     },
     "clone": true,
-    "clone_time": 13.4,
+    "clone_time": 6.3,
     "clone_err": "",
     "build": {
       "python": false,
@@ -91,71 +172,9 @@
     },
     "install": "failed",
     "install_log": "TIMEOUT after 200s",
-    "install_time": 1064.2,
+    "install_time": 200.1,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
-    "run_time": 0.0,
-    "score": 44,
-    "stars": "★★★☆☆"
-  },
-  {
-    "project": {
-      "owner": "Lordog",
-      "name": "dive-into-llms",
-      "full": "Lordog/dive-into-llms",
-      "url": "https://github.com/Lordog/dive-into-llms",
-      "description": "《动手学大模型Dive into LLMs》系列编程实践教程",
-      "language": "Jupyter Notebook",
-      "stars": 44997
-    },
-    "clone": true,
-    "clone_time": 10.3,
-    "clone_err": "",
-    "build": {
-      "python": false,
-      "node": false,
-      "rust": false,
-      "go": false,
-      "docker": false,
-      "files": []
-    },
-    "install": "skipped",
-    "install_log": "未识别到可自动安装的构建系统",
-    "install_time": 0.0,
-    "run": "skipped",
-    "run_log": "无自动可运行入口",
-    "run_time": 0.0,
-    "score": 44,
-    "stars": "★★★☆☆"
-  },
-  {
-    "project": {
-      "owner": "shiyu-coder",
-      "name": "Kronos",
-      "full": "shiyu-coder/Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "stars": 33496
-    },
-    "clone": true,
-    "clone_time": 3.0,
-    "clone_err": "",
-    "build": {
-      "python": true,
-      "node": false,
-      "rust": false,
-      "go": false,
-      "docker": false,
-      "files": [
-        "requirements.txt"
-      ]
-    },
-    "install": "failed",
-    "install_log": ":\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-kjqdrobq\\pandas_aadac593fd6343adafd039e38a98d3d4\n      Build dir: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-kjqdrobq\\pandas_aadac593fd6343adafd039e38a98d3d4\\.mesonpy-wo5gv0sp\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
-    "install_time": 42.9,
-    "run": "skipped",
-    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
     "score": 44,
     "stars": "★★★☆☆"

@@ -1,0 +1,15 @@
+[13:56:02] === GitHub 热门项目每日工作流启动 2026-07-25 ===
+[13:56:04] trending 抓取完成，共 16 个仓库
+[13:56:04] 分类过滤后保留 11 个（覆盖 6 个类别）
+[13:56:04] 选取 TOP5（平日），覆盖类别：AI/LLM/Agent, Backend/DevOps, Frontend/Web
+[13:56:04] --- 处理 mattpocock/skills ---
+[13:56:05]   clone OK mattpocock/skills (1.6s)
+[13:56:08] --- 处理 chrislgarry/Apollo-11 ---
+[13:56:10]   clone OK chrislgarry/Apollo-11 (2.1s)
+[13:56:16] --- 处理 Pumpkin-MC/Pumpkin ---
+[13:56:22]   clone OK Pumpkin-MC/Pumpkin (6.3s)
+[13:56:22] --- 处理 ruvnet/RuView ---
+[13:56:31]   clone OK ruvnet/RuView (9.0s)
+[13:56:31] --- 处理 koala73/worldmonitor ---
+[13:56:38]   clone OK koala73/worldmonitor (6.3s)
+[13:59:58] 日报已生成：/home/taoyan/ai-project-weekly/reports/daily/2026-07-25.md
