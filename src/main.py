@@ -14,7 +14,7 @@ AI 开源项目每日工作流（真实运行版）
   3. 选 TOP5（周一~周六）/ TOP10（周日）
   4. 对每个项目：真实 Clone -> 检测构建系统 -> 真实安装 -> 真实冒烟运行
   5. AI 评分（热度/创新/完整度/运行成功/价值）
-  6. 生成 Daily-Reports/YYYY-MM-DD.md（中文，真实数据）
+  6. 生成 reports/daily/YYYY-MM-DD.md（中文，真实数据）
   7. 本地 git 提交，并尝试推送到 wuqijin442/main（需 GITHUB_TOKEN 或 SSH）
 
 依赖：仅 Python 3 标准库 + 系统 git。安装/运行使用系统 python/node/npm（按需）。
@@ -34,12 +34,12 @@ from pathlib import Path
 # ----------------------------------------------------------------------------
 # 配置
 # ----------------------------------------------------------------------------
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent  # src/main.py -> 仓库根
 CLONES_DIR = ROOT / "clones"
 CLONES_DIR.mkdir(exist_ok=True)
-DAILY_DIR = ROOT / "Daily-Reports"
+DAILY_DIR = ROOT / "reports" / "daily"
 DAILY_DIR.mkdir(exist_ok=True)
-META_DIR = ROOT / "Metadata"
+META_DIR = ROOT / "data" / "metadata"
 META_DIR.mkdir(exist_ok=True)
 LOGS_DIR = ROOT / "Logs"
 LOGS_DIR.mkdir(exist_ok=True)
