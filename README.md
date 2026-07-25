@@ -48,4 +48,4 @@ python main.py
 
 - 扫描 16 / AI 过滤 9 / Clone 成功 5 / 安装成功 2 / 运行成功 0 / 推荐 0
 - 详见 [Daily-Reports/2026-07-25.md](Daily-Reports/2026-07-25.md)
-- GitHub 同步状态：待仓库 `wuqijin442/ai-project-weekly` 创建并配置凭据后推送
+- GitHub 同步状态：✅ 已推送到 [`wuqijin442/ai-project-weekly`](https://github.com/wuqijin442/ai-project-weekly) 的 `main` 分支（SSH 密钥认证）

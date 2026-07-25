@@ -44,7 +44,7 @@ META_DIR.mkdir(exist_ok=True)
 LOGS_DIR = ROOT / "Logs"
 LOGS_DIR.mkdir(exist_ok=True)
 
-GITHUB_REMOTE = os.environ.get("GITHUB_REPO", "https://github.com/wuqijin442/ai-project-weekly.git")
+GITHUB_REMOTE = os.environ.get("GITHUB_REPO", "git@github.com:wuqijin442/ai-project-weekly.git")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 INSTALL_TIMEOUT = int(os.environ.get("INSTALL_TIMEOUT", "200"))
 RUN_TIMEOUT = int(os.environ.get("RUN_TIMEOUT", "45"))
@@ -334,16 +334,26 @@ def write_report(date, top, results, scanned, filtered):
 def sync_to_github(date):
     try:
         run_cmd("git add -A", cwd=ROOT, timeout=60)
-        msg = f"[{date.isoformat()}] Daily AI Project Update"
-        run_cmd(f'git commit -m "{msg}"', cwd=ROOT, timeout=60)
+        # 只在有变更时提交；避免空提交失败
+        rc, _, _ = run_cmd("git diff --cached --quiet", cwd=ROOT, timeout=30)
+        if rc != 0:
+            msg = f"[{date.isoformat()}] Daily AI Project Update"
+            run_cmd(f'git commit -m "{msg}"', cwd=ROOT, timeout=60)
         # 统一分支名为 main（git init 默认可能为 master）
         run_cmd("git branch -M main", cwd=ROOT, timeout=30)
-        # 配置 remote
-        run_cmd(f"git remote remove origin", cwd=ROOT, timeout=30)
-        push_url = GITHUB_REMOTE
-        if GITHUB_TOKEN:
-            push_url = GITHUB_REMOTE.replace("https://", f"https://{GITHUB_TOKEN}@")
-        run_cmd(f"git remote add origin {push_url}", cwd=ROOT, timeout=30)
+        # 配置 remote：优先保留现有 origin；没有则添加默认 SSH
+        rc, _, _ = run_cmd("git remote get-url origin", cwd=ROOT, timeout=30)
+        if rc != 0:
+            push_url = GITHUB_REMOTE
+            if GITHUB_TOKEN and push_url.startswith("https://"):
+                push_url = push_url.replace("https://", f"https://{GITHUB_TOKEN}@")
+            run_cmd(["git", "remote", "add", "origin", push_url], cwd=ROOT, timeout=30)
+        else:
+            # 若用户给了 token 且远程是 https，则临时注入 token
+            rc, cur_url, _ = run_cmd("git remote get-url origin", cwd=ROOT, timeout=30)
+            if GITHUB_TOKEN and cur_url.startswith("https://"):
+                run_cmd(["git", "remote", "set-url", "origin",
+                         cur_url.replace("https://", f"https://{GITHUB_TOKEN}@")], cwd=ROOT, timeout=30)
         rc, out, err = run_cmd("git push -u origin main", cwd=ROOT, timeout=120)
         if rc == 0:
             log("✅ 已推送到 wuqijin442/main")
