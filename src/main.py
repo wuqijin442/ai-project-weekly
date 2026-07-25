@@ -393,17 +393,26 @@ def pre_sync_pull():
 
     关键点：本函数在报告生成之前调用，拉取后 write_report 会用本地结果覆盖
     reports/daily/YYYY-MM-DD.md，因此不会产生内容合并冲突，commit 直接基于远端
-    HEAD，推送为 fast-forward。"""
-    try:
-        rc, out, err = run_cmd(
-            ["git", "pull", "--rebase", "--autostash", "origin", "main"],
-            cwd=ROOT, timeout=120)
-        if rc == 0:
-            log("✅ 已先拉取远端最新（pre-pull），避免推送冲突")
-        else:
-            log(f"⚠️ pre-pull 失败（忽略，继续生成）：{err[:200]}")
-    except Exception as e:  # noqa
-        log(f"pre-pull 异常（忽略）：{e}")
+    HEAD，推送为 fast-forward。
+
+    网络健壮性：headless 服务器到 GitHub 的 TLS 连接偶发中断（GnuTLS recv error），
+    故对 pull 做最多 3 次重试 + 退避，避免瞬时抖动导致跳过 pre-pull 后推送失败。"""
+    last_err = ""
+    for attempt in range(1, 4):
+        try:
+            rc, out, err = run_cmd(
+                ["git", "pull", "--rebase", "--autostash", "origin", "main"],
+                cwd=ROOT, timeout=120)
+            if rc == 0:
+                log("✅ 已先拉取远端最新（pre-pull），避免推送冲突")
+                return
+            last_err = err
+        except Exception as e:  # noqa
+            last_err = str(e)
+        log(f"⚠️ pre-pull 第 {attempt}/3 次失败（{last_err[:120]}），"
+            f"{'重试' if attempt < 3 else '放弃，继续生成'}")
+        if attempt < 3:
+            time.sleep(5 * attempt)  # 5s / 10s 退避
 
 
 def sync_to_github(date):
