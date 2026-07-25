@@ -11,7 +11,12 @@
    - 对每个项目：真实 Clone → 检测构建系统 → 真实安装（pip/npm）→ 真实冒烟运行
    - 生成 `reports/daily/YYYY-MM-DD.md`（中文，真实数据）+ `data/metadata/YYYY-MM-DD.json`
    - 本地 `git commit` 并 `_sync_to_github` 推 `main`
-2. `board_workflow.py` — 11 板块 × TOP5 测试（待实现）
+2. `src/board_workflow.py` — 11 板块 × TOP5 测试（已实现）
+   - 11 个板块（GitHub topic）：大语言模型 / AI / RAG / 扩散模型 / 计算机视觉 / 语音识别 / 机器人 / MLOps / 向量数据库 / 提示工程 / 微调
+   - 通过 GitHub Search API（无需 token，按 star 降序）真实抓取每板块 TOP5
+   - 对每个项目：真实 Clone → 检测构建 → 真实安装 → 真实冒烟（复用 main.py 的同款真实运行函数）
+   - 生成 `reports/boards/YYYY-MM-DD-boards.md` + `data/metadata/YYYY-MM-DD-boards.json`
+   - 注意：11×5=55 个项目，整体耗时较长；已做未认证 Search API 限速规避（板间间隔 + 403 退避重试）
 
 ## 目录结构（已按职能重组）
 
@@ -42,7 +47,8 @@ cloned_projects/       历史落地的项目（gitignore）
 
 ```bash
 pip install -r requirements.txt   # 本脚本仅依赖 Python 标准库 + 系统 git
-python src/main.py
+python src/main.py                 # 每日 TOP5 工作流
+python src/board_workflow.py       # 11 板块 × TOP5 测试（耗时较长）
 ```
 
 环境变量：`GITHUB_TOKEN`（推送用）、`GITHUB_REPO`（默认 wuqijin442/ai-project-weekly）、
