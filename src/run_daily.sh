@@ -16,6 +16,15 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO_ROOT" || exit 1
 
+# 从仓库根 .env 载入机密（若存在）。.env 必须 chmod 600 且已被 .gitignore 排除。
+# 这样 token 不进 crontab、不进 git；headless 服务器靠它做 HTTPS 推送。
+if [ -f "$REPO_ROOT/.env" ]; then
+  set -a
+  # shellcheck disable=SC1091
+  . "$REPO_ROOT/.env"
+  set +a
+fi
+
 # 解析 python 解释器：Linux 多为 python3，macOS/Windows 多为 python
 PY="$(command -v python3 || command -v python)"
 if [ -z "$PY" ]; then

@@ -412,8 +412,10 @@ def sync_to_github(date):
         if rc == 0:
             log("✅ 已推送到 wuqijin442/main")
             return True, out
-        log(f"⚠️ push 失败（检查 GITHUB_TOKEN 或 origin 远程）：{err[:300]}")
-        return False, err
+        # 抹掉日志里的 token（git 报错会带含 token 的 URL）
+        safe_err = err.replace(GITHUB_TOKEN, "***TOKEN***") if GITHUB_TOKEN else err
+        log(f"⚠️ push 失败（检查 GITHUB_TOKEN 或 origin 远程）：{safe_err[:300]}")
+        return False, safe_err
     except Exception as e:  # noqa
         log(f"sync 异常：{e}")
         return False, str(e)
