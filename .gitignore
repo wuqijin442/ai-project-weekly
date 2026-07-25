@@ -1,5 +1,6 @@
 # ===== 大型/非报告资产（不纳入 GitHub 同步） =====
 cloned_projects/
+clones/
 node_modules/
 .venv/
 venv/

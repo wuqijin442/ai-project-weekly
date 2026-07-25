@@ -210,19 +210,19 @@ def install_project(p, path, build):
         return "skipped", "Docker 未安装（按规则记录失败后继续）", 0.0
     t0 = time.time()
     if build["python"]:
-        # 优先 requirements.txt
+        # 优先 requirements.txt；用 list 调用避免 shell=True 下子进程管道阻止超时生效
         if (Path(path) / "requirements.txt").exists():
             rc, out, err = run_cmd(
-                f"python -m pip install -r requirements.txt", cwd=path, timeout=INSTALL_TIMEOUT)
+                ["python", "-m", "pip", "install", "-r", "requirements.txt"], cwd=path, timeout=INSTALL_TIMEOUT)
         else:
             rc, out, err = run_cmd(
-                "python -m pip install -e .", cwd=path, timeout=INSTALL_TIMEOUT)
+                ["python", "-m", "pip", "install", "-e", "."], cwd=path, timeout=INSTALL_TIMEOUT)
         dt = round(time.time() - t0, 1)
         if rc == 0:
             return "success", out[-500:], dt
         return "failed", err[-800:], dt
     if build["node"]:
-        rc, out, err = run_cmd("npm install", cwd=path, timeout=INSTALL_TIMEOUT)
+        rc, out, err = run_cmd(["npm", "install"], cwd=path, timeout=INSTALL_TIMEOUT)
         dt = round(time.time() - t0, 1)
         if rc == 0:
             return "success", out[-500:], dt
@@ -243,7 +243,7 @@ def smoke_run(p, path, build):
         for entry in ["main.py", "cli.py", "app.py", "run.py"]:
             if (pth / entry).exists():
                 rc, out, err = run_cmd(
-                    f"python {entry} --help", cwd=path, timeout=RUN_TIMEOUT)
+                    ["python", entry, "--help"], cwd=path, timeout=RUN_TIMEOUT)
                 dt = round(time.time() - t0, 1)
                 if rc == 0:
                     return "success", (out or err)[:400], dt
