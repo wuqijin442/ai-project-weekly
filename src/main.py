@@ -444,18 +444,17 @@ def sync_to_github(date):
             run_cmd(["git", "commit", "-m", msg], cwd=ROOT, timeout=60)
         # 统一分支名为 main（git init 默认可能为 master）
         run_cmd(["git", "branch", "-M", "main"], cwd=ROOT, timeout=30)
-        # 推送策略（headless Linux 服务器友好）：
-        #   1) 若设置 GITHUB_TOKEN，直接用 token 注入的 HTTPS URL 推送，不依赖 SSH key，
-        #      且 token 不写入 .git/config（仅本次 push 命令内联），更安全。
-        #   2) 否则回退到 origin 远程（需 SSH key 或已配置凭据）。
-        if GITHUB_TOKEN:
+        # 推送策略（跨平台健壮）：
+        #   1) 优先用 origin 远程 + 凭据管理器（Windows 已缓存可写凭据 / Linux 若已配置）。
+        #   2) 仅当 plain push 失败且存在 GITHUB_TOKEN 时，才回退到 token 注入的 HTTPS URL
+        #      （headless Linux 服务器常见路径；token 不写入 .git/config，仅本次命令内联）。
+        #   注意：Windows 环境变量里的 GITHUB_TOKEN 为只读，不可用于推送，故不作为首选，
+        #        否则会被 git 403 denied（remote: Permission denied to wuqijin442）。
+        rc, out, err = run_cmd(["git", "push", "-u", "origin", "main"], cwd=ROOT, timeout=120)
+        if rc != 0 and GITHUB_TOKEN:
+            log("⚠️ plain push 失败，回退到 GITHUB_TOKEN 注入推送")
             push_url = f"https://{GITHUB_TOKEN}@github.com/wuqijin442/ai-project-weekly.git"
-        else:
-            rc, _, _ = run_cmd(["git", "remote", "get-url", "origin"], cwd=ROOT, timeout=30)
-            if rc != 0:
-                run_cmd(["git", "remote", "add", "origin", GITHUB_REMOTE], cwd=ROOT, timeout=30)
-            push_url = "origin"
-        rc, out, err = run_cmd(["git", "push", "-u", push_url, "main"], cwd=ROOT, timeout=120)
+            rc, out, err = run_cmd(["git", "push", "-u", push_url, "main"], cwd=ROOT, timeout=120)
         if rc == 0:
             log("✅ 已推送到 wuqijin442/main")
             return True, out
