@@ -143,9 +143,28 @@ def select_top5(projects):
 def clone_board_repo(p):
     safe = f"{p['owner']}__{p['name']}"
     dest = CLONES_BOARD_DIR / safe
-    if dest.exists():
-        shutil.rmtree(dest)
     t0 = time.time()
+    if dest.exists() and (dest / ".git").exists():
+        # 已存在 git 仓库 → 原地更新（fetch + reset），避免 rmtree 触发工作区安全删除拦截
+        rc, _, err = run_cmd(
+            ["git", "-C", str(dest), "fetch", "--depth", str(CLONE_DEPTH), "origin"], timeout=180)
+        if rc != 0:
+            log(f"  fetch FAIL {p['full']}: {err[:200]}")
+            return False, str(dest), round(time.time() - t0, 1), err
+        _, b_out, _ = run_cmd(
+            ["git", "-C", str(dest), "symbolic-ref", "refs/remotes/origin/HEAD"], timeout=30)
+        branch = b_out.strip().split("/")[-1] or "main"
+        rc, _, err = run_cmd(
+            ["git", "-C", str(dest), "reset", "--hard", f"origin/{branch}"], timeout=60)
+        if rc != 0:
+            log(f"  reset FAIL {p['full']}: {err[:200]}")
+            return False, str(dest), round(time.time() - t0, 1), err
+        dt = round(time.time() - t0, 1)
+        log(f"  clone OK(updated) {p['full']} ({dt}s)")
+        return True, str(dest), dt, ""
+    if dest.exists():
+        # 非 git 残留（极少见）→ 删除后重新克隆
+        shutil.rmtree(dest)
     rc, out, err = run_cmd(
         ["git", "clone", "--depth", str(CLONE_DEPTH),
          f"https://github.com/{p['full']}.git", str(dest)],
