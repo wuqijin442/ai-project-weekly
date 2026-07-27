@@ -435,6 +435,11 @@ def pre_sync_pull():
 
 
 def sync_to_github(date):
+    # DGX_LEARN_ONLY：dgx 端只本地生成数据供 learn_link 使用，不提交/推送每日数据，
+    # 避免与 Windows 端（每日数据独家推送）在同一批文件上产生 rebase 冲突。
+    if os.environ.get("DGX_LEARN_ONLY"):
+        log("⏭️ DGX_LEARN_ONLY：跳过每日数据提交/推送（仅本地生成供学习使用），数据由 Windows 端推送")
+        return True, "skip"
     try:
         run_cmd(["git", "add", "-A"], cwd=ROOT, timeout=60)
         # 只在有变更时提交；避免空提交失败

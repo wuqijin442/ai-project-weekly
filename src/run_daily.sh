@@ -59,15 +59,28 @@ echo ">>> [步骤1] 多类别日报" | tee -a "$LOG"
 RC1=$?
 echo "<<< 步骤1 退出码=$RC1" | tee -a "$LOG"
 
-echo ">>> [步骤2] 11 板块深潜" | tee -a "$LOG"
-"$PY" src/board_workflow.py >>"$LOG" 2>&1
-RC2=$?
-echo "<<< 步骤2 退出码=$RC2" | tee -a "$LOG"
+# 步骤2：11 板块深潜。DGX_LEARN_ONLY 时跳过（板块数据由 Windows 端生成/推送，避免冲突）。
+if [ -n "${DGX_LEARN_ONLY:-}" ]; then
+  echo ">>> [步骤2] 跳过（DGX_LEARN_ONLY：板块深潜数据由 Windows 端生成）" | tee -a "$LOG"
+  RC2=0
+else
+  echo ">>> [步骤2] 11 板块深潜" | tee -a "$LOG"
+  "$PY" src/board_workflow.py >>"$LOG" 2>&1
+  RC2=$?
+  echo "<<< 步骤2 退出码=$RC2" | tee -a "$LOG"
+fi
 
 echo ">>> [步骤3] Ollama DeepSeek 学习+链接（best-effort，失败不阻断）" | tee -a "$LOG"
 "$PY" src/learn_link.py >>"$LOG" 2>&1
 RC3=$?
 echo "<<< 步骤3 退出码=$RC3" | tee -a "$LOG"
+
+# 若 DGX_LEARN_ONLY：丢弃本地生成的每日数据（Windows 端独家推送），避免误推送或阻塞后续 pull
+if [ -n "${DGX_LEARN_ONLY:-}" ]; then
+  git checkout -- data/metadata reports/daily 2>/dev/null
+  git clean -fd data/metadata reports/daily 2>/dev/null
+  echo "（DGX_LEARN_ONLY）已丢弃本地生成的每日数据，仅保留学习产物待推送" | tee -a "$LOG"
+fi
 
 # ---- 步骤4：把「学习+链接」产物（及本日任何新增）同步推送 ----
 # 委托 src/push_retry.sh：幂等、健壮（先 abort 残留 rebase，再 pull 重试→commit→push 重试）。
