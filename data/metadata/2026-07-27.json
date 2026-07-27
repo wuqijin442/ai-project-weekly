@@ -13,7 +13,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 6.9,
+    "clone_time": 1.9,
     "clone_err": "",
     "build": {
       "python": false,
@@ -48,7 +48,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 28.9,
+    "clone_time": 3.1,
     "clone_err": "",
     "build": {
       "python": false,
@@ -84,7 +84,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 5.7,
+    "clone_time": 2.4,
     "clone_err": "",
     "build": {
       "python": false,
@@ -111,13 +111,13 @@
       "url": "https://github.com/shiyu-coder/Kronos",
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
-      "stars": 34166,
+      "stars": 34168,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 2.0,
+    "clone_time": 1.8,
     "clone_err": "",
     "build": {
       "python": true,
@@ -130,8 +130,8 @@
       ]
     },
     "install": "failed",
-    "install_log": ":\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-2utvclu8\\pandas_745cbb085b374869841242a34e5856bf\n      Build dir: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-2utvclu8\\pandas_745cbb085b374869841242a34e5856bf\\.mesonpy-7_rold6d\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
-    "install_time": 33.0,
+    "install_log": ":\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-rx0up19u\\pandas_14d4ac47883948fba632f82207121870\n      Build dir: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-rx0up19u\\pandas_14d4ac47883948fba632f82207121870\\.mesonpy-rnesg4_0\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+    "install_time": 25.0,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
@@ -146,13 +146,13 @@
       "url": "https://github.com/Pumpkin-MC/Pumpkin",
       "description": "Empowering everyone to host fast and efficient Minecraft servers.",
       "language": "Rust",
-      "stars": 9999,
+      "stars": 10000,
       "categories": [
         "Backend/DevOps"
       ]
     },
     "clone": true,
-    "clone_time": 3.7,
+    "clone_time": 2.2,
     "clone_err": "",
     "build": {
       "python": false,
@@ -172,7 +172,7 @@
     "run": "skipped",
     "run_log": "无自动可运行入口",
     "run_time": 0.0,
-    "score": 44.0,
+    "score": 44,
     "stars": "★★★☆☆"
   }
 ]
