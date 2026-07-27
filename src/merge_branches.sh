@@ -58,7 +58,8 @@ git merge --abort >/dev/null 2>&1
 # 1) fetch 所有远端分支（带重试）
 FETCHED=0
 for i in 1 2 3 4 5 6; do
-  if git fetch origin >>"$LOG" 2>&1; then FETCHED=1; break; fi
+  # 显式拉取全部分支（覆盖仓库可能配置的 single-branch fetch，确保 origin/dgx、origin/win 也更新）
+  if git fetch origin '+refs/heads/*:refs/remotes/origin/*' >>"$LOG" 2>&1; then FETCHED=1; break; fi
   echo "fetch 第 $i/6 次失败，退避 $((i * 5))s" | tee -a "$LOG"
   sleep $((i * 5))
 done
