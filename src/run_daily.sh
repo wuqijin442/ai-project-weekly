@@ -7,9 +7,13 @@
 #   步骤4：委托 src/push_retry.sh 同步推送（幂等健壮；同脚本被重试 cron 复用）
 # 四步骤每日都跑；脚本路径无关（按本文件位置推导仓库根）。
 #
+# 分支感知：默认 main；多机分支模型下由 GITHUB_TARGET_BRANCH 指定目标分支
+# （dgx 端 = dgx 分支，Windows 端 = win 分支）。本脚本在开头即切换到目标分支，
+# 后续所有 git 操作（main.py 提交/推送、push_retry 推送）都落在目标分支上。
+#
 # 用法：
-#   bash src/run_daily.sh
-#   GITHUB_TOKEN=xxx bash src/run_daily.sh        # headless 服务器必须带 token
+#   GITHUB_TARGET_BRANCH=dgx bash src/run_daily.sh   # dgx 端
+#   GITHUB_TARGET_BRANCH=win bash src/run_daily.sh   # Windows 端（若直接调用本脚本）
 # 也可被 crontab / systemd timer 调用（建议用绝对路径）。
 # ============================================================================
 set -u
@@ -19,13 +23,21 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO_ROOT" || exit 1
 
 # 从仓库根 .env 载入机密（若存在）。.env 必须 chmod 600 且已被 .gitignore 排除。
-# 这样 token 不进 crontab、不进 git；headless 服务器靠它做 HTTPS 推送。
 if [ -f "$REPO_ROOT/.env" ]; then
   set -a
   # shellcheck disable=SC1091
   . "$REPO_ROOT/.env"
   set +a
 fi
+
+# ---- 分支感知：默认 main；多机分支模型下由 GITHUB_TARGET_BRANCH 指定（win/dgx）----
+TARGET_BRANCH="${GITHUB_TARGET_BRANCH:-main}"
+git rebase --abort >/dev/null 2>&1
+git checkout "$TARGET_BRANCH" 2>/dev/null \
+  || git checkout -b "$TARGET_BRANCH" "origin/$TARGET_BRANCH" 2>/dev/null \
+  || git checkout -b "$TARGET_BRANCH"
+export GITHUB_TARGET_BRANCH="$TARGET_BRANCH"
+echo ">>> 目标分支：$TARGET_BRANCH"
 
 # 解析 python 解释器：Linux 多为 python3，macOS/Windows 多为 python
 PY="$(command -v python3 || command -v python)"
@@ -52,7 +64,7 @@ mkdir -p "$LOG_DIR"
 STAMP="$(date +%Y-%m-%d)"
 LOG="$LOG_DIR/cron-$STAMP.log"
 
-echo "=== $(date '+%F %T') 启动每日自动化 @ $REPO_ROOT (python=$PY) ===" | tee -a "$LOG"
+echo "=== $(date '+%F %T') 启动每日自动化 @ $REPO_ROOT (python=$PY branch=$TARGET_BRANCH) ===" | tee -a "$LOG"
 
 echo ">>> [步骤1] 多类别日报" | tee -a "$LOG"
 "$PY" src/main.py >>"$LOG" 2>&1
@@ -82,10 +94,10 @@ if [ -n "${DGX_LEARN_ONLY:-}" ]; then
   echo "（DGX_LEARN_ONLY）已丢弃本地生成的每日数据，仅保留学习产物待推送" | tee -a "$LOG"
 fi
 
-# ---- 步骤4：把「学习+链接」产物（及本日任何新增）同步推送 ----
+# ---- 步骤4：把「学习+链接」产物（及本日任何新增）同步推送（到目标分支）----
 # 委托 src/push_retry.sh：幂等、健壮（先 abort 残留 rebase，再 pull 重试→commit→push 重试）。
 # 该脚本同时被重试 cron（*/20 2-8）调用，覆盖 GitHub 凌晨偶发不可达的多小时窗口。
-echo ">>> [步骤4] 同步推送（委托 push_retry.sh）" | tee -a "$LOG"
+echo ">>> [步骤4] 同步推送（委托 push_retry.sh，目标分支=$TARGET_BRANCH）" | tee -a "$LOG"
 bash "$SCRIPT_DIR/push_retry.sh" >>"$LOG" 2>&1
 RC4=$?
 echo "<<< 步骤4 退出码=$RC4" | tee -a "$LOG"

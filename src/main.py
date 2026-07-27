@@ -419,11 +419,12 @@ def pre_sync_pull():
 
     网络健壮性：headless 服务器到 GitHub 的 TLS 连接偶发中断（GnuTLS recv error），
     故对 pull 做最多 3 次重试 + 退避，避免瞬时抖动导致跳过 pre-pull 后推送失败。"""
+    target_branch = os.environ.get("GITHUB_TARGET_BRANCH", "main")
     last_err = ""
     for attempt in range(1, 4):
         try:
             rc, out, err = run_cmd(
-                ["git", "pull", "--rebase", "--autostash", "origin", "main"],
+                ["git", "pull", "--rebase", "--autostash", "origin", target_branch],
                 cwd=ROOT, timeout=120)
             if rc == 0:
                 log("✅ 已先拉取远端最新（pre-pull），避免推送冲突")
@@ -443,6 +444,16 @@ def sync_to_github(date):
     if os.environ.get("DGX_LEARN_ONLY"):
         log("⏭️ DGX_LEARN_ONLY：跳过每日数据提交/推送（仅本地生成供学习使用），数据由 Windows 端推送")
         return True, "skip"
+    # 分支感知：默认推 main；多机分支模型（win/dgx）由 GITHUB_TARGET_BRANCH 指定。
+    target_branch = os.environ.get("GITHUB_TARGET_BRANCH", "main")
+    try:
+        rc, _, _ = run_cmd(["git", "checkout", target_branch], cwd=ROOT, timeout=30)
+        if rc != 0:
+            run_cmd(["git", "fetch", "origin", target_branch], cwd=ROOT, timeout=60)
+            run_cmd(["git", "checkout", "-b", target_branch, f"origin/{target_branch}"],
+                    cwd=ROOT, timeout=30)
+    except Exception:  # noqa
+        pass
     try:
         run_cmd(["git", "add", "-A"], cwd=ROOT, timeout=60)
         # 只在有变更时提交；避免空提交失败
@@ -450,21 +461,21 @@ def sync_to_github(date):
         if rc != 0:
             msg = f"[{date.isoformat()}] Daily AI Project Update"
             run_cmd(["git", "commit", "-m", msg], cwd=ROOT, timeout=60)
-        # 统一分支名为 main（git init 默认可能为 master）
-        run_cmd(["git", "branch", "-M", "main"], cwd=ROOT, timeout=30)
+        # 统一分支名为目标分支（git init 默认可能为 master；多机分支模型下为 win/dgx）
+        run_cmd(["git", "branch", "-M", target_branch], cwd=ROOT, timeout=30)
         # 推送策略（跨平台健壮）：
         #   1) 优先用 origin 远程 + 凭据管理器（Windows 已缓存可写凭据 / Linux 若已配置）。
         #   2) 仅当 plain push 失败且存在 GITHUB_TOKEN 时，才回退到 token 注入的 HTTPS URL
         #      （headless Linux 服务器常见路径；token 不写入 .git/config，仅本次命令内联）。
         #   注意：Windows 环境变量里的 GITHUB_TOKEN 为只读，不可用于推送，故不作为首选，
         #        否则会被 git 403 denied（remote: Permission denied to wuqijin442）。
-        rc, out, err = run_cmd(["git", "push", "-u", "origin", "main"], cwd=ROOT, timeout=120)
+        rc, out, err = run_cmd(["git", "push", "-u", "origin", target_branch], cwd=ROOT, timeout=120)
         if rc != 0 and GITHUB_TOKEN:
             log("⚠️ plain push 失败，回退到 GITHUB_TOKEN 注入推送")
             push_url = f"https://{GITHUB_TOKEN}@github.com/wuqijin442/ai-project-weekly.git"
-            rc, out, err = run_cmd(["git", "push", "-u", push_url, "main"], cwd=ROOT, timeout=120)
+            rc, out, err = run_cmd(["git", "push", "-u", push_url, target_branch], cwd=ROOT, timeout=120)
         if rc == 0:
-            log("✅ 已推送到 wuqijin442/main")
+            log(f"✅ 已推送到 wuqijin442/{target_branch}")
             return True, out
         # 抹掉日志里的 token（git 报错会带含 token 的 URL）
         safe_err = err.replace(GITHUB_TOKEN, "***TOKEN***") if GITHUB_TOKEN else err
