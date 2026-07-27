@@ -13,7 +13,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 6.4,
+    "clone_time": 2.3,
     "clone_err": "",
     "build": {
       "python": false,
@@ -26,8 +26,8 @@
       ]
     },
     "install": "success",
-    "install_log": "\nup to date in 14s\n\n58 packages are looking for funding\n  run `npm fund` for details\n",
-    "install_time": 14.9,
+    "install_log": "\nup to date in 20s\n\n58 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 20.5,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
@@ -48,7 +48,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 4.9,
+    "clone_time": 4.8,
     "clone_err": "",
     "build": {
       "python": false,
@@ -61,8 +61,8 @@
       ]
     },
     "install": "success",
-    "install_log": "\nup to date in 26s\n\n188 packages are looking for funding\n  run `npm fund` for details\n",
-    "install_time": 27.2,
+    "install_log": "\nup to date in 25s\n\n188 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 25.6,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
@@ -84,7 +84,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 2.5,
+    "clone_time": 2.4,
     "clone_err": "",
     "build": {
       "python": false,
@@ -117,7 +117,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 2.5,
+    "clone_time": 1.9,
     "clone_err": "",
     "build": {
       "python": true,
@@ -130,8 +130,8 @@
       ]
     },
     "install": "failed",
-    "install_log": ":\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-0uxshucc\\pandas_6e77763b6dc44307b3031f54b36d22b5\n      Build dir: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-0uxshucc\\pandas_6e77763b6dc44307b3031f54b36d22b5\\.mesonpy-pzzpyiat\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
-    "install_time": 34.4,
+    "install_log": ":\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-1ex5me80\\pandas_26dadf5a8fdd43c3bc3371d7aabb2a55\n      Build dir: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-1ex5me80\\pandas_26dadf5a8fdd43c3bc3371d7aabb2a55\\.mesonpy-7sya5y47\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+    "install_time": 28.6,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
@@ -152,7 +152,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 3.8,
+    "clone_time": 2.2,
     "clone_err": "",
     "build": {
       "python": false,
