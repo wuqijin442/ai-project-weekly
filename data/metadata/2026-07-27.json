@@ -7,7 +7,7 @@
       "url": "https://github.com/pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
       "language": "JavaScript",
-      "stars": 50655,
+      "stars": 51030,
       "categories": [
         "AI/LLM/Agent"
       ]
@@ -26,8 +26,8 @@
       ]
     },
     "install": "success",
-    "install_log": "\nadded 204 packages in 1m\n\n58 packages are looking for funding\n  run `npm fund` for details\n",
-    "install_time": 85.2,
+    "install_log": "\nup to date in 20s\n\n58 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 20.5,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
@@ -42,13 +42,13 @@
       "url": "https://github.com/jenkinsci/jenkins",
       "description": "Jenkins automation server",
       "language": "Java",
-      "stars": 25699,
+      "stars": 25790,
       "categories": [
         "Backend/DevOps"
       ]
     },
     "clone": true,
-    "clone_time": 3.4,
+    "clone_time": 4.8,
     "clone_err": "",
     "build": {
       "python": false,
@@ -61,8 +61,8 @@
       ]
     },
     "install": "success",
-    "install_log": "\nadded 633 packages in 2m\n\n188 packages are looking for funding\n  run `npm fund` for details\n",
-    "install_time": 126.8,
+    "install_log": "\nup to date in 25s\n\n188 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 25.6,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
@@ -77,14 +77,14 @@
       "url": "https://github.com/amnezia-vpn/amnezia-client",
       "description": "Amnezia VPN Client (Desktop+Mobile)",
       "language": "C++",
-      "stars": 13309,
+      "stars": 13523,
       "categories": [
         "DevTools",
         "Mobile"
       ]
     },
     "clone": true,
-    "clone_time": 2.0,
+    "clone_time": 2.4,
     "clone_err": "",
     "build": {
       "python": false,
@@ -111,13 +111,13 @@
       "url": "https://github.com/shiyu-coder/Kronos",
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
-      "stars": 34170,
+      "stars": 34356,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 1.6,
+    "clone_time": 1.9,
     "clone_err": "",
     "build": {
       "python": true,
@@ -130,8 +130,8 @@
       ]
     },
     "install": "failed",
-    "install_log": ":\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-931xbuv6\\pandas_a248015945f943b3801be090f1d211ca\n      Build dir: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-931xbuv6\\pandas_a248015945f943b3801be090f1d211ca\\.mesonpy-9td3cjm4\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
-    "install_time": 27.1,
+    "install_log": ":\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-1ex5me80\\pandas_26dadf5a8fdd43c3bc3371d7aabb2a55\n      Build dir: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-1ex5me80\\pandas_26dadf5a8fdd43c3bc3371d7aabb2a55\\.mesonpy-7sya5y47\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+    "install_time": 28.6,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
@@ -146,13 +146,13 @@
       "url": "https://github.com/Pumpkin-MC/Pumpkin",
       "description": "Empowering everyone to host fast and efficient Minecraft servers.",
       "language": "Rust",
-      "stars": 10000,
+      "stars": 10150,
       "categories": [
         "Backend/DevOps"
       ]
     },
     "clone": true,
-    "clone_time": 2.1,
+    "clone_time": 2.2,
     "clone_err": "",
     "build": {
       "python": false,

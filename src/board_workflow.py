@@ -36,7 +36,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import main as _main  # noqa
 from main import (  # noqa
     log, run_cmd, clean_text, detect_build, install_project,
-    smoke_run, score_project, sync_to_github, EXCLUDE_KEYWORDS,
+    smoke_run, score_project, sync_to_github, pre_sync_pull, EXCLUDE_KEYWORDS,
 )
 
 # 板块运行使用更短的超时，避免 55 个项目时整体过长
@@ -232,6 +232,9 @@ def write_board_report(date, all_results, totals):
 def main():
     date = datetime.date.today()
     log(f"=== AI 项目 11 板块测试工作流启动 {date.isoformat()} ===")
+    # 先拉远端最新（多机/多自动化共用 win 分支，避免长耗时运行期间
+    # 远端被其他自动化推进导致最终 push 非快进失败）
+    pre_sync_pull()
     if not BOARDS:
         log("未配置任何板块，退出。")
         return None
