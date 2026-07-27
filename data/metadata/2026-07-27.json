@@ -1,0 +1,178 @@
+[
+  {
+    "project": {
+      "owner": "pbakaus",
+      "name": "impeccable",
+      "full": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "JavaScript",
+      "stars": 50655,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 6.9,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "failed",
+    "install_log": "[WinError 2] 系统找不到指定的文件。",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "jenkinsci",
+      "name": "jenkins",
+      "full": "jenkinsci/jenkins",
+      "url": "https://github.com/jenkinsci/jenkins",
+      "description": "Jenkins automation server",
+      "language": "Java",
+      "stars": 25699,
+      "categories": [
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 28.9,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "failed",
+    "install_log": "[WinError 2] 系统找不到指定的文件。",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "amnezia-vpn",
+      "name": "amnezia-client",
+      "full": "amnezia-vpn/amnezia-client",
+      "url": "https://github.com/amnezia-vpn/amnezia-client",
+      "description": "Amnezia VPN Client (Desktop+Mobile)",
+      "language": "C++",
+      "stars": 13308,
+      "categories": [
+        "DevTools",
+        "Mobile"
+      ]
+    },
+    "clone": true,
+    "clone_time": 5.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "shiyu-coder",
+      "name": "Kronos",
+      "full": "shiyu-coder/Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars": 34166,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.0,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt"
+      ]
+    },
+    "install": "failed",
+    "install_log": ":\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-2utvclu8\\pandas_745cbb085b374869841242a34e5856bf\n      Build dir: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-2utvclu8\\pandas_745cbb085b374869841242a34e5856bf\\.mesonpy-7_rold6d\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+    "install_time": 33.0,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Pumpkin-MC",
+      "name": "Pumpkin",
+      "full": "Pumpkin-MC/Pumpkin",
+      "url": "https://github.com/Pumpkin-MC/Pumpkin",
+      "description": "Empowering everyone to host fast and efficient Minecraft servers.",
+      "language": "Rust",
+      "stars": 9999,
+      "categories": [
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 3.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": true,
+      "go": false,
+      "docker": true,
+      "files": [
+        "Cargo.toml",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "skipped",
+    "install_log": "Rust 项目，未执行 cargo build（资源/耗时限制）",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44.0,
+    "stars": "★★★☆☆"
+  }
+]
