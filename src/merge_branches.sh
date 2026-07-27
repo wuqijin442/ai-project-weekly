@@ -164,20 +164,24 @@ if [ -n "${GITHUB_TOKEN:-}" ] && command -v curl >/dev/null 2>&1; then
   [ "$acode" = "200" ] && API_OK=1
 fi
 
-PUSHED=0
+NEED_PUSH=0
 if [ "$API_OK" -eq 1 ]; then
   echo ">>> 走 API PR 路径" | tee -a "$LOG"
-  api_pr_merge "$BR_DGX" || merge_one "$BR_DGX" dgx
+  api_pr_merge "$BR_DGX" || { merge_one "$BR_DGX" dgx; NEED_PUSH=1; }
   git fetch origin "$BR_MAIN" >>"$LOG" 2>&1   # 刷新 origin/main 供第二分支判定
-  api_pr_merge "$BR_WIN" || merge_one "$BR_WIN" win
-  # 远端合并后同步本地 main
-  git pull --rebase --autostash origin "$BR_MAIN" >>"$LOG" 2>&1
-  PUSHED=1
+  api_pr_merge "$BR_WIN" || { merge_one "$BR_WIN" win; NEED_PUSH=1; }
+  # 同步远端可能已通过 API 推进的 main（如某分支走 API 合并）
+  git pull --autostash origin "$BR_MAIN" >>"$LOG" 2>&1
 else
   echo ">>> 走本地 merge 路径（API 不可用）" | tee -a "$LOG"
-  merge_one "$BR_DGX" dgx
-  merge_one "$BR_WIN" win
-  # 推送 main（带重试，正确退出码）
+  merge_one "$BR_DGX" dgx; NEED_PUSH=1
+  merge_one "$BR_WIN" win; NEED_PUSH=1
+fi
+
+# 只要走了本地 merge 兜底（API 不可用 / PR 创建或合并失败），就必须把本地 main 推到远端
+# 否则仅设 PUSHED=1 而不推送会导致远端 main 停止更新（关键修复）
+PUSHED=0
+if [ "$NEED_PUSH" -eq 1 ]; then
   if [ -n "${GITHUB_TOKEN:-}" ]; then
     PUSH_URL="https://${GITHUB_TOKEN}@github.com/${API_REPO}.git"
   else
@@ -192,6 +196,8 @@ else
     echo "push 第 $i/8 次失败，退避 $((i * 5))s" | tee -a "$LOG"
     sleep $((i * 5))
   done
+else
+  PUSHED=1   # 两分支均成功走 API 远端合并，本地无需推送
 fi
 
 if [ "$PUSHED" -eq 1 ]; then
