@@ -10,6 +10,7 @@ build/
 target/
 .next/
 .cache/
+*.log
 .env
 *.env
 # IDE / 工具元数据
@@ -18,8 +19,10 @@ target/
 .uploads/
 .workbuddy/tmp/
 .workbuddy/automations/
+.workbuddy/memory/
 .trae-html-share-packages/
 # 其它无关知识库目录（Obsidian_Vault 自 2026-07-27 起纳入 GitHub 同步）
 储能知识库/
 video-pipeline-guide/
-# 运行时日志（自 2026-07-27 起纳入版本管理，见 Obsidian_Vault 同步决策）
+# 运行时日志不纳入版本管理（仅同步 Obsidian_Vault，避免多机 cron 冲突/弄脏工作树）
+logs/
