@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""learn_link.py — 用 Ollama 上的 deepseek-r1:32b 对当日 GitHub 热门做「学习 + 链接」。
+"""learn_link.py — 用 Ollama deepseek-r1:32b 对 GitHub 热门做「学习 + 链接 + 知识图谱」。
 
-读取当日 metadata（main.py 的每日多类别 + board_workflow 的板块深潜），
-结合历史知识库（knowledge-base/learn_links/INDEX.md），让模型：
-  1) 学习：提炼今日技术主题、新颖点、值得跟进的方向；
-  2) 链接：发现项目间关联（同领域/互补/竞争/可组合），并连接历史知识；
-产出结构化「学习消化报告」reports/learnings/YYYY-MM-DD.md，
-并把核心洞察沉淀到累积知识库（让这些采集工具成为模型的左膀右臂）。
+流程：
+  (a) 每日消化报告  reports/learnings/YYYY-MM-DD.md
+  (b) 滚动 7 天「主题图谱（知识图谱）+ 本周趋势聚合」 knowledge-base/learn_links/WEEKLY.md
+  (c) INDEX.md 重组为「图谱优先 + 本周趋势 + 每日摘要（按日期幂等）」，
+      使累积知识库更像知识图谱而非流水摘要行。
 
-实现：仅依赖 Python 标准库（urllib 调 Ollama HTTP API），Ollama 不可用时优雅跳过，
-不阻断整个自动化。
+仅依赖 Python 标准库（urllib 调 Ollama HTTP API）。Ollama 不可用时优雅跳过，
+不阻断整个自动化（best-effort）。
 """
 import os
 import sys
@@ -23,11 +22,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 META_DIR = ROOT / "data" / "metadata"
 LEARN_DIR = ROOT / "reports" / "learnings"
-LINK_INDEX = ROOT / "knowledge-base" / "learn_links" / "INDEX.md"
+LINK_DIR = ROOT / "knowledge-base" / "learn_links"
+LINK_INDEX = LINK_DIR / "INDEX.md"
+WEEKLY_MD = LINK_DIR / "WEEKLY.md"
+SUMMARY_JSON = LINK_DIR / "summaries.json"
 
 OLLAMA_CHAT = "http://localhost:11434/api/chat"
 MODEL = os.environ.get("LEARN_MODEL", "deepseek-r1:32b")
 HTTP_TIMEOUT = int(os.environ.get("LEARN_TIMEOUT", "600"))
+WEEK_DAYS = int(os.environ.get("LEARN_WEEK_DAYS", "7"))
 
 
 def log(msg):
@@ -35,6 +38,9 @@ def log(msg):
     print(f"[learn_link {ts}] {msg}", flush=True)
 
 
+# ----------------------------------------------------------------------------
+# 数据读取
+# ----------------------------------------------------------------------------
 def _proj_info(item):
     """从 metadata 条目里尽量稳健地抽出项目核心字段。"""
     p = item.get("project") or item.get("repo") or {}
@@ -77,7 +83,6 @@ def build_context(main_data, board_data):
             lines.append(f"- **{full}** [{cat_s}] ⭐{stars} ({lang}) — {d} | 实测:{status}")
     if board_data:
         lines.append("\n## 板块深潜（board_workflow，每板 TOP 摘要）")
-        # board_data 可能是 {boards:[...]} 或 [...]；尽量适配
         boards = board_data.get("boards") if isinstance(board_data, dict) else board_data
         if isinstance(boards, list):
             for b in boards:
@@ -104,7 +109,10 @@ def load_history(max_chars=3500):
     return txt
 
 
-def build_messages(context, history):
+# ----------------------------------------------------------------------------
+# 模型调用
+# ----------------------------------------------------------------------------
+def build_daily_messages(context, history):
     system = (
         "你是一位资深开源技术分析师，负责把每日采集的 GitHub 热门项目转化为可行动的知识。"
         "你的职责是「学习」与「链接」：\n"
@@ -113,7 +121,9 @@ def build_messages(context, history):
         "输出严谨、具体、中文、结构化的 Markdown，禁止编造不存在的项目或数据。\n"
         "【格式铁律】直接输出 Markdown 正文，以『## 1.』章节开头；"
         "严禁用代码块（```）包裹整段输出；严禁重复书写主标题『# 学习消化报告』；"
-        "若数据不足以支撑某节，明确写「数据不足」，不要编造。"
+        "若数据不足以支撑某节，明确写「数据不足」，不要编造。\n"
+        "【图谱友好】第 1 节『今日技术主题』每条用『主题名：一句话』格式，"
+        "便于跨日聚类成知识图谱；第 2 节『项目关联网络』每条明确写出关系类型（同领域/互补/竞争/可组合/延续）。"
     )
     user = f"""下面是今日采集到的 GitHub 热门数据（来自自动化工具的真实运行结果）：
 
@@ -128,8 +138,8 @@ def build_messages(context, history):
 """
     user += (
         "请直接以 Markdown 章节输出以下内容（不要加主标题、不要用代码块包裹）：\n"
-        "## 1. 今日技术主题（3-5 个，每条一句话）\n"
-        "## 2. 项目关联网络（列出 3-6 组关联：同领域/互补/竞争/可组合，并说明如何连）\n"
+        "## 1. 今日技术主题（3-5 个，每条『主题名：一句话』）\n"
+        "## 2. 项目关联网络（列出 3-6 组关联，标注关系类型，并说明如何连）\n"
         "## 3. 与历史知识的连接（哪些在延续、哪些是新出现、趋势有何变化）\n"
         "## 4. 推荐深入学习（TOP3 项目 + 理由）\n"
         "## 5. 开放问题 / 值得关注的风险\n"
@@ -141,14 +151,59 @@ def build_messages(context, history):
     ]
 
 
-def call_ollama(messages):
+def build_weekly_messages(digests):
+    system = (
+        "你是一位资深开源技术知识图谱构建者。给定最近若干天「每日技术主题 + 项目关联网络」的摘录，"
+        "请产出两份结构化成果（中文 Markdown，禁止编造不存在的项目或数据）：\n\n"
+        "## 主题图谱（知识图谱视图）\n"
+        "- 把分散在多日的主题聚类为 5-8 个稳定「主题节点」，每个节点给出：\n"
+        "  · 出现天数（在窗口内出现几天）\n"
+        "  · 趋势：↑上升 / →稳定 / ↓消退\n"
+        "  · 关联边：与哪些主题或项目相连，关系类型（同领域/互补/竞争/可组合/延续）\n"
+        "  · 涉及日期：列出具体日期\n"
+        "- 用「节点—边—节点」的方式呈现，使其像知识图谱而非平铺列表。\n\n"
+        "## 本周趋势聚合（起始 ~ 结束）\n"
+        "- 上升主题（为什么在升温）\n"
+        "- 稳定主线（持续在榜的方向）\n"
+        "- 新出现信号（首次出现的主题 / 项目）\n"
+        "- 消退 / 风险（热度下降或需警惕的）\n"
+        "- 一句话本周结论\n\n"
+        "【格式铁律】直接输出上述两个『## 』章节，不要主标题、不要用代码块包裹、不要重复写标题；"
+        "若某主题证据不足，明确写「数据不足」。"
+    )
+    excerpts = []
+    for d, t in digests:  # digests 顺序：最新在最前（i=0 为今日）
+        excerpts.append(f"【{d.isoformat()}】\n{_extract_theme_network(t)}")
+    start = digests[-1][0].isoformat()
+    end = digests[0][0].isoformat()
+    user = (
+        f"以下是 {start} ~ {end} 共 {len(digests)} 天的「每日技术主题 + 项目关联网络」摘录"
+        f"（按日期倒序，最新在最前）：\n\n" + "\n\n".join(excerpts) +
+        f"\n\n请严格按『## 主题图谱（知识图谱视图）』与『## 本周趋势聚合（{start} ~ {end}）』"
+        f"两个章节输出（不要主标题、不要代码块包裹）。"
+    )
+    return [
+        {"role": "system", "content": system},
+        {"role": "user", "content": user},
+    ]
+
+
+def _extract_theme_network(text):
+    """抽取每日报告的第 1 节（主题）+ 第 2 节（关联网络），截到第 3 节之前，供图谱聚合使用。"""
+    m = re.search(r"##\s*1\.(.*?)(?=##\s*3\.)", text, re.DOTALL)
+    if m:
+        return m.group(1).strip()
+    return text[:1600].strip()
+
+
+def call_ollama(messages, weekly=False):
     payload = {
         "model": MODEL,
         "messages": messages,
         "stream": False,
         "options": {
-            "num_predict": int(os.environ.get("LEARN_NUM_PREDICT", "2500")),
-            "num_ctx": int(os.environ.get("LEARN_NUM_CTX", "8192")),
+            "num_predict": int(os.environ.get("LEARN_NUM_PREDICT", "2500" if not weekly else "2000")),
+            "num_ctx": int(os.environ.get("LEARN_NUM_CTX", "8192" if not weekly else "16384")),
             "temperature": 0.3,
         },
     }
@@ -174,6 +229,9 @@ def strip_think(text):
     return re.sub(r"<thinking>.*?</think>", "", text, flags=re.DOTALL).strip()
 
 
+# ----------------------------------------------------------------------------
+# 落盘：每日摘要 / 图谱 / 索引
+# ----------------------------------------------------------------------------
 def save_digest(date, text):
     LEARN_DIR.mkdir(parents=True, exist_ok=True)
     path = LEARN_DIR / f"{date.isoformat()}.md"
@@ -185,37 +243,87 @@ def save_digest(date, text):
     return path
 
 
-def append_index(date, text):
-    LINK_INDEX.parent.mkdir(parents=True, exist_ok=True)
-    summary = text.replace("\n", " ").strip()
-    summary = summary[:200] + ("…" if len(text) > 200 else "")
-    block = (
-        f"\n## {date.isoformat()}\n"
-        f"- {summary}\n"
-        f"- 🔗 详情：reports/learnings/{date.isoformat()}.md\n"
+def _make_one_line_summary(text):
+    m = re.search(r"##\s*1\..*?\n(.*?)(?:\n|$)", text, re.DOTALL)
+    line = (m.group(1).strip() if m else text.strip().splitlines()[0] if text.strip() else "")
+    line = re.sub(r"\s+", " ", line)
+    return line[:160]
+
+
+def load_summaries():
+    if SUMMARY_JSON.exists():
+        try:
+            return json.loads(SUMMARY_JSON.read_text(encoding="utf-8"))
+        except Exception:  # noqa
+            return {}
+    return {}
+
+
+def save_summary(date, text):
+    summaries = load_summaries()
+    summaries[date.isoformat()] = _make_one_line_summary(text)
+    SUMMARY_JSON.parent.mkdir(parents=True, exist_ok=True)
+    SUMMARY_JSON.write_text(
+        json.dumps(summaries, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def seed_summaries():
+    """把已有每日报告补进 summaries.json（首跑或新增历史日时保证每日摘要完整）。"""
+    summaries = load_summaries()
+    changed = False
+    for p in sorted(LEARN_DIR.glob("20[0-9][0-9]-[0-9][0-9]-[0-9][0-9].md")):
+        d = p.stem
+        if d not in summaries:
+            summaries[d] = _make_one_line_summary(p.read_text(encoding="utf-8"))
+            changed = True
+    if changed:
+        SUMMARY_JSON.parent.mkdir(parents=True, exist_ok=True)
+        SUMMARY_JSON.write_text(
+            json.dumps(summaries, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def save_weekly(text):
+    LINK_DIR.mkdir(parents=True, exist_ok=True)
+    WEEKLY_MD.write_text(text + "\n", encoding="utf-8")
+    return WEEKLY_MD
+
+
+def build_index(weekly_text):
+    """重组 INDEX.md：图谱优先 + 本周趋势 + 每日摘要（按日期幂等）。"""
+    LINK_DIR.mkdir(parents=True, exist_ok=True)
+    header = (
+        "# 累积知识库（左膀右臂记忆）\n\n"
+        "> 知识图谱视图 + 本周趋势由模型每日滚动聚合（近 7 天）；"
+        "每日摘要按日期幂等累积于文末。\n"
+        "> 完整每日报告见 `reports/learnings/YYYY-MM-DD.md`。\n\n"
     )
-    if not LINK_INDEX.exists():
-        LINK_INDEX.write_text(
-            "# 累积知识库（左膀右臂记忆）\n\n"
-            "本文件由 learn_link.py 每日追加，沉淀 GitHub 热门的「学习 + 链接」洞察，"
-            "供模型跨日连接知识。\n" + block, encoding="utf-8")
-        return
-    # 同日重跑（多机/重跑）时替换旧块，避免累积知识库出现重复日期条目
-    cur = LINK_INDEX.read_text(encoding="utf-8")
-    date_hdr = f"## {date.isoformat()}"
-    if date_hdr in cur:
-        idx = cur.index(date_hdr)
-        before = cur[:idx].rstrip()
-        after = cur[idx:]
-        nxt = after.find("\n## ", 1)  # 跳过当前日期块自身的标题
-        after = after[nxt:] if nxt != -1 else ""
-        LINK_INDEX.write_text(before + block.rstrip() + "\n" + after.lstrip(),
-                              encoding="utf-8")
-    else:
-        with LINK_INDEX.open("a", encoding="utf-8") as f:
-            f.write(block)
+    weekly_text = weekly_text or "_本周趋势聚合暂不可用（模型不可用或可用天数不足）。_"
+    body = weekly_text.rstrip() + "\n\n---\n\n## 每日摘要\n\n"
+    summaries = load_summaries()
+    for d in sorted(summaries):
+        body += f"### {d}\n- {summaries[d]}\n- 🔗 详情：reports/learnings/{d}.md\n\n"
+    LINK_INDEX.write_text(header + body, encoding="utf-8")
 
 
+def rebuild_index(weekly_text=None):
+    if not weekly_text and WEEKLY_MD.exists():
+        weekly_text = WEEKLY_MD.read_text(encoding="utf-8")
+    build_index(weekly_text)
+
+
+def collect_week_digests(end_date, days=WEEK_DAYS):
+    out = []
+    for i in range(days):
+        d = end_date - datetime.timedelta(days=i)
+        p = LEARN_DIR / f"{d.isoformat()}.md"
+        if p.exists():
+            out.append((d, p.read_text(encoding="utf-8")))
+    return out
+
+
+# ----------------------------------------------------------------------------
+# 主流程
+# ----------------------------------------------------------------------------
 def main():
     date = datetime.date.today()
     if len(sys.argv) > 1:
@@ -223,27 +331,49 @@ def main():
             date = datetime.date.fromisoformat(sys.argv[1])
         except Exception:  # noqa
             pass
-    log(f"开始学习+链接：{date.isoformat()}")
+    log(f"开始学习+链接+图谱：{date.isoformat()}")
 
     main_data, board_data = load_day(date)
     if not main_data and not board_data:
         log("当日无 metadata（main/boards 均未产出），跳过。")
+        seed_summaries()
+        rebuild_index()
         return 0
 
     context = build_context(main_data, board_data)
     history = load_history()
-    messages = build_messages(context, history)
+    messages = build_daily_messages(context, history)
 
     content = call_ollama(messages)
     if not content:
         log("⚠️ Ollama/DeepSeek 不可用，跳过学习步骤（不影响主流程）。")
+        seed_summaries()
+        rebuild_index()
         return 0
 
     clean = strip_think(content) or content
-    path = save_digest(date, clean)
-    append_index(date, clean)
-    log(f"✅ 学习消化报告已生成：{path}")
-    log(f"✅ 累积知识库已更新：{LINK_INDEX}")
+    save_digest(date, clean)
+    save_summary(date, clean)
+    log(f"✅ 每日消化报告：{LEARN_DIR / (date.isoformat() + '.md')}")
+
+    # 滚动 7 天「主题图谱 + 本周趋势聚合」
+    digests = collect_week_digests(date)
+    weekly_text = None
+    if len(digests) >= 2:
+        w_msgs = build_weekly_messages(digests)
+        w_content = call_ollama(w_msgs, weekly=True)
+        if w_content:
+            weekly_text = strip_think(w_content) or w_content
+            save_weekly(weekly_text)
+            log("✅ 本周主题图谱 + 趋势聚合已更新")
+        else:
+            log("⚠️ 本周聚合模型调用失败，沿用上一份图谱（如有）")
+    else:
+        log(f"本周可用天数={len(digests)} < 2，跳过聚合，仅更新每日摘要")
+
+    seed_summaries()
+    rebuild_index(weekly_text)
+    log("✅ INDEX.md 已重组为知识图谱优先视图")
     return 0
 
 
