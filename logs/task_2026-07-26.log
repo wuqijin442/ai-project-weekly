@@ -1,0 +1,41 @@
+# 任务日志 — 2026-07-26（第24次执行）
+
+## 模式
+周末（全赛道 Top 10）— 周日，取 GitHub Trending 周榜（?since=weekly）按本周新增 Star 降序前 10。
+
+## 连通性
+- curl 直连 github.com/trending?since=weekly HTTP:200（711KB，解析 22 仓库，无 tmp- 前缀 class 混淆）
+- GitHub REST API（GITHUB_TOKEN Bearer）HTTP:200，10/10 仓库补全 stars/created_at/language/topics/homepage/description
+
+## Top 10（本周新增降序）
+1. bojieli/ai-agent-book（+16,579/⭐19.8k，本周最佳🔝、《深入理解 AI Agent》开源教材）
+2. koala73/worldmonitor（+12,085/⭐74.1k，实时全球情报大屏 + MCP server）
+3. mattpocock/skills（+11,790/⭐188.2k，真工程师技能集）
+4. diegosouzapw/OmniRoute（+11,147/⭐30.0k，免费 MIT AI 网关）
+5. stablyai/orca（+7,327/⭐29.0k，并行 Agent ADE）
+6. tirth8205/code-review-graph（+6,423/⭐26.4k，代码智能图谱）
+7. ruvnet/RuView（+5,313/⭐86.4k，WiFi 感知空间智能）
+8. earendil-works/pi（+5,167/⭐77.5k，AI Agent 工具箱）
+9. Nutlope/hallmark（+4,881/⭐17.7k，反 AI-slop 设计技能）
+10. rohitg00/ai-engineering-from-scratch（+4,518/⭐43.5k，从零构建 AI 工程课程）
+
+## 归档
+- 新建周报 Weekly/AI-Weekly-2026-07-26.md
+- 新建 5 个项目页（bojieli_ai-agent-book / koala73_worldmonitor / ruvnet_RuView / earendil-works_pi / rohitg00_ai-engineering-from-scratch）
+- 更新 5 个项目页（mattpocock_skills / diegosouzapw_OmniRoute / stablyai_orca / tirth8205_code-review-graph / Nutlope_hallmark：刷新 stars + today_growth→weekly_growth + 加 07-26 周报回链）
+- 更新 _Index.md（日期表 +1 行、项目索引 +5 行）
+
+## ima 推送
+✅ 成功。库「github daily log」(7485494204062117)：
+- create_media → media_id=markdown_890280cec11ce364b934fc466e7471b2_86f50cc5ec94fd0883aed3689c6b34417485494204062117
+- cos-upload.cjs → HTTP 200, exit 0
+- add_knowledge → 成功
+- search_knowledge 校验 → media_state=2(PARSE_SUCCESS)、parse_progress=100%、parent_folder_name=github daily log
+- 载体 .workbuddy/tmp/GitHub_AI_VibeCoding_2026-07-26.md（6,906 字节）
+
+## 跳过项
+- 企业微信推送：跳过（连接器断开，自 2026-07-04 起暂停）
+- GitHub 推送：跳过（工作区非 git 仓库，无 remote）
+
+## 数据说明
+本周全赛道三线并进：① 教材/课程沉淀（ai-agent-book 居首 +16.6k、ai-engineering-from-scratch）标志 AI Agent 知识系统化；② 编码 Agent 工具链六席同榜（skills/OmniRoute/orca/code-review-graph/pi/hallmark）构成「技能→网关→调度→审查→设计」完整链路；③ 感知/情报外溢（RuView WiFi 感知、worldmonitor 地缘情报）把 AI 推向物理世界与宏观态势。

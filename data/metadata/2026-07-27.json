@@ -13,7 +13,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 1.9,
+    "clone_time": 2.3,
     "clone_err": "",
     "build": {
       "python": false,
@@ -25,13 +25,13 @@
         "package.json"
       ]
     },
-    "install": "failed",
-    "install_log": "[WinError 2] 系统找不到指定的文件。",
-    "install_time": 0.0,
+    "install": "success",
+    "install_log": "\nadded 204 packages in 1m\n\n58 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 85.2,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
-    "score": 44,
+    "score": 60,
     "stars": "★★★☆☆"
   },
   {
@@ -48,7 +48,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 3.1,
+    "clone_time": 3.4,
     "clone_err": "",
     "build": {
       "python": false,
@@ -60,13 +60,13 @@
         "package.json"
       ]
     },
-    "install": "failed",
-    "install_log": "[WinError 2] 系统找不到指定的文件。",
-    "install_time": 0.0,
+    "install": "success",
+    "install_log": "\nadded 633 packages in 2m\n\n188 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 126.8,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
-    "score": 44,
+    "score": 60,
     "stars": "★★★☆☆"
   },
   {
@@ -77,14 +77,14 @@
       "url": "https://github.com/amnezia-vpn/amnezia-client",
       "description": "Amnezia VPN Client (Desktop+Mobile)",
       "language": "C++",
-      "stars": 13308,
+      "stars": 13309,
       "categories": [
         "DevTools",
         "Mobile"
       ]
     },
     "clone": true,
-    "clone_time": 2.4,
+    "clone_time": 2.0,
     "clone_err": "",
     "build": {
       "python": false,
@@ -111,13 +111,13 @@
       "url": "https://github.com/shiyu-coder/Kronos",
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
       "language": "Python",
-      "stars": 34168,
+      "stars": 34170,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 1.8,
+    "clone_time": 1.6,
     "clone_err": "",
     "build": {
       "python": true,
@@ -130,8 +130,8 @@
       ]
     },
     "install": "failed",
-    "install_log": ":\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-rx0up19u\\pandas_14d4ac47883948fba632f82207121870\n      Build dir: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-rx0up19u\\pandas_14d4ac47883948fba632f82207121870\\.mesonpy-rnesg4_0\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
-    "install_time": 25.0,
+    "install_log": ":\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-931xbuv6\\pandas_a248015945f943b3801be090f1d211ca\n      Build dir: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-install-931xbuv6\\pandas_a248015945f943b3801be090f1d211ca\\.mesonpy-9td3cjm4\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+    "install_time": 27.1,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
@@ -152,7 +152,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 2.2,
+    "clone_time": 2.1,
     "clone_err": "",
     "build": {
       "python": false,

@@ -294,7 +294,10 @@ def install_project(p, path, build):
             return "success", out[-500:], dt
         return "failed", err[-800:], dt
     if build["node"]:
-        rc, out, err = run_cmd(["npm", "install"], cwd=path, timeout=INSTALL_TIMEOUT)
+        # Windows 兼容：subprocess(shell=False) 调 CreateProcess("npm") 只补 .exe 不补 .CMD，
+        # 故需用 shutil.which 解析到完整 npm.CMD 路径，否则 WinError 2。
+        npm_bin = shutil.which("npm") or "npm"
+        rc, out, err = run_cmd([npm_bin, "install"], cwd=path, timeout=INSTALL_TIMEOUT)
         dt = round(time.time() - t0, 1)
         if rc == 0:
             return "success", out[-500:], dt

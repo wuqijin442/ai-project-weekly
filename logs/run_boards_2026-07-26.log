@@ -1,0 +1,136 @@
+[08:39:55] === AI 项目 11 板块测试工作流启动 2026-07-26 ===
+[08:39:55] --- 板块：大语言模型 (large-language-models) ---
+[08:39:56]   [large-language-models] 抓取 10 个仓库（min★50）
+[08:40:03]   处理 langflow-ai/langflow (★152390)
+[08:42:25]   clone OK langflow-ai/langflow (142.0s)
+[08:44:25]   处理 rasbt/LLMs-from-scratch (★99812)
+[08:44:29]   clone OK rasbt/LLMs-from-scratch (3.9s)
+[08:46:29]   处理 hiyouga/LlamaFactory (★73511)
+[08:46:33]   clone OK hiyouga/LlamaFactory (3.9s)
+[08:48:33]   处理 binary-husky/gpt_academic (★71134)
+[08:48:36]   clone OK binary-husky/gpt_academic (3.2s)
+[08:49:47]   处理 FlowiseAI/Flowise (★54923)
+[08:50:19]   clone OK FlowiseAI/Flowise (32.0s)
+[08:50:19] --- 板块：人工智能 (artificial-intelligence) ---
+[08:50:19]   [artificial-intelligence] 抓取 10 个仓库（min★50）
+[08:50:26]   处理 Significant-Gravitas/AutoGPT (★185684)
+[08:51:09]   clone OK Significant-Gravitas/AutoGPT (42.8s)
+[08:51:09]   处理 f/prompts.chat (★166361)
+[08:51:22]   clone OK f/prompts.chat (12.2s)
+[08:51:22]   处理 rasbt/LLMs-from-scratch (★99812)
+[08:51:24]   clone OK(updated) rasbt/LLMs-from-scratch (2.1s)
+[08:51:47]   处理 hacksider/Deep-Live-Cam (★95244)
+[08:51:54]   clone OK hacksider/Deep-Live-Cam (7.3s)
+[08:54:00]   处理 thedotmack/claude-mem (★88559)
+[08:54:11]   clone OK thedotmack/claude-mem (11.7s)
+[08:54:11] --- 板块：检索增强生成 RAG (rag) ---
+[08:54:12]   [rag] 抓取 10 个仓库（min★50）
+[08:54:19]   处理 langgenius/dify (★150242)
+[08:55:15]   clone OK langgenius/dify (56.2s)
+[08:55:15]   处理 open-webui/open-webui (★146728)
+[08:55:28]   clone OK open-webui/open-webui (12.3s)
+[08:57:28]   处理 langchain-ai/langchain (★142584)
+[08:57:45]   clone OK langchain-ai/langchain (17.1s)
+[08:57:45]   处理 Graphify-Labs/graphify (★95858)
+[08:57:54]   clone OK Graphify-Labs/graphify (9.4s)
+[08:58:13]   处理 thedotmack/claude-mem (★88559)
+[08:58:15]   clone OK(updated) thedotmack/claude-mem (2.3s)
+[08:58:15] --- 板块：扩散模型 (stable-diffusion) ---
+[08:58:16]   [stable-diffusion] 抓取 10 个仓库（min★50）
+[08:58:23]   处理 AUTOMATIC1111/stable-diffusion-webui (★164271)
+[08:58:27]   clone OK AUTOMATIC1111/stable-diffusion-webui (3.2s)
+[09:00:27]   处理 Comfy-Org/ComfyUI (★122243)
+[09:00:38]   clone OK Comfy-Org/ComfyUI (11.6s)
+[09:01:57]   处理 mudler/LocalAI (★47852)
+[09:02:05]   clone OK mudler/LocalAI (8.1s)
+[09:02:05]   处理 calesthio/OpenMontage (★42258)
+[09:02:17]   clone OK calesthio/OpenMontage (11.8s)
+[09:02:27]   处理 huggingface/diffusers (★34153)
+[09:02:43]   clone OK huggingface/diffusers (16.0s)
+[09:02:56] --- 板块：计算机视觉 (computer-vision) ---
+[09:02:57]   [computer-vision] 抓取 10 个仓库（min★50）
+[09:03:04]   处理 opencv/opencv (★90138)
+[09:04:49]   clone OK opencv/opencv (105.2s)
+[09:04:49]   处理 d2l-ai/d2l-zh (★79194)
+[09:06:41]   clone OK d2l-ai/d2l-zh (111.5s)
+[09:06:49]   处理 ultralytics/ultralytics (★59872)
+[09:06:52]   clone OK ultralytics/ultralytics (3.9s)
+[09:07:12]   处理 ultralytics/yolov5 (★57744)
+[09:07:14]   clone OK ultralytics/yolov5 (2.2s)
+[09:07:19]   处理 microsoft/AI-For-Beginners (★52871)
+[09:09:44]   clone OK microsoft/AI-For-Beginners (144.9s)
+[09:10:25] --- 板块：语音识别 (speech-recognition) ---
+[09:10:26]   [speech-recognition] 抓取 10 个仓库（min★50）
+[09:10:33]   处理 huggingface/transformers (★162976)
+[09:10:51]   clone OK huggingface/transformers (17.7s)
+[09:11:23]   处理 ggml-org/whisper.cpp (★52296)
+[09:11:32]   clone OK ggml-org/whisper.cpp (9.5s)
+[09:11:32]   处理 mozilla/DeepSpeech (★26774)
+[09:11:37]   clone OK mozilla/DeepSpeech (5.3s)
+[09:11:43]   处理 SYSTRAN/faster-whisper (★24531)
+[09:12:04]   clone OK SYSTRAN/faster-whisper (21.5s)
+[09:12:05]   处理 m-bain/whisperX (★23259)
+[09:12:27]   clone OK m-bain/whisperX (21.6s)
+[09:14:20] --- 板块：机器人 (robotics) ---
+[09:14:21]   [robotics] 抓取 10 个仓库（min★50）
+[09:14:28]   处理 commaai/openpilot (★63225)
+[09:17:36]   clone FAIL commaai/openpilot: TIMEOUT after 180s
+[09:17:58]   处理 NaiboWang/EasySpider (★44288)
+[09:18:55]   clone OK NaiboWang/EasySpider (56.8s)
+[09:18:55]   处理 AtsushiSakai/PythonRobotics (★30139)
+[09:19:02]   clone OK AtsushiSakai/PythonRobotics (7.5s)
+[09:19:02]   处理 wechaty/wechaty (★22930)
+[09:19:04]   clone OK wechaty/wechaty (2.1s)
+[09:19:04]   处理 zauberzeug/nicegui (★16062)
+[09:19:22]   clone OK zauberzeug/nicegui (17.6s)
+[09:19:47] --- 板块：MLOps (mlops) ---
+[09:19:47]   [mlops] 抓取 10 个仓库（min★50）
+[09:19:54]   处理 GokuMohandas/Made-With-ML (★48886)
+[09:19:57]   clone OK GokuMohandas/Made-With-ML (2.1s)
+[09:20:45]   处理 apache/airflow (★46246)
+[09:21:20]   clone OK apache/airflow (35.0s)
+[09:21:31]   处理 qdrant/qdrant (★33585)
+[09:21:41]   clone OK qdrant/qdrant (10.1s)
+[09:21:41]   处理 HumanSignal/label-studio (★27917)
+[09:24:41]   clone FAIL HumanSignal/label-studio: TIMEOUT after 180s
+[09:24:41]   处理 mlflow/mlflow (★27209)
+[09:25:23]   clone OK mlflow/mlflow (41.7s)
+[09:25:52] --- 板块：向量数据库 (vector-database) ---
+[09:25:53]   [vector-database] 抓取 10 个仓库（min★50）
+[09:26:00]   处理 Mintplex-Labs/anything-llm (★63837)
+[09:26:24]   clone OK Mintplex-Labs/anything-llm (24.6s)
+[09:26:24]   处理 pathwaycom/llm-app (★58987)
+[09:26:29]   clone OK pathwaycom/llm-app (4.6s)
+[09:26:34]   处理 meilisearch/meilisearch (★58728)
+[09:27:04]   clone OK meilisearch/meilisearch (29.9s)
+[09:27:04]   处理 run-llama/llama_index (★51093)
+[09:29:29]   clone OK run-llama/llama_index (145.8s)
+[09:29:49]   处理 milvus-io/milvus (★45381)
+[09:30:34]   clone OK milvus-io/milvus (45.0s)
+[09:30:34] --- 板块：提示工程 (prompt-engineering) ---
+[09:30:35]   [prompt-engineering] 抓取 10 个仓库（min★50）
+[09:30:42]   处理 f/prompts.chat (★166362)
+[09:30:44]   clone OK(updated) f/prompts.chat (1.9s)
+[09:30:44]   处理 microsoft/generative-ai-for-beginners (★113496)
+[09:33:44]   clone FAIL microsoft/generative-ai-for-beginners: TIMEOUT after 180s
+[09:33:44]   处理 JuliusBrussee/caveman (★92983)
+[09:33:47]   clone OK JuliusBrussee/caveman (2.6s)
+[09:33:47]   处理 DietrichGebert/ponytail (★89377)
+[09:33:51]   clone OK DietrichGebert/ponytail (4.1s)
+[09:33:51]   处理 dair-ai/Prompt-Engineering-Guide (★76961)
+[09:34:00]   clone OK dair-ai/Prompt-Engineering-Guide (9.5s)
+[09:34:00] --- 板块：微调 (fine-tuning) ---
+[09:34:01]   [fine-tuning] 抓取 10 个仓库（min★50）
+[09:34:01]   处理 hiyouga/LlamaFactory (★73512)
+[09:34:04]   clone OK(updated) hiyouga/LlamaFactory (2.8s)
+[09:34:45]   处理 unslothai/unsloth (★68895)
+[09:35:34]   clone OK unslothai/unsloth (48.4s)
+[09:36:00]   处理 run-llama/llama_index (★51093)
+[09:36:03]   clone OK(updated) run-llama/llama_index (3.2s)
+[09:36:14]   处理 QwenAudio/CosyVoice (★22406)
+[09:36:16]   clone OK QwenAudio/CosyVoice (2.3s)
+[09:36:51]   处理 huggingface/peft (★21453)
+[09:36:57]   clone OK huggingface/peft (5.5s)
+[09:37:08] 板块报告已生成：D:\Users\Administrator\Desktop\AI Project Weekly\reports\boards\2026-07-26-boards.md
+[09:37:12] ✅ 已推送到 wuqijin442/main
+[09:37:12] === 完成 | 板块 11 / 扫描 110 / 测试 55 / clone 52 / 安装 14 / 运行 2 / 推荐 0 / 推送 OK ===
