@@ -1,0 +1,174 @@
+[
+  {
+    "project": {
+      "owner": "ocornut",
+      "name": "imgui",
+      "full": "ocornut/imgui",
+      "url": "https://github.com/ocornut/imgui",
+      "description": "Dear ImGui: Bloat-free Graphical User interface for C++ with minimal dependencies",
+      "language": "C++",
+      "stars": 75293,
+      "categories": [
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 5.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "mvanhorn",
+      "name": "last30days-skill",
+      "full": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 54437,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 12.6,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "s,\n      setuptools will not proceed with this build.\n      \n      If you are trying to create a single distribution with multiple packages\n      on purpose, you should not rely on automatic discovery.\n      Instead, consider the following options:\n      \n      1. set up custom discovery (`find` directive with `include` or `exclude`)\n      2. use a `src-layout`\n      3. explicitly set `py_modules` or `packages` with a list of names\n      \n      To find more information, look for \"package discovery\" on setuptools docs.\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\nERROR: Failed to build 'file:///D:/Users/Administrator/Desktop/AI%20Project%20Weekly/clones/mvanhorn__last30days-skill' when getting requirements to build editable\n",
+    "install_time": 11.9,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "jenkinsci",
+      "name": "jenkins",
+      "full": "jenkinsci/jenkins",
+      "url": "https://github.com/jenkinsci/jenkins",
+      "description": "Jenkins automation server",
+      "language": "Java",
+      "stars": 25960,
+      "categories": [
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 21.5,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date in 22s\n\n188 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 22.7,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "amnezia-vpn",
+      "name": "amnezia-client",
+      "full": "amnezia-vpn/amnezia-client",
+      "url": "https://github.com/amnezia-vpn/amnezia-client",
+      "description": "Amnezia VPN Client (Desktop+Mobile)",
+      "language": "C++",
+      "stars": 14085,
+      "categories": [
+        "DevTools",
+        "Mobile"
+      ]
+    },
+    "clone": true,
+    "clone_time": 3.4,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "apache",
+      "name": "cassandra",
+      "full": "apache/cassandra",
+      "url": "https://github.com/apache/cassandra",
+      "description": "Open source transactional distributed database. Linear scalability and proven fault-tolerance on commodity hardware or cloud infrastructure without compromising performance.",
+      "language": "Java",
+      "stars": 10022,
+      "categories": [
+        "Database",
+        "Data/ML"
+      ]
+    },
+    "clone": true,
+    "clone_time": 53.0,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  }
+]

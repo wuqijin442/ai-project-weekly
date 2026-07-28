@@ -18,12 +18,13 @@ AI 开源项目 11 板块测试工作流（真实运行版）
   （已 gitignore）。建议由自动化或手动触发，无需每日强跑。
 - 复用 main.py 的纯函数，保持真实运行逻辑完全一致。
 
-运行：python src/board_workflow.py
+运行：python src/board_workflow.py [--date YYYY-MM-DD]
 """
 import os
 import re
 import sys
 import json
+import argparse
 import time
 import shutil
 import datetime
@@ -230,7 +231,19 @@ def write_board_report(date, all_results, totals):
 # 主流程
 # ----------------------------------------------------------------------------
 def main():
-    date = datetime.date.today()
+    # 支持 --date YYYY-MM-DD 回填历史日期（如补跑昨日板块报告）；缺省为今天
+    parser = argparse.ArgumentParser(description="AI 开源项目 11 板块测试工作流")
+    parser.add_argument("--date", default=None,
+                        help="目标日期 YYYY-MM-DD（缺省=今天），用于回填历史板块报告")
+    args, _ = parser.parse_known_args()
+    if args.date:
+        try:
+            date = datetime.date.fromisoformat(args.date)
+        except ValueError:
+            log(f"⚠️ --date 格式错误：{args.date}，回退为今天")
+            date = datetime.date.today()
+    else:
+        date = datetime.date.today()
     log(f"=== AI 项目 11 板块测试工作流启动 {date.isoformat()} ===")
     # 先拉远端最新（多机/多自动化共用 win 分支，避免长耗时运行期间
     # 远端被其他自动化推进导致最终 push 非快进失败）
