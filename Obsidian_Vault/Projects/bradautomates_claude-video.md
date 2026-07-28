@@ -1,18 +1,18 @@
 ---
 aliases: [claude-video, watch]
 tags: [AI, Trending, Python, Claude, Multimodal, Vibe-Coding]
-stars: 6041
+stars: 11534
 created_at: 2026-04-24
-today_growth: 951
-status: 热门
-date_accessed: 2026-07-09
+today_growth: 434
+status: 活跃（Claude 看视频技能，三度上榜）
+date_accessed: 2026-07-28
 
 # claude-video (/watch)
 
 **项目地址**：https://github.com/bradautomates/claude-video
 **作者**：bradautomates（Brad Bonanno）
-**⭐ 总 Star**：6,041
-**📈 今日新增**：951 stars
+**⭐ 总 Star**：11,534（11.5k）
+**📈 今日新增**：434 stars（Vibe Coding #3）
 **💻 主要语言**：Python
 **当前版本**：0.2.0
 
@@ -95,6 +95,7 @@ npx skills add bradautomates/claude-video -g
 
 - [[Vibe-Coding-2026-07-08|2026-07-08 日报]]
 - [[Vibe-Coding-2026-07-09|2026-07-09 日报]]
+- [[Vibe-Coding-2026-07-28|2026-07-28 日报]]
 
 ## 备注
 

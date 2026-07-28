@@ -1,18 +1,18 @@
 ---
 aliases: [last30days, last30days-skill]
 tags: [AI, Trending, Python, Agent-Skill, Research, Vibe-Coding]
-stars: 50733
+stars: 54437
 created_at: 2026-01-23
-today_growth: 352
-status: 热门
-date_accessed: 2026-07-09
+today_growth: 240
+status: 活跃（AI Agent 研究/搜索技能，二度上榜）
+date_accessed: 2026-07-28
 
 # /last30days
 
 **项目地址**：https://github.com/mvanhorn/last30days-skill
 **作者**：mvanhorn（Mike Van Horn）
-**⭐ 总 Star**：50,733
-**📈 今日新增**：352 stars
+**⭐ 总 Star**：54,437（54.4k）
+**📈 今日新增**：240 stars（Vibe Coding #4）
 **💻 主要语言**：Python
 **形态**：Agent Skills（SKILL.md 规范）
 
@@ -61,6 +61,7 @@ npx skills add mvanhorn/last30days-skill -g
 ## 相关日期
 
 - [[Vibe-Coding-2026-07-09|2026-07-09 日报]]
+- [[Vibe-Coding-2026-07-28|2026-07-28 日报]]
 
 ## 备注
 

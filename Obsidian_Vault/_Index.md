@@ -6,6 +6,7 @@ tags: [Index, AI, Trending]
 
 | 日期 | 模式 | 项目数量 | 链接 |
 | --- | --- | --- | --- |
+| 2026-07-28 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-28]] |
 | 2026-07-26 | 周末（全赛道 Top 10） | 10 | [[AI-Weekly-2026-07-26]] |
 | 2026-07-27 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-27]] |
 | 2026-07-25 | 工作日（Vibe Coding） | 2 | [[Vibe-Coding-2026-07-25]] |
@@ -96,3 +97,5 @@ tags: [Index, AI, Trending]
 | CoreBunch/Instatic | [[CoreBunch_Instatic|详情]] |
 | anthropics/claude-cookbooks | [[anthropics_claude-cookbooks|详情]] |
 | pingdotgg/t3code | [[pingdotgg_t3code|详情]] |
+| pbakaus/impeccable | [[pbakaus_impeccable|详情]] |
+| vudovn/ag-kit | [[vudovn_ag-kit|详情]] |
