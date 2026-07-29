@@ -1,0 +1,183 @@
+[
+  {
+    "project": {
+      "owner": "obra",
+      "name": "superpowers",
+      "full": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "language": "Shell",
+      "stars": 263180,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 1.2,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date, audited 1 package in 856ms\n\nfound 0 vulnerabilities\n",
+    "install_time": 1.7,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "opengeos",
+      "name": "GeoLibre",
+      "full": "opengeos/GeoLibre",
+      "url": "https://github.com/opengeos/GeoLibre",
+      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+      "language": "TypeScript",
+      "stars": 3935,
+      "categories": [
+        "Frontend/Web",
+        "Mobile",
+        "Data/ML"
+      ]
+    },
+    "clone": true,
+    "clone_time": 21.9,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "Dockerfile"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nchanged 3 packages, and audited 1420 packages in 2s\n\n330 packages are looking for funding\n  run `npm fund` for details\n\n1 moderate severity vulnerability\n\nTo address all issues, run:\n  npm audit fix\n\nRun `npm audit` for details.\n",
+    "install_time": 2.4,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 47.9,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "full": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 235436,
+      "categories": [
+        "AI/LLM/Agent",
+        "Security"
+      ]
+    },
+    "clone": true,
+    "clone_time": 1.5,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "package.json"
+      ]
+    },
+    "install": "failed",
+    "install_log": "   If you wish to install a non-Debian-packaged Python package,\n    create a virtual environment using python3 -m venv path/to/venv.\n    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make\n    sure you have python3-full installed.\n    \n    If you wish to install a non-Debian packaged Python application,\n    it may be easiest to use pipx install xyz, which will manage a\n    virtual environment for you. Make sure you have pipx installed.\n    \n    See /usr/share/doc/python3.12/README.venv for more information.\n\nnote: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.\nhint: See PEP 668 for the detailed specification.\n",
+    "install_time": 0.4,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "microsoft",
+      "name": "VibeVoice",
+      "full": "microsoft/VibeVoice",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "description": "Open-Source Frontier Voice AI",
+      "language": "Python",
+      "stars": 51182,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 10.4,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "   If you wish to install a non-Debian-packaged Python package,\n    create a virtual environment using python3 -m venv path/to/venv.\n    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make\n    sure you have python3-full installed.\n    \n    If you wish to install a non-Debian packaged Python application,\n    it may be easiest to use pipx install xyz, which will manage a\n    virtual environment for you. Make sure you have pipx installed.\n    \n    See /usr/share/doc/python3.12/README.venv for more information.\n\nnote: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.\nhint: See PEP 668 for the detailed specification.\n",
+    "install_time": 0.2,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "moeru-ai",
+      "name": "airi",
+      "full": "moeru-ai/airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "language": "TypeScript",
+      "stars": 45315,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.4,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "failed",
+    "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"catalog:\": catalog:\nnpm error A complete log of this run can be found in: /home/taoyan/.npm/_logs/2026-07-29T19_06_56_089Z-debug-0.log\n",
+    "install_time": 0.6,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  }
+]
