@@ -1,0 +1,177 @@
+[
+  {
+    "project": {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "full": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 235189,
+      "categories": [
+        "AI/LLM/Agent",
+        "Security"
+      ]
+    },
+    "clone": true,
+    "clone_time": 4.0,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "5b3f517410336517d6df1\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-399hr_nt\\wheels\\4c\\37\\53\\460090de2c1aef5fe4943561902f0cab28f82cad25f1d64cea\nSuccessfully built llm-abstraction\nInstalling collected packages: llm-abstraction\n  Attempting uninstall: llm-abstraction\n    Found existing installation: llm-abstraction 0.1.0\n    Uninstalling llm-abstraction-0.1.0:\n      Successfully uninstalled llm-abstraction-0.1.0\nSuccessfully installed llm-abstraction-0.1.0\n",
+    "install_time": 19.2,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "jenkinsci",
+      "name": "jenkins",
+      "full": "jenkinsci/jenkins",
+      "url": "https://github.com/jenkinsci/jenkins",
+      "description": "Jenkins automation server",
+      "language": "Java",
+      "stars": 26182,
+      "categories": [
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 14.1,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date in 16s\n\n188 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 16.9,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "opengeos",
+      "name": "GeoLibre",
+      "full": "opengeos/GeoLibre",
+      "url": "https://github.com/opengeos/GeoLibre",
+      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+      "language": "TypeScript",
+      "stars": 3660,
+      "categories": [
+        "Frontend/Web",
+        "Mobile",
+        "Data/ML"
+      ]
+    },
+    "clone": true,
+    "clone_time": 5.9,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "Dockerfile"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 804.6,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 31.3,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "moeru-ai",
+      "name": "airi",
+      "full": "moeru-ai/airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "language": "TypeScript",
+      "stars": 45095,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": false,
+    "clone_time": 189.3,
+    "clone_err": "TIMEOUT after 180s",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 180s",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "TIMEOUT after 180s",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "andrewyng",
+      "name": "aisuite",
+      "full": "andrewyng/aisuite",
+      "url": "https://github.com/andrewyng/aisuite",
+      "description": "Simple, unified interface to multiple Generative AI providers",
+      "language": "Python",
+      "stars": 15787,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 3.2,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml"
+      ]
+    },
+    "install": "success",
+    "install_log": "2 sha256=f03e91cf7ef078f123a5f49242b4eca40870c2f4177a52a283bc72babb440c6d\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-vlc2ynrc\\wheels\\f7\\fb\\65\\fb5853b5d8716f5814eddec74cb0f7236afb10cca5a2147b12\nSuccessfully built aisuite\nInstalling collected packages: aisuite\n  Attempting uninstall: aisuite\n    Found existing installation: aisuite 0.1.14\n    Uninstalling aisuite-0.1.14:\n      Successfully uninstalled aisuite-0.1.14\nSuccessfully installed aisuite-0.1.14\n",
+    "install_time": 11.0,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  }
+]
