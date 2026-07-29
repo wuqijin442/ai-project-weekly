@@ -6,6 +6,7 @@ tags: [Index, AI, Trending]
 
 | 日期 | 模式 | 项目数量 | 链接 |
 | --- | --- | --- | --- |
+| 2026-07-29 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-29]] |
 | 2026-07-28 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-28]] |
 | 2026-07-26 | 周末（全赛道 Top 10） | 10 | [[AI-Weekly-2026-07-26]] |
 | 2026-07-27 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-27]] |
@@ -99,3 +100,6 @@ tags: [Index, AI, Trending]
 | pingdotgg/t3code | [[pingdotgg_t3code|详情]] |
 | pbakaus/impeccable | [[pbakaus_impeccable|详情]] |
 | vudovn/ag-kit | [[vudovn_ag-kit|详情]] |
+| virgiliojr94/book-to-skill | [[virgiliojr94_book-to-skill|详情]] |
+| andrewyng/aisuite | [[andrewyng_aisuite|详情]] |
+| microsoft/agent-governance-toolkit | [[microsoft_agent-governance-toolkit|详情]] |
