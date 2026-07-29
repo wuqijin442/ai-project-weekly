@@ -48,7 +48,10 @@ def list_remote_branches():
     branches = []
     for line in out.splitlines():
         b = line.strip()
-        if not b or b.startswith("(HEAD"):
+        if not b:
+            continue
+        # 跳过符号引用行（形如 origin/HEAD -> origin/main）
+        if " -> " in b:
             continue
         if b.startswith("origin/"):
             name = b[len("origin/"):]

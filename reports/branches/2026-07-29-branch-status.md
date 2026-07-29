@@ -2,17 +2,16 @@
 
 > 自动 `git fetch --prune` 后比对各分支相对 `main` 的领先/落后提交与最近提交，结论基于真实 git 元数据，无推测。
 
-**基准分支**：`main`　**分支总数**：4　**核对时间**：2026-07-29 08:09:49
+**基准分支**：`main`　**分支总数**：3　**核对时间**：2026-07-29 08:10:39
 
 
 ## 各分支总览
 
 | 分支 | 领先 main | 落后 main | 最近提交 | 作者 | 日期 |
 |---|---|---|---|---|---|
-| `HEAD -> origin/main` | 0 | 0 |  |  |  |
 | `dgx` | 1 | 14 | chore: 每日学习消化+图谱 2026-07-29 [dgx] | wuqijin442 | Wed Jul 29 03:10:40 2026 +0800 |
 | `main` | 0 | 0 | Merge pull request #4 from wuqijin442/wi | Worn Quiet Joy | Tue Jul 28 20:00:15 2026 +0800 |
-| `win` | 0 | 7 | [2026-07-28] Daily AI Project Update | wuqijin442 | Tue Jul 28 19:09:20 2026 +0800 |
+| `win` | 1 | 7 | [2026-07-29] Daily AI Project Update | wuqijin442 | Wed Jul 29 08:09:50 2026 +0800 |
 
 ## 领先 main 的待归集提交
 
@@ -20,6 +19,10 @@
 ### `dgx`（领先 main 1 个提交，待 20:00 归集）
 
 - ae82c6e 2026-07-29 wuqijin442 chore: 每日学习消化+图谱 2026-07-29 [dgx]
+
+### `win`（领先 main 1 个提交，待 20:00 归集）
+
+- e8560e3 2026-07-29 wuqijin442 [2026-07-29] Daily AI Project Update
 
 ---
 
