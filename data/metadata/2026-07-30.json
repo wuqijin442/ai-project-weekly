@@ -1,0 +1,176 @@
+[
+  {
+    "project": {
+      "owner": "obra",
+      "name": "superpowers",
+      "full": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "language": "Shell",
+      "stars": 263645,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.6,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date, audited 1 package in 3s\n\nfound 0 vulnerabilities\n",
+    "install_time": 3.6,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "opengeos",
+      "name": "GeoLibre",
+      "full": "opengeos/GeoLibre",
+      "url": "https://github.com/opengeos/GeoLibre",
+      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+      "language": "TypeScript",
+      "stars": 4380,
+      "categories": [
+        "Frontend/Web",
+        "Mobile",
+        "Data/ML"
+      ]
+    },
+    "clone": true,
+    "clone_time": 10.9,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "Dockerfile"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 205.0,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 32.8,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "full": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 235920,
+      "categories": [
+        "AI/LLM/Agent",
+        "Security"
+      ]
+    },
+    "clone": true,
+    "clone_time": 8.8,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "c0b7557c36fe5b74a76ab\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-5969ehly\\wheels\\4c\\37\\53\\460090de2c1aef5fe4943561902f0cab28f82cad25f1d64cea\nSuccessfully built llm-abstraction\nInstalling collected packages: llm-abstraction\n  Attempting uninstall: llm-abstraction\n    Found existing installation: llm-abstraction 0.1.0\n    Uninstalling llm-abstraction-0.1.0:\n      Successfully uninstalled llm-abstraction-0.1.0\nSuccessfully installed llm-abstraction-0.1.0\n",
+    "install_time": 19.8,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "microsoft",
+      "name": "VibeVoice",
+      "full": "microsoft/VibeVoice",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "description": "Open-Source Frontier Voice AI",
+      "language": "Python",
+      "stars": 51550,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 19.1,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml"
+      ]
+    },
+    "install": "success",
+    "install_log": "uccessfully uninstalled transformers-5.8.0\n\nSuccessfully installed aioice-0.10.2 aiortc-1.15.0 audioread-3.1.0 cryptography-49.0.0 diffusers-0.39.0 dnspython-2.8.0 google-crc32c-1.8.0 huggingface-hub-0.36.2 lazy_loader-0.5 librosa-0.11.0 llvmlite-0.48.0 ml-collections-1.1.0 msgpack-1.2.1 numba-0.66.0 numpy-2.4.6 pooch-1.9.0 pyee-13.0.1 pylibsrtp-1.0.0 pyopenssl-26.3.0 soundfile-0.14.0 soxr-1.1.0 standard-aifc-3.13.0 standard-chunk-3.13.0 standard-sunau-3.13.0 transformers-4.57.6 vibevoice-1.0.0\n",
+    "install_time": 76.3,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "moeru-ai",
+      "name": "airi",
+      "full": "moeru-ai/airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "language": "TypeScript",
+      "stars": 45686,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": false,
+    "clone_time": 2.5,
+    "clone_err": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/moeru-ai__airi/.git/shallow.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/moeru-ai__airi/.git/shallow.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/moeru-ai__airi/.git/shallow.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  }
+]
