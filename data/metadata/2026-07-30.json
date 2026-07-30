@@ -7,13 +7,13 @@
       "url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework &amp; software development methodology that works.",
       "language": "Shell",
-      "stars": 263180,
+      "stars": 263645,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 1.2,
+    "clone_time": 2.6,
     "clone_err": "",
     "build": {
       "python": false,
@@ -26,8 +26,8 @@
       ]
     },
     "install": "success",
-    "install_log": "\nup to date, audited 1 package in 856ms\n\nfound 0 vulnerabilities\n",
-    "install_time": 1.7,
+    "install_log": "\nup to date, audited 1 package in 3s\n\nfound 0 vulnerabilities\n",
+    "install_time": 3.6,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
@@ -42,7 +42,7 @@
       "url": "https://github.com/opengeos/GeoLibre",
       "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
       "language": "TypeScript",
-      "stars": 3935,
+      "stars": 4380,
       "categories": [
         "Frontend/Web",
         "Mobile",
@@ -50,7 +50,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 21.9,
+    "clone_time": 10.9,
     "clone_err": "",
     "build": {
       "python": false,
@@ -63,13 +63,13 @@
         "Dockerfile"
       ]
     },
-    "install": "success",
-    "install_log": "\nchanged 3 packages, and audited 1420 packages in 2s\n\n330 packages are looking for funding\n  run `npm fund` for details\n\n1 moderate severity vulnerability\n\nTo address all issues, run:\n  npm audit fix\n\nRun `npm audit` for details.\n",
-    "install_time": 2.4,
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 205.0,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
-    "score": 47.9,
+    "score": 32.8,
     "stars": "★★★☆☆"
   },
   {
@@ -80,14 +80,14 @@
       "url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 235436,
+      "stars": 235920,
       "categories": [
         "AI/LLM/Agent",
         "Security"
       ]
     },
     "clone": true,
-    "clone_time": 1.5,
+    "clone_time": 8.8,
     "clone_err": "",
     "build": {
       "python": true,
@@ -100,13 +100,13 @@
         "package.json"
       ]
     },
-    "install": "failed",
-    "install_log": "   If you wish to install a non-Debian-packaged Python package,\n    create a virtual environment using python3 -m venv path/to/venv.\n    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make\n    sure you have python3-full installed.\n    \n    If you wish to install a non-Debian packaged Python application,\n    it may be easiest to use pipx install xyz, which will manage a\n    virtual environment for you. Make sure you have pipx installed.\n    \n    See /usr/share/doc/python3.12/README.venv for more information.\n\nnote: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.\nhint: See PEP 668 for the detailed specification.\n",
-    "install_time": 0.4,
+    "install": "success",
+    "install_log": "c0b7557c36fe5b74a76ab\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-5969ehly\\wheels\\4c\\37\\53\\460090de2c1aef5fe4943561902f0cab28f82cad25f1d64cea\nSuccessfully built llm-abstraction\nInstalling collected packages: llm-abstraction\n  Attempting uninstall: llm-abstraction\n    Found existing installation: llm-abstraction 0.1.0\n    Uninstalling llm-abstraction-0.1.0:\n      Successfully uninstalled llm-abstraction-0.1.0\nSuccessfully installed llm-abstraction-0.1.0\n",
+    "install_time": 19.8,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
-    "score": 50,
+    "score": 66,
     "stars": "★★★☆☆"
   },
   {
@@ -117,13 +117,13 @@
       "url": "https://github.com/microsoft/VibeVoice",
       "description": "Open-Source Frontier Voice AI",
       "language": "Python",
-      "stars": 51182,
+      "stars": 51550,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 10.4,
+    "clone_time": 19.1,
     "clone_err": "",
     "build": {
       "python": true,
@@ -135,13 +135,13 @@
         "pyproject.toml"
       ]
     },
-    "install": "failed",
-    "install_log": "   If you wish to install a non-Debian-packaged Python package,\n    create a virtual environment using python3 -m venv path/to/venv.\n    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make\n    sure you have python3-full installed.\n    \n    If you wish to install a non-Debian packaged Python application,\n    it may be easiest to use pipx install xyz, which will manage a\n    virtual environment for you. Make sure you have pipx installed.\n    \n    See /usr/share/doc/python3.12/README.venv for more information.\n\nnote: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.\nhint: See PEP 668 for the detailed specification.\n",
-    "install_time": 0.2,
+    "install": "success",
+    "install_log": "uccessfully uninstalled transformers-5.8.0\n\nSuccessfully installed aioice-0.10.2 aiortc-1.15.0 audioread-3.1.0 cryptography-49.0.0 diffusers-0.39.0 dnspython-2.8.0 google-crc32c-1.8.0 huggingface-hub-0.36.2 lazy_loader-0.5 librosa-0.11.0 llvmlite-0.48.0 ml-collections-1.1.0 msgpack-1.2.1 numba-0.66.0 numpy-2.4.6 pooch-1.9.0 pyee-13.0.1 pylibsrtp-1.0.0 pyopenssl-26.3.0 soundfile-0.14.0 soxr-1.1.0 standard-aifc-3.13.0 standard-chunk-3.13.0 standard-sunau-3.13.0 transformers-4.57.6 vibevoice-1.0.0\n",
+    "install_time": 76.3,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
-    "score": 50,
+    "score": 66,
     "stars": "★★★☆☆"
   },
   {
@@ -152,30 +152,23 @@
       "url": "https://github.com/moeru-ai/airi",
       "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
       "language": "TypeScript",
-      "stars": 45315,
+      "stars": 45686,
       "categories": [
         "AI/LLM/Agent",
         "Frontend/Web"
       ]
     },
-    "clone": true,
-    "clone_time": 2.4,
-    "clone_err": "",
+    "clone": false,
+    "clone_time": 2.5,
+    "clone_err": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/moeru-ai__airi/.git/shallow.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
     "build": {
-      "python": false,
-      "node": true,
-      "rust": false,
-      "go": false,
-      "docker": false,
-      "files": [
-        "package.json"
-      ]
+      "files": []
     },
     "install": "failed",
-    "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"catalog:\": catalog:\nnpm error A complete log of this run can be found in: /home/taoyan/.npm/_logs/2026-07-29T19_06_56_089Z-debug-0.log\n",
-    "install_time": 0.6,
-    "run": "skipped",
-    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "install_log": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/moeru-ai__airi/.git/shallow.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/moeru-ai__airi/.git/shallow.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
     "run_time": 0.0,
     "score": 44,
     "stars": "★★★☆☆"

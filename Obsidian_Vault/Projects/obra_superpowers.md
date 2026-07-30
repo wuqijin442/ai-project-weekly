@@ -1,18 +1,18 @@
 ---
 aliases: [superpowers]
 tags: [AI, Trending, Shell, AI, Coding, Skills, SDLC, Vibe-Coding, Subagent]
-stars: 251771
+stars: 263643
 created_at: 2025-10-09
-today_growth: 1013
-status: 热门
-date_accessed: 2026-07-11
+today_growth: 616
+status: 热门（Agentic 技能框架 + 子代理驱动开发，二度上榜 #4）
+date_accessed: 2026-07-30
 
 # superpowers
 
 **项目地址**：https://github.com/obra/superpowers
 **作者**：obra
-**⭐ 总 Star**：251,771
-**📈 今日新增**：1,013 stars
+**⭐ 总 Star**：263,643（263.6k）
+**📈 今日新增**：616 stars（Vibe Coding #4）
 **💻 主要语言**：Shell
 
 ## 项目定位
@@ -34,7 +34,9 @@ date_accessed: 2026-07-11
 ## 相关日期
 
 - [[Vibe-Coding-2026-07-11|2026-07-11 日报]]
+- [[Vibe-Coding-2026-07-30|2026-07-30 日报]]
 
 ## 备注
 
-- 由 GitHub Trending 日榜自动归档（Vibe Coding / AI 编码 Agent 生态口径）。
+- 由 GitHub Trending 日榜自动归档（Vibe Coding / AI 编码 Agent 生态口径）。2026-07-11 首入榜（+1013，251.8k，Vibe Coding #4）。
+- 2026-07-30 二度上榜（+616，263.6k，Vibe Coding #4），以纯 Markdown 技能 + 子代理驱动开发（subagent-driven-development）覆盖 Claude Code / Codex / Cursor / Copilot CLI / Kimi Code / OpenCode / Pi 等 11+ 主机，核心「先 spec、后红绿 TDD、再分发给子代理」已成事实标准方法论—— Skills 从「能力封装」走向「工程纪律封装」。

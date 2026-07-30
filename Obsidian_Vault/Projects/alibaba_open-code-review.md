@@ -1,18 +1,18 @@
 ---
 aliases: [open-code-review]
 tags: [AI, Trending, Go, Vibe-Coding, Coding-Agent, Code-Review]
-stars: 15302
+stars: 16339
 created_at: 2026-05-18
-today_growth: 979
-status: 活跃（大厂代码审查 Agent 化，三度上榜登顶 #1）
-date_accessed: 2026-07-28
+today_growth: 359
+status: 活跃（大厂代码审查 Agent 化，四度上榜 #5）
+date_accessed: 2026-07-30
 
 # open-code-review
 
 **项目地址**：https://github.com/alibaba/open-code-review
 **作者**：alibaba
-**⭐ 总 Star**：15,302（15.3k）
-**📈 今日新增**：979 stars（Vibe Coding #1，今日最佳🔝）
+**⭐ 总 Star**：16,339（16.3k）
+**📈 今日新增**：359 stars（Vibe Coding #5）
 **💻 主要语言**：Go
 **🗓 开源时间**：2026-05-18
 
@@ -39,7 +39,8 @@ date_accessed: 2026-07-28
 
 - [[Vibe-Coding-2026-07-27|2026-07-27 日报]]
 - [[Vibe-Coding-2026-07-28|2026-07-28 日报]]
+- [[Vibe-Coding-2026-07-30|2026-07-30 日报]]
 
 ## 备注
 
-- 由 GitHub Trending 日榜自动归档（Vibe Coding 生态扩充命中：以 LLM Agent 做代码审查、兼容 Claude Code / Codex / Cursor，属「编码 Agent / 代码质量」细分）。轨迹：2026-07-24 首入榜 #5（+180，11.5k）→ 2026-07-27 二度上榜 #2（+832，13.8k）→ 2026-07-28 三度上榜登顶 #1（+979，15.3k），标志大厂把「代码审查」Agent 化已成 Vibe Coding 最稳主线、且持续强调精度 / F1 与省 token。
+- 由 GitHub Trending 日榜自动归档（Vibe Coding 生态扩充命中：以 LLM Agent 做代码审查、兼容 Claude Code / Codex / Cursor，属「编码 Agent / 代码质量」细分）。轨迹：2026-07-24 首入榜 #5（+180，11.5k）→ 2026-07-27 二度上榜 #2（+832，13.8k）→ 2026-07-28 三度上榜登顶 #1（+979，15.3k）→ 2026-07-30 四度上榜 #5（+359，16.3k，新增明显回落 979→359），标志大厂把「代码审查」Agent 化主线进入平台期、从爆发转入稳态，但精度 / F1 与省 token 叙事延续。

@@ -1,18 +1,18 @@
 ---
 aliases: [jcode]
 tags: [AI, Trending, Rust, Coding-Agent, CLI-Agent, Terminal, TUI, MCP, Vibe-Coding]
-stars: 10300
-today_growth: 843
+stars: 13792
+today_growth: 640
 created_at: 2026-01-05
-status: 新兴
-date_accessed: 2026-07-22
+status: 活跃（Rust/CLI 编码 Agent Harness，四度上榜 #3）
+date_accessed: 2026-07-30
 
 # jcode
 
 **项目地址**：https://github.com/1jehuang/jcode
 **作者**：1jehuang
-**⭐ 总 Star**：10,300（10.3k）
-**📈 今日新增**：843 stars
+**⭐ 总 Star**：13,792（13.8k）
+**📈 今日新增**：640 stars（Vibe Coding #3）
 **💻 主要语言**：Rust
 **🗓 开源时间**：2026-01-05
 
@@ -42,8 +42,10 @@ date_accessed: 2026-07-22
 - [[Vibe-Coding-2026-07-20|2026-07-20 日报]]
 - [[Vibe-Coding-2026-07-21|2026-07-21 日报]]
 - [[Vibe-Coding-2026-07-22|2026-07-22 日报]]
+- [[Vibe-Coding-2026-07-30|2026-07-30 日报]]
 
 ## 备注
 
 - 由 GitHub Trending 日榜自动归档（Vibe Coding 生态扩充命中：简介「Coding Agent Harness」+ topics 含 coding-agent / ai-coding-agent / mcp / claude）。2026-07-20 居 Vibe Coding #4（+235）；2026-07-21 居 #3（+568，9.6k），与 kimi-cli 共同印证「Rust/CLI 编码 Agent 基座」赛道升温——性能与可定制成为继能力之后的新竞争点。
 - 2026-07-22 居 Vibe Coding #4（+843，10.3k，三度上榜），新增较昨日（568）明显放大，Rust/CLI 编码 Agent 基座赛道持续升温，跨平台、多会话、低开销定位延续。
+- 2026-07-30 居 Vibe Coding #3（+640，13.8k，四度上榜），总星 10.3k→13.8k 持续累积，Rust/CLI「最省 RAM 的 harness」定位与 ECC 的「harness OS」形成「编码 Agent 基座」双雄格局，资源效率 + 可定制 + 多会话成赛道新竞争点。
