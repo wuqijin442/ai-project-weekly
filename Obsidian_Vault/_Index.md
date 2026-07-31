@@ -6,6 +6,7 @@ tags: [Index, AI, Trending]
 
 | 日期 | 模式 | 项目数量 | 链接 |
 | --- | --- | --- | --- |
+| 2026-07-31 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-31]] |
 | 2026-07-30 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-30]] |
 | 2026-07-29 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-29]] |
 | 2026-07-28 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-28]] |
@@ -104,3 +105,6 @@ tags: [Index, AI, Trending]
 | virgiliojr94/book-to-skill | [[virgiliojr94_book-to-skill|详情]] |
 | andrewyng/aisuite | [[andrewyng_aisuite|详情]] |
 | microsoft/agent-governance-toolkit | [[microsoft_agent-governance-toolkit|详情]] |
+| different-ai/openwork | [[different-ai_openwork|详情]] |
+| agavra/tuicr | [[agavra_tuicr|详情]] |
+| ChromeDevTools/chrome-devtools-mcp | [[ChromeDevTools_chrome-devtools-mcp|详情]] |
