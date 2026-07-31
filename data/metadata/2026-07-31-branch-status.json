@@ -1,0 +1,42 @@
+[
+  {
+    "branch": "dgx",
+    "last": {
+      "hash": "0630e9a75d",
+      "author": "wuqijin442",
+      "date": "Fri Jul 31 03:12:26 2026 +0800",
+      "subject": "chore: 每日学习消化+图谱 2026-07-31 [dgx]"
+    },
+    "behind_main": 28,
+    "ahead_main": 1,
+    "unique_commits": [
+      "0630e9a 2026-07-31 wuqijin442 chore: 每日学习消化+图谱 2026-07-31 [dgx]"
+    ]
+  },
+  {
+    "branch": "main",
+    "last": {
+      "hash": "ad9fd8c15c",
+      "author": "wuqijin442",
+      "date": "Thu Jul 30 20:00:16 2026 +0800",
+      "subject": "merge: win -> main 2026-07-30"
+    },
+    "behind_main": 0,
+    "ahead_main": 0,
+    "unique_commits": []
+  },
+  {
+    "branch": "win",
+    "last": {
+      "hash": "aabea94e69",
+      "author": "wuqijin442",
+      "date": "Fri Jul 31 18:07:06 2026 +0800",
+      "subject": "[2026-07-31] Daily AI Project Update"
+    },
+    "behind_main": 14,
+    "ahead_main": 1,
+    "unique_commits": [
+      "aabea94 2026-07-31 wuqijin442 [2026-07-31] Daily AI Project Update"
+    ]
+  }
+]
