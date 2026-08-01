@@ -120,19 +120,26 @@ def fetch_trending(since="daily"):
     url = f"https://github.com/trending?since={since}"
     html = ""
     last_err = ""
-    for attempt in range(1, 4):
+    # 网络韧性（与推送逻辑一致）：17:3x–19:0x 窗口 GitHub 连接间歇性重置，
+    # 单次 3 次短重试易全部失败。改为外层轮询等待网络恢复（最多 20 轮 × 15s），
+    # 每轮尝试一次抓取（45s 超时），命中即返回，避免整日空报告。
+    MAX_ROUNDS = 20
+    for rnd in range(1, MAX_ROUNDS + 1):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=45) as resp:
                 html = resp.read().decode("utf-8", errors="ignore")
             if html:
+                log(f"trending 抓取成功（第{rnd}/{MAX_ROUNDS}轮）")
                 break
+            last_err = "empty response"
         except Exception as e:  # noqa
             last_err = str(e)
-            log(f"trending 抓取第{attempt}次失败: {e}，重试...")
-            time.sleep(3)
+            log(f"trending 抓取第{rnd}/{MAX_ROUNDS}次失败: {e}")
+        if not html and rnd < MAX_ROUNDS:
+            time.sleep(15)
     if not html:
-        log(f"trending 抓取失败（已重试3次）: {last_err}")
+        log(f"trending 抓取失败（已重试{MAX_ROUNDS}次）: {last_err}")
         return []
 
     articles = re.findall(r'<article class="Box-row">(.*?)</article>', html, re.S)
@@ -494,11 +501,11 @@ def _push_with_resilience(target_branch, max_wait=1800):
         burst += 1
         rc, out, err = git_push_with_retry(target_branch, max_attempts=3)
         if rc == 0:
-            return True, out
+            return 0, out, err
         if not is_transient_git_err(err):
-            return False, err  # 权限/配置类永久错误，不再等待
+            return rc, out, err  # 权限/配置类永久错误，不再等待
         if time.time() > deadline:
-            return False, err
+            return rc, out, err
         wait = 30
         log(f"⚠️ 推送因网络中断失败，{wait}s 后重试（第{burst}轮，超时上限{int(max_wait)}s）：{err[:140]}")
         time.sleep(wait)
@@ -616,6 +623,13 @@ def main():
     # 保存元数据 JSON
     (META_DIR / f"{date.isoformat()}.json").write_text(
         json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # 网络韧性：若 trending 全程抓取失败（扫描 0），无真实数据可落地，
+    # 跳过提交/推送，避免空报告污染 win 历史（如实标注未运行）。
+    if scanned == 0:
+        log("⚠️ 未抓取到任何 trending 数据（网络中断），跳过提交/推送，避免空报告污染历史")
+        log(f"=== 完成 | 扫描 {scanned} / 过滤 {filtered} / TOP{n} / 推荐 0 / 推送 SKIPPED ===")
+        return report
 
     pushed, perr = sync_to_github(date)
     log(f"=== 完成 | 扫描 {scanned} / 过滤 {filtered} / TOP{n} / 推荐 "
