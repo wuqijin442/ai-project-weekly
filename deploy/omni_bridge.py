@@ -74,7 +74,9 @@ def _system_prefill():
 
 
 def _decode_text(timeout=REQ_TIMEOUT):
+    print("[decode] posting decode...", flush=True)
     body = _omni_post("/v1/stream/decode", {"stream": True}, timeout=timeout, stream=True)
+    print(f"[decode] got {len(body)} bytes", flush=True)
     parts = []
     for line in body.splitlines():
         line = line.strip()
