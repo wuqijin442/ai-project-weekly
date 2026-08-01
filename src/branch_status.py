@@ -25,7 +25,7 @@ from pathlib import Path
 
 # 复用 main.py 的真实运行/同步函数（main.py 有 __main__ 守卫，import 不触发其主流程）
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from main import log, run_cmd, pre_sync_pull, sync_to_github  # noqa
+from main import log, run_cmd, pre_sync_pull, sync_to_github, run_git_retry  # noqa
 
 ROOT = Path(__file__).resolve().parent.parent          # src/branch_status.py -> 仓库根
 BRANCH_DIR = ROOT / "reports" / "branches"
@@ -35,8 +35,11 @@ META_DIR.mkdir(exist_ok=True)
 
 
 def fetch_all():
-    """拉取所有远端分支引用（--prune 清理已删除远端分支的本地跟踪引用）。"""
-    rc, _, err = run_cmd(["git", "fetch", "origin", "--prune"], cwd=ROOT, timeout=120)
+    """拉取所有远端分支引用（--prune 清理已删除远端分支的本地跟踪引用）。
+    fetch 走 run_git_retry：18:1x–19:0x 窗口 GitHub 连接重置时自动退避重试。"""
+    rc, _, err = run_git_retry(
+        ["git", "fetch", "origin", "--prune"], cwd=ROOT, timeout=120,
+        max_attempts=4, op_label="fetch --prune")
     if rc != 0:
         log(f"⚠️ git fetch --prune 失败：{err[:200]}（沿用本地已有引用继续）")
     else:
