@@ -6,6 +6,8 @@ tags: [Index, AI, Trending]
 
 | 日期 | 模式 | 项目数量 | 链接 |
 | --- | --- | --- | --- |
+| 2026-08-01 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-01]] |
+
 | 2026-07-31 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-31]] |
 | 2026-07-30 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-30]] |
 | 2026-07-29 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-29]] |
@@ -37,6 +39,7 @@ tags: [Index, AI, Trending]
 | 2026-07-02 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-02]] |
 
 ## 项目索引
+| affaan-m/ECC | [[affaan-m_ECC|详情]] |
 
 | 项目 | 链接 |
 | --- | --- |
