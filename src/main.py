@@ -120,19 +120,26 @@ def fetch_trending(since="daily"):
     url = f"https://github.com/trending?since={since}"
     html = ""
     last_err = ""
-    for attempt in range(1, 4):
+    # 网络韧性（与推送逻辑一致）：17:3x–19:0x 窗口 GitHub 连接间歇性重置，
+    # 单次 3 次短重试易全部失败。改为外层轮询等待网络恢复（最多 20 轮 × 15s），
+    # 每轮尝试一次抓取（45s 超时），命中即返回，避免整日空报告。
+    MAX_ROUNDS = 20
+    for rnd in range(1, MAX_ROUNDS + 1):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=45) as resp:
                 html = resp.read().decode("utf-8", errors="ignore")
             if html:
+                log(f"trending 抓取成功（第{rnd}/{MAX_ROUNDS}轮）")
                 break
+            last_err = "empty response"
         except Exception as e:  # noqa
             last_err = str(e)
-            log(f"trending 抓取第{attempt}次失败: {e}，重试...")
-            time.sleep(3)
+            log(f"trending 抓取第{rnd}/{MAX_ROUNDS}次失败: {e}")
+        if not html and rnd < MAX_ROUNDS:
+            time.sleep(15)
     if not html:
-        log(f"trending 抓取失败（已重试3次）: {last_err}")
+        log(f"trending 抓取失败（已重试{MAX_ROUNDS}次）: {last_err}")
         return []
 
     articles = re.findall(r'<article class="Box-row">(.*?)</article>', html, re.S)
@@ -409,6 +416,101 @@ def write_report(date, top, results, scanned, filtered):
 # ----------------------------------------------------------------------------
 # 步骤7：GitHub 同步
 # ----------------------------------------------------------------------------
+def is_transient_git_err(err: str) -> bool:
+    """识别 git 瞬时网络错误（应退避重试），排除权限/配置类永久错误。"""
+    e = (err or "").lower()
+    keys = [
+        "connection was reset", "tls unexpected eof", "recv failure",
+        "could not resolve", "timed out", "10054", "10060", "10061",
+        "reset by peer", "early eof", "the remote end hung up",
+        "network is unreachable", "connection timed out", "connection abort",
+        "broken pipe", "gnutls", "openssl", "temporary failure",
+        "failed to connect", "connection refused",
+    ]
+    return any(k in e for k in keys)
+
+
+def run_git_retry(args, cwd=None, timeout=180, max_attempts=3, op_label="git"):
+    """执行 git 命令并对瞬时网络错误退避重试。返回 (rc, out, err)。"""
+    last = (1, "", "")
+    for attempt in range(1, max_attempts + 1):
+        rc, out, err = run_cmd(args, cwd=cwd, timeout=timeout)
+        if rc == 0:
+            return rc, out, err
+        last = (rc, out, err)
+        if is_transient_git_err(err) and attempt < max_attempts:
+            wait = 5 * attempt
+            log(f"  ⚠️ {op_label} 瞬时错误（{attempt}/{max_attempts}），{wait}s 后重试：{err[:140]}")
+            time.sleep(wait)
+            continue
+        return rc, out, err
+    return last
+
+
+def git_push_with_retry(target_branch, max_attempts=3, base_backoff=5):
+    """推送目标分支到 origin，单轮内退避重试。返回 (rc, out, err)。
+    - 非快进被拒：自动 rebase 拉取后继续重试（不视为失败）。
+    - 瞬时网络错误：按 5/10/20...s 指数退避重试。
+    - plain 失败且存在 GITHUB_TOKEN：回退 token 注入 HTTPS（Linux headless 路径）。"""
+    token = os.environ.get("GITHUB_TOKEN", "")
+    last_out, last_err = "", ""
+    for attempt in range(1, max_attempts + 1):
+        rc, out, err = run_cmd(
+            ["git", "push", "-u", "origin", target_branch], cwd=ROOT, timeout=180)
+        last_out, last_err = out, err
+        if rc == 0:
+            return 0, out, err
+        # 非快进被拒 → rebase 拉取后继续（下一轮重试）
+        if any(k in err for k in ("non-fast-forward", "rejected", "fetch first", "[rejected]")):
+            log(f"⚠️ push 被拒（非快进），rebase 拉取后重试（{attempt}/{max_attempts}）")
+            run_cmd(["git", "pull", "--rebase", "--autostash", "origin", target_branch],
+                    cwd=ROOT, timeout=120)
+            continue
+        # 权限/认证类错误 → 优先回退 token 注入（Linux headless 路径），不浪费瞬时重试
+        if token and any(k in err for k in ("denied", "403", "401", "authentication")):
+            push_url = f"https://{token}@github.com/wuqijin442/ai-project-weekly.git"
+            rc, out, err = run_cmd(
+                ["git", "push", "-u", push_url, target_branch], cwd=ROOT, timeout=180)
+            last_out, last_err = out, err
+            if rc == 0:
+                return 0, out, err
+            if is_transient_git_err(err) and attempt < max_attempts:
+                wait = min(base_backoff * (2 ** (attempt - 1)), 120)
+                log(f"⚠️ token push 瞬时错误（{attempt}/{max_attempts}），{wait}s 后重试：{err[:140]}")
+                time.sleep(wait)
+                continue
+            return rc, out, err
+        # 瞬时网络错误 → 退避重试
+        if is_transient_git_err(err):
+            wait = min(base_backoff * (2 ** (attempt - 1)), 120)
+            log(f"⚠️ push 瞬时网络错误（{attempt}/{max_attempts}），{wait}s 后重试：{err[:140]}")
+            if attempt < max_attempts:
+                time.sleep(wait)
+            continue
+        # 其他非瞬时错误 → 放弃
+        return rc, out, err
+    return 1, last_out, last_err
+
+
+def _push_with_resilience(target_branch, max_wait=1800):
+    """耐心推送：单轮 3 次退避重试仍因网络中断失败，则每 30s 轮询重试，直到成功或超时。
+    覆盖 07-31 那种持续 ~28 分钟的 GitHub 连接重置窗口，避免依赖临时 recover 脚本。"""
+    deadline = time.time() + max_wait
+    burst = 0
+    while True:
+        burst += 1
+        rc, out, err = git_push_with_retry(target_branch, max_attempts=3)
+        if rc == 0:
+            return 0, out, err
+        if not is_transient_git_err(err):
+            return rc, out, err  # 权限/配置类永久错误，不再等待
+        if time.time() > deadline:
+            return rc, out, err
+        wait = 30
+        log(f"⚠️ 推送因网络中断失败，{wait}s 后重试（第{burst}轮，超时上限{int(max_wait)}s）：{err[:140]}")
+        time.sleep(wait)
+
+
 def pre_sync_pull():
     """先拉取远端最新提交，避免多台机器（Linux 服务器 / Windows）基于旧 HEAD 推送
     导致 non-fast-forward 失败或 rebase 冲突。best-effort：失败不影响后续生成。
@@ -469,17 +571,15 @@ def sync_to_github(date):
         #      （headless Linux 服务器常见路径；token 不写入 .git/config，仅本次命令内联）。
         #   注意：Windows 环境变量里的 GITHUB_TOKEN 为只读，不可用于推送，故不作为首选，
         #        否则会被 git 403 denied（remote: Permission denied to wuqijin442）。
-        rc, out, err = run_cmd(["git", "push", "-u", "origin", target_branch], cwd=ROOT, timeout=120)
-        if rc != 0 and GITHUB_TOKEN:
-            log("⚠️ plain push 失败，回退到 GITHUB_TOKEN 注入推送")
-            push_url = f"https://{GITHUB_TOKEN}@github.com/wuqijin442/ai-project-weekly.git"
-            rc, out, err = run_cmd(["git", "push", "-u", push_url, target_branch], cwd=ROOT, timeout=120)
+        # 耐心推送：内置退避重试 + 瞬时网络错误识别 + 非快进自动 rebase，
+        # 覆盖 18:1x–19:0x 窗口 GitHub 连接重置（07-30/07-31 实测），最长等待 30 分钟。
+        rc, out, err = _push_with_resilience(target_branch)
         if rc == 0:
             log(f"✅ 已推送到 wuqijin442/{target_branch}")
             return True, out
         # 抹掉日志里的 token（git 报错会带含 token 的 URL）
         safe_err = err.replace(GITHUB_TOKEN, "***TOKEN***") if GITHUB_TOKEN else err
-        log(f"⚠️ push 失败（检查 GITHUB_TOKEN 或 origin 远程）：{safe_err[:300]}")
+        log(f"⚠️ push 失败（检查网络/凭据）：{safe_err[:300]}")
         return False, safe_err
     except Exception as e:  # noqa
         log(f"sync 异常：{e}")
@@ -523,6 +623,13 @@ def main():
     # 保存元数据 JSON
     (META_DIR / f"{date.isoformat()}.json").write_text(
         json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # 网络韧性：若 trending 全程抓取失败（扫描 0），无真实数据可落地，
+    # 跳过提交/推送，避免空报告污染 win 历史（如实标注未运行）。
+    if scanned == 0:
+        log("⚠️ 未抓取到任何 trending 数据（网络中断），跳过提交/推送，避免空报告污染历史")
+        log(f"=== 完成 | 扫描 {scanned} / 过滤 {filtered} / TOP{n} / 推荐 0 / 推送 SKIPPED ===")
+        return report
 
     pushed, perr = sync_to_github(date)
     log(f"=== 完成 | 扫描 {scanned} / 过滤 {filtered} / TOP{n} / 推荐 "

@@ -7,7 +7,7 @@
 
 用途：
 - 多机分支模型下，main 由每日 20:00 归集任务（src/merge_branches.sh 经 PR）合并 win 与 dgx；
-  Windows 本机自动化 18:10 运行时，win/dgx 通常领先 main（待归集）。本脚本用于每日核对
+  Windows 本机自动化 17:30 运行时，win/dgx 通常领先 main（待归集）。本脚本用于每日核对
   "各分支领先/落后 main 多少提交、最近提交了什么、哪些待归集"。
 - 仅做 git 元数据层面的核对（fetch + 比对 + 最近提交），不克隆任何项目，耗时极短，
   适合作为每日自动化的追加步骤（步骤3）。
@@ -25,7 +25,7 @@ from pathlib import Path
 
 # 复用 main.py 的真实运行/同步函数（main.py 有 __main__ 守卫，import 不触发其主流程）
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from main import log, run_cmd, pre_sync_pull, sync_to_github  # noqa
+from main import log, run_cmd, pre_sync_pull, sync_to_github, run_git_retry  # noqa
 
 ROOT = Path(__file__).resolve().parent.parent          # src/branch_status.py -> 仓库根
 BRANCH_DIR = ROOT / "reports" / "branches"
@@ -35,8 +35,11 @@ META_DIR.mkdir(exist_ok=True)
 
 
 def fetch_all():
-    """拉取所有远端分支引用（--prune 清理已删除远端分支的本地跟踪引用）。"""
-    rc, _, err = run_cmd(["git", "fetch", "origin", "--prune"], cwd=ROOT, timeout=120)
+    """拉取所有远端分支引用（--prune 清理已删除远端分支的本地跟踪引用）。
+    fetch 走 run_git_retry：18:1x–19:0x 窗口 GitHub 连接重置时自动退避重试。"""
+    rc, _, err = run_git_retry(
+        ["git", "fetch", "origin", "--prune"], cwd=ROOT, timeout=120,
+        max_attempts=4, op_label="fetch --prune")
     if rc != 0:
         log(f"⚠️ git fetch --prune 失败：{err[:200]}（沿用本地已有引用继续）")
     else:
@@ -157,7 +160,7 @@ def main():
     md.append("- 本核对仅读取 git 元数据，不克隆任何项目，耗时极短。")
     md.append("- 当前多机分支模型：`win`=Windows 端每日数据、`dgx`=dgx 端学习消化产物，"
               "二者由每日 20:00 归集任务（src/merge_branches.sh）经 GitHub PR 合并进 `main`。")
-    md.append("- Windows 自动化 18:10 运行时，`win`/`dgx` 通常领先 `main`，属**正常的待归集状态**；"
+    md.append("- Windows 自动化 17:30 运行时，`win`/`dgx` 通常领先 `main`，属**正常的待归集状态**；"
               "若某分支长期大幅领先 main 未归集，需排查 20:00 归集任务是否异常。")
     report = "\n".join(md)
 

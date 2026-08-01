@@ -158,17 +158,24 @@
         "Frontend/Web"
       ]
     },
-    "clone": false,
-    "clone_time": 2.5,
-    "clone_err": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/moeru-ai__airi/.git/shallow.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
+    "clone": true,
+    "clone_time": 45.3,
+    "clone_err": "",
     "build": {
-      "files": []
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
     },
     "install": "failed",
-    "install_log": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/moeru-ai__airi/.git/shallow.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
-    "install_time": 0.0,
-    "run": "failed",
-    "run_log": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/moeru-ai__airi/.git/shallow.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
+    "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"catalog:\": catalog:\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-01T04_20_39_834Z-debug-0.log\n",
+    "install_time": 2.9,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
     "score": 44,
     "stars": "★★★☆☆"

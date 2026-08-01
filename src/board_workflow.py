@@ -38,6 +38,7 @@ import main as _main  # noqa
 from main import (  # noqa
     log, run_cmd, clean_text, detect_build, install_project,
     smoke_run, score_project, sync_to_github, pre_sync_pull, EXCLUDE_KEYWORDS,
+    is_transient_git_err, run_git_retry,
 )
 
 # 板块运行使用更短的超时，避免 55 个项目时整体过长
@@ -147,8 +148,10 @@ def clone_board_repo(p):
     t0 = time.time()
     if dest.exists() and (dest / ".git").exists():
         # 已存在 git 仓库 → 原地更新（fetch + reset），避免 rmtree 触发工作区安全删除拦截
-        rc, _, err = run_cmd(
-            ["git", "-C", str(dest), "fetch", "--depth", str(CLONE_DEPTH), "origin"], timeout=180)
+        # fetch 走 run_git_retry：18:1x–19:0x 窗口 GitHub 连接重置时自动退避重试，避免整板 0/5
+        rc, _, err = run_git_retry(
+            ["git", "-C", str(dest), "fetch", "--depth", str(CLONE_DEPTH), "origin"],
+            timeout=180, max_attempts=3, op_label=f"fetch {p['full']}")
         if rc != 0:
             log(f"  fetch FAIL {p['full']}: {err[:200]}")
             return False, str(dest), round(time.time() - t0, 1), err
@@ -165,14 +168,28 @@ def clone_board_repo(p):
         return True, str(dest), dt, ""
     if dest.exists():
         # 非 git 残留（极少见）→ 删除后重新克隆
-        shutil.rmtree(dest)
-    rc, out, err = run_cmd(
-        ["git", "clone", "--depth", str(CLONE_DEPTH),
-         f"https://github.com/{p['full']}.git", str(dest)],
-        timeout=180,
-    )
+        shutil.rmtree(dest, ignore_errors=True)
+    # 克隆对瞬时网络错误退避重试（最多 3 次）；重试前清理半截克隆，避免 "destination exists"
+    ok, err = False, ""
+    for attempt in range(1, 4):
+        rc, _, err = run_cmd(
+            ["git", "clone", "--depth", str(CLONE_DEPTH),
+             f"https://github.com/{p['full']}.git", str(dest)],
+            timeout=180,
+        )
+        if rc == 0:
+            ok = True
+            break
+        if is_transient_git_err(err) and attempt < 3:
+            wait = 5 * attempt
+            log(f"  clone 瞬时错误（{attempt}/3），{wait}s 后重试：{err[:140]}")
+            if dest.exists():
+                shutil.rmtree(dest, ignore_errors=True)
+            time.sleep(wait)
+            continue
+        break
     dt = round(time.time() - t0, 1)
-    if rc == 0:
+    if ok:
         log(f"  clone OK {p['full']} ({dt}s)")
         return True, str(dest), dt, ""
     log(f"  clone FAIL {p['full']}: {err[:200]}")

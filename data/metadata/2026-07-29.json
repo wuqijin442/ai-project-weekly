@@ -123,17 +123,24 @@
         "Frontend/Web"
       ]
     },
-    "clone": false,
-    "clone_time": 189.3,
-    "clone_err": "TIMEOUT after 180s",
+    "clone": true,
+    "clone_time": 329.7,
+    "clone_err": "",
     "build": {
-      "files": []
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
     },
     "install": "failed",
-    "install_log": "TIMEOUT after 180s",
-    "install_time": 0.0,
-    "run": "failed",
-    "run_log": "TIMEOUT after 180s",
+    "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"catalog:\": catalog:\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-01T03_56_44_923Z-debug-0.log\n",
+    "install_time": 3.3,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
     "score": 44,
     "stars": "★★★☆☆"

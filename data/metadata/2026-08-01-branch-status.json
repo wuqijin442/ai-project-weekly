@@ -1,0 +1,46 @@
+[
+  {
+    "branch": "dgx",
+    "last": {
+      "hash": "0630e9a75d",
+      "author": "wuqijin442",
+      "date": "Fri Jul 31 03:12:26 2026 +0800",
+      "subject": "chore: 每日学习消化+图谱 2026-07-31 [dgx]"
+    },
+    "behind_main": 36,
+    "ahead_main": 0,
+    "unique_commits": []
+  },
+  {
+    "branch": "main",
+    "last": {
+      "hash": "220c93b96a",
+      "author": "Worn Quiet Joy",
+      "date": "Fri Jul 31 20:05:18 2026 +0800",
+      "subject": "Merge pull request #10 from wuqijin442/win"
+    },
+    "behind_main": 0,
+    "ahead_main": 0,
+    "unique_commits": []
+  },
+  {
+    "branch": "win",
+    "last": {
+      "hash": "8bf192b0f9",
+      "author": "wuqijin442",
+      "date": "Sat Aug 1 18:57:01 2026 +0800",
+      "subject": "[2026-08-01] Daily AI Project Update"
+    },
+    "behind_main": 17,
+    "ahead_main": 7,
+    "unique_commits": [
+      "8bf192b 2026-08-01 wuqijin442 [2026-08-01] Daily AI Project Update",
+      "14a97ab 2026-08-01 wuqijin442 [2026-08-01] Daily AI Project Update",
+      "7324dee 2026-08-01 wuqijin442 [2026-08-01] Fix sync push unpack bug; resilient trending fetch (wait for network); skip empty-commit on scan=0",
+      "7426c53 2026-08-01 wuqijin442 [2026-08-01] Daily AI Project Update",
+      "0f33979 2026-08-01 wuqijin442 [2026-08-01] 生成 08-01 AI 开源看板（11 板块/55 项目）",
+      "155f7ff 2026-08-01 wuqijin442 [2026-08-01] 回填日报 + 重试修复 airi 克隆失败（直连）",
+      "4f51007 2026-08-01 wuqijin442 [2026-08-01] Harden sync: push retry/backoff + clone retry + reschedule win to 17:30"
+    ]
+  }
+]

@@ -1,17 +1,17 @@
 ---
 aliases: [aisuite]
 tags: [AI, Trending, Python, LLM, Vibe-Coding]
-stars: 15786
+stars: 15855
 created_at: 2024-06-30
 today_growth: 62
-status: 活跃（统一多 GenAI 供应商接口，Andrew Ng 出品）
-date_accessed: 2026-07-29
+status: 活跃（统一多 GenAI 供应商接口，二度上榜）
+date_accessed: 2026-08-01
 
 # aisuite
 
 **项目地址**：https://github.com/andrewyng/aisuite
 **作者**：andrewyng（Andrew Ng）
-**⭐ 总 Star**：15,786（15.8k）
+**⭐ 总 Star**：15,855（15.9k）
 **📈 今日新增**：62 stars（Vibe Coding #4）
 **💻 主要语言**：Python
 **许可证**：MIT
@@ -47,7 +47,9 @@ date_accessed: 2026-07-29
 ## 相关日期
 
 - [[Vibe-Coding-2026-07-29|2026-07-29 日报]]
+- [[Vibe-Coding-2026-08-01|2026-08-01 日报]]
 
 ## 反向链接
 
 - [[Vibe-Coding-2026-07-29]]
+- [[Vibe-Coding-2026-08-01]]

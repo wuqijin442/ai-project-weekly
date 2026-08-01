@@ -1,17 +1,17 @@
 ---
 aliases: [agent-governance-toolkit, Agent Governance Toolkit]
 tags: [AI, Trending, Python, Agent, Governance, Security, Vibe-Coding]
-stars: 5392
+stars: 5543
 created_at: 2026-03-02
 today_growth: 46
-status: 活跃（Agent 治理 / 零信任 / 沙箱，首入榜）
-date_accessed: 2026-07-29
+status: 活跃（Agent 治理 / 零信任 / 沙箱，二度上榜）
+date_accessed: 2026-08-01
 
 # agent-governance-toolkit
 
 **项目地址**：https://github.com/microsoft/agent-governance-toolkit
 **作者**：microsoft
-**⭐ 总 Star**：5,392（5.4k）
+**⭐ 总 Star**：5,543（5.5k）
 **📈 今日新增**：46 stars（Vibe Coding #5）
 **💻 主要语言**：Python
 **许可证**：MIT
@@ -50,7 +50,9 @@ date_accessed: 2026-07-29
 ## 相关日期
 
 - [[Vibe-Coding-2026-07-29|2026-07-29 日报]]
+- [[Vibe-Coding-2026-08-01|2026-08-01 日报]]
 
 ## 反向链接
 
 - [[Vibe-Coding-2026-07-29]]
+- [[Vibe-Coding-2026-08-01]]
