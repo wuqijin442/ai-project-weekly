@@ -9,7 +9,7 @@
         "url": "https://github.com/langflow-ai/langflow",
         "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
         "language": "Python",
-        "stars": 152816,
+        "stars": 152820,
         "topic": "large-language-models"
       },
       {
@@ -19,7 +19,7 @@
         "url": "https://github.com/rasbt/LLMs-from-scratch",
         "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
         "language": "Jupyter Notebook",
-        "stars": 100477,
+        "stars": 100481,
         "topic": "large-language-models"
       },
       {
@@ -29,7 +29,7 @@
         "url": "https://github.com/hiyouga/LlamaFactory",
         "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
         "language": "Python",
-        "stars": 73728,
+        "stars": 73729,
         "topic": "large-language-models"
       },
       {
@@ -39,7 +39,7 @@
         "url": "https://github.com/binary-husky/gpt_academic",
         "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
         "language": "Python",
-        "stars": 71178,
+        "stars": 71180,
         "topic": "large-language-models"
       },
       {
@@ -62,28 +62,20 @@
           "url": "https://github.com/langflow-ai/langflow",
           "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
           "language": "Python",
-          "stars": 152816,
+          "stars": 152820,
           "topic": "large-language-models"
         },
-        "clone": true,
-        "clone_time": 8.6,
-        "clone_err": "",
+        "clone": false,
+        "clone_time": 79.3,
+        "clone_err": "fatal: unable to access 'https://github.com/langflow-ai/langflow.git/': Failed to connect to github.com port 443 after 21047 ms: Could not connect to server\n",
         "build": {
-          "python": true,
-          "node": true,
-          "rust": false,
-          "go": false,
-          "docker": false,
-          "files": [
-            "pyproject.toml",
-            "package.json"
-          ]
+          "files": []
         },
         "install": "failed",
-        "install_log": "TIMEOUT after 120s",
-        "install_time": 120.1,
-        "run": "skipped",
-        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "install_log": "fatal: unable to access 'https://github.com/langflow-ai/langflow.git/': Failed to connect to github.com port 443 after 21047 ms: Could not connect to server\n",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "fatal: unable to access 'https://github.com/langflow-ai/langflow.git/': Failed to connect to github.com port 443 after 21047 ms: Could not connect to server\n",
         "run_time": 0.0,
         "score": 50,
         "stars": "★★★☆☆"
@@ -96,11 +88,11 @@
           "url": "https://github.com/rasbt/LLMs-from-scratch",
           "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
           "language": "Jupyter Notebook",
-          "stars": 100477,
+          "stars": 100481,
           "topic": "large-language-models"
         },
         "clone": true,
-        "clone_time": 2.9,
+        "clone_time": 49.3,
         "clone_err": "",
         "build": {
           "python": true,
@@ -114,8 +106,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-        "install_time": 36.0,
+        "install_log": "WARNING: Ignoring invalid distribution ~rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12.old.56768\\Lib\\site-packages)\nWARNING: Ignoring invalid distribution ~rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12.old.56768\\Lib\\site-packages)\nERROR: Could not install packages due to an OSError: [Errno 2] 系统找不到指定的文件。: 'C:\\\\Users\\\\Administrator\\\\.workbuddy\\\\binaries\\\\python\\\\versions\\\\3.13.12.old.56768\\\\Lib\\\\site-packages\\\\tensorflow\\\\_api\\\\v2\\\\v2.py'\n\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\n",
+        "install_time": 50.0,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -130,11 +122,11 @@
           "url": "https://github.com/hiyouga/LlamaFactory",
           "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
           "language": "Python",
-          "stars": 73728,
+          "stars": 73729,
           "topic": "large-language-models"
         },
         "clone": true,
-        "clone_time": 4.9,
+        "clone_time": 9.6,
         "clone_err": "",
         "build": {
           "python": true,
@@ -147,8 +139,8 @@
           ]
         },
         "install": "success",
-        "install_log": "db6e09d97c2274664ef81f\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-wup01_lg\\wheels\\7d\\b6\\df\\6294aa2a94a80aaa82daddca9e6a05033e1a1a27a85f5834b3\nSuccessfully built llamafactory\nInstalling collected packages: llamafactory\n  Attempting uninstall: llamafactory\n    Found existing installation: llamafactory 0.9.6.dev0\n    Uninstalling llamafactory-0.9.6.dev0:\n      Successfully uninstalled llamafactory-0.9.6.dev0\nSuccessfully installed llamafactory-0.9.6.dev0\n",
-        "install_time": 43.1,
+        "install_log": "ly uninstalled starlette-1.3.1\n  Attempting uninstall: transformers\n    Found existing installation: transformers 5.15.0.dev0\n    Uninstalling transformers-5.15.0.dev0:\n      Successfully uninstalled transformers-5.15.0.dev0\n  Attempting uninstall: llamafactory\n    Found existing installation: llamafactory 0.9.6.dev0\n    Uninstalling llamafactory-0.9.6.dev0:\n      Successfully uninstalled llamafactory-0.9.6.dev0\n\nSuccessfully installed llamafactory-0.9.6.dev0 starlette-0.52.1 transformers-5.8.0\n",
+        "install_time": 119.8,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -163,11 +155,11 @@
           "url": "https://github.com/binary-husky/gpt_academic",
           "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
           "language": "Python",
-          "stars": 71178,
+          "stars": 71180,
           "topic": "large-language-models"
         },
         "clone": true,
-        "clone_time": 3.1,
+        "clone_time": 3.5,
         "clone_err": "",
         "build": {
           "python": true,
@@ -183,10 +175,10 @@
         },
         "install": "failed",
         "install_log": "     Cython.Compiler.Errors.CompileError: blis\\py.pyx\n                  [end of output]\n      \n              note: This error originates from a subprocess, and is likely not a problem with pip.\n            ERROR: Failed to build 'blis' when getting requirements to build wheel\n            [end of output]\n      \n        note: This error originates from a subprocess, and is likely not a problem with pip.\n      ERROR: Failed to build 'thinc' when installing build dependencies for thinc\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Failed to build 'spacy' when installing build dependencies for spacy\n",
-        "install_time": 91.9,
+        "install_time": 76.9,
         "run": "failed",
         "run_log": "main.py --help 失败: Traceback (most recent call last):\n  File \"D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\binary-husky__gpt_academic\\main.py\", line 16, in <module>\n    from loguru import logger\nModuleNotFoundError: No module named 'loguru'\n",
-        "run_time": 0.7,
+        "run_time": 0.8,
         "score": 50,
         "stars": "★★★☆☆"
       },
@@ -202,7 +194,7 @@
           "topic": "large-language-models"
         },
         "clone": true,
-        "clone_time": 5.4,
+        "clone_time": 4.8,
         "clone_err": "",
         "build": {
           "python": false,
@@ -216,8 +208,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "modules/flowise-react-json-view\nnpm error   flowise-react-json-view@\"^1.21.7\" from @flowiseai/agentflow@0.0.0-dev.14\nnpm error   packages/agentflow\nnpm error     @flowiseai/agentflow@0.0.0-dev.14\nnpm error     node_modules/@flowiseai/agentflow\nnpm error       workspace packages\\agentflow from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-04T02_35_08_892Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-04T02_35_08_892Z-debug-0.log\n",
-        "install_time": 24.2,
+        "install_log": "modules/flowise-react-json-view\nnpm error   flowise-react-json-view@\"^1.21.7\" from @flowiseai/agentflow@0.0.0-dev.14\nnpm error   packages/agentflow\nnpm error     @flowiseai/agentflow@0.0.0-dev.14\nnpm error     node_modules/@flowiseai/agentflow\nnpm error       workspace packages\\agentflow from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-04T03_27_40_524Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-04T03_27_40_524Z-debug-0.log\n",
+        "install_time": 24.1,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -236,7 +228,7 @@
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
         "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
         "language": "Python",
-        "stars": 185794,
+        "stars": 185795,
         "topic": "artificial-intelligence"
       },
       {
@@ -246,7 +238,7 @@
         "url": "https://github.com/f/prompts.chat",
         "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
         "language": "HTML",
-        "stars": 166697,
+        "stars": 166700,
         "topic": "artificial-intelligence"
       },
       {
@@ -256,7 +248,7 @@
         "url": "https://github.com/rasbt/LLMs-from-scratch",
         "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
         "language": "Jupyter Notebook",
-        "stars": 100478,
+        "stars": 100481,
         "topic": "artificial-intelligence"
       },
       {
@@ -276,7 +268,7 @@
         "url": "https://github.com/thedotmack/claude-mem",
         "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
         "language": "JavaScript",
-        "stars": 89447,
+        "stars": 89449,
         "topic": "artificial-intelligence"
       }
     ],
@@ -289,20 +281,25 @@
           "url": "https://github.com/Significant-Gravitas/AutoGPT",
           "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
           "language": "Python",
-          "stars": 185794,
+          "stars": 185795,
           "topic": "artificial-intelligence"
         },
-        "clone": false,
-        "clone_time": 78.5,
-        "clone_err": "fatal: unable to access 'https://github.com/Significant-Gravitas/AutoGPT.git/': Failed to connect to github.com port 443 after 21152 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 7.7,
+        "clone_err": "",
         "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
           "files": []
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/Significant-Gravitas/AutoGPT.git/': Failed to connect to github.com port 443 after 21152 ms: Could not connect to server\n",
+        "install": "skipped",
+        "install_log": "未识别到可自动安装的构建系统",
         "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/Significant-Gravitas/AutoGPT.git/': Failed to connect to github.com port 443 after 21152 ms: Could not connect to server\n",
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -315,20 +312,27 @@
           "url": "https://github.com/f/prompts.chat",
           "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
           "language": "HTML",
-          "stars": 166697,
+          "stars": 166700,
           "topic": "artificial-intelligence"
         },
-        "clone": false,
-        "clone_time": 93.2,
-        "clone_err": "fatal: unable to access 'https://github.com/f/prompts.chat.git/': Failed to connect to github.com port 443 after 21071 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 3.5,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "package.json"
+          ]
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/f/prompts.chat.git/': Failed to connect to github.com port 443 after 21071 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/f/prompts.chat.git/': Failed to connect to github.com port 443 after 21071 ms: Could not connect to server\n",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 527.9,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -341,20 +345,20 @@
           "url": "https://github.com/rasbt/LLMs-from-scratch",
           "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
           "language": "Jupyter Notebook",
-          "stars": 100478,
+          "stars": 100481,
           "topic": "artificial-intelligence"
         },
         "clone": false,
-        "clone_time": 79.0,
-        "clone_err": "fatal: unable to access 'https://github.com/rasbt/LLMs-from-scratch.git/': Failed to connect to github.com port 443 after 21132 ms: Could not connect to server\n",
+        "clone_time": 93.2,
+        "clone_err": "fatal: unable to access 'https://github.com/rasbt/LLMs-from-scratch.git/': Failed to connect to github.com port 443 after 21116 ms: Could not connect to server\n",
         "build": {
           "files": []
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/rasbt/LLMs-from-scratch.git/': Failed to connect to github.com port 443 after 21132 ms: Could not connect to server\n",
+        "install_log": "fatal: unable to access 'https://github.com/rasbt/LLMs-from-scratch.git/': Failed to connect to github.com port 443 after 21116 ms: Could not connect to server\n",
         "install_time": 0.0,
         "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/rasbt/LLMs-from-scratch.git/': Failed to connect to github.com port 443 after 21132 ms: Could not connect to server\n",
+        "run_log": "fatal: unable to access 'https://github.com/rasbt/LLMs-from-scratch.git/': Failed to connect to github.com port 443 after 21116 ms: Could not connect to server\n",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -371,16 +375,16 @@
           "topic": "artificial-intelligence"
         },
         "clone": false,
-        "clone_time": 79.4,
-        "clone_err": "fatal: unable to access 'https://github.com/hacksider/Deep-Live-Cam.git/': Failed to connect to github.com port 443 after 21180 ms: Could not connect to server\n",
+        "clone_time": 79.0,
+        "clone_err": "fatal: unable to access 'https://github.com/hacksider/Deep-Live-Cam.git/': Failed to connect to github.com port 443 after 21086 ms: Could not connect to server\n",
         "build": {
           "files": []
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/hacksider/Deep-Live-Cam.git/': Failed to connect to github.com port 443 after 21180 ms: Could not connect to server\n",
+        "install_log": "fatal: unable to access 'https://github.com/hacksider/Deep-Live-Cam.git/': Failed to connect to github.com port 443 after 21086 ms: Could not connect to server\n",
         "install_time": 0.0,
         "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/hacksider/Deep-Live-Cam.git/': Failed to connect to github.com port 443 after 21180 ms: Could not connect to server\n",
+        "run_log": "fatal: unable to access 'https://github.com/hacksider/Deep-Live-Cam.git/': Failed to connect to github.com port 443 after 21086 ms: Could not connect to server\n",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -393,28 +397,20 @@
           "url": "https://github.com/thedotmack/claude-mem",
           "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
           "language": "JavaScript",
-          "stars": 89447,
+          "stars": 89449,
           "topic": "artificial-intelligence"
         },
-        "clone": true,
-        "clone_time": 49.0,
-        "clone_err": "",
+        "clone": false,
+        "clone_time": 79.1,
+        "clone_err": "fatal: unable to access 'https://github.com/thedotmack/claude-mem.git/': Failed to connect to github.com port 443 after 21111 ms: Could not connect to server\n",
         "build": {
-          "python": false,
-          "node": true,
-          "rust": false,
-          "go": false,
-          "docker": true,
-          "files": [
-            "package.json",
-            "docker-compose.yml"
-          ]
+          "files": []
         },
         "install": "failed",
-        "install_log": "npm error Invalid Version: \nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-04T02_42_00_644Z-debug-0.log\n",
-        "install_time": 6.3,
-        "run": "skipped",
-        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "install_log": "fatal: unable to access 'https://github.com/thedotmack/claude-mem.git/': Failed to connect to github.com port 443 after 21111 ms: Could not connect to server\n",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "fatal: unable to access 'https://github.com/thedotmack/claude-mem.git/': Failed to connect to github.com port 443 after 21111 ms: Could not connect to server\n",
         "run_time": 0.0,
         "score": 50,
         "stars": "★★★☆☆"
@@ -431,7 +427,7 @@
         "url": "https://github.com/langgenius/dify",
         "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
         "language": "TypeScript",
-        "stars": 151245,
+        "stars": 151260,
         "topic": "rag"
       },
       {
@@ -441,7 +437,7 @@
         "url": "https://github.com/open-webui/open-webui",
         "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
         "language": "Python",
-        "stars": 147754,
+        "stars": 147761,
         "topic": "rag"
       },
       {
@@ -451,7 +447,7 @@
         "url": "https://github.com/langchain-ai/langchain",
         "description": "The agent engineering platform.",
         "language": "Python",
-        "stars": 143356,
+        "stars": 143364,
         "topic": "rag"
       },
       {
@@ -461,7 +457,7 @@
         "url": "https://github.com/Graphify-Labs/graphify",
         "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
         "language": "Python",
-        "stars": 101900,
+        "stars": 101923,
         "topic": "rag"
       },
       {
@@ -471,7 +467,7 @@
         "url": "https://github.com/thedotmack/claude-mem",
         "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
         "language": "JavaScript",
-        "stars": 89447,
+        "stars": 89451,
         "topic": "rag"
       }
     ],
@@ -484,11 +480,11 @@
           "url": "https://github.com/langgenius/dify",
           "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
           "language": "TypeScript",
-          "stars": 151245,
+          "stars": 151260,
           "topic": "rag"
         },
         "clone": true,
-        "clone_time": 39.7,
+        "clone_time": 83.8,
         "clone_err": "",
         "build": {
           "python": false,
@@ -501,8 +497,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"catalog:\": catalog:\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-04T02_42_54_432Z-debug-0.log\n",
-        "install_time": 4.4,
+        "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"catalog:\": catalog:\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-04T03_42_54_031Z-debug-0.log\n",
+        "install_time": 4.1,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -517,11 +513,11 @@
           "url": "https://github.com/open-webui/open-webui",
           "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
           "language": "Python",
-          "stars": 147754,
+          "stars": 147761,
           "topic": "rag"
         },
         "clone": true,
-        "clone_time": 7.1,
+        "clone_time": 4.5,
         "clone_err": "",
         "build": {
           "python": true,
@@ -552,20 +548,25 @@
           "url": "https://github.com/langchain-ai/langchain",
           "description": "The agent engineering platform.",
           "language": "Python",
-          "stars": 143356,
+          "stars": 143364,
           "topic": "rag"
         },
-        "clone": false,
-        "clone_time": 79.2,
-        "clone_err": "fatal: unable to access 'https://github.com/langchain-ai/langchain.git/': Failed to connect to github.com port 443 after 21164 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 8.6,
+        "clone_err": "",
         "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
           "files": []
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/langchain-ai/langchain.git/': Failed to connect to github.com port 443 after 21164 ms: Could not connect to server\n",
+        "install": "skipped",
+        "install_log": "未识别到可自动安装的构建系统",
         "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/langchain-ai/langchain.git/': Failed to connect to github.com port 443 after 21164 ms: Could not connect to server\n",
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
         "run_time": 0.0,
         "score": 50,
         "stars": "★★★☆☆"
@@ -578,22 +579,30 @@
           "url": "https://github.com/Graphify-Labs/graphify",
           "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
           "language": "Python",
-          "stars": 101900,
+          "stars": 101923,
           "topic": "rag"
         },
-        "clone": false,
-        "clone_time": 79.5,
-        "clone_err": "fatal: unable to access 'https://github.com/Graphify-Labs/graphify.git/': Failed to connect to github.com port 443 after 21109 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 5.6,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "pyproject.toml",
+            "Dockerfile"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/Graphify-Labs/graphify.git/': Failed to connect to github.com port 443 after 21109 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/Graphify-Labs/graphify.git/': Failed to connect to github.com port 443 after 21109 ms: Could not connect to server\n",
+        "install": "success",
+        "install_log": "7935859995abf6b31707c622ed92e3f7694e32ee97525cf28c4a9e159ee\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-jh9srxy8\\wheels\\59\\cc\\82\\3513c0c314b14024e33a11fdcd8aee0f3afd769d2f5dd409c5\nSuccessfully built graphifyy\nInstalling collected packages: graphifyy\n  Attempting uninstall: graphifyy\n    Found existing installation: graphifyy 0.9.31\n    Uninstalling graphifyy-0.9.31:\n      Successfully uninstalled graphifyy-0.9.31\nSuccessfully installed graphifyy-0.9.32\n",
+        "install_time": 37.9,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
-        "score": 50,
+        "score": 66,
         "stars": "★★★☆☆"
       },
       {
@@ -604,20 +613,28 @@
           "url": "https://github.com/thedotmack/claude-mem",
           "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
           "language": "JavaScript",
-          "stars": 89447,
+          "stars": 89451,
           "topic": "rag"
         },
-        "clone": false,
-        "clone_time": 82.1,
-        "clone_err": "fatal: unable to access 'https://github.com/thedotmack/claude-mem.git/': Failed to connect to github.com port 443 after 21778 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 4.1,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "package.json",
+            "docker-compose.yml"
+          ]
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/thedotmack/claude-mem.git/': Failed to connect to github.com port 443 after 21778 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/thedotmack/claude-mem.git/': Failed to connect to github.com port 443 after 21778 ms: Could not connect to server\n",
+        "install_log": "npm error Invalid Version: \nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-04T03_45_59_314Z-debug-0.log\n",
+        "install_time": 8.2,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
         "score": 50,
         "stars": "★★★☆☆"
@@ -634,7 +651,7 @@
         "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
         "description": "Stable Diffusion web UI",
         "language": "Python",
-        "stars": 164375,
+        "stars": 164376,
         "topic": "stable-diffusion"
       },
       {
@@ -644,7 +661,7 @@
         "url": "https://github.com/Comfy-Org/ComfyUI",
         "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
         "language": "Python",
-        "stars": 123451,
+        "stars": 123462,
         "topic": "stable-diffusion"
       },
       {
@@ -654,7 +671,7 @@
         "url": "https://github.com/mudler/LocalAI",
         "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
         "language": "Go",
-        "stars": 48218,
+        "stars": 48219,
         "topic": "stable-diffusion"
       },
       {
@@ -664,7 +681,7 @@
         "url": "https://github.com/calesthio/OpenMontage",
         "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
         "language": "Python",
-        "stars": 44940,
+        "stars": 44945,
         "topic": "stable-diffusion"
       },
       {
@@ -687,20 +704,29 @@
           "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
           "description": "Stable Diffusion web UI",
           "language": "Python",
-          "stars": 164375,
+          "stars": 164376,
           "topic": "stable-diffusion"
         },
-        "clone": false,
-        "clone_time": 80.1,
-        "clone_err": "fatal: unable to access 'https://github.com/AUTOMATIC1111/stable-diffusion-webui.git/': Failed to connect to github.com port 443 after 21120 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 3.1,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml",
+            "package.json"
+          ]
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/AUTOMATIC1111/stable-diffusion-webui.git/': Failed to connect to github.com port 443 after 21120 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/AUTOMATIC1111/stable-diffusion-webui.git/': Failed to connect to github.com port 443 after 21120 ms: Could not connect to server\n",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.1,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -713,22 +739,30 @@
           "url": "https://github.com/Comfy-Org/ComfyUI",
           "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
           "language": "Python",
-          "stars": 123451,
+          "stars": 123462,
           "topic": "stable-diffusion"
         },
-        "clone": false,
-        "clone_time": 78.5,
-        "clone_err": "fatal: unable to access 'https://github.com/Comfy-Org/ComfyUI.git/': Failed to connect to github.com port 443 after 21168 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 8.0,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/Comfy-Org/ComfyUI.git/': Failed to connect to github.com port 443 after 21168 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/Comfy-Org/ComfyUI.git/': Failed to connect to github.com port 443 after 21168 ms: Could not connect to server\n",
-        "run_time": 0.0,
-        "score": 44,
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.0,
+        "run": "success",
+        "run_log": "usage: main.py [-h] [--listen [IP]] [--port PORT] [--tls-keyfile TLS_KEYFILE]\n               [--tls-certfile TLS_CERTFILE] [--enable-cors-header [ORIGIN]]\n               [--max-upload-size MAX_UPLOAD_SIZE]\n               [--base-directory BASE_DIRECTORY]\n               [--extra-model-paths-config PATH [PATH ...]]\n               [--output-directory OUTPUT_DIRECTORY]\n               [--temp-directory",
+        "run_time": 0.5,
+        "score": 50,
         "stars": "★★★☆☆"
       },
       {
@@ -739,20 +773,28 @@
           "url": "https://github.com/mudler/LocalAI",
           "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
           "language": "Go",
-          "stars": 48218,
+          "stars": 48219,
           "topic": "stable-diffusion"
         },
-        "clone": false,
-        "clone_time": 79.1,
-        "clone_err": "fatal: unable to access 'https://github.com/mudler/LocalAI.git/': Failed to connect to github.com port 443 after 21121 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 11.0,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": true,
+          "docker": true,
+          "files": [
+            "go.mod",
+            "Dockerfile"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/mudler/LocalAI.git/': Failed to connect to github.com port 443 after 21121 ms: Could not connect to server\n",
+        "install": "skipped",
+        "install_log": "Go 项目，未执行 go build（资源/耗时限制）",
         "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/mudler/LocalAI.git/': Failed to connect to github.com port 443 after 21121 ms: Could not connect to server\n",
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -765,22 +807,30 @@
           "url": "https://github.com/calesthio/OpenMontage",
           "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
           "language": "Python",
-          "stars": 44940,
+          "stars": 44945,
           "topic": "stable-diffusion"
         },
-        "clone": false,
-        "clone_time": 79.2,
-        "clone_err": "fatal: unable to access 'https://github.com/calesthio/OpenMontage.git/': Failed to connect to github.com port 443 after 21121 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 8.6,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "setup.py"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/calesthio/OpenMontage.git/': Failed to connect to github.com port 443 after 21121 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/calesthio/OpenMontage.git/': Failed to connect to github.com port 443 after 21121 ms: Could not connect to server\n",
+        "install": "success",
+        "install_log": ".4-cp313-cp313-win_amd64.whl (2.1 MB)\nInstalling collected packages: pydantic-core, pydantic\n  Attempting uninstall: pydantic-core\n    Found existing installation: pydantic_core 2.41.4\n    Uninstalling pydantic_core-2.41.4:\n      Successfully uninstalled pydantic_core-2.41.4\n  Attempting uninstall: pydantic\n    Found existing installation: pydantic 2.12.3\n    Uninstalling pydantic-2.12.3:\n      Successfully uninstalled pydantic-2.12.3\n\nSuccessfully installed pydantic-2.13.4 pydantic-core-2.46.4\n",
+        "install_time": 11.5,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
-        "score": 50,
+        "score": 66,
         "stars": "★★★☆☆"
       },
       {
@@ -794,19 +844,27 @@
           "stars": 34227,
           "topic": "stable-diffusion"
         },
-        "clone": false,
-        "clone_time": 79.7,
-        "clone_err": "fatal: unable to access 'https://github.com/huggingface/diffusers.git/': Failed to connect to github.com port 443 after 21124 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 14.2,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml",
+            "setup.py"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/huggingface/diffusers.git/': Failed to connect to github.com port 443 after 21124 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/huggingface/diffusers.git/': Failed to connect to github.com port 443 after 21124 ms: Could not connect to server\n",
+        "install": "success",
+        "install_log": "b32eea2d9e86d40021349e2012de8c3cecac665\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-o06f74j1\\wheels\\37\\5e\\6b\\d0e5fc901ce3490f51f41b26e90a4a7dac92b88c75373a09db\nSuccessfully built diffusers\nInstalling collected packages: diffusers\n  Attempting uninstall: diffusers\n    Found existing installation: diffusers 0.40.0.dev0\n    Uninstalling diffusers-0.40.0.dev0:\n      Successfully uninstalled diffusers-0.40.0.dev0\nSuccessfully installed diffusers-0.40.0.dev0\n",
+        "install_time": 56.1,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
-        "score": 44,
+        "score": 60,
         "stars": "★★★☆☆"
       }
     ]
@@ -831,7 +889,7 @@
         "url": "https://github.com/d2l-ai/d2l-zh",
         "description": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
         "language": "Python",
-        "stars": 79379,
+        "stars": 79382,
         "topic": "computer-vision"
       },
       {
@@ -841,7 +899,7 @@
         "url": "https://github.com/microsoft/AI-For-Beginners",
         "description": "12 Weeks, 24 Lessons, AI for All!",
         "language": "Jupyter Notebook",
-        "stars": 60895,
+        "stars": 60964,
         "topic": "computer-vision"
       },
       {
@@ -851,7 +909,7 @@
         "url": "https://github.com/ultralytics/ultralytics",
         "description": "Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking",
         "language": "Python",
-        "stars": 60182,
+        "stars": 60185,
         "topic": "computer-vision"
       },
       {
@@ -877,17 +935,22 @@
           "stars": 90291,
           "topic": "computer-vision"
         },
-        "clone": false,
-        "clone_time": 79.9,
-        "clone_err": "fatal: unable to access 'https://github.com/opencv/opencv.git/': Recv failure: Connection was reset\n",
+        "clone": true,
+        "clone_time": 13.5,
+        "clone_err": "",
         "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
           "files": []
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/opencv/opencv.git/': Recv failure: Connection was reset\n",
+        "install": "skipped",
+        "install_log": "未识别到可自动安装的构建系统",
         "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/opencv/opencv.git/': Recv failure: Connection was reset\n",
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -900,20 +963,27 @@
           "url": "https://github.com/d2l-ai/d2l-zh",
           "description": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
           "language": "Python",
-          "stars": 79379,
+          "stars": 79382,
           "topic": "computer-vision"
         },
-        "clone": false,
-        "clone_time": 79.2,
-        "clone_err": "fatal: unable to access 'https://github.com/d2l-ai/d2l-zh.git/': Failed to connect to github.com port 443 after 21260 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 4.1,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "setup.py"
+          ]
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/d2l-ai/d2l-zh.git/': Failed to connect to github.com port 443 after 21260 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/d2l-ai/d2l-zh.git/': Failed to connect to github.com port 443 after 21260 ms: Could not connect to server\n",
+        "install_log": "2, 1.16.3, 1.16.4, 1.16.5, 1.16.6, 1.17.0, 1.17.1, 1.17.2, 1.17.3, 1.17.4, 1.17.5, 1.18.0, 1.18.1, 1.18.2, 1.18.3, 1.18.4, 1.18.5, 1.19.0, 1.19.1, 1.19.2, 1.19.3, 1.19.4, 1.19.5, 1.20.0, 1.20.1, 1.20.2, 1.20.3, 1.21.0, 1.21.1, 1.22.0, 1.22.1, 1.22.2, 1.22.3, 1.22.4, 1.23.0, 1.23.1, 1.23.2, 1.23.3, 1.23.4, 1.23.5, 1.24.0, 1.24.1, 1.24.2, 1.24.3, 1.24.4, 1.25.0, 1.25.1, 1.25.2, 1.26.2, 1.26.3, 1.26.4, 2.0.0, 2.0.1, 2.0.2, 2.1.0, 2.1.1, 2.1.2, 2.1.3, 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.3.0, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5, 2.4.0rc1, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.5.0rc1, 2.5.0, 2.5.1)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: No matching distribution found for numpy==1.21.5\n",
+        "install_time": 15.6,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -926,20 +996,27 @@
           "url": "https://github.com/microsoft/AI-For-Beginners",
           "description": "12 Weeks, 24 Lessons, AI for All!",
           "language": "Jupyter Notebook",
-          "stars": 60895,
+          "stars": 60964,
           "topic": "computer-vision"
         },
-        "clone": false,
-        "clone_time": 94.3,
-        "clone_err": "fatal: unable to access 'https://github.com/microsoft/AI-For-Beginners.git/': Failed to connect to github.com port 443 after 21136 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 37.5,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt"
+          ]
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/microsoft/AI-For-Beginners.git/': Failed to connect to github.com port 443 after 21136 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/microsoft/AI-For-Beginners.git/': Failed to connect to github.com port 443 after 21136 ms: Could not connect to server\n",
+        "install_log": "rs\\Administrator\\AppData\\Local\\Temp\\pip-install-7fuh2oxr\\pandas_b90bb76646204db68126de8d5bc03bf3\\.mesonpy-bk0bif1e\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+        "install_time": 105.9,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -952,29 +1029,22 @@
           "url": "https://github.com/ultralytics/ultralytics",
           "description": "Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking",
           "language": "Python",
-          "stars": 60182,
+          "stars": 60185,
           "topic": "computer-vision"
         },
-        "clone": true,
-        "clone_time": 21.4,
-        "clone_err": "",
+        "clone": false,
+        "clone_time": 78.9,
+        "clone_err": "fatal: unable to access 'https://github.com/ultralytics/ultralytics.git/': Failed to connect to github.com port 443 after 21080 ms: Could not connect to server\n",
         "build": {
-          "python": true,
-          "node": false,
-          "rust": false,
-          "go": false,
-          "docker": false,
-          "files": [
-            "pyproject.toml"
-          ]
+          "files": []
         },
-        "install": "success",
-        "install_log": "c742e524fe366d431708a41198837da50d66cbe2e\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-j62sbnid\\wheels\\fa\\1c\\18\\8d1c234b40603578a4110419eb50dd91fe9f56e06be0fc3e9d\nSuccessfully built ultralytics\nInstalling collected packages: ultralytics\n  Attempting uninstall: ultralytics\n    Found existing installation: ultralytics 8.4.114\n    Uninstalling ultralytics-8.4.114:\n      Successfully uninstalled ultralytics-8.4.114\nSuccessfully installed ultralytics-8.4.115\n",
-        "install_time": 29.9,
-        "run": "skipped",
-        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "install": "failed",
+        "install_log": "fatal: unable to access 'https://github.com/ultralytics/ultralytics.git/': Failed to connect to github.com port 443 after 21080 ms: Could not connect to server\n",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "fatal: unable to access 'https://github.com/ultralytics/ultralytics.git/': Failed to connect to github.com port 443 after 21080 ms: Could not connect to server\n",
         "run_time": 0.0,
-        "score": 60,
+        "score": 44,
         "stars": "★★★☆☆"
       },
       {
@@ -988,27 +1058,19 @@
           "stars": 57796,
           "topic": "computer-vision"
         },
-        "clone": true,
-        "clone_time": 3.2,
-        "clone_err": "",
+        "clone": false,
+        "clone_time": 79.4,
+        "clone_err": "fatal: unable to access 'https://github.com/ultralytics/yolov5.git/': Failed to connect to github.com port 443 after 21140 ms: Could not connect to server\n",
         "build": {
-          "python": true,
-          "node": false,
-          "rust": false,
-          "go": false,
-          "docker": false,
-          "files": [
-            "requirements.txt",
-            "pyproject.toml"
-          ]
+          "files": []
         },
-        "install": "success",
-        "install_log": "til>=2.7->matplotlib>=3.3->-r requirements.txt (line 5)) (1.17.0)\nRequirement already satisfied: mpmath<1.4,>=1.1.0 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12.old.56768\\Lib\\site-packages (from sympy>=1.13.3->torch>=1.8.0->-r requirements.txt (line 14)) (1.3.0)\nRequirement already satisfied: MarkupSafe>=2.0 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12.old.56768\\Lib\\site-packages (from jinja2->torch>=1.8.0->-r requirements.txt (line 14)) (3.0.3)\n",
-        "install_time": 4.3,
-        "run": "skipped",
-        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "install": "failed",
+        "install_log": "fatal: unable to access 'https://github.com/ultralytics/yolov5.git/': Failed to connect to github.com port 443 after 21140 ms: Could not connect to server\n",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "fatal: unable to access 'https://github.com/ultralytics/yolov5.git/': Failed to connect to github.com port 443 after 21140 ms: Could not connect to server\n",
         "run_time": 0.0,
-        "score": 60,
+        "score": 44,
         "stars": "★★★☆☆"
       }
     ]
@@ -1023,7 +1085,7 @@
         "url": "https://github.com/huggingface/transformers",
         "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
         "language": "Python",
-        "stars": 163303,
+        "stars": 163308,
         "topic": "speech-recognition"
       },
       {
@@ -1033,7 +1095,7 @@
         "url": "https://github.com/ggml-org/whisper.cpp",
         "description": "Port of OpenAI's Whisper model in C/C++",
         "language": "C++",
-        "stars": 52558,
+        "stars": 52559,
         "topic": "speech-recognition"
       },
       {
@@ -1063,7 +1125,7 @@
         "url": "https://github.com/m-bain/whisperX",
         "description": "WhisperX: Automatic Speech Recognition with Word-level Timestamps (& Diarization)",
         "language": "Python",
-        "stars": 23408,
+        "stars": 23409,
         "topic": "speech-recognition"
       }
     ],
@@ -1076,30 +1138,22 @@
           "url": "https://github.com/huggingface/transformers",
           "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
           "language": "Python",
-          "stars": 163303,
+          "stars": 163308,
           "topic": "speech-recognition"
         },
-        "clone": true,
-        "clone_time": 13.7,
-        "clone_err": "",
+        "clone": false,
+        "clone_time": 80.1,
+        "clone_err": "fatal: unable to access 'https://github.com/huggingface/transformers.git/': Failed to connect to github.com port 443 after 21102 ms: Could not connect to server\n",
         "build": {
-          "python": true,
-          "node": false,
-          "rust": false,
-          "go": false,
-          "docker": false,
-          "files": [
-            "pyproject.toml",
-            "setup.py"
-          ]
+          "files": []
         },
-        "install": "success",
-        "install_log": "f9022c9d5a5a0f296db627e707f713c8ccae\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-d9kzl7le\\wheels\\dd\\ab\\92\\b2a42e72c02ede003952b7db1184c91d2018e4ba89085bc8a2\nSuccessfully built transformers\nInstalling collected packages: transformers\n  Attempting uninstall: transformers\n    Found existing installation: transformers 5.8.0\n    Uninstalling transformers-5.8.0:\n      Successfully uninstalled transformers-5.8.0\nSuccessfully installed transformers-5.15.0.dev0\n",
-        "install_time": 100.3,
-        "run": "skipped",
-        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "install": "failed",
+        "install_log": "fatal: unable to access 'https://github.com/huggingface/transformers.git/': Failed to connect to github.com port 443 after 21102 ms: Could not connect to server\n",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "fatal: unable to access 'https://github.com/huggingface/transformers.git/': Failed to connect to github.com port 443 after 21102 ms: Could not connect to server\n",
         "run_time": 0.0,
-        "score": 60,
+        "score": 44,
         "stars": "★★★☆☆"
       },
       {
@@ -1110,11 +1164,11 @@
           "url": "https://github.com/ggml-org/whisper.cpp",
           "description": "Port of OpenAI's Whisper model in C/C++",
           "language": "C++",
-          "stars": 52558,
+          "stars": 52559,
           "topic": "speech-recognition"
         },
         "clone": true,
-        "clone_time": 4.2,
+        "clone_time": 51.2,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1145,7 +1199,7 @@
           "topic": "speech-recognition"
         },
         "clone": true,
-        "clone_time": 3.9,
+        "clone_time": 5.5,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1158,8 +1212,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "p_script=setup_script)\n          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-75yt9zt6\\overlay\\Lib\\site-packages\\setuptools\\build_meta.py\", line 317, in run_setup\n          exec(code, locals())\n          ~~~~^^^^^^^^^^^^^^^^\n        File \"<string>\", line 6, in <module>\n      ModuleNotFoundError: No module named 'pkg_resources'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Failed to build 'file:///D:/Users/Administrator/Desktop/AI%20Project%20Weekly/clones/boards/mozilla__DeepSpeech' when getting requirements to build editable\n",
-        "install_time": 10.3,
+        "install_log": "p_script=setup_script)\n          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-f4hfk6on\\overlay\\Lib\\site-packages\\setuptools\\build_meta.py\", line 317, in run_setup\n          exec(code, locals())\n          ~~~~^^^^^^^^^^^^^^^^\n        File \"<string>\", line 6, in <module>\n      ModuleNotFoundError: No module named 'pkg_resources'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Failed to build 'file:///D:/Users/Administrator/Desktop/AI%20Project%20Weekly/clones/boards/mozilla__DeepSpeech' when getting requirements to build editable\n",
+        "install_time": 16.3,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1178,7 +1232,7 @@
           "topic": "speech-recognition"
         },
         "clone": true,
-        "clone_time": 2.9,
+        "clone_time": 4.3,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1193,7 +1247,7 @@
         },
         "install": "success",
         "install_log": "23->-r requirements.txt (line 2)) (1.0.9)\nRequirement already satisfied: idna in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12.old.56768\\Lib\\site-packages (from httpx<1,>=0.23.0->huggingface_hub>=0.23->-r requirements.txt (line 2)) (3.18)\nRequirement already satisfied: h11>=0.16 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12.old.56768\\Lib\\site-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface_hub>=0.23->-r requirements.txt (line 2)) (0.16.0)\n",
-        "install_time": 2.8,
+        "install_time": 3.5,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1208,11 +1262,11 @@
           "url": "https://github.com/m-bain/whisperX",
           "description": "WhisperX: Automatic Speech Recognition with Word-level Timestamps (& Diarization)",
           "language": "Python",
-          "stars": 23408,
+          "stars": 23409,
           "topic": "speech-recognition"
         },
         "clone": true,
-        "clone_time": 2.9,
+        "clone_time": 4.2,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1225,8 +1279,8 @@
           ]
         },
         "install": "success",
-        "install_log": "f3a3c4dddcd0e38255b66bd277d0b4053df0879f36e281880f36f9f941\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-j_l07h6x\\wheels\\d5\\75\\6d\\fe55de307f867bc96f6117dc38b878c51fb21a18f8d94d47be\nSuccessfully built whisperx\nInstalling collected packages: whisperx\n  Attempting uninstall: whisperx\n    Found existing installation: whisperx 3.8.7rc1\n    Uninstalling whisperx-3.8.7rc1:\n      Successfully uninstalled whisperx-3.8.7rc1\nSuccessfully installed whisperx-3.8.7rc1\n",
-        "install_time": 27.1,
+        "install_log": "f734c760367cc7873e5e13df736129db5e2386ade9f7fe72641a7d945a\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-esdmlmyb\\wheels\\d5\\75\\6d\\fe55de307f867bc96f6117dc38b878c51fb21a18f8d94d47be\nSuccessfully built whisperx\nInstalling collected packages: whisperx\n  Attempting uninstall: whisperx\n    Found existing installation: whisperx 3.8.7rc1\n    Uninstalling whisperx-3.8.7rc1:\n      Successfully uninstalled whisperx-3.8.7rc1\nSuccessfully installed whisperx-3.8.7rc1\n",
+        "install_time": 48.0,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1245,7 +1299,7 @@
         "url": "https://github.com/commaai/openpilot",
         "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
         "language": "Python",
-        "stars": 63311,
+        "stars": 63312,
         "topic": "robotics"
       },
       {
@@ -1255,7 +1309,7 @@
         "url": "https://github.com/NaiboWang/EasySpider",
         "description": "A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化测试/数据采集/网页爬虫软件，可以无代码图形化的设计和执行爬虫任务。别名：ServiceWrapper面向Web应用的智能化服务封装系统。",
         "language": "JavaScript",
-        "stars": 44338,
+        "stars": 44337,
         "topic": "robotics"
       },
       {
@@ -1285,7 +1339,7 @@
         "url": "https://github.com/zauberzeug/nicegui",
         "description": "Create web-based user interfaces with Python. The nice way.",
         "language": "Python",
-        "stars": 16085,
+        "stars": 16086,
         "topic": "robotics"
       }
     ],
@@ -1298,20 +1352,20 @@
           "url": "https://github.com/commaai/openpilot",
           "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
           "language": "Python",
-          "stars": 63311,
+          "stars": 63312,
           "topic": "robotics"
         },
         "clone": false,
-        "clone_time": 185.0,
-        "clone_err": "TIMEOUT after 60s",
+        "clone_time": 5.1,
+        "clone_err": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/boards/commaai__openpilot/.git/index.lock': File exists.\n\nAnother git process seems to be running in this repository, e.g.\nan editor opened by 'git commit'. Please make sure all processes\nare terminated then try again. If it still fails, a git process\nmay have crashed in this repository earlier:\nremove the file manually to continue.\n",
         "build": {
           "files": []
         },
         "install": "failed",
-        "install_log": "TIMEOUT after 60s",
+        "install_log": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/boards/commaai__openpilot/.git/index.lock': File exists.\n\nAnother git process seems to be running in this repository, e.g.\nan editor opened by 'git commit'. Please make sure all processes\nare terminated then try again. If it still fails, a git process\nmay have crashed in this repository earlier:\nremove the file manually to continue.\n",
         "install_time": 0.0,
         "run": "failed",
-        "run_log": "TIMEOUT after 60s",
+        "run_log": "fatal: Unable to create 'D:/Users/Administrator/Desktop/AI Project Weekly/clones/boards/commaai__openpilot/.git/index.lock': File exists.\n\nAnother git process seems to be running in this repository, e.g.\nan editor opened by 'git commit'. Please make sure all processes\nare terminated then try again. If it still fails, a git process\nmay have crashed in this repository earlier:\nremove the file manually to continue.\n",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -1324,11 +1378,11 @@
           "url": "https://github.com/NaiboWang/EasySpider",
           "description": "A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化测试/数据采集/网页爬虫软件，可以无代码图形化的设计和执行爬虫任务。别名：ServiceWrapper面向Web应用的智能化服务封装系统。",
           "language": "JavaScript",
-          "stars": 44338,
+          "stars": 44337,
           "topic": "robotics"
         },
         "clone": true,
-        "clone_time": 3.9,
+        "clone_time": 6.1,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1359,7 +1413,7 @@
           "topic": "robotics"
         },
         "clone": true,
-        "clone_time": 3.4,
+        "clone_time": 5.5,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1390,7 +1444,7 @@
           "topic": "robotics"
         },
         "clone": true,
-        "clone_time": 3.0,
+        "clone_time": 4.8,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1404,8 +1458,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "npm error Invalid Version: \nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-04T03_07_30_980Z-debug-0.log\n",
-        "install_time": 8.9,
+        "install_log": "npm error Invalid Version: \nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-04T04_02_02_921Z-debug-0.log\n",
+        "install_time": 9.2,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -1420,11 +1474,11 @@
           "url": "https://github.com/zauberzeug/nicegui",
           "description": "Create web-based user interfaces with Python. The nice way.",
           "language": "Python",
-          "stars": 16085,
+          "stars": 16086,
           "topic": "robotics"
         },
         "clone": true,
-        "clone_time": 4.4,
+        "clone_time": 6.5,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1440,10 +1494,10 @@
         },
         "install": "success",
         "install_log": "talling collected packages: starlette, nicegui\n  Attempting uninstall: starlette\n    Found existing installation: starlette 0.52.1\n    Uninstalling starlette-0.52.1:\n      Successfully uninstalled starlette-0.52.1\n  Attempting uninstall: nicegui\n    Found existing installation: nicegui 0.0.0.post1.dev0+b6b37c7\n    Uninstalling nicegui-0.0.0.post1.dev0+b6b37c7:\n      Successfully uninstalled nicegui-0.0.0.post1.dev0+b6b37c7\n\nSuccessfully installed nicegui-0.0.0.post1.dev0+b6b37c7 starlette-1.3.1\n",
-        "install_time": 37.0,
+        "install_time": 46.4,
         "run": "failed",
         "run_log": "main.py --help 失败: Traceback (most recent call last):\n  File \"D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\zauberzeug__nicegui\\main.py\", line 12, in <module>\n    from website import design as d\n  File \"D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\zauberzeug__nicegui\\website\\__init__.py\", line 1, in <module>\n    from . import documentation, examples_page, fly, main_page, svg\n  File",
-        "run_time": 9.4,
+        "run_time": 16.2,
         "score": 60,
         "stars": "★★★☆☆"
       }
@@ -1459,7 +1513,7 @@
         "url": "https://github.com/GokuMohandas/Made-With-ML",
         "description": "Learn how to develop, deploy and iterate on production-grade ML applications.",
         "language": "Jupyter Notebook",
-        "stars": 48959,
+        "stars": 48961,
         "topic": "mlops"
       },
       {
@@ -1479,7 +1533,7 @@
         "url": "https://github.com/qdrant/qdrant",
         "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
         "language": "Rust",
-        "stars": 33761,
+        "stars": 33763,
         "topic": "mlops"
       },
       {
@@ -1489,7 +1543,7 @@
         "url": "https://github.com/HumanSignal/label-studio",
         "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format",
         "language": "TypeScript",
-        "stars": 27979,
+        "stars": 27980,
         "topic": "mlops"
       },
       {
@@ -1512,11 +1566,11 @@
           "url": "https://github.com/GokuMohandas/Made-With-ML",
           "description": "Learn how to develop, deploy and iterate on production-grade ML applications.",
           "language": "Jupyter Notebook",
-          "stars": 48959,
+          "stars": 48961,
           "topic": "mlops"
         },
         "clone": true,
-        "clone_time": 3.3,
+        "clone_time": 3.4,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1530,8 +1584,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "emp\\pip-build-env-a4_l_0p_\\overlay\\Lib\\site-packages\\setuptools\\version.py\", line 1, in <module>\n          import pkg_resources\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-a4_l_0p_\\overlay\\Lib\\site-packages\\pkg_resources\\__init__.py\", line 2172, in <module>\n          register_finder(pkgutil.ImpImporter, find_on_path)\n                          ^^^^^^^^^^^^^^^^^^^\n      AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Failed to build 'numpy' when getting requirements to build wheel\n",
-        "install_time": 92.5,
+        "install_log": "emp\\pip-build-env-xwmlbguk\\overlay\\Lib\\site-packages\\setuptools\\version.py\", line 1, in <module>\n          import pkg_resources\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-xwmlbguk\\overlay\\Lib\\site-packages\\pkg_resources\\__init__.py\", line 2172, in <module>\n          register_finder(pkgutil.ImpImporter, find_on_path)\n                          ^^^^^^^^^^^^^^^^^^^\n      AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Failed to build 'numpy' when getting requirements to build wheel\n",
+        "install_time": 86.6,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1550,7 +1604,7 @@
           "topic": "mlops"
         },
         "clone": true,
-        "clone_time": 17.5,
+        "clone_time": 39.2,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1565,7 +1619,7 @@
         },
         "install": "failed",
         "install_log": "<3.13\nERROR: Could not find a version that satisfies the requirement apache-airflow-core==3.4.0 (from apache-airflow) (from versions: 3.0.4rc1, 3.0.4rc2, 3.0.4, 3.0.5rc1, 3.0.5rc2, 3.0.5rc3, 3.0.6rc1, 3.0.6rc2, 3.0.6, 3.1.0b1, 3.1.0b2, 3.1.0rc1, 3.1.0rc2, 3.1.0, 3.1.1rc1, 3.1.1rc2, 3.1.1, 3.1.2rc1, 3.1.2rc2, 3.1.2, 3.1.3rc1, 3.1.3, 3.1.4rc1, 3.1.4rc2, 3.1.5rc1, 3.1.5, 3.1.6rc1, 3.1.6, 3.1.7rc1, 3.1.7rc2, 3.1.7, 3.1.8rc1, 3.1.8rc2, 3.1.8, 3.2.0b1, 3.2.0b2, 3.2.0rc1, 3.2.0rc2, 3.2.0, 3.2.1rc1, 3.2.1rc2, 3.2.1rc3, 3.2.1, 3.2.2rc1, 3.2.2rc2, 3.2.2rc3, 3.2.2, 3.3.0b1, 3.3.0b2, 3.3.0rc1, 3.3.0rc2, 3.3.0)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: No matching distribution found for apache-airflow-core==3.4.0\n",
-        "install_time": 21.5,
+        "install_time": 19.6,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1580,20 +1634,28 @@
           "url": "https://github.com/qdrant/qdrant",
           "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
           "language": "Rust",
-          "stars": 33761,
+          "stars": 33763,
           "topic": "mlops"
         },
-        "clone": false,
-        "clone_time": 78.6,
-        "clone_err": "fatal: unable to access 'https://github.com/qdrant/qdrant.git/': Failed to connect to github.com port 443 after 21117 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 5.1,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": false,
+          "node": false,
+          "rust": true,
+          "go": false,
+          "docker": true,
+          "files": [
+            "Cargo.toml",
+            "Dockerfile"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/qdrant/qdrant.git/': Failed to connect to github.com port 443 after 21117 ms: Could not connect to server\n",
+        "install": "skipped",
+        "install_log": "Rust 项目，未执行 cargo build（资源/耗时限制）",
         "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/qdrant/qdrant.git/': Failed to connect to github.com port 443 after 21117 ms: Could not connect to server\n",
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -1606,20 +1668,20 @@
           "url": "https://github.com/HumanSignal/label-studio",
           "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format",
           "language": "TypeScript",
-          "stars": 27979,
+          "stars": 27980,
           "topic": "mlops"
         },
         "clone": false,
-        "clone_time": 79.1,
-        "clone_err": "fatal: unable to access 'https://github.com/HumanSignal/label-studio.git/': Failed to connect to github.com port 443 after 21120 ms: Could not connect to server\n",
+        "clone_time": 77.3,
+        "clone_err": "fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\n",
         "build": {
           "files": []
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/HumanSignal/label-studio.git/': Failed to connect to github.com port 443 after 21120 ms: Could not connect to server\n",
+        "install_log": "fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\n",
         "install_time": 0.0,
         "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/HumanSignal/label-studio.git/': Failed to connect to github.com port 443 after 21120 ms: Could not connect to server\n",
+        "run_log": "fatal: ambiguous argument 'origin/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\n",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -1635,19 +1697,26 @@
           "stars": 27353,
           "topic": "mlops"
         },
-        "clone": false,
-        "clone_time": 79.2,
-        "clone_err": "fatal: unable to access 'https://github.com/mlflow/mlflow.git/': Failed to connect to github.com port 443 after 21152 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 32.1,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/mlflow/mlflow.git/': Failed to connect to github.com port 443 after 21152 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/mlflow/mlflow.git/': Failed to connect to github.com port 443 after 21152 ms: Could not connect to server\n",
+        "install": "success",
+        "install_log": "1bdee5c19f0349c48b52cabc456d2145bb057399ad30abc20057138b9983\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-i6_u9d1n\\wheels\\78\\8d\\93\\88dd81931dd7fa934b15a4031fe56ed5ad62cf34f762d56cd1\nSuccessfully built mlflow\nInstalling collected packages: mlflow\n  Attempting uninstall: mlflow\n    Found existing installation: mlflow 3.15.1.dev0\n    Uninstalling mlflow-3.15.1.dev0:\n      Successfully uninstalled mlflow-3.15.1.dev0\nSuccessfully installed mlflow-3.15.1.dev0\n",
+        "install_time": 40.0,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
-        "score": 50,
+        "score": 66,
         "stars": "★★★☆☆"
       }
     ]
@@ -1702,7 +1771,7 @@
         "url": "https://github.com/milvus-io/milvus",
         "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
         "language": "Go",
-        "stars": 45497,
+        "stars": 45500,
         "topic": "vector-database"
       }
     ],
@@ -1718,19 +1787,26 @@
           "stars": 64303,
           "topic": "vector-database"
         },
-        "clone": false,
-        "clone_time": 79.1,
-        "clone_err": "fatal: unable to access 'https://github.com/Mintplex-Labs/anything-llm.git/': Failed to connect to github.com port 443 after 21147 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 17.0,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "package.json"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/Mintplex-Labs/anything-llm.git/': Failed to connect to github.com port 443 after 21147 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/Mintplex-Labs/anything-llm.git/': Failed to connect to github.com port 443 after 21147 ms: Could not connect to server\n",
+        "install": "success",
+        "install_log": "\nup to date in 7s\n\n34 packages are looking for funding\n  run `npm fund` for details\n",
+        "install_time": 7.6,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
-        "score": 50,
+        "score": 66,
         "stars": "★★★☆☆"
       },
       {
@@ -1744,17 +1820,24 @@
           "stars": 59142,
           "topic": "vector-database"
         },
-        "clone": false,
-        "clone_time": 93.0,
-        "clone_err": "fatal: unable to access 'https://github.com/pathwaycom/llm-app.git/': Recv failure: Connection was reset\n",
+        "clone": true,
+        "clone_time": 4.9,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/pathwaycom/llm-app.git/': Recv failure: Connection was reset\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/pathwaycom/llm-app.git/': Recv failure: Connection was reset\n",
+        "install_log": "y\\Lib\\site-packages\\poetry\\core\\masonry\\builders\\builder.py\", line 40, in __init__\n          raise RuntimeError(\n              \"Building a package is not possible in non-package mode.\"\n          )\n      RuntimeError: Building a package is not possible in non-package mode.\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> from file:///D:/Users/Administrator/Desktop/AI%20Project%20Weekly/clones/boards/pathwaycom__llm-app\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+        "install_time": 10.2,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
         "score": 50,
         "stars": "★★★☆☆"
@@ -1770,17 +1853,25 @@
           "stars": 58844,
           "topic": "vector-database"
         },
-        "clone": false,
-        "clone_time": 79.2,
-        "clone_err": "fatal: unable to access 'https://github.com/meilisearch/meilisearch.git/': Failed to connect to github.com port 443 after 21106 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 10.6,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": false,
+          "node": false,
+          "rust": true,
+          "go": false,
+          "docker": true,
+          "files": [
+            "Cargo.toml",
+            "Dockerfile"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/meilisearch/meilisearch.git/': Failed to connect to github.com port 443 after 21106 ms: Could not connect to server\n",
+        "install": "skipped",
+        "install_log": "Rust 项目，未执行 cargo build（资源/耗时限制）",
         "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/meilisearch/meilisearch.git/': Failed to connect to github.com port 443 after 21106 ms: Could not connect to server\n",
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -1796,19 +1887,26 @@
           "stars": 51357,
           "topic": "vector-database"
         },
-        "clone": false,
-        "clone_time": 79.5,
-        "clone_err": "fatal: unable to access 'https://github.com/run-llama/llama_index.git/': Failed to connect to github.com port 443 after 21072 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 21.5,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/run-llama/llama_index.git/': Failed to connect to github.com port 443 after 21072 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/run-llama/llama_index.git/': Failed to connect to github.com port 443 after 21072 ms: Could not connect to server\n",
+        "install": "success",
+        "install_log": "f291ef5b948ecbaa0ed9a24531fa79d8fe3e49462\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-he7bnmzv\\wheels\\b4\\06\\8d\\69d68a93056eadd80d36d6a5f4f298a980e6d695bd5af9860b\nSuccessfully built llama-index\nInstalling collected packages: llama-index\n  Attempting uninstall: llama-index\n    Found existing installation: llama-index 0.14.23\n    Uninstalling llama-index-0.14.23:\n      Successfully uninstalled llama-index-0.14.23\nSuccessfully installed llama-index-0.14.23\n",
+        "install_time": 26.0,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
-        "score": 50,
+        "score": 66,
         "stars": "★★★☆☆"
       },
       {
@@ -1819,20 +1917,28 @@
           "url": "https://github.com/milvus-io/milvus",
           "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
           "language": "Go",
-          "stars": 45497,
+          "stars": 45500,
           "topic": "vector-database"
         },
-        "clone": false,
-        "clone_time": 79.9,
-        "clone_err": "fatal: unable to access 'https://github.com/milvus-io/milvus.git/': Failed to connect to github.com port 443 after 21173 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 13.6,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": true,
+          "docker": true,
+          "files": [
+            "go.mod",
+            "docker-compose.yml"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/milvus-io/milvus.git/': Failed to connect to github.com port 443 after 21173 ms: Could not connect to server\n",
+        "install": "skipped",
+        "install_log": "Go 项目，未执行 go build（资源/耗时限制）",
         "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/milvus-io/milvus.git/': Failed to connect to github.com port 443 after 21173 ms: Could not connect to server\n",
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -1849,7 +1955,7 @@
         "url": "https://github.com/f/prompts.chat",
         "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
         "language": "HTML",
-        "stars": 166699,
+        "stars": 166702,
         "topic": "prompt-engineering"
       },
       {
@@ -1859,7 +1965,7 @@
         "url": "https://github.com/microsoft/generative-ai-for-beginners",
         "description": "21 Lessons, Get Started Building with Generative AI",
         "language": "Jupyter Notebook",
-        "stars": 115688,
+        "stars": 115724,
         "topic": "prompt-engineering"
       },
       {
@@ -1869,7 +1975,7 @@
         "url": "https://github.com/JuliusBrussee/caveman",
         "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
         "language": "JavaScript",
-        "stars": 95562,
+        "stars": 95571,
         "topic": "prompt-engineering"
       },
       {
@@ -1879,7 +1985,7 @@
         "url": "https://github.com/DietrichGebert/ponytail",
         "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
         "language": "JavaScript",
-        "stars": 95094,
+        "stars": 95133,
         "topic": "prompt-engineering"
       },
       {
@@ -1889,7 +1995,7 @@
         "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
         "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
         "language": "MDX",
-        "stars": 77248,
+        "stars": 77251,
         "topic": "prompt-engineering"
       }
     ],
@@ -1902,11 +2008,11 @@
           "url": "https://github.com/f/prompts.chat",
           "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
           "language": "HTML",
-          "stars": 166699,
+          "stars": 166702,
           "topic": "prompt-engineering"
         },
         "clone": true,
-        "clone_time": 89.6,
+        "clone_time": 9.2,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1920,7 +2026,7 @@
         },
         "install": "failed",
         "install_log": "TIMEOUT after 120s",
-        "install_time": 383.9,
+        "install_time": 397.5,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -1935,29 +2041,20 @@
           "url": "https://github.com/microsoft/generative-ai-for-beginners",
           "description": "21 Lessons, Get Started Building with Generative AI",
           "language": "Jupyter Notebook",
-          "stars": 115688,
+          "stars": 115724,
           "topic": "prompt-engineering"
         },
-        "clone": true,
-        "clone_time": 12.0,
-        "clone_err": "",
+        "clone": false,
+        "clone_time": 79.1,
+        "clone_err": "fatal: unable to access 'https://github.com/microsoft/generative-ai-for-beginners.git/': Failed to connect to github.com port 443 after 21110 ms: Could not connect to server\n",
         "build": {
-          "python": true,
-          "node": true,
-          "rust": false,
-          "go": false,
-          "docker": false,
-          "files": [
-            "requirements.txt",
-            "pyproject.toml",
-            "package.json"
-          ]
+          "files": []
         },
         "install": "failed",
-        "install_log": "TIMEOUT after 120s",
-        "install_time": 120.0,
-        "run": "skipped",
-        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "install_log": "fatal: unable to access 'https://github.com/microsoft/generative-ai-for-beginners.git/': Failed to connect to github.com port 443 after 21110 ms: Could not connect to server\n",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "fatal: unable to access 'https://github.com/microsoft/generative-ai-for-beginners.git/': Failed to connect to github.com port 443 after 21110 ms: Could not connect to server\n",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -1970,29 +2067,22 @@
           "url": "https://github.com/JuliusBrussee/caveman",
           "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
           "language": "JavaScript",
-          "stars": 95562,
+          "stars": 95571,
           "topic": "prompt-engineering"
         },
-        "clone": true,
-        "clone_time": 6.2,
-        "clone_err": "",
+        "clone": false,
+        "clone_time": 78.7,
+        "clone_err": "fatal: unable to access 'https://github.com/JuliusBrussee/caveman.git/': Failed to connect to github.com port 443 after 21173 ms: Could not connect to server\n",
         "build": {
-          "python": false,
-          "node": true,
-          "rust": false,
-          "go": false,
-          "docker": false,
-          "files": [
-            "package.json"
-          ]
+          "files": []
         },
-        "install": "success",
-        "install_log": "\nup to date, audited 1 package in 3s\n\nfound 0 vulnerabilities\n",
-        "install_time": 4.1,
-        "run": "skipped",
-        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "install": "failed",
+        "install_log": "fatal: unable to access 'https://github.com/JuliusBrussee/caveman.git/': Failed to connect to github.com port 443 after 21173 ms: Could not connect to server\n",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "fatal: unable to access 'https://github.com/JuliusBrussee/caveman.git/': Failed to connect to github.com port 443 after 21173 ms: Could not connect to server\n",
         "run_time": 0.0,
-        "score": 66,
+        "score": 50,
         "stars": "★★★☆☆"
       },
       {
@@ -2003,29 +2093,22 @@
           "url": "https://github.com/DietrichGebert/ponytail",
           "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
           "language": "JavaScript",
-          "stars": 95094,
+          "stars": 95133,
           "topic": "prompt-engineering"
         },
-        "clone": true,
-        "clone_time": 2.9,
-        "clone_err": "",
+        "clone": false,
+        "clone_time": 79.1,
+        "clone_err": "fatal: unable to access 'https://github.com/DietrichGebert/ponytail.git/': Failed to connect to github.com port 443 after 21049 ms: Could not connect to server\n",
         "build": {
-          "python": false,
-          "node": true,
-          "rust": false,
-          "go": false,
-          "docker": false,
-          "files": [
-            "package.json"
-          ]
+          "files": []
         },
-        "install": "success",
-        "install_log": "\nup to date, audited 1 package in 4s\n\nfound 0 vulnerabilities\n",
-        "install_time": 4.8,
-        "run": "skipped",
-        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "install": "failed",
+        "install_log": "fatal: unable to access 'https://github.com/DietrichGebert/ponytail.git/': Failed to connect to github.com port 443 after 21049 ms: Could not connect to server\n",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "fatal: unable to access 'https://github.com/DietrichGebert/ponytail.git/': Failed to connect to github.com port 443 after 21049 ms: Could not connect to server\n",
         "run_time": 0.0,
-        "score": 66,
+        "score": 50,
         "stars": "★★★☆☆"
       },
       {
@@ -2036,29 +2119,22 @@
           "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
           "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
           "language": "MDX",
-          "stars": 77248,
+          "stars": 77251,
           "topic": "prompt-engineering"
         },
-        "clone": true,
-        "clone_time": 4.5,
-        "clone_err": "",
+        "clone": false,
+        "clone_time": 78.2,
+        "clone_err": "fatal: unable to access 'https://github.com/dair-ai/Prompt-Engineering-Guide.git/': Failed to connect to github.com port 443 after 21084 ms: Could not connect to server\n",
         "build": {
-          "python": false,
-          "node": true,
-          "rust": false,
-          "go": false,
-          "docker": false,
-          "files": [
-            "package.json"
-          ]
+          "files": []
         },
-        "install": "success",
-        "install_log": "\nup to date in 52s\n\n190 packages are looking for funding\n  run `npm fund` for details\n",
-        "install_time": 52.8,
-        "run": "skipped",
-        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "install": "failed",
+        "install_log": "fatal: unable to access 'https://github.com/dair-ai/Prompt-Engineering-Guide.git/': Failed to connect to github.com port 443 after 21084 ms: Could not connect to server\n",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "fatal: unable to access 'https://github.com/dair-ai/Prompt-Engineering-Guide.git/': Failed to connect to github.com port 443 after 21084 ms: Could not connect to server\n",
         "run_time": 0.0,
-        "score": 66,
+        "score": 50,
         "stars": "★★★☆☆"
       }
     ]
@@ -2073,7 +2149,7 @@
         "url": "https://github.com/hiyouga/LlamaFactory",
         "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
         "language": "Python",
-        "stars": 73730,
+        "stars": 73731,
         "topic": "fine-tuning"
       },
       {
@@ -2083,7 +2159,7 @@
         "url": "https://github.com/unslothai/unsloth",
         "description": "Unsloth is a local UI for training and running Kimi K3, Gemma 4, Qwen3.6, DeepSeek-V4, GLM and other models.",
         "language": "Python",
-        "stars": 69492,
+        "stars": 69493,
         "topic": "fine-tuning"
       },
       {
@@ -2103,7 +2179,7 @@
         "url": "https://github.com/QwenAudio/CosyVoice",
         "description": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.",
         "language": "Python",
-        "stars": 22567,
+        "stars": 22569,
         "topic": "fine-tuning"
       },
       {
@@ -2126,11 +2202,11 @@
           "url": "https://github.com/hiyouga/LlamaFactory",
           "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
           "language": "Python",
-          "stars": 73730,
+          "stars": 73731,
           "topic": "fine-tuning"
         },
         "clone": false,
-        "clone_time": 77.9,
+        "clone_time": 93.3,
         "clone_err": "fatal: unable to access 'https://github.com/hiyouga/LlamaFactory.git/': Recv failure: Connection was reset\n",
         "build": {
           "files": []
@@ -2152,22 +2228,29 @@
           "url": "https://github.com/unslothai/unsloth",
           "description": "Unsloth is a local UI for training and running Kimi K3, Gemma 4, Qwen3.6, DeepSeek-V4, GLM and other models.",
           "language": "Python",
-          "stars": 69492,
+          "stars": 69493,
           "topic": "fine-tuning"
         },
-        "clone": false,
-        "clone_time": 79.6,
-        "clone_err": "fatal: unable to access 'https://github.com/unslothai/unsloth.git/': Failed to connect to github.com port 443 after 21090 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 80.2,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/unslothai/unsloth.git/': Failed to connect to github.com port 443 after 21090 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/unslothai/unsloth.git/': Failed to connect to github.com port 443 after 21090 ms: Could not connect to server\n",
-        "run_time": 0.0,
-        "score": 44,
+        "install": "success",
+        "install_log": "=648da33893b6158a242657fa94215d9d9be234e0a69767c27e2c833202174cd8\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-yp3g4j1v\\wheels\\43\\51\\db\\0165dff7709aa1544467ca2229d43060063353087b738f704b\nSuccessfully built unsloth\nInstalling collected packages: unsloth\n  Attempting uninstall: unsloth\n    Found existing installation: unsloth 2026.7.6\n    Uninstalling unsloth-2026.7.6:\n      Successfully uninstalled unsloth-2026.7.6\nSuccessfully installed unsloth-2026.8.2\n",
+        "install_time": 85.3,
+        "run": "success",
+        "run_log": "                                                                               \n Usage: cli.py [OPTIONS] COMMAND [ARGS]...                                     \n                                                                               \n Command-line interface for Unsloth training, inference, and export.           \n                                                                               \n",
+        "run_time": 2.9,
+        "score": 70,
         "stars": "★★★☆☆"
       },
       {
@@ -2181,19 +2264,26 @@
           "stars": 51356,
           "topic": "fine-tuning"
         },
-        "clone": false,
-        "clone_time": 79.5,
-        "clone_err": "fatal: unable to access 'https://github.com/run-llama/llama_index.git/': Failed to connect to github.com port 443 after 21084 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 9.5,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
         },
-        "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/run-llama/llama_index.git/': Failed to connect to github.com port 443 after 21084 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/run-llama/llama_index.git/': Failed to connect to github.com port 443 after 21084 ms: Could not connect to server\n",
+        "install": "success",
+        "install_log": "f291ef5b948ecbaa0ed9a24531fa79d8fe3e49462\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-iles5hxu\\wheels\\b4\\06\\8d\\69d68a93056eadd80d36d6a5f4f298a980e6d695bd5af9860b\nSuccessfully built llama-index\nInstalling collected packages: llama-index\n  Attempting uninstall: llama-index\n    Found existing installation: llama-index 0.14.23\n    Uninstalling llama-index-0.14.23:\n      Successfully uninstalled llama-index-0.14.23\nSuccessfully installed llama-index-0.14.23\n",
+        "install_time": 24.9,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
-        "score": 50,
+        "score": 66,
         "stars": "★★★☆☆"
       },
       {
@@ -2204,20 +2294,27 @@
           "url": "https://github.com/QwenAudio/CosyVoice",
           "description": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.",
           "language": "Python",
-          "stars": 22567,
+          "stars": 22569,
           "topic": "fine-tuning"
         },
-        "clone": false,
-        "clone_time": 79.2,
-        "clone_err": "fatal: unable to access 'https://github.com/QwenAudio/CosyVoice.git/': Failed to connect to github.com port 443 after 21139 ms: Could not connect to server\n",
+        "clone": true,
+        "clone_time": 4.3,
+        "clone_err": "",
         "build": {
-          "files": []
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt"
+          ]
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/QwenAudio/CosyVoice.git/': Failed to connect to github.com port 443 after 21139 ms: Could not connect to server\n",
-        "install_time": 0.0,
-        "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/QwenAudio/CosyVoice.git/': Failed to connect to github.com port 443 after 21139 ms: Could not connect to server\n",
+        "install_log": "ackages\\setuptools\\build_meta.py\", line 520, in run_setup\n          super().run_setup(setup_script=setup_script)\n          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-scw2is1n\\overlay\\Lib\\site-packages\\setuptools\\build_meta.py\", line 317, in run_setup\n          exec(code, locals())\n          ~~~~^^^^^^^^^^^^^^^^\n        File \"<string>\", line 43, in <module>\n      ModuleNotFoundError: No module named 'pkg_resources'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Failed to build 'grpcio' when getting requirements to build wheel\n",
+        "install_time": 54.8,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
@@ -2234,16 +2331,16 @@
           "topic": "fine-tuning"
         },
         "clone": false,
-        "clone_time": 93.3,
-        "clone_err": "fatal: unable to access 'https://github.com/huggingface/peft.git/': Failed to connect to github.com port 443 after 21103 ms: Could not connect to server\n",
+        "clone_time": 79.7,
+        "clone_err": "fatal: unable to access 'https://github.com/huggingface/peft.git/': Recv failure: Connection was reset\n",
         "build": {
           "files": []
         },
         "install": "failed",
-        "install_log": "fatal: unable to access 'https://github.com/huggingface/peft.git/': Failed to connect to github.com port 443 after 21103 ms: Could not connect to server\n",
+        "install_log": "fatal: unable to access 'https://github.com/huggingface/peft.git/': Recv failure: Connection was reset\n",
         "install_time": 0.0,
         "run": "failed",
-        "run_log": "fatal: unable to access 'https://github.com/huggingface/peft.git/': Failed to connect to github.com port 443 after 21103 ms: Could not connect to server\n",
+        "run_log": "fatal: unable to access 'https://github.com/huggingface/peft.git/': Recv failure: Connection was reset\n",
         "run_time": 0.0,
         "score": 44,
         "stars": "★★★☆☆"
