@@ -6,8 +6,8 @@ tags: [Index, AI, Trending]
 
 | 日期 | 模式 | 项目数量 | 链接 |
 | --- | --- | --- | --- |
+| 2026-08-04 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-04]] |
 | 2026-08-01 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-01]] |
-
 | 2026-07-31 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-31]] |
 | 2026-07-30 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-30]] |
 | 2026-07-29 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-07-29]] |
@@ -111,3 +111,7 @@ tags: [Index, AI, Trending]
 | different-ai/openwork | [[different-ai_openwork|详情]] |
 | agavra/tuicr | [[agavra_tuicr|详情]] |
 | ChromeDevTools/chrome-devtools-mcp | [[ChromeDevTools_chrome-devtools-mcp|详情]] |
+| zhaoxuya520/reverse-skill | [[zhaoxuya520_reverse-skill|详情]] |
+| Panniantong/Agent-Reach | [[Panniantong_Agent-Reach|详情]] |
+| esengine/DeepSeek-Reasonix | [[esengine_DeepSeek-Reasonix|详情]] |
+| Alishahryar1/free-claude-code | [[Alishahryar1_free-claude-code|详情]] |

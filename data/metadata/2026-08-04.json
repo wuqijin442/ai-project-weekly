@@ -1,0 +1,164 @@
+[
+  {
+    "project": {
+      "owner": "microsoft",
+      "name": "generative-ai-for-beginners",
+      "full": "microsoft/generative-ai-for-beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "description": "21 Lessons, Get Started Building with Generative AI",
+      "language": "Jupyter Notebook",
+      "stars": 115624,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "DevTools",
+        "Data/ML"
+      ]
+    },
+    "clone": true,
+    "clone_time": 115.4,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml",
+        "package.json"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.0,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Panniantong",
+      "name": "Agent-Reach",
+      "full": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "language": "Python",
+      "stars": 65789,
+      "categories": [
+        "AI/LLM/Agent",
+        "Backend/DevOps",
+        "DevTools"
+      ]
+    },
+    "clone": false,
+    "clone_time": 22.4,
+    "clone_err": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\Panniantong__Agent-Reach'...\nfatal: unable to access 'https://github.com/Panniantong/Agent-Reach.git/': Recv failure: Connection was reset\n",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\Panniantong__Agent-Reach'...\nfatal: unable to access 'https://github.com/Panniantong/Agent-Reach.git/': Recv failure: Connection was reset\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\Panniantong__Agent-Reach'...\nfatal: unable to access 'https://github.com/Panniantong/Agent-Reach.git/': Recv failure: Connection was reset\n",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "microsoft",
+      "name": "AI-For-Beginners",
+      "full": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "language": "Jupyter Notebook",
+      "stars": 60840,
+      "categories": [
+        "AI/LLM/Agent",
+        "Data/ML"
+      ]
+    },
+    "clone": true,
+    "clone_time": 8.1,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt"
+      ]
+    },
+    "install": "failed",
+    "install_log": "rs\\Administrator\\AppData\\Local\\Temp\\pip-install-k1mu6453\\pandas_0be468c2108e41d49d4def47bb85e978\\.mesonpy-8g36gs5k\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+    "install_time": 94.8,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "jamiepine",
+      "name": "voicebox",
+      "full": "jamiepine/voicebox",
+      "url": "https://github.com/jamiepine/voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "language": "TypeScript",
+      "stars": 48730,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": false,
+    "clone_time": 22.2,
+    "clone_err": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\jamiepine__voicebox'...\nfatal: unable to access 'https://github.com/jamiepine/voicebox.git/': Failed to connect to github.com port 443 after 21440 ms: Could not connect to server\n",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\jamiepine__voicebox'...\nfatal: unable to access 'https://github.com/jamiepine/voicebox.git/': Failed to connect to github.com port 443 after 21440 ms: Could not connect to server\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\jamiepine__voicebox'...\nfatal: unable to access 'https://github.com/jamiepine/voicebox.git/': Failed to connect to github.com port 443 after 21440 ms: Could not connect to server\n",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Alishahryar1",
+      "name": "free-claude-code",
+      "full": "Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "description": "Use Claude Code, Codex and Pi for free from your terminal, app, IDE, or phone like OpenClaw (voice supported)",
+      "language": "Python",
+      "stars": 44068,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": false,
+    "clone_time": 22.2,
+    "clone_err": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\Alishahryar1__free-claude-code'...\nfatal: unable to access 'https://github.com/Alishahryar1/free-claude-code.git/': Failed to connect to github.com port 443 after 21093 ms: Could not connect to server\n",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\Alishahryar1__free-claude-code'...\nfatal: unable to access 'https://github.com/Alishahryar1/free-claude-code.git/': Failed to connect to github.com port 443 after 21093 ms: Could not connect to server\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\Alishahryar1__free-claude-code'...\nfatal: unable to access 'https://github.com/Alishahryar1/free-claude-code.git/': Failed to connect to github.com port 443 after 21093 ms: Could not connect to server\n",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  }
+]
