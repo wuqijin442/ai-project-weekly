@@ -1,0 +1,165 @@
+[
+  {
+    "project": {
+      "owner": "microsoft",
+      "name": "generative-ai-for-beginners",
+      "full": "microsoft/generative-ai-for-beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "description": "21 Lessons, Get Started Building with Generative AI",
+      "language": "Jupyter Notebook",
+      "stars": 115946,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "DevTools",
+        "Data/ML"
+      ]
+    },
+    "clone": false,
+    "clone_time": 21.5,
+    "clone_err": "fatal: unable to access 'https://github.com/microsoft/generative-ai-for-beginners.git/': Failed to connect to github.com port 443 after 21067 ms: Could not connect to server\n",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "fatal: unable to access 'https://github.com/microsoft/generative-ai-for-beginners.git/': Failed to connect to github.com port 443 after 21067 ms: Could not connect to server\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "fatal: unable to access 'https://github.com/microsoft/generative-ai-for-beginners.git/': Failed to connect to github.com port 443 after 21067 ms: Could not connect to server\n",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Panniantong",
+      "name": "Agent-Reach",
+      "full": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "language": "Python",
+      "stars": 66180,
+      "categories": [
+        "AI/LLM/Agent",
+        "Backend/DevOps",
+        "DevTools"
+      ]
+    },
+    "clone": false,
+    "clone_time": 21.6,
+    "clone_err": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\Panniantong__Agent-Reach'...\nfatal: unable to access 'https://github.com/Panniantong/Agent-Reach.git/': Failed to connect to github.com port 443 after 21054 ms: Could not connect to server\n",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\Panniantong__Agent-Reach'...\nfatal: unable to access 'https://github.com/Panniantong/Agent-Reach.git/': Failed to connect to github.com port 443 after 21054 ms: Could not connect to server\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "Cloning into 'D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\Panniantong__Agent-Reach'...\nfatal: unable to access 'https://github.com/Panniantong/Agent-Reach.git/': Failed to connect to github.com port 443 after 21054 ms: Could not connect to server\n",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "microsoft",
+      "name": "AI-For-Beginners",
+      "full": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "language": "Jupyter Notebook",
+      "stars": 61366,
+      "categories": [
+        "AI/LLM/Agent",
+        "Data/ML"
+      ]
+    },
+    "clone": false,
+    "clone_time": 21.8,
+    "clone_err": "fatal: unable to access 'https://github.com/microsoft/AI-For-Beginners.git/': Failed to connect to github.com port 443 after 21156 ms: Could not connect to server\n",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "fatal: unable to access 'https://github.com/microsoft/AI-For-Beginners.git/': Failed to connect to github.com port 443 after 21156 ms: Could not connect to server\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "fatal: unable to access 'https://github.com/microsoft/AI-For-Beginners.git/': Failed to connect to github.com port 443 after 21156 ms: Could not connect to server\n",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "jamiepine",
+      "name": "voicebox",
+      "full": "jamiepine/voicebox",
+      "url": "https://github.com/jamiepine/voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "language": "TypeScript",
+      "stars": 48981,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 12.5,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "requirements.txt",
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "success",
+    "install_log": "\\Lib\\site-packages (from jinja2->torch->-r requirements.txt (line 4)) (3.0.3)\nRequirement already satisfied: standard-chunk in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12.old.56768\\Lib\\site-packages (from standard-aifc->librosa->-r requirements.txt (line 7)) (3.13.0)\nRequirement already satisfied: audioop-lts in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12.old.56768\\Lib\\site-packages (from standard-aifc->librosa->-r requirements.txt (line 7)) (0.2.2)\n",
+    "install_time": 5.1,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Alishahryar1",
+      "name": "free-claude-code",
+      "full": "Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "description": "Use Claude Code, Codex and Pi for free from your terminal, app, IDE, or phone like OpenClaw (voice supported)",
+      "language": "Python",
+      "stars": 44212,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 4.8,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "WARNING: Ignoring invalid distribution ~rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12.old.56768\\Lib\\site-packages)\n  WARNING: Ignoring invalid distribution ~rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12.old.56768\\Lib\\site-packages)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Package 'free-claude-code' requires a different Python: 3.13.14 not in '>=3.14.0'\n",
+    "install_time": 17.2,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  }
+]
