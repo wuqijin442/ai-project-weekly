@@ -1,7 +1,7 @@
 ---
 aliases: [free-claude-code, FCC, Free Claude Code]
 tags: [AI, Trending, Python, Proxy, Gateway, Claude-Code, Codex, Vibe-Coding]
-stars: 44068
+stars: 44221
 created_at: 2026-01-28
 today_growth: 278
 status: 热门（首入榜 #5）
@@ -12,7 +12,7 @@ date_accessed: 2026-08-04
 
 **项目地址**：https://github.com/Alishahryar1/free-claude-code
 **作者**：Alishahryar1
-**⭐ 总 Star**：44,068（44.1k）
+**⭐ 总 Star**：44,221（44.2k）  <!-- 18:00 复核值；10:22 首采 44,068 -->
 **📈 今日新增**：🔺278 stars
 **🍴 Fork**：7,273
 **💻 主要语言**：Python（3.14）

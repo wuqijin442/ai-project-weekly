@@ -1,7 +1,7 @@
 ---
 aliases: [reverse-skill, 逆向技能路由包, Cybersecurity Skills Router]
 tags: [AI, Trending, PowerShell, Skills, Security, Reverse-Engineering, Vibe-Coding]
-stars: 15967
+stars: 16853
 created_at: 2026-05-13
 today_growth: 2446
 status: 今日最佳🔝（首入榜 #1，严格关键词命中）
@@ -12,7 +12,7 @@ date_accessed: 2026-08-04
 
 **项目地址**：https://github.com/zhaoxuya520/reverse-skill
 **作者**：zhaoxuya520
-**⭐ 总 Star**：15,967（16.0k）
+**⭐ 总 Star**：16,853（16.9k）  <!-- 18:00 复核值；10:22 首采 15,967 -->
 **📈 今日新增**：🔺2,446 stars
 **🍴 Fork**：2,243
 **💻 主要语言**：PowerShell

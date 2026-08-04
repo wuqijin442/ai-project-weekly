@@ -1,7 +1,7 @@
 ---
 aliases: [Agent-Reach, agent-reach, Agent 联网感官]
 tags: [AI, Trending, Python, CLI, MCP, Agent-Infrastructure, Vibe-Coding]
-stars: 65789
+stars: 66190
 created_at: 2026-02-24
 today_growth: 1057
 status: 热门（首入榜 #3）
@@ -12,7 +12,7 @@ date_accessed: 2026-08-04
 
 **项目地址**：https://github.com/Panniantong/Agent-Reach
 **作者**：Panniantong
-**⭐ 总 Star**：65,789（65.8k）
+**⭐ 总 Star**：66,190（66.2k）  <!-- 18:00 复核值；10:22 首采 65,789 -->
 **📈 今日新增**：🔺1,057 stars
 **🍴 Fork**：5,458
 **💻 主要语言**：Python（3.10+）
@@ -69,6 +69,6 @@ topics 直接标注 `claude-code`、`cursor`、`mcp`、`llm-tools`——定位�
 
 ## 备注
 
-- ⭐65.8k 体量为今日 Top 5 中最大，说明「Agent 联网」是长期高需求缺口
+- ⭐66.2k 体量为今日 Top 5 中最大，说明「Agent 联网」是长期高需求缺口
 - 曾获 Trendshift「GitHub Trending #1 Repository of the Day」
 - 与 07-20/07-21 上榜的 wigolo（Agent 检索本地化）同属「Agent 感官/检索层」主线
