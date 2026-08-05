@@ -26,3 +26,4 @@ target/
 video-pipeline-guide/
 # 运行时日志不纳入版本管理（仅同步 Obsidian_Vault，避免多机 cron 冲突/弄脏工作树）
 logs/
+src/*.py.bak-*
