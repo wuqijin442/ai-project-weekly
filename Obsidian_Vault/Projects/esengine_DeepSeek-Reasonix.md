@@ -1,23 +1,23 @@
 ---
 aliases: [DeepSeek-Reasonix, Reasonix, reasonix]
 tags: [AI, Trending, Go, Coding-Agent, CLI, TUI, DeepSeek, Vibe-Coding]
-stars: 30398
+stars: 31139
 created_at: 2026-04-21
-today_growth: 883
-status: 热门（首入榜 #4）
-date_accessed: 2026-08-04
+today_growth: 922
+status: 热门（二度上榜 #3，连续两日在榜）
+date_accessed: 2026-08-05
 ---
 
 # DeepSeek-Reasonix
 
 **项目地址**：https://github.com/esengine/DeepSeek-Reasonix
 **作者**：esengine
-**⭐ 总 Star**：30,398（30.4k）  <!-- 18:00 复核值；10:22 首采 29,997 -->
-**📈 今日新增**：🔺883 stars
-**🍴 Fork**：1,926
+**⭐ 总 Star**：31,139（31.1k）  <!-- 2026-08-05 18:00 实时值；08-04 为 30,398 -->
+**📈 今日新增**：🔺922 stars
+**🍴 Fork**：1,999
 **💻 主要语言**：Go
 **📅 开源时间**：2026-04-21
-**🔄 最近推送**：2026-08-04
+**🔄 最近推送**：2026-08-05
 **🌐 官网**：http://reasonix.io/
 **📜 许可证**：MIT
 
@@ -79,8 +79,11 @@ reasonix run "implement the TODOs in main.go"
 ## 相关日期
 
 - [[Vibe-Coding-2026-08-04|2026-08-04 日报]]（首入榜 #4）
+- [[Vibe-Coding-2026-08-05|2026-08-05 日报]]（二度上榜 #3，⭐31.1k / 🔺922）
 
 ## 备注
+
+- **成长曲线**：2026-08-04 ⭐30,398（+883）→ 2026-08-05 ⭐31,139（+922），增速微升、连续两日在榜
 
 - 与 07-30 上榜的 1jehuang/jcode（「最省 RAM 的 harness」）同属「终端编码 Agent 工程化」主线，二者分别主打**缓存稳定**与**内存占用**
 - Windows 安装包由 SignPath Foundation 提供免费证书完成代码签名

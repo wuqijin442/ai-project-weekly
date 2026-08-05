@@ -1,23 +1,23 @@
 ---
 aliases: [reverse-skill, 逆向技能路由包, Cybersecurity Skills Router]
 tags: [AI, Trending, PowerShell, Skills, Security, Reverse-Engineering, Vibe-Coding]
-stars: 16853
+stars: 18685
 created_at: 2026-05-13
-today_growth: 2446
-status: 今日最佳🔝（首入榜 #1，严格关键词命中）
-date_accessed: 2026-08-04
+today_growth: 2297
+status: 今日最佳🔝（二度上榜 #1，连续两日登顶，严格关键词命中）
+date_accessed: 2026-08-05
 ---
 
 # reverse-skill
 
 **项目地址**：https://github.com/zhaoxuya520/reverse-skill
 **作者**：zhaoxuya520
-**⭐ 总 Star**：16,853（16.9k）  <!-- 18:00 复核值；10:22 首采 15,967 -->
-**📈 今日新增**：🔺2,446 stars
-**🍴 Fork**：2,243
+**⭐ 总 Star**：18,685（18.7k）  <!-- 2026-08-05 18:00 实时值；08-04 为 16,853 -->
+**📈 今日新增**：🔺2,297 stars
+**🍴 Fork**：2,550
 **💻 主要语言**：PowerShell
 **📅 开源时间**：2026-05-13
-**🔄 最近推送**：2026-08-03
+**🔄 最近推送**：2026-08-05
 **📜 许可证**：MIT
 
 ## 项目定位
@@ -103,10 +103,13 @@ bash kali/scripts/refresh-tool-index.sh
 ## 相关日期
 
 - [[Vibe-Coding-2026-08-04|2026-08-04 日报]]（首入榜 #1，今日最佳🔝，严格关键词命中 Cursor / Cline）
+- [[Vibe-Coding-2026-08-05|2026-08-05 日报]]（二度上榜 #1，连续两日今日最佳🔝，⭐18.7k / 🔺2,297）
 
 ## 备注
 
-- 今日以 +2,446 同时登顶 **Vibe Coding 榜与 GitHub 全站日榜**
+- **成长曲线**：2026-08-04 ⭐16,853（+2,446）→ 2026-08-05 ⭐18,685（+2,297），两日累计 +4,743，Fork 2,243 → 2,550
+- 连续两日登顶 Vibe Coding 榜；08-05 位居 GitHub 全站日榜 #2（仅次于 firecrawl/pdf-inspector）
+- 08-04 曾以 +2,446 同时登顶 **Vibe Coding 榜与 GitHub 全站日榜**
 - 本日唯一严格关键词命中项（简介同时含 Cursor 与 Cline）
 - 强调「**授权**渗透测试」，RULES 层做 scope gate，合规边界写进 Agent 工作流
 - 本地案件目录 `work/` 已 gitignore，避免敏感数据入库
