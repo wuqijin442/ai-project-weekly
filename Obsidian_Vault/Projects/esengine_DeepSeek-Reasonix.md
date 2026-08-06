@@ -1,23 +1,23 @@
 ---
 aliases: [DeepSeek-Reasonix, Reasonix, reasonix]
 tags: [AI, Trending, Go, Coding-Agent, CLI, TUI, DeepSeek, Vibe-Coding]
-stars: 31139
+stars: 32010
 created_at: 2026-04-21
-today_growth: 922
-status: 热门（二度上榜 #3，连续两日在榜）
-date_accessed: 2026-08-05
+today_growth: 747
+status: 热门（三度上榜 #4，连续三日在榜）
+date_accessed: 2026-08-06
 ---
 
 # DeepSeek-Reasonix
 
 **项目地址**：https://github.com/esengine/DeepSeek-Reasonix
 **作者**：esengine
-**⭐ 总 Star**：31,139（31.1k）  <!-- 2026-08-05 18:00 实时值；08-04 为 30,398 -->
-**📈 今日新增**：🔺922 stars
-**🍴 Fork**：1,999
+**⭐ 总 Star**：32,010（32.0k）  <!-- 2026-08-06 18:00 实时值；08-05 为 31,139 -->
+**📈 今日新增**：🔺747 stars
+**🍴 Fork**：2,066
 **💻 主要语言**：Go
 **📅 开源时间**：2026-04-21
-**🔄 最近推送**：2026-08-05
+**🔄 最近推送**：2026-08-06
 **🌐 官网**：http://reasonix.io/
 **📜 许可证**：MIT
 
@@ -80,10 +80,11 @@ reasonix run "implement the TODOs in main.go"
 
 - [[Vibe-Coding-2026-08-04|2026-08-04 日报]]（首入榜 #4）
 - [[Vibe-Coding-2026-08-05|2026-08-05 日报]]（二度上榜 #3，⭐31.1k / 🔺922）
+- [[Vibe-Coding-2026-08-06|2026-08-06 日报]]（三度上榜 #4，⭐32.0k / 🔺747）
 
 ## 备注
 
-- **成长曲线**：2026-08-04 ⭐30,398（+883）→ 2026-08-05 ⭐31,139（+922），增速微升、连续两日在榜
+- **成长曲线**：2026-08-04 ⭐30,398（+883）→ 2026-08-05 ⭐31,139（+922）→ 2026-08-06 ⭐32,010（+747）。⭐ 突破 3.2 万，但日增首次跌破 800、增速见缓，符合工具类项目上榜三日后的常见形态
 
 - 与 07-30 上榜的 1jehuang/jcode（「最省 RAM 的 harness」）同属「终端编码 Agent 工程化」主线，二者分别主打**缓存稳定**与**内存占用**
 - Windows 安装包由 SignPath Foundation 提供免费证书完成代码签名
