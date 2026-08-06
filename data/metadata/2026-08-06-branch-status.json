@@ -7,20 +7,17 @@
       "date": "Wed Aug 5 08:19:06 2026 +0800",
       "subject": "chore: 移除误入库的 learn_link 补丁备份并忽略 *.py.bak-*"
     },
-    "behind_main": 54,
-    "ahead_main": 2,
-    "unique_commits": [
-      "fbd3eb5 2026-08-05 wuqijin442 chore: 移除误入库的 learn_link 补丁备份并忽略 *.py.bak-*",
-      "ce348ca 2026-08-05 wuqijin442 chore: 每日学习消化+图谱 2026-08-05 [dgx]"
-    ]
+    "behind_main": 60,
+    "ahead_main": 0,
+    "unique_commits": []
   },
   {
     "branch": "main",
     "last": {
-      "hash": "8c14a08455",
+      "hash": "afbd732972",
       "author": "Worn Quiet Joy",
-      "date": "Tue Aug 4 20:00:09 2026 +0800",
-      "subject": "Merge pull request #12 from wuqijin442/win"
+      "date": "Wed Aug 5 20:03:14 2026 +0800",
+      "subject": "Merge pull request #14 from wuqijin442/win"
     },
     "behind_main": 0,
     "ahead_main": 0,
@@ -29,21 +26,18 @@
   {
     "branch": "win",
     "last": {
-      "hash": "1fa318fdcd",
+      "hash": "47ff56cdce",
       "author": "wuqijin442",
-      "date": "Thu Aug 6 19:01:20 2026 +0800",
+      "date": "Thu Aug 6 19:05:32 2026 +0800",
       "subject": "[2026-08-06] Daily AI Project Update"
     },
-    "behind_main": 19,
-    "ahead_main": 7,
+    "behind_main": 23,
+    "ahead_main": 4,
     "unique_commits": [
+      "47ff56c 2026-08-06 wuqijin442 [2026-08-06] Daily AI Project Update",
       "1fa318f 2026-08-06 wuqijin442 [2026-08-06] Daily AI Project Update",
       "b1d6abc 2026-08-06 wuqijin442 [2026-08-06] Daily AI Project Update",
-      "e6c934d 2026-08-06 wuqijin442 [2026-08-06] Daily AI Project Update",
-      "e74b51b 2026-08-05 wuqijin442 [2026-08-05] Daily AI Project Update",
-      "689efd3 2026-08-05 wuqijin442 [2026-08-05] Daily AI Project Update",
-      "398f565 2026-08-05 wuqijin442 [2026-08-05] Daily AI Project Update",
-      "9793a4c 2026-08-05 wuqijin442 [2026-08-05] Daily AI Project Update"
+      "e6c934d 2026-08-06 wuqijin442 [2026-08-06] Daily AI Project Update"
     ]
   }
 ]

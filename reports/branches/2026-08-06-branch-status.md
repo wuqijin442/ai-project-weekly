@@ -2,34 +2,26 @@
 
 > 自动 `git fetch --prune` 后比对各分支相对 `main` 的领先/落后提交与最近提交，结论基于真实 git 元数据，无推测。
 
-**基准分支**：`main`　**分支总数**：3　**核对时间**：2026-08-06 19:05:31
+**基准分支**：`main`　**分支总数**：3　**核对时间**：2026-08-06 19:14:35
 
 
 ## 各分支总览
 
 | 分支 | 领先 main | 落后 main | 最近提交 | 作者 | 日期 |
 |---|---|---|---|---|---|
-| `dgx` | 2 | 54 | chore: 移除误入库的 learn_link 补丁备份并忽略 *.py.ba | wuqijin442 | Wed Aug 5 08:19:06 2026 +0800 |
-| `main` | 0 | 0 | Merge pull request #12 from wuqijin442/w | Worn Quiet Joy | Tue Aug 4 20:00:09 2026 +0800 |
-| `win` | 7 | 19 | [2026-08-06] Daily AI Project Update | wuqijin442 | Thu Aug 6 19:01:20 2026 +0800 |
+| `dgx` | 0 | 60 | chore: 移除误入库的 learn_link 补丁备份并忽略 *.py.ba | wuqijin442 | Wed Aug 5 08:19:06 2026 +0800 |
+| `main` | 0 | 0 | Merge pull request #14 from wuqijin442/w | Worn Quiet Joy | Wed Aug 5 20:03:14 2026 +0800 |
+| `win` | 4 | 23 | [2026-08-06] Daily AI Project Update | wuqijin442 | Thu Aug 6 19:05:32 2026 +0800 |
 
 ## 领先 main 的待归集提交
 
 
-### `dgx`（领先 main 2 个提交，待 20:00 归集）
+### `win`（领先 main 4 个提交，待 20:00 归集）
 
-- fbd3eb5 2026-08-05 wuqijin442 chore: 移除误入库的 learn_link 补丁备份并忽略 *.py.bak-*
-- ce348ca 2026-08-05 wuqijin442 chore: 每日学习消化+图谱 2026-08-05 [dgx]
-
-### `win`（领先 main 7 个提交，待 20:00 归集）
-
+- 47ff56c 2026-08-06 wuqijin442 [2026-08-06] Daily AI Project Update
 - 1fa318f 2026-08-06 wuqijin442 [2026-08-06] Daily AI Project Update
 - b1d6abc 2026-08-06 wuqijin442 [2026-08-06] Daily AI Project Update
 - e6c934d 2026-08-06 wuqijin442 [2026-08-06] Daily AI Project Update
-- e74b51b 2026-08-05 wuqijin442 [2026-08-05] Daily AI Project Update
-- 689efd3 2026-08-05 wuqijin442 [2026-08-05] Daily AI Project Update
-- 398f565 2026-08-05 wuqijin442 [2026-08-05] Daily AI Project Update
-- 9793a4c 2026-08-05 wuqijin442 [2026-08-05] Daily AI Project Update
 
 ---
 
