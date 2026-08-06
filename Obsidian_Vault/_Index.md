@@ -6,6 +6,7 @@ tags: [Index, AI, Trending]
 
 | 日期 | 模式 | 项目数量 | 链接 |
 | --- | --- | --- | --- |
+| 2026-08-06 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-06]] |
 | 2026-08-05 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-05]] |
 | 2026-08-04 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-04]] |
 | 2026-08-01 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-01]] |
@@ -43,6 +44,8 @@ tags: [Index, AI, Trending]
 
 | 项目 | 链接 |
 | --- | --- |
+| cloudflare/computer | [[cloudflare_computer\|详情]] |
+| huangruiteng/loopx | [[huangruiteng_loopx\|详情]] |
 | EveryInc/compound-engineering-plugin | [[EveryInc_compound-engineering-plugin\|详情]] |
 | affaan-m/ECC | [[affaan-m_ECC\|详情]] |
 | MadsLorentzen/ai-job-search | [[MadsLorentzen_ai-job-search|详情]] |
