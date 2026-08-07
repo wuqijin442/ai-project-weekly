@@ -1,0 +1,41 @@
+[
+  {
+    "branch": "dgx",
+    "last": {
+      "hash": "fbd3eb52af",
+      "author": "wuqijin442",
+      "date": "Wed Aug 5 08:19:06 2026 +0800",
+      "subject": "chore: 移除误入库的 learn_link 补丁备份并忽略 *.py.bak-*"
+    },
+    "behind_main": 66,
+    "ahead_main": 0,
+    "unique_commits": []
+  },
+  {
+    "branch": "main",
+    "last": {
+      "hash": "7f29f949f2",
+      "author": "Worn Quiet Joy",
+      "date": "Thu Aug 6 20:12:47 2026 +0800",
+      "subject": "Merge pull request #15 from wuqijin442/win"
+    },
+    "behind_main": 0,
+    "ahead_main": 0,
+    "unique_commits": []
+  },
+  {
+    "branch": "win",
+    "last": {
+      "hash": "ad687a5a7f",
+      "author": "wuqijin442",
+      "date": "Fri Aug 7 19:14:34 2026 +0800",
+      "subject": "[2026-08-07] Daily AI Project Update"
+    },
+    "behind_main": 24,
+    "ahead_main": 2,
+    "unique_commits": [
+      "ad687a5 2026-08-07 wuqijin442 [2026-08-07] Daily AI Project Update",
+      "605051e 2026-08-07 wuqijin442 [2026-08-07] Daily AI Project Update"
+    ]
+  }
+]

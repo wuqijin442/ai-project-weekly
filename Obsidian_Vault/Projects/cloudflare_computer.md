@@ -1,23 +1,24 @@
 ---
 aliases: [Cloudflare Computer, computer, "@cloudflare/computer"]
 tags: [AI, Trending, TypeScript, Agent-Runtime, Sandbox, Cloudflare, DurableObject, Vibe-Coding]
-stars: 4171
+stars: 5162
 created_at: 2026-06-05
-today_growth: 891
-status: 新星（首入榜 #3，PREVIEW ONLY）
-date_accessed: 2026-08-06
+today_growth: 2802
+status: 热门（二度上榜 #1，今日最佳 🔝，PREVIEW ONLY）
+date_accessed: 2026-08-07
 ---
 
 # Cloudflare Computer
 
 **项目地址**：https://github.com/cloudflare/computer
 **作者**：cloudflare
-**⭐ 总 Star**：4,171（4.2k）  <!-- 2026-08-06 18:00 实时值 -->
-**📈 今日新增**：🔺891 stars
-**🍴 Fork**：199
+**⭐ 总 Star**：5,162（5.2k）  <!-- 2026-08-07 18:00 实时值；08-06 为 4,171 -->
+**📈 今日新增**：🔺2,802 stars（榜面值；API 实测 24h 增量 +991）
+**🍴 Fork**：263
+**👁 Watch**：18
 **💻 主要语言**：TypeScript
 **📅 开源时间**：2026-06-05
-**🔄 最近推送**：2026-08-05
+**🔄 最近推送**：2026-08-06
 **📜 许可证**：MIT
 
 ## 项目定位
@@ -87,10 +88,13 @@ Cloudflare Computer 是一个**活在 Durable Object 里的虚拟文件系统**�
 ## 相关日期
 
 - [[Vibe-Coding-2026-08-06|2026-08-06 日报]]（首入榜 #3，⭐4.2k / 🔺891）
+- [[Vibe-Coding-2026-08-07|2026-08-07 日报]]（二度上榜 #1，⭐5.2k / 🔺2,802，**今日最佳 🔝**）
 
 ## 备注
 
 - 由 GitHub Trending 日榜自动归档（Vibe Coding / AI 编码 Agent 生态口径）
 - 2026-06-05 开源，两个月内 ⭐4.2k，单日 +891 —— 大厂官方下场做 Agent 运行时的信号
+- **成长曲线**：2026-08-06 ⭐4,171（Fork 199）→ 2026-08-07 ⭐5,162（Fork 263）。首入榜次日即登顶 Vibe Coding #1，两天 +24%
+- ⚠️ **数据口径提醒**：2026-08-07 Trending 榜面标注 "2,802 stars today"，但 08-06 18:00 → 08-07 18:00 的 API 快照差分仅 +991，榜面高估约 183%。GitHub 的 "stars today" 统计窗口与本归档的 18:00 定点快照不重合，位次应打折看待（详见 [[Vibe-Coding-2026-08-07|08-07 日报]]数据质量说明）
 - 与同日上榜的 [[TencentCloud_TencentDB-Agent-Memory|TencentDB Agent Memory]]（记忆层）、[[huangruiteng_loopx|loopx]]（控制面）构成互补：Computer 是"在哪儿干"的那一层
 - 参照物：[[TencentCloud_CubeSandbox|TencentCloud/CubeSandbox]] 同属 Agent 沙箱赛道，但 Computer 的差异点在于**文件系统即权威状态**而非"沙箱即环境"
