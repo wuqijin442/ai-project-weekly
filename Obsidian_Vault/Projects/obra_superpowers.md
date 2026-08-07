@@ -1,24 +1,24 @@
 ---
 aliases: [superpowers]
 tags: [AI, Trending, Shell, AI, Coding, Skills, SDLC, Vibe-Coding, Subagent]
-stars: 267669
+stars: 268415
 created_at: 2025-10-09
-today_growth: 931
-status: 热门（Agentic 技能框架 + 子代理驱动开发，三度上榜 #2）
-date_accessed: 2026-08-06
+today_growth: 858
+status: 热门（Agentic 技能框架 + 子代理驱动开发，四度上榜 #5）
+date_accessed: 2026-08-07
 ---
 
 # superpowers
 
 **项目地址**：https://github.com/obra/superpowers
 **作者**：obra
-**⭐ 总 Star**：267,669（267.7k）  <!-- 2026-08-06 18:00 实时值；07-30 为 263,643 -->
-**📈 今日新增**：🔺931 stars（Vibe Coding #2）
-**🍴 Fork**：23,917
+**⭐ 总 Star**：268,415（268.4k）  <!-- 2026-08-07 18:00 实时值；08-06 为 267,669 -->
+**📈 今日新增**：🔺858 stars（Vibe Coding #5；榜面值，API 实测 24h 增量 +746）
+**🍴 Fork**：23,982
 **👁 Watch**：1,016
 **💻 主要语言**：Shell
 **📅 开源时间**：2025-10-09
-**🔄 最近推送**：2026-08-06
+**🔄 最近推送**：2026-08-07
 **📜 许可证**：MIT
 
 ## 项目定位

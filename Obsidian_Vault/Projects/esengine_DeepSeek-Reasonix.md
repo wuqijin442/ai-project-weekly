@@ -1,23 +1,24 @@
 ---
 aliases: [DeepSeek-Reasonix, Reasonix, reasonix]
 tags: [AI, Trending, Go, Coding-Agent, CLI, TUI, DeepSeek, Vibe-Coding]
-stars: 32010
+stars: 32749
 created_at: 2026-04-21
-today_growth: 747
-status: 热门（三度上榜 #4，连续三日在榜）
-date_accessed: 2026-08-06
+today_growth: 888
+status: 热门（四度上榜 #4，连续四日在榜）
+date_accessed: 2026-08-07
 ---
 
 # DeepSeek-Reasonix
 
 **项目地址**：https://github.com/esengine/DeepSeek-Reasonix
 **作者**：esengine
-**⭐ 总 Star**：32,010（32.0k）  <!-- 2026-08-06 18:00 实时值；08-05 为 31,139 -->
-**📈 今日新增**：🔺747 stars
-**🍴 Fork**：2,066
+**⭐ 总 Star**：32,749（32.7k）  <!-- 2026-08-07 18:00 实时值；08-06 为 32,010 -->
+**📈 今日新增**：🔺888 stars（榜面值；API 实测 24h 增量 +739）
+**🍴 Fork**：2,114
+**👁 Watch**：91
 **💻 主要语言**：Go
 **📅 开源时间**：2026-04-21
-**🔄 最近推送**：2026-08-06
+**🔄 最近推送**：2026-08-07
 **🌐 官网**：http://reasonix.io/
 **📜 许可证**：MIT
 

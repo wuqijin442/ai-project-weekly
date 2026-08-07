@@ -1,23 +1,24 @@
 ---
 aliases: [TencentDB-Agent-Memory, agent-memory]
 tags: [AI, Trending, TypeScript, Memory, Agent, Vibe-Coding]
-stars: 15566
+stars: 17093
 created_at: 2026-04-07
-today_growth: 1892
-status: 热门（四度上榜 #1，连续三日在榜，今日最佳 🔝）
-date_accessed: 2026-08-06
+today_growth: 1057
+status: 热门（五度上榜 #3，连续四日在榜）
+date_accessed: 2026-08-07
 ---
 
 # TencentDB Agent Memory
 
 **项目地址**：https://github.com/TencentCloud/TencentDB-Agent-Memory
 **作者**：TencentCloud（腾讯云）
-**⭐ 总 Star**：15,566（15.6k）  <!-- 2026-08-06 18:00 实时值；08-05 为 14,527 -->
-**📈 今日新增**：🔺1,892 stars（Vibe Coding #1，同时位居 GitHub 全站日榜 #1）
-**🍴 Fork**：1,404
+**⭐ 总 Star**：17,093（17.1k）  <!-- 2026-08-07 18:00 实时值；08-06 为 15,566 -->
+**📈 今日新增**：🔺1,057 stars（榜面值；API 实测 24h 增量 +1,527）
+**🍴 Fork**：1,533
+**👁 Watch**：63
 **💻 主要语言**：TypeScript
 **📅 开源时间**：2026-04-07
-**🔄 最近推送**：2026-08-05
+**🔄 最近推送**：2026-08-06
 **运行环境**：Node.js ≥ 22.16
 
 ## 项目定位
