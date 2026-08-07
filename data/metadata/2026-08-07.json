@@ -1,0 +1,175 @@
+[
+  {
+    "project": {
+      "owner": "obra",
+      "name": "superpowers",
+      "full": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "language": "Shell",
+      "stars": 268415,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 17.5,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date, audited 1 package in 3s\n\nfound 0 vulnerabilities\n",
+    "install_time": 4.8,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "mattpocock",
+      "name": "skills",
+      "full": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 207963,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 3.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date in 2s\n\n11 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 3.2,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Significant-Gravitas",
+      "name": "AutoGPT",
+      "full": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "language": "Python",
+      "stars": 186164,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "DevTools"
+      ]
+    },
+    "clone": true,
+    "clone_time": 23.9,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "addyosmani",
+      "name": "agent-skills",
+      "full": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 83351,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 6.2,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "esengine",
+      "name": "DeepSeek-Reasonix",
+      "full": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+      "language": "Go",
+      "stars": 32749,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 12.2,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": true,
+      "docker": false,
+      "files": [
+        "go.mod"
+      ]
+    },
+    "install": "skipped",
+    "install_log": "Go 项目，未执行 go build（资源/耗时限制）",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  }
+]
