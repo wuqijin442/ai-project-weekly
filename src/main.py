@@ -49,6 +49,9 @@ GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 INSTALL_TIMEOUT = int(os.environ.get("INSTALL_TIMEOUT", "200"))
 RUN_TIMEOUT = int(os.environ.get("RUN_TIMEOUT", "45"))
 CLONE_DEPTH = int(os.environ.get("CLONE_DEPTH", "1"))
+# 主站 github.com 被阻断时，是否启用官方备用通道（api.github.com / codeload.github.com）
+FALLBACK_ENABLED = os.environ.get("GH_FALLBACK", "1") == "1"
+TRENDING_ROUNDS = int(os.environ.get("TRENDING_ROUNDS", "8"))
 
 # 跨平台 Python 解释器：Linux 通常为 python3，Windows 通常为 python，两者都尝试
 def _resolve_python_bin():
@@ -114,6 +117,111 @@ def clean_text(s: str) -> str:
 
 
 # ----------------------------------------------------------------------------
+# 官方备用通道：主站 github.com 被阻断时（TLS 握手成功但无响应 / 10060 超时），
+# api.github.com 与 codeload.github.com 通常仍可达。二者均为 GitHub 官方域名，
+# 用它们获取真实数据不违反"真实运行铁律"，但需在报告中标注数据获取方式。
+# ----------------------------------------------------------------------------
+def api_json(url, timeout=30, attempts=3):
+    """GET api.github.com 并返回 JSON；失败返回 None。"""
+    headers = {"User-Agent": "ai-project-weekly", "Accept": "application/vnd.github+json"}
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+    for i in range(1, attempts + 1):
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read().decode("utf-8", errors="ignore"))
+        except Exception as e:  # noqa
+            if i == attempts:
+                log(f"  api 请求失败 {url[:70]}: {str(e)[:120]}")
+            else:
+                time.sleep(3 * i)
+    return None
+
+
+def get_default_branch(full):
+    data = api_json(f"https://api.github.com/repos/{full}", timeout=20, attempts=2)
+    if isinstance(data, dict):
+        return data.get("default_branch") or ""
+    return ""
+
+
+def download_tarball(full, dest, timeout=240):
+    """codeload.github.com 下载源码 tar.gz 并解压到 dest（无 .git，仅源码快照）。
+
+    用于 git clone 走不通（主站阻断）时的回退，仍是真实下载真实代码，
+    足以进行真实的依赖安装与冒烟运行。返回 (ok, err)。
+    """
+    import tarfile
+    import tempfile
+    branch = get_default_branch(full)
+    cands = [b for b in [branch, "main", "master"] if b]
+    seen, err = set(), ""
+    for br in cands:
+        if br in seen:
+            continue
+        seen.add(br)
+        url = f"https://codeload.github.com/{full}/tar.gz/refs/heads/{br}"
+        tmp_gz = Path(tempfile.gettempdir()) / f"apw_{full.replace('/', '__')}_{br}.tar.gz"
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "ai-project-weekly"})
+            with urllib.request.urlopen(req, timeout=timeout) as resp, open(tmp_gz, "wb") as f:
+                shutil.copyfileobj(resp, f)
+            tmp_dir = Path(tempfile.mkdtemp(prefix="apw_ex_"))
+            with tarfile.open(tmp_gz, "r:gz") as tf:
+                try:
+                    tf.extractall(tmp_dir, filter="data")
+                except TypeError:  # Python < 3.12 无 filter 参数
+                    tf.extractall(tmp_dir)
+            tops = [p for p in tmp_dir.iterdir() if p.is_dir()]
+            if not tops:
+                err = "tarball 解压后无顶层目录"
+                shutil.rmtree(tmp_dir, ignore_errors=True)
+                continue
+            if dest.exists():
+                shutil.rmtree(dest, ignore_errors=True)
+            shutil.move(str(tops[0]), str(dest))
+            shutil.rmtree(tmp_dir, ignore_errors=True)
+            tmp_gz.unlink(missing_ok=True)
+            return True, ""
+        except Exception as e:  # noqa
+            err = str(e)
+            tmp_gz.unlink(missing_ok=True)
+    return False, err[:200]
+
+
+def fetch_trending_via_api(since="daily", limit=30):
+    """主站 /trending 不可达时的回退：用 Search API 取近期高热度仓库。
+
+    近似口径：最近 1 天（周榜 7 天）内有推送、star>=200，按 star 降序。
+    与官方 trending 的"当日新增 star"算法不同，报告中会显式标注。
+    """
+    days = 7 if since == "weekly" else 1
+    since_date = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
+    url = ("https://api.github.com/search/repositories?q="
+           f"pushed:%3E={since_date}+stars:%3E=200&sort=stars&order=desc&per_page={limit}")
+    data = api_json(url, timeout=30, attempts=3)
+    if not isinstance(data, dict) or not data.get("items"):
+        return []
+    projects = []
+    for it in data["items"]:
+        full = it.get("full_name", "")
+        if full.count("/") != 1:
+            continue
+        owner, name = full.split("/")
+        projects.append({
+            "owner": owner, "name": name, "full": full,
+            "url": it.get("html_url", f"https://github.com/{full}"),
+            "description": clean_text(it.get("description") or ""),
+            "language": it.get("language") or "Unknown",
+            "stars": int(it.get("stargazers_count") or 0),
+            "source": "search-api-fallback",
+        })
+    log(f"trending 回退（Search API）抓取到 {len(projects)} 个仓库")
+    return projects
+
+
+# ----------------------------------------------------------------------------
 # 步骤1：抓取 GitHub Trending
 # ----------------------------------------------------------------------------
 def fetch_trending(since="daily"):
@@ -123,7 +231,7 @@ def fetch_trending(since="daily"):
     # 网络韧性（与推送逻辑一致）：17:3x–19:0x 窗口 GitHub 连接间歇性重置，
     # 单次 3 次短重试易全部失败。改为外层轮询等待网络恢复（最多 20 轮 × 15s），
     # 每轮尝试一次抓取（45s 超时），命中即返回，避免整日空报告。
-    MAX_ROUNDS = 20
+    MAX_ROUNDS = TRENDING_ROUNDS
     for rnd in range(1, MAX_ROUNDS + 1):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -140,6 +248,9 @@ def fetch_trending(since="daily"):
             time.sleep(15)
     if not html:
         log(f"trending 抓取失败（已重试{MAX_ROUNDS}次）: {last_err}")
+        if FALLBACK_ENABLED:
+            log("主站 /trending 不可达 → 启用官方备用通道 api.github.com（Search API 近似榜单）")
+            return fetch_trending_via_api(since)
         return []
 
     articles = re.findall(r'<article class="Box-row">(.*?)</article>', html, re.S)
@@ -239,6 +350,15 @@ def clone_repo(p):
         rc, _, err = run_cmd(
             ["git", "-C", str(dest), "fetch", "--depth", str(CLONE_DEPTH), "origin"], timeout=180)
         if rc != 0:
+            # 主站阻断导致 fetch 失败 → 直接用 codeload 归档覆盖为最新源码快照
+            if FALLBACK_ENABLED:
+                ok_tb, err_tb = download_tarball(p["full"], dest)
+                if ok_tb:
+                    p["fetch_method"] = "codeload-tarball"
+                    dt = round(time.time() - t0, 1)
+                    log(f"  clone OK(codeload 归档回退) {p['full']} ({dt}s)")
+                    return True, str(dest), dt, ""
+                err = f"{err} | tarball 回退亦失败: {err_tb}"
             log(f"  fetch FAIL {p['full']}: {err[:200]}")
             return False, str(dest), round(time.time() - t0, 1), err
         _, b_out, _ = run_cmd(
@@ -264,6 +384,14 @@ def clone_repo(p):
     if rc == 0:
         log(f"  clone OK {p['full']} ({dt}s)")
         return True, str(dest), dt, ""
+    if FALLBACK_ENABLED:
+        ok_tb, err_tb = download_tarball(p["full"], dest)
+        dt = round(time.time() - t0, 1)
+        if ok_tb:
+            p["fetch_method"] = "codeload-tarball"
+            log(f"  clone OK(codeload 归档回退) {p['full']} ({dt}s)")
+            return True, str(dest), dt, ""
+        err = f"{err} | tarball 回退亦失败: {err_tb}"
     log(f"  clone FAIL {p['full']}: {err[:200]}")
     return False, str(dest), dt, err
 
@@ -367,6 +495,17 @@ def write_report(date, top, results, scanned, filtered):
     md.append(f"# GitHub 热门项目日报 — {date.isoformat()}\n")
     md.append("> 本报告所有结论基于真实 Clone/安装/运行结果，未根据 README 推测。\n")
     weekday = "周日" if date.weekday() == 6 else "平日"
+    fb_list = [p for p in top if p.get("source") == "search-api-fallback"]
+    if fb_list:
+        md.append("> ⚠️ **数据来源说明**：本期 github.com/trending 主站不可达（TLS 握手成功但无响应），"
+                  "已回退至官方 api.github.com Search API，口径为"
+                  "「近 1 日有推送 + star≥200，按 star 降序」，与官方 trending 的"
+                  "「当日新增 star」算法不同，排名不可与历史期直接对比。\n")
+    tb_list = [r for r in results if r["project"].get("fetch_method") == "codeload-tarball"]
+    if tb_list:
+        md.append(f"> ℹ️ **代码获取方式**：{len(tb_list)} 个项目因主站阻断改用官方 "
+                  "codeload.github.com 源码归档下载（真实代码，无 .git 历史），"
+                  "安装与冒烟运行均为真实执行。\n")
     md.append(f"**模式**：{weekday}（TOP{len(top)}）  ")
     md.append(f"**扫描数**：{scanned}  **AI 过滤后**：{filtered}  "
               f"**Clone 成功**：{sum(1 for r in results if r['clone'])}  "

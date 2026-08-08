@@ -1,24 +1,24 @@
 ---
 aliases: [Cloudflare Computer, computer, "@cloudflare/computer"]
 tags: [AI, Trending, TypeScript, Agent-Runtime, Sandbox, Cloudflare, DurableObject, Vibe-Coding]
-stars: 5162
+stars: 6126
 created_at: 2026-06-05
-today_growth: 2802
-status: 热门（二度上榜 #1，今日最佳 🔝，PREVIEW ONLY）
-date_accessed: 2026-08-07
+today_growth: 872
+status: 热门（三度上榜 #4，PREVIEW ONLY）
+date_accessed: 2026-08-08
 ---
 
 # Cloudflare Computer
 
 **项目地址**：https://github.com/cloudflare/computer
 **作者**：cloudflare
-**⭐ 总 Star**：5,162（5.2k）  <!-- 2026-08-07 18:00 实时值；08-06 为 4,171 -->
-**📈 今日新增**：🔺2,802 stars（榜面值；API 实测 24h 增量 +991）
-**🍴 Fork**：263
+**⭐ 总 Star**：6,126（6.1k）  <!-- 2026-08-08 18:05 API 实时值；当日 08:25 为 5,698，08-07 为 5,162，08-06 为 4,171 -->
+**📈 今日新增**：🔺872 stars（榜面值；**完整 24h 实测 +964（5,162→6,126），榜面反而低估 11% —— 连续两期被榜面低估，真实热度强于名次显示**）
+**🍴 Fork**：287
 **👁 Watch**：18
 **💻 主要语言**：TypeScript
 **📅 开源时间**：2026-06-05
-**🔄 最近推送**：2026-08-06
+**🔄 最近推送**：2026-08-07 15:35
 **📜 许可证**：MIT
 
 ## 项目定位
@@ -89,6 +89,7 @@ Cloudflare Computer 是一个**活在 Durable Object 里的虚拟文件系统**�
 
 - [[Vibe-Coding-2026-08-06|2026-08-06 日报]]（首入榜 #3，⭐4.2k / 🔺891）
 - [[Vibe-Coding-2026-08-07|2026-08-07 日报]]（二度上榜 #1，⭐5.2k / 🔺2,802，**今日最佳 🔝**）
+- [[Vibe-Coding-2026-08-08|2026-08-08 日报]]（三度上榜 #4，⭐5.7k / 🔺872）
 
 ## 备注
 
@@ -98,3 +99,10 @@ Cloudflare Computer 是一个**活在 Durable Object 里的虚拟文件系统**�
 - ⚠️ **数据口径提醒**：2026-08-07 Trending 榜面标注 "2,802 stars today"，但 08-06 18:00 → 08-07 18:00 的 API 快照差分仅 +991，榜面高估约 183%。GitHub 的 "stars today" 统计窗口与本归档的 18:00 定点快照不重合，位次应打折看待（详见 [[Vibe-Coding-2026-08-07|08-07 日报]]数据质量说明）
 - 与同日上榜的 [[TencentCloud_TencentDB-Agent-Memory|TencentDB Agent Memory]]（记忆层）、[[huangruiteng_loopx|loopx]]（控制面）构成互补：Computer 是"在哪儿干"的那一层
 - 参照物：[[TencentCloud_CubeSandbox|TencentCloud/CubeSandbox]] 同属 Agent 沙箱赛道，但 Computer 的差异点在于**文件系统即权威状态**而非"沙箱即环境"
+
+### 2026-08-08 更新（三度上榜 #4）
+
+- **成长曲线**：08-06 ⭐4,171（Fork 199）→ 08-07 ⭐5,162（Fork 263）→ 08-08 ⭐5,698（Fork 287）。三天 +37%。
+- **数据口径回归正常**：08-07 榜面 🔺2,802 vs 实测 +991（高估 183%）；本期榜面 🔺872 vs 14.3h 实测 +536（折算 24h ≈ +900，**偏差仅 -3%**）。这印证了 08-07 的推断——偏差来自 Trending 统计窗口与定点快照错位，而非榜面数据本身失真。
+- ⚡ **底座出现自托管替代品**：同日榜上 [denoland/celld](https://github.com/denoland/celld)（🔺516 / ⭐2.2k，Rust，Apache-2.0，Deno 团队 ry 亲自参与）做的正是 *"self-hosted, distributed Durable Objects"*——**把 Durable Object 从 Cloudflare 平台里拆出来**。Computer 的整套架构建立在「DO + SQLite 持有权威状态」之上，一旦 celld 成熟，这套「DO 即 Agent 状态权威」的设计就能落到自有机房，**Agent 运行时底座正在去平台绑定化**。值得持续跟踪。
+- **路线对照**：同日 #1 的 [[PrimeIntellect-ai_prime-agent|prime-agent]] 把运行时（daemon）、记忆（Continual Harness）、控制面（goal/heartbeat）全部内建，与 Computer 代表的**外置组件化**路线形成「一体化 vs 组件化」的正面对照。
