@@ -6,6 +6,8 @@ tags: [Index, AI, Trending]
 
 | 日期 | 模式 | 项目数量 | 链接 |
 | --- | --- | --- | --- |
+| 2026-08-08 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-08]] |
+| 2026-08-07 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-07]] |
 | 2026-08-06 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-06]] |
 | 2026-08-05 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-05]] |
 | 2026-08-04 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-04]] |
@@ -120,3 +122,4 @@ tags: [Index, AI, Trending]
 | Panniantong/Agent-Reach | [[Panniantong_Agent-Reach|详情]] |
 | esengine/DeepSeek-Reasonix | [[esengine_DeepSeek-Reasonix|详情]] |
 | Alishahryar1/free-claude-code | [[Alishahryar1_free-claude-code|详情]] |
+| PrimeIntellect-ai/prime-agent | [[PrimeIntellect-ai_prime-agent|详情]] |
