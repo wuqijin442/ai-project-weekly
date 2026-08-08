@@ -153,6 +153,15 @@ def clone_board_repo(p):
             ["git", "-C", str(dest), "fetch", "--depth", str(CLONE_DEPTH), "origin"],
             timeout=180, max_attempts=3, op_label=f"fetch {p['full']}")
         if rc != 0:
+            # 主站阻断导致 fetch 失败 → 直接用 codeload 归档覆盖为最新源码快照
+            if _main.FALLBACK_ENABLED:
+                ok_tb, err_tb = _main.download_tarball(p["full"], dest)
+                if ok_tb:
+                    p["fetch_method"] = "codeload-tarball"
+                    dt = round(time.time() - t0, 1)
+                    log(f"  clone OK(codeload 归档回退) {p['full']} ({dt}s)")
+                    return True, str(dest), dt, ""
+                err = f"{err} | tarball 回退亦失败: {err_tb}"
             log(f"  fetch FAIL {p['full']}: {err[:200]}")
             return False, str(dest), round(time.time() - t0, 1), err
         _, b_out, _ = run_cmd(
@@ -192,6 +201,15 @@ def clone_board_repo(p):
     if ok:
         log(f"  clone OK {p['full']} ({dt}s)")
         return True, str(dest), dt, ""
+    # 主站阻断时的官方备用通道：codeload.github.com 下载源码归档（真实代码，可真实安装/冒烟）
+    if _main.FALLBACK_ENABLED:
+        ok_tb, err_tb = _main.download_tarball(p["full"], dest)
+        dt = round(time.time() - t0, 1)
+        if ok_tb:
+            p["fetch_method"] = "codeload-tarball"
+            log(f"  clone OK(codeload 归档回退) {p['full']} ({dt}s)")
+            return True, str(dest), dt, ""
+        err = f"{err} | tarball 回退亦失败: {err_tb}"
     log(f"  clone FAIL {p['full']}: {err[:200]}")
     return False, str(dest), dt, err
 
