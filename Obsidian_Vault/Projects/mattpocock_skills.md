@@ -1,7 +1,7 @@
 ---
 aliases: [skills, mattpocock/skills]
 tags: [AI, Trending, Shell, Claude-Code, Skills, Vibe-Coding, Engineering]
-stars: 208799
+stars: 209330
 today_growth: 2152
 created_at: 2026-02-03
 status: 热门（技能层头部，2026-08-08 Vibe Coding #2）
@@ -12,8 +12,8 @@ date_accessed: 2026-08-08
 
 **项目地址**：https://github.com/mattpocock/skills
 **作者**：mattpocock（Total TypeScript 作者）
-**⭐ 总 Star**：208,799（208.8k）  <!-- 2026-08-08 08:25 API 实时值；08-07 为 207,963 -->
-**📈 今日新增**：🔺2,152 stars（榜面值；14.3h 快照实测 +836，折算 24h ≈ +1,403）
+**⭐ 总 Star**：209,330（209.3k）  <!-- 2026-08-08 18:05 API 实时值；当日 08:25 为 208,799，08-07 为 207,963 -->
+**📈 今日新增**：🔺2,152 stars（榜面值；**完整 24h 实测 +1,367（207,963→209,330），榜面高估 57%**）
 **🍴 Fork**：18,022
 **💻 主要语言**：Shell
 **🗓 开源时间**：2026-02-03

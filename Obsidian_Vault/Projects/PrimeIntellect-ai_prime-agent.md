@@ -1,7 +1,7 @@
 ---
 aliases: [Prime Agent, prime-agent, Prime Intellect Agent]
 tags: [AI, Trending, TypeScript, Coding-Agent, RLM, Self-Improving, Long-Running, PrimeIntellect, Vibe-Coding]
-stars: 6483
+stars: 7346
 created_at: 2026-05-08
 today_growth: 2293
 status: 热门（首入榜 #1，今日最佳 🔝）
@@ -12,8 +12,8 @@ date_accessed: 2026-08-08
 
 **项目地址**：https://github.com/PrimeIntellect-ai/prime-agent
 **作者**：PrimeIntellect-ai（Prime Intellect）
-**⭐ 总 Star**：6,483（6.5k）  <!-- 2026-08-08 08:25 API 实时值 -->
-**📈 今日新增**：🔺2,293 stars（榜面值；昨日未入榜，无快照基线）
+**⭐ 总 Star**：7,346（7.3k）  <!-- 2026-08-08 18:05 API 实时值；当日 08:25 为 6,483 -->
+**📈 今日新增**：🔺2,293 stars（榜面值；**18:00 复核实测 9.7h +863，折算 24h ≈ +2,140，与榜面仅差 6%，#1 位次已独立确认**）
 **🍴 Fork**：516
 **💻 主要语言**：TypeScript
 **📅 开源时间**：2026-05-08

@@ -9,8 +9,8 @@ source: GitHub Trending 全局日榜（飙升榜，按当日新增 Star 降序�
 # Vibe Coding 每日榜 · 2026-08-08（周六）
 
 > 数据源：GitHub Trending 全局日榜（`/trending?since=daily`，17 仓库解析）+ GitHub REST API 实时补全交叉校验。`/trending/ai?since=daily` 返回 "we don't have any trending repositories for your choices"（解析 0 仓库，历史常空，仅作补充校验）。
-> 赛道口径：Vibe Coding / AI 编码 Agent。**严格关键词命中 0 个**（`owner/repo` + 简介口径），全部按生态扩充取前 5。
-> ⏱ 采集时刻：2026-08-08 08:25（本期为早班次采集，与上一期 08-07 18:08 相隔约 14.3 小时，非完整 24h 窗口，见下方数据质量说明）。
+> 赛道口径：Vibe Coding / AI 编码 Agent。**严格关键词命中 1 个**（`addyosmani/agent-skills`，topics 含 `cursor`）—— 口径已于本日扩展为 `owner/repo` + 简介 + **GitHub topics**，其余 4 席按生态扩充。
+> ⏱ 采集时刻：早班次 2026-08-08 08:25 首采 + **18:00 定时复核重采**（详见文末「18:00 定时复核」，含完整 24h 窗口实测）。
 
 ## 今日最佳开源项目 🔝
 
@@ -23,11 +23,13 @@ source: GitHub Trending 全局日榜（飙升榜，按当日新增 Star 降序�
 
 | # | 项目 | 简介 | 语言 | ⭐ Star | 📈 今日新增 | 入选依据 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | [[PrimeIntellect-ai_prime-agent\|PrimeIntellect-ai/prime-agent]] 🔝 | 自改进 RLM 编码 Agent：持久 IPython + 可精炼 Harness + 守护进程长驻 | TypeScript | 6.5k | 🔺2293 | 生态扩充（编码 Agent 本体） |
-| 2 | [[mattpocock_skills\|mattpocock/skills]] | 真工程师的 Agent 技能集，小而可组合、跨模型通用 | Shell | 208.8k | 🔺2152 | 生态扩充（技能层） |
-| 3 | [[addyosmani_agent-skills\|addyosmani/agent-skills]] | 产线级工程技能：24 技能覆盖 Define→Ship 全流程，支持 70+ 宿主 | JavaScript | 83.9k | 🔺1131 | 生态扩充（技能层） |
-| 4 | [[cloudflare_computer\|cloudflare/computer]] | 给 Agent 一台"电脑"：Durable Object 虚拟文件系统 + 三种可插拔执行后端 | TypeScript | 5.7k | 🔺872 | 生态扩充（Agent 运行时） |
-| 5 | [[obra_superpowers\|obra/superpowers]] | Agentic 技能框架 + 子代理驱动开发方法论 | Shell | 268.7k | 🔺782 | 生态扩充（方法论层） |
+| 1 | [[PrimeIntellect-ai_prime-agent\|PrimeIntellect-ai/prime-agent]] 🔝 | 自改进 RLM 编码 Agent：持久 IPython + 可精炼 Harness + 守护进程长驻 | TypeScript | 7.3k | 🔺2293 | 生态扩充（编码 Agent 本体） |
+| 2 | [[mattpocock_skills\|mattpocock/skills]] | 真工程师的 Agent 技能集，小而可组合、跨模型通用 | Shell | 209.3k | 🔺2152 | 生态扩充（技能层） |
+| 3 | [[addyosmani_agent-skills\|addyosmani/agent-skills]] | 产线级工程技能：24 技能覆盖 Define→Ship 全流程，支持 70+ 宿主 | JavaScript | 84.1k | 🔺1131 | **严格命中**（topics: `cursor`） |
+| 4 | [[cloudflare_computer\|cloudflare/computer]] | 给 Agent 一台"电脑"：Durable Object 虚拟文件系统 + 三种可插拔执行后端 | TypeScript | 6.1k | 🔺872 | 生态扩充（Agent 运行时） |
+| 5 | [[obra_superpowers\|obra/superpowers]] | Agentic 技能框架 + 子代理驱动开发方法论 | Shell | 269.0k | 🔺782 | 生态扩充（方法论层） |
+
+> ⭐ Star 为 **18:00 复核实时值**（早班次 08:25 值见文末复核表）；🔺 今日新增取 Trending 榜面值，两次采集完全一致。
 
 ## 趋势解读
 
@@ -119,7 +121,56 @@ Cloudflare Computer 的整个设计建立在「Durable Object + SQLite 持有权
 
 **近失名单**：`denoland/celld`(🔺516 / ⭐2.2k) 列生态第 6，作为 Agent 运行时底座的自托管替代品有战略意义（见趋势 4）；`google/skills`(🔺327 / ⭐16.2k) 列生态第 7（见趋势 3）；`unclebob/swarm-forge`(🔺81 / ⭐1.8k，Clojure，"A simple tool for coordinating several AI agents") 列生态第 8。
 
-**口径备注**：`addyosmani/agent-skills` 的 topics 含 `cursor` `codex` `claude-code`，若关键词口径扩展到 topics 字段则构成严格命中；本期沿用历史一致口径（仅匹配 `owner/repo` + 简介），故仍计为生态扩充。**该口径分歧已连续两期出现，建议评估是否将 topics 纳入严格命中判定。**
+**口径备注（08-08 18:00 更新）**：早班次原文建议「评估是否将 topics 纳入严格命中判定」，该建议**当日已获采纳**——严格命中判定范围正式扩展为 `owner/repo` + 简介 + **GitHub topics**。据此 `addyosmani/agent-skills`（topics 含 `cursor` `codex` `claude-code`）由生态扩充升为**严格命中**，入选依据已在上表更正。全榜 17 仓已按新口径重算，结论见文末复核。
+
+## 18:00 定时复核（第二轮采集）
+
+本期为**同日双采集**：早班次 08:25 首采 + 18:00 定时复核重采。复核做了三件事，两件是给早班次留下的悬案收口。
+
+**连通性**：`curl /trending?since=daily` attempt1/2 HTTP:000 超时 → attempt3 HTTP:200（640,536 字节，17 仓解析，`sponsors/*` 已剔除）；GitHub REST API **17/17 HTTP:200**（本轮对全部 17 仓逐个拉取 topics，而非仅 Top 5）。
+
+### ① 口径变更 → 全榜重算：名次不变，一席改判
+
+严格命中判定范围本日起扩展为 `owner/repo` + 简介 + **GitHub topics**。**全部 17 个候选仓库已逐一取 topics 重新匹配 15 个关键词**，结果：
+
+| 判定 | 结果 |
+| --- | --- |
+| 新口径严格命中 | **1 个** —— `addyosmani/agent-skills`（topics: `cursor`） |
+| 旧口径严格命中 | 0 个 |
+| 因新口径上位、挤掉现有名次者 | **无** |
+
+唯一改判项 `addyosmani/agent-skills` 早班次已凭生态扩充位列 #3，改判后仅「入选依据」由生态扩充变更为严格命中，**Top 5 名单与名次均不变**。榜内其余 12 个非入选仓库（authentik / AutoGPT / google/skills / MiroFish / semantica 等）topics 均无关键词命中，不存在「严格命中却落榜」的情况。
+
+> 附带确认：`google/skills` topics 为 `google, googlecloud, skills`，即便在新口径下**仍非严格命中**，其生态第 6 的定位不变（见趋势 3）。
+
+### ② 完整 24h 窗口实测：收口早班次的「14.3 小时」缺陷
+
+早班次因 08:25 采集、窗口仅 14.3h 而无法与榜面等量对比。**本轮 18:05 采集恰好与上一期 08-07 18:08 构成约 23.9 小时的完整窗口**，可直接校验榜面精度：
+
+| 项目 | 08-07 18:08 | 08-08 18:05 | 实测 24h 增量 | 榜面今日新增 | 偏差 |
+| --- | --- | --- | --- | --- | --- |
+| mattpocock/skills | 207,963 | 209,330 | **+1,367** | 🔺2,152 | 榜面高估 57% |
+| cloudflare/computer | 5,162 | 6,126 | **+964** | 🔺872 | **榜面低估 11%** |
+| addyosmani/agent-skills | 83,351 | 84,137 | **+786** | 🔺1,131 | 榜面高估 44% |
+| obra/superpowers | 268,415 | 268,983 | **+568** | 🔺782 | 榜面高估 38% |
+
+结论：榜面「stars today」**并非系统性单向虚高**——四项里三高一低，`cloudflare/computer` 连续两期出现榜面低于实测的情况。榜面与定点快照的差异应归因于统计窗口错位，把它当作精确日增量使用会有 ±50% 量级的误差。
+
+### ③ prime-agent 的 #1 位次：独立复核通过
+
+早班次明确留过一句「其 #1 位次仅由榜面支撑，建议下期复核」。本轮已有 08:25 基线，可独立验证：
+
+| 项目 | 08:25 | 18:05 | 实测 9.7h 增量 | 24h 线性外推 |
+| --- | --- | --- | --- | --- |
+| **PrimeIntellect-ai/prime-agent** | 6,483 | **7,346** | **+863** | **≈ +2,140** |
+| mattpocock/skills | 208,799 | 209,330 | +531 | ≈ +1,318 |
+| cloudflare/computer | 5,698 | 6,126 | +428 | ≈ +1,062 |
+| addyosmani/agent-skills | 83,891 | 84,137 | +246 | ≈ +611 |
+| obra/superpowers | 268,738 | 268,983 | +245 | ≈ +608 |
+
+**prime-agent 半日实测 +863，把第二名甩开 62%，外推 24h ≈ 2,140 与榜面 🔺2,293 仅差 6%（本期五项中吻合度最高）。#1 位次由独立测量确认，早班次的悬案关闭。** 一个 5 月才开源、总量仅 7.3k 星的项目，半天涨幅压过 20 万星量级的 skills 与 superpowers，说明它拿到的是真实增量而非存量惯性。
+
+**另需记一笔**：按实测增量重排，#3/#4 应对调——`cloudflare/computer`（+428）快于 `addyosmani/agent-skills`（+246）。本榜排序仍以榜面「stars today」为准（符合飙升榜口径），但 `cloudflare/computer` 的真实热度**连续两期被榜面低估**，其 Agent 运行时底座的走强值得在后续期次里重点跟。
 
 ## 相关链接
 

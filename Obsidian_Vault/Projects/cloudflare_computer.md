@@ -1,7 +1,7 @@
 ---
 aliases: [Cloudflare Computer, computer, "@cloudflare/computer"]
 tags: [AI, Trending, TypeScript, Agent-Runtime, Sandbox, Cloudflare, DurableObject, Vibe-Coding]
-stars: 5698
+stars: 6126
 created_at: 2026-06-05
 today_growth: 872
 status: 热门（三度上榜 #4，PREVIEW ONLY）
@@ -12,8 +12,8 @@ date_accessed: 2026-08-08
 
 **项目地址**：https://github.com/cloudflare/computer
 **作者**：cloudflare
-**⭐ 总 Star**：5,698（5.7k）  <!-- 2026-08-08 08:25 API 实时值；08-07 为 5,162，08-06 为 4,171 -->
-**📈 今日新增**：🔺872 stars（榜面值；14.3h 快照实测 +536，折算 24h ≈ +900，**本期榜面与实测基本吻合**）
+**⭐ 总 Star**：6,126（6.1k）  <!-- 2026-08-08 18:05 API 实时值；当日 08:25 为 5,698，08-07 为 5,162，08-06 为 4,171 -->
+**📈 今日新增**：🔺872 stars（榜面值；**完整 24h 实测 +964（5,162→6,126），榜面反而低估 11% —— 连续两期被榜面低估，真实热度强于名次显示**）
 **🍴 Fork**：287
 **👁 Watch**：18
 **💻 主要语言**：TypeScript

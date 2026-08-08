@@ -1,10 +1,10 @@
 ---
 aliases: [agent-skills, addyosmani/agent-skills]
 tags: [AI, Trending, JavaScript, Claude-Code, Cursor, Codex, Agent, Skills, Vibe-Coding]
-stars: 83891
+stars: 84137
 created_at: 2026-02-15
 today_growth: 1131
-status: 热门（技能层三足之一，2026-08-08 Vibe Coding #3）
+status: 热门（技能层三足之一，2026-08-08 Vibe Coding #3 · 新口径严格命中 cursor）
 date_accessed: 2026-08-08
 ---
 
@@ -12,8 +12,9 @@ date_accessed: 2026-08-08
 
 **项目地址**：https://github.com/addyosmani/agent-skills
 **作者**：addyosmani（Addy Osmani，Google 工程师）
-**⭐ 总 Star**：83,891（83.9k）  <!-- 2026-08-08 08:25 API 实时值；08-07 为 83,351 -->
-**📈 今日新增**：🔺1,131 stars（榜面值；14.3h 快照实测 +540，折算 24h ≈ +906）
+**⭐ 总 Star**：84,137（84.1k）  <!-- 2026-08-08 18:05 API 实时值；当日 08:25 为 83,891，08-07 为 83,351 -->
+**📈 今日新增**：🔺1,131 stars（榜面值；**完整 24h 实测 +786（83,351→84,137），榜面高估 44%**）
+**🎯 严格命中**：`cursor`（topics）—— 2026-08-08 起严格命中判定范围扩展至 GitHub topics，本项目由生态扩充升为严格命中
 **🍴 Fork**：8,966
 **💻 主要语言**：JavaScript
 **📅 开源时间**：2026-02-15
