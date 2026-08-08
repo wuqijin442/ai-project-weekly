@@ -26,3 +26,5 @@ target/
 video-pipeline-guide/
 # 运行时日志不纳入版本管理（仅同步 Obsidian_Vault，避免多机 cron 冲突/弄脏工作树）
 logs/
+# 板块工作流断点续跑检查点（运行中间态，最终产物为 data/metadata/*-boards.json）
+data/metadata/.*-boards-partial.json
