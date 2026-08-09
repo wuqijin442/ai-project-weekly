@@ -56,21 +56,52 @@ if [ "$CURRENT" != "$TARGET_BRANCH" ]; then
   fi
 fi
 
-# 1) 拉取远端最新（容忍 TLS 抖动，最多 6 次，每次先 abort 残留）
+# 1) 拉取远端最新
+#    区分两类失败：①网络抖动（可重试） ②内容冲突（重试无意义，必须告警）
+#    2026-08-09 教训：07-30 日报 add/add 冲突让 pull 连败 6 轮，退出前又不清场，
+#    仓库停在 detached HEAD + .git/rebase-merge 残留，且 exit 0 吞掉失败 ->
+#    dgx 分支连续 4 天零提交且零告警。三点根治：清场 / 识别冲突 / 非零退出。
+STUCK_FLAG="$LOG_DIR/PUSH_STUCK.flag"
 PULLED=0
+CONFLICT=0
 for i in 1 2 3 4 5 6; do
   git rebase --abort >/dev/null 2>&1
-  if git pull --rebase --autostash origin "$TARGET_BRANCH" >>"$LOG" 2>&1; then
+  git merge --abort >/dev/null 2>&1
+  PULL_ERR="$(git pull --rebase --autostash origin "$TARGET_BRANCH" 2>&1)"
+  PULL_RC=$?
+  printf '%s\n' "$PULL_ERR" >>"$LOG"
+  if [ "$PULL_RC" -eq 0 ]; then
     PULLED=1
     break
   fi
-  echo "pull 第 $i/6 次失败，退避 $((i * 5))s" | tee -a "$LOG"
+  if printf '%s' "$PULL_ERR" | grep -qE "CONFLICT|could not apply|Resolve all conflicts|冲突|不能应用"; then
+    CONFLICT=1
+    echo "pull 遇内容冲突（非网络问题），重试无意义，立即停止" | tee -a "$LOG"
+    break
+  fi
+  echo "pull 第 $i/6 次失败（疑似网络），退避 $((i * 5))s" | tee -a "$LOG"
   [ "$i" -lt 6 ] && sleep $((i * 5))
 done
 if [ "$PULLED" -ne 1 ]; then
-  echo "pull 持续失败，本次放弃（下个 cron 周期再试）" | tee -a "$LOG"
-  exit 0
+  # 关键：退出前必须清场，否则残留状态会让后续所有 git 操作卡死
+  git rebase --abort >/dev/null 2>&1
+  git merge --abort >/dev/null 2>&1
+  if [ "$CONFLICT" -eq 1 ]; then
+    REASON="内容冲突（需人工介入，或 git merge -s ours origin/$TARGET_BRANCH 合流）"
+  else
+    REASON="网络持续不可达"
+  fi
+  {
+    echo "date=$(date '+%F %T')"
+    echo "branch=$TARGET_BRANCH"
+    echo "reason=$REASON"
+    echo "log=$LOG"
+  } > "$STUCK_FLAG"
+  echo "[ALERT] pull 持续失败：$REASON" | tee -a "$LOG"
+  echo "[ALERT] 已写告警标记 $STUCK_FLAG（该文件存在 = 需人工介入）" | tee -a "$LOG"
+  exit 2
 fi
+rm -f "$STUCK_FLAG" 2>/dev/null
 
 # 2) 提交本日新增（学习产物 / 数据 / 报告 / 图谱）
 git add -A >>"$LOG" 2>&1
@@ -98,8 +129,16 @@ for i in 1 2 3 4 5 6 7 8; do
 done
 
 if [ "$PUSHED" -eq 1 ]; then
+  rm -f "$STUCK_FLAG" 2>/dev/null
   echo "<<< 推送成功（HEAD=$(git rev-parse --short HEAD) -> $TARGET_BRANCH）" | tee -a "$LOG"
 else
-  echo "<<< 推送仍未成功（下个 cron 周期再试）" | tee -a "$LOG"
+  {
+    echo "date=$(date '+%F %T')"
+    echo "branch=$TARGET_BRANCH"
+    echo "reason=push 连续 8 次失败"
+    echo "log=$LOG"
+  } > "$STUCK_FLAG"
+  echo "[ALERT] 推送仍未成功，已写告警标记 $STUCK_FLAG" | tee -a "$LOG"
+  exit 3
 fi
 exit 0
