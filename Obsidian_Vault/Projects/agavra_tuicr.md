@@ -6,6 +6,7 @@ today_growth: 190
 created_at: 2026-01-08
 status: 活跃（AI 辅助 code review TUI，首入榜 #4）
 date_accessed: 2026-07-31
+---
 
 # agavra/tuicr
 

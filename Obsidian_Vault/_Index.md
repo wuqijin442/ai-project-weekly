@@ -6,6 +6,7 @@ tags: [Index, AI, Trending]
 
 | 日期 | 模式 | 项目数量 | 链接 |
 | --- | --- | --- | --- |
+| 2026-08-09 | 周末（全赛道 Top 10） | 10 | [[AI-Weekly-2026-08-09]] |
 | 2026-08-08 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-08]] |
 | 2026-08-07 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-07]] |
 | 2026-08-06 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-06]] |
@@ -123,3 +124,8 @@ tags: [Index, AI, Trending]
 | esengine/DeepSeek-Reasonix | [[esengine_DeepSeek-Reasonix|详情]] |
 | Alishahryar1/free-claude-code | [[Alishahryar1_free-claude-code|详情]] |
 | PrimeIntellect-ai/prime-agent | [[PrimeIntellect-ai_prime-agent|详情]] |
+| antirez/ds4 | [[antirez_ds4|详情]] |
+| lyogavin/airllm | [[lyogavin_airllm|详情]] |
+| google/skills | [[google_skills|详情]] |
+| microsoft/AI-For-Beginners | [[microsoft_AI-For-Beginners|详情]] |
+| Comfy-Org/ComfyUI | [[Comfy-Org_ComfyUI|详情]] |

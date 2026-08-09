@@ -6,6 +6,7 @@ created_at: 2025-11-16
 today_growth: 847
 status: 活跃（AI 编码 Agent 设计语言，首入榜 #2）
 date_accessed: 2026-07-28
+---
 
 # impeccable
 

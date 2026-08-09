@@ -121,6 +121,26 @@ def clean_text(s: str) -> str:
 # api.github.com 与 codeload.github.com 通常仍可达。二者均为 GitHub 官方域名，
 # 用它们获取真实数据不违反"真实运行铁律"，但需在报告中标注数据获取方式。
 # ----------------------------------------------------------------------------
+def safe_displace(path):
+    """把已存在的目录原子重命名为 _stale_*，而不是 rmtree。
+
+    背景：本环境对一次删除大量文件有批量删除保护，rmtree 一个上万文件的
+    clones 目录会直接中断整个进程（2026-08-08 步骤2 因此在 mlflow 处崩溃）。
+    clones/ 已 gitignore，_stale_* 残留只占磁盘，不影响提交。
+    返回 True 表示目标路径已腾空。
+    """
+    path = Path(path)
+    if not path.exists():
+        return True
+    stale = path.parent / f"_stale_{path.name}_{int(time.time())}"
+    try:
+        path.rename(stale)
+        return True
+    except Exception as e:  # noqa
+        log(f"  ⚠️ 目录腾挪失败 {path.name}: {str(e)[:120]}")
+        return False
+
+
 def api_json(url, timeout=30, attempts=3):
     """GET api.github.com 并返回 JSON；失败返回 None。"""
     headers = {"User-Agent": "ai-project-weekly", "Accept": "application/vnd.github+json"}
@@ -153,21 +173,30 @@ def download_tarball(full, dest, timeout=240):
     足以进行真实的依赖安装与冒烟运行。返回 (ok, err)。
     """
     import tarfile
-    import tempfile
     branch = get_default_branch(full)
     cands = [b for b in [branch, "main", "master"] if b]
     seen, err = set(), ""
+    dest = Path(dest)
+    # ⚠️ 关键：临时目录必须与 dest 同盘（同一文件系统）。
+    # 若用系统 Temp（C:）而 dest 在 D:，shutil.move 会退化为「复制 + 删除源树」，
+    # 删除上万文件会触发工作区批量删除保护并直接中断进程
+    # （2026-08-08 步骤2 在 huggingface/diffusers 处即因此崩溃）。
+    # 同盘时 shutil.move 走 os.rename，属原子重命名，全程零删除。
+    tmp_base = dest.parent / "_tmp"
+    tmp_base.mkdir(parents=True, exist_ok=True)
     for br in cands:
         if br in seen:
             continue
         seen.add(br)
         url = f"https://codeload.github.com/{full}/tar.gz/refs/heads/{br}"
-        tmp_gz = Path(tempfile.gettempdir()) / f"apw_{full.replace('/', '__')}_{br}.tar.gz"
+        safe_name = full.replace("/", "__")
+        tmp_gz = tmp_base / f"{safe_name}_{br}.tar.gz"
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "ai-project-weekly"})
             with urllib.request.urlopen(req, timeout=timeout) as resp, open(tmp_gz, "wb") as f:
                 shutil.copyfileobj(resp, f)
-            tmp_dir = Path(tempfile.mkdtemp(prefix="apw_ex_"))
+            tmp_dir = tmp_base / f"ex_{safe_name}_{br}_{int(time.time())}"
+            tmp_dir.mkdir(parents=True, exist_ok=True)
             with tarfile.open(tmp_gz, "r:gz") as tf:
                 try:
                     tf.extractall(tmp_dir, filter="data")
@@ -176,17 +205,17 @@ def download_tarball(full, dest, timeout=240):
             tops = [p for p in tmp_dir.iterdir() if p.is_dir()]
             if not tops:
                 err = "tarball 解压后无顶层目录"
-                shutil.rmtree(tmp_dir, ignore_errors=True)
                 continue
-            if dest.exists():
-                shutil.rmtree(dest, ignore_errors=True)
+            # 已存在目录不做 rmtree，改为原子重命名到 _stale_*
+            #（clones/ 已 gitignore，残留仅占磁盘，不影响提交）
+            if not safe_displace(dest):
+                return False, "目标目录已存在且无法腾挪，跳过 tarball 回退"
             shutil.move(str(tops[0]), str(dest))
-            shutil.rmtree(tmp_dir, ignore_errors=True)
-            tmp_gz.unlink(missing_ok=True)
+            # 不清理 tmp_dir / tmp_gz：任何删除都会累加到批量删除保护计数。
+            # clones/*/_tmp 已随 clones/ 被 gitignore，可在运行间隙人工清理。
             return True, ""
         except Exception as e:  # noqa
             err = str(e)
-            tmp_gz.unlink(missing_ok=True)
     return False, err[:200]
 
 
@@ -374,7 +403,7 @@ def clone_repo(p):
         return True, str(dest), dt, ""
     if dest.exists():
         # 非 git 残留（极少见）→ 删除后重新克隆
-        shutil.rmtree(dest)
+        safe_displace(dest)
     rc, out, err = run_cmd(
         ["git", "clone", "--depth", str(CLONE_DEPTH),
          f"https://github.com/{p['full']}.git", str(dest)],

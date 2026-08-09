@@ -6,6 +6,7 @@ created_at: 2026-02-13
 weekly_growth: 11147
 status: 连续三日上榜（严格关键词命中）
 date_accessed: 2026-07-26
+---
 
 # OmniRoute
 

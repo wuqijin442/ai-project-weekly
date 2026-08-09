@@ -6,6 +6,7 @@ created_at: 2023-06-20
 today_growth: 398
 status: 活跃（AI 数据库客户端，二度上榜，生态边缘）
 date_accessed: 2026-07-27
+---
 
 # Chat2DB
 

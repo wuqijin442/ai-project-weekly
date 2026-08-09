@@ -176,9 +176,9 @@ def clone_board_repo(p):
         log(f"  clone OK(updated) {p['full']} ({dt}s)")
         return True, str(dest), dt, ""
     if dest.exists():
-        # 非 git 残留（极少见）→ 删除后重新克隆
-        shutil.rmtree(dest, ignore_errors=True)
-    # 克隆对瞬时网络错误退避重试（最多 3 次）；重试前清理半截克隆，避免 "destination exists"
+        # 非 git 残留（极少见）→ 挪走后重新克隆（不用 rmtree，避免批量删除保护中断进程）
+        _main.safe_displace(dest)
+    # 克隆对瞬时网络错误退避重试（最多 3 次）；重试前挪走半截克隆，避免 "destination exists"
     ok, err = False, ""
     for attempt in range(1, 4):
         rc, _, err = run_cmd(
@@ -193,7 +193,7 @@ def clone_board_repo(p):
             wait = 5 * attempt
             log(f"  clone 瞬时错误（{attempt}/3），{wait}s 后重试：{err[:140]}")
             if dest.exists():
-                shutil.rmtree(dest, ignore_errors=True)
+                _main.safe_displace(dest)
             time.sleep(wait)
             continue
         break
@@ -291,7 +291,35 @@ def main():
     totals = {"boards": 0, "scanned": 0, "tested": 0, "clone_ok": 0,
               "install_ok": 0, "run_ok": 0, "recommended": 0}
 
+    # 断点续跑：单板块耗时数分钟，11 板块全跑 30~90 分钟。若中途因网络/环境异常
+    # 崩溃，重跑时从检查点恢复已完成板块，避免重复劳动（真实结果照常沿用，
+    # 不是编造——检查点里存的就是本次运行真实 clone/安装/冒烟的结果）。
+    ckpt = META_DIR / f".{date.isoformat()}-boards-partial.json"
+    if ckpt.exists():
+        try:
+            saved = json.loads(ckpt.read_text(encoding="utf-8"))
+            all_results = saved.get("all_results", {}) or {}
+            totals = saved.get("totals", totals) or totals
+            if all_results:
+                log(f"检测到检查点，恢复已完成板块 {len(all_results)} 个："
+                    f"{', '.join(all_results.keys())}")
+        except Exception as e:  # noqa
+            log(f"⚠️ 检查点读取失败，从头开始：{str(e)[:120]}")
+            all_results, totals = {}, {"boards": 0, "scanned": 0, "tested": 0,
+                                       "clone_ok": 0, "install_ok": 0,
+                                       "run_ok": 0, "recommended": 0}
+
+    def save_ckpt():
+        try:
+            ckpt.write_text(json.dumps({"all_results": all_results, "totals": totals},
+                                       ensure_ascii=False), encoding="utf-8")
+        except Exception as e:  # noqa
+            log(f"⚠️ 检查点写入失败：{str(e)[:120]}")
+
     for idx, (slug, label) in enumerate(BOARDS):
+        if slug in all_results:
+            log(f"--- 板块：{label} ({slug}) 已在检查点中，跳过 ---")
+            continue
         log(f"--- 板块：{label} ({slug}) ---")
         projects = fetch_board(slug)
         # 板间留间隔，规避未认证 Search API 的 10 次/分钟限速（最后一板无需等待）
@@ -323,6 +351,7 @@ def main():
             totals["run_ok"] += 1 if rstatus == "success" else 0
             totals["recommended"] += 1 if (score >= 90 and istatus == "success") else 0
         all_results[slug] = {"label": label, "top": top, "results": results}
+        save_ckpt()
 
     report = write_board_report(date, all_results, totals)
     (META_DIR / f"{date.isoformat()}-boards.json").write_text(

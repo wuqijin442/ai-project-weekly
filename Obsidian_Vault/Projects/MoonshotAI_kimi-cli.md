@@ -6,6 +6,7 @@ today_growth: 410
 created_at: 2025-10-15
 status: 演进中（正迁移至 kimi-code）
 date_accessed: 2026-07-21
+---
 
 # kimi-cli
 

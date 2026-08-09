@@ -1,19 +1,19 @@
 ---
 aliases: [TencentDB-Agent-Memory, agent-memory]
 tags: [AI, Trending, TypeScript, Memory, Agent, Vibe-Coding]
-stars: 17093
+stars: 18478
 created_at: 2026-04-07
-today_growth: 1057
-status: 热门（五度上榜 #3，连续四日在榜）
-date_accessed: 2026-08-07
+weekly_growth: 8046
+status: 热门（全赛道周榜 #2，本周 🔺8,046）
+date_accessed: 2026-08-09
 ---
 
 # TencentDB Agent Memory
 
 **项目地址**：https://github.com/TencentCloud/TencentDB-Agent-Memory
 **作者**：TencentCloud（腾讯云）
-**⭐ 总 Star**：17,093（17.1k）  <!-- 2026-08-07 18:00 实时值；08-06 为 15,566 -->
-**📈 今日新增**：🔺1,057 stars（榜面值；API 实测 24h 增量 +1,527）
+**⭐ 总 Star**：18,478（18.5k）  <!-- 2026-08-09 实时值；08-07 为 17,093 -->
+**📈 本周新增**：🔺8,046 stars（全赛道周榜 #2）
 **🍴 Fork**：1,533
 **👁 Watch**：63
 **💻 主要语言**：TypeScript
@@ -85,12 +85,13 @@ npm install @tencentdb-agent-memory/memory-tencentdb
 - [[Vibe-Coding-2026-08-04|2026-08-04 日报]]（二度上榜 #2，⭐12.6k / 🔺1,090）
 - [[Vibe-Coding-2026-08-05|2026-08-05 日报]]（三度上榜 #2，⭐14.5k / 🔺1,111）
 - [[Vibe-Coding-2026-08-06|2026-08-06 日报]]（四度上榜 #1，⭐15.6k / 🔺1,892，**今日最佳 🔝**）
+- [[AI-Weekly-2026-08-09|2026-08-09 全赛道周报]]（周榜 #2，🔺8,046 / ⭐18.5k）
 
 ## 备注
 
 - 本地优先（local-first），零外部 API 依赖，数据可控
 - 已适配 OpenClaw 生态（OpenClaw ≥ 2026.3.13），并接入 Hermes Gateway
-- **成长曲线**：2026-07-09 ⭐7,620 → 2026-08-04 ⭐12,622 → 2026-08-05 ⭐14,527 → 2026-08-06 ⭐15,566（28 天 +104%，Fork 1,150 → 1,404）
+- **成长曲线**：2026-07-09 ⭐7,620 → 2026-08-04 ⭐12,622 → 2026-08-05 ⭐14,527 → 2026-08-06 ⭐15,566 → 2026-08-09 ⭐18,478（+8,046 本周，34 天 +142%，Fork 1,404 → 1,533）
 - **日增在放大**：+1,090（08-04）→ +1,111（08-05）→ **+1,892（08-06）**。连续三日在榜且增速不降反升，08-05 判断的「扩散尚未见顶」得到证实；定位从「本地长期记忆插件」改写为「团队级记忆中枢」后，受众从个人开发者换成工程团队，是量级差异的来源
 - 2026-08-06 首次登顶 GitHub 全站日榜第 1
 - topics：`agent`、`ai-agent`、`embedding`、`llm`、`local-first`、`long-term-memory`、`memory`、`openclaw-plugin`、`vector-search`

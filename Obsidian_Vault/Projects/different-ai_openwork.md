@@ -1,18 +1,19 @@
 ---
 aliases: [openwork, different-ai/openwork]
 tags: [AI, Trending, TypeScript, Vibe-Coding, Agent-Workflow, MCP]
-stars: 19070
-today_growth: 915
+stars: 21660
+weekly_growth: 1834
 created_at: 2026-01-14
-status: 活跃（开源 AI 工作流共享桌面应用，首入榜 #1）
-date_accessed: 2026-07-31
+status: 活跃（全赛道周榜 #7，本周 🔺1,834）
+date_accessed: 2026-08-09
+---
 
 # different-ai/openwork
 
 **项目地址**：https://github.com/different-ai/openwork
 **作者**：different-ai
-**⭐ 总 Star**：19,070（19.1k）
-**📈 今日新增**：915 stars（Vibe Coding #1 · 今日最佳🔝）
+**⭐ 总 Star**：21,660（21.7k）  <!-- 2026-08-09 实时值；07-31 为 19,070 -->
+**📈 本周新增**：🔺1,834 stars（全赛道周榜 #7）
 **💻 主要语言**：TypeScript
 **形态**：开源桌面应用 + MCP 服务器
 
@@ -61,6 +62,7 @@ claude mcp add --transport http openwork https://api.openworklabs.com/mcp/agent
 ## 相关日期
 
 - [[Vibe-Coding-2026-07-31|2026-07-31 日报]]
+- [[AI-Weekly-2026-08-09|2026-08-09 全赛道周报]]（周榜 #7，🔺1,834 / ⭐21.7k）
 
 ## 备注
 

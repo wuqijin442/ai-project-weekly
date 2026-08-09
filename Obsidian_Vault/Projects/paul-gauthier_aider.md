@@ -6,6 +6,7 @@ created_at: 2023-05-09
 weekly_growth: 1400
 status: 待评估
 date_accessed: 2026-07-02
+---
 
 # paul-gauthier/aider
 

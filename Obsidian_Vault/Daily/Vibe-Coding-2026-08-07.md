@@ -101,7 +101,19 @@ GitHub Trending 的 "stars today" 并非严格的自然日增量，其统计窗�
 
 **近失名单**：`huangruiteng/loopx`(🔺847 / ⭐3.2k) 差 11 星落到第 6；`addyosmani/agent-skills`(🔺593 / ⭐83.4k) 连续第二天赛道内落榜，其 topics 含 `cursor` `codex` `claude-code`，若关键词口径扩展到 topics 字段则构成严格命中——本期沿用历史一致口径（仅匹配 `owner/repo` + 简介）；`tirth8205/code-review-graph`(🔺237 / ⭐29.3k) 列生态第 8。
 
+## 📌 事后修订说明（2026-08-08 补记）
+
+> [!warning] 本期口径已于次期变更，排名保留原状
+> 本期正文标注「**严格关键词命中 0 个**」并在近失名单中记录：*"`addyosmani/agent-skills`(🔺593 / ⭐83.4k) 连续第二天赛道内落榜，其 topics 含 `cursor` `codex` `claude-code`，若关键词口径扩展到 topics 字段则构成严格命中"*。
+>
+> 该口径分歧已于 **2026-08-08 正式修正**：严格关键词判定范围由「`owner/repo` + 简介」**扩展至 GitHub topics 字段**。
+>
+> **对本期的影响**：按新口径，`addyosmani/agent-skills`（🔺593）构成唯一严格命中（`cursor`），应优先于生态扩充项入选，将挤掉本期 #5 的 [[obra_superpowers|obra/superpowers]]（🔺858），本期严格命中数应为 1 而非 0。
+>
+> **处置**：已归档日报作为**当时口径下的历史快照**予以保留，**不做排名回改**，以维持归档的时间一致性与可追溯性。新口径自 [[Vibe-Coding-2026-08-08|2026-08-08 日报]]起单向生效，详见该期「口径变更记录」小节。
+
 ## 相关链接
 
 - [[_Index|全局索引]]
 - 上一期：[[Vibe-Coding-2026-08-06|2026-08-06 日报]]
+- 下一期：[[Vibe-Coding-2026-08-08|2026-08-08 日报]]（口径变更生效期）
