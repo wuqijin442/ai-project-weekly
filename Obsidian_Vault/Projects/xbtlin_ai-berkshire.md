@@ -6,6 +6,7 @@ created_at: 2026-04-07
 weekly_growth: 5984
 status: 待填写
 date_accessed: 2026-07-05
+---
 
 # xbtlin/ai-berkshire
 

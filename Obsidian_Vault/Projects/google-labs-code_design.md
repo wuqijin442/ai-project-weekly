@@ -6,6 +6,7 @@ created_at: 2026-04-10
 weekly_growth: 6240
 status: 待填写
 date_accessed: 2026-07-04
+---
 
 # design.md (Google Labs Code)
 

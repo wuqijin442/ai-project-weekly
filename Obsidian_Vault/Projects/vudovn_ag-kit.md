@@ -6,6 +6,7 @@ created_at: 2026-01-14
 today_growth: 14
 status: 新入榜（Antigravity-first Agent 工程套件，#5）
 date_accessed: 2026-07-28
+---
 
 # ag-kit (AG Kit)
 

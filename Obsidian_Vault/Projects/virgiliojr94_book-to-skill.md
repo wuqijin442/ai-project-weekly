@@ -1,18 +1,19 @@
 ---
 aliases: [book-to-skill]
 tags: [AI, Trending, Python, Claude, Skills, Vibe-Coding]
-stars: 14497
+stars: 19136
 created_at: 2026-05-01
-today_growth: 423
-status: 活跃（技术书 → Claude Code 技能，三度上榜）
-date_accessed: 2026-08-01
+weekly_growth: 4071
+status: 活跃（全赛道周榜 #6，本周 🔺4,071）
+date_accessed: 2026-08-09
+---
 
 # book-to-skill
 
 **项目地址**：https://github.com/virgiliojr94/book-to-skill
 **作者**：virgiliojr94
-**⭐ 总 Star**：14,497（14.5k）
-**📈 今日新增**：423 stars（Vibe Coding #3）
+**⭐ 总 Star**：19,136（19.1k）  <!-- 2026-08-09 实时值；08-01 为 14,497 -->
+**📈 本周新增**：🔺4,071 stars（全赛道周榜 #6）
 **💻 主要语言**：Python
 **许可证**：MIT
 
@@ -49,6 +50,7 @@ date_accessed: 2026-08-01
 - [[Vibe-Coding-2026-07-29|2026-07-29 日报]]
 - [[Vibe-Coding-2026-07-30|2026-07-30 日报]]
 - [[Vibe-Coding-2026-08-01|2026-08-01 日报]]
+- [[AI-Weekly-2026-08-09|2026-08-09 全赛道周报]]（周榜 #6，🔺4,071 / ⭐19.1k）
 
 ## 反向链接
 

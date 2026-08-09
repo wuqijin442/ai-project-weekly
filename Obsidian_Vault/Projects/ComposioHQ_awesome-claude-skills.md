@@ -6,6 +6,7 @@ created_at: 2025-10-17
 today_growth: 663
 status: 活跃（awesome 列表，三度上榜）
 date_accessed: 2026-07-25
+---
 
 # awesome-claude-skills
 

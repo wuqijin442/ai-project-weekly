@@ -6,6 +6,7 @@ today_growth: 80
 created_at: 2025-09-11
 status: 活跃（面向 coding agents 的 Chrome DevTools MCP 服务器，首入榜 #5）
 date_accessed: 2026-07-31
+---
 
 # ChromeDevTools/chrome-devtools-mcp
 

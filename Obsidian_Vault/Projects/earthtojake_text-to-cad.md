@@ -6,6 +6,7 @@ created_at: 2026-04-22
 today_growth: 230
 status: 新兴（技能外溢至工程制造）
 date_accessed: 2026-07-24
+---
 
 # text-to-cad
 

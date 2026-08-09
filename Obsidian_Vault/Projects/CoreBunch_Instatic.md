@@ -6,6 +6,7 @@ created_at: 2026-04-30
 today_growth: 888
 status: 新兴（Agentic 建站 / Vibe Coding 外溢）
 date_accessed: 2026-07-27
+---
 
 # Instatic
 

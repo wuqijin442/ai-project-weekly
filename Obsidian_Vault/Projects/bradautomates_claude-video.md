@@ -6,6 +6,7 @@ created_at: 2026-04-24
 today_growth: 988
 status: 活跃（Claude 看视频技能，五度上榜）
 date_accessed: 2026-08-01
+---
 
 # claude-video (/watch)
 

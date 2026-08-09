@@ -6,6 +6,7 @@ created_at: 2025-07-04
 today_growth: 274
 status: 待填写
 date_accessed: 2026-07-13
+---
 
 # claude-code-templates (aitmpl.com)
 
