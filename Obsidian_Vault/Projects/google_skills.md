@@ -1,20 +1,21 @@
 ---
 aliases: [google/skills, Google Agent Skills]
 tags: [AI, Trending, Python, Skills, Google-Cloud, Agent, Vibe-Coding]
-stars: 16936
+stars: 17483
+today_growth: 528
 weekly_growth: 1143
 created_at: 2026-03-31
-status: 活跃（首入周榜 #10，厂商官方技能库）
-date_accessed: 2026-08-09
+status: 活跃（厂商官方技能库，2026-08-10 Vibe Coding #4）
+date_accessed: 2026-08-10
 ---
 
 # google/skills
 
 **项目地址**：https://github.com/google/skills
 **作者**：google（Google 官方）
-**⭐ 总 Star**：16,936（16.9k）
-**📈 本周新增**：🔺1,143（全赛道周榜 #10）
-**🍴 Fork**：1,380
+**⭐ 总 Star**：17,483（17.5k）
+**📈 今日新增**：🔺528（Vibe Coding #4；**24h 实测 +547（16,936→17,483），榜面低估 3.5%**）
+**🍴 Fork**：1,402
 **👁 Watch**：111
 **💻 主要语言**：Python
 **📅 开源时间**：2026-03-31
@@ -70,6 +71,7 @@ npx skills add google/skills
 ## 相关日期
 
 - [[Vibe-Coding-2026-08-08|2026-08-08 日报]]（生态第 6，🔺327）
+- [[Vibe-Coding-2026-08-10|2026-08-10 日报]]（#4，⭐17.5k / 🔺528）
 - [[AI-Weekly-2026-08-09|2026-08-09 全赛道周报]]（周榜 #10）
 
 ## 备注
