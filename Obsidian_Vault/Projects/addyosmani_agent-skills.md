@@ -1,21 +1,21 @@
 ---
 aliases: [agent-skills, addyosmani/agent-skills]
 tags: [AI, Trending, JavaScript, Claude-Code, Cursor, Codex, Agent, Skills, Vibe-Coding]
-stars: 84137
+stars: 85426
 created_at: 2026-02-15
-today_growth: 1131
-status: 热门（技能层三足之一，2026-08-08 Vibe Coding #3 · 新口径严格命中 cursor）
-date_accessed: 2026-08-08
+today_growth: 680
+status: 热门（技能层三足之一，2026-08-10 Vibe Coding #3 · 严格命中 cursor）
+date_accessed: 2026-08-10
 ---
 
 # agent-skills
 
 **项目地址**：https://github.com/addyosmani/agent-skills
 **作者**：addyosmani（Addy Osmani，Google 工程师）
-**⭐ 总 Star**：84,137（84.1k）  <!-- 2026-08-08 18:05 API 实时值；当日 08:25 为 83,891，08-07 为 83,351 -->
-**📈 今日新增**：🔺1,131 stars（榜面值；**完整 24h 实测 +786（83,351→84,137），榜面高估 44%**）
+**⭐ 总 Star**：85,426（85.4k）  <!-- 2026-08-10 18:1x API 实时值；08-08 为 84,137 -->
+**📈 今日新增**：🔺680 stars（榜面值；**48h 净增 +1,289（84,137→85,426），日均 ≈+645，与榜面吻合**）
 **🎯 严格命中**：`cursor`（topics）—— 2026-08-08 起严格命中判定范围扩展至 GitHub topics，本项目由生态扩充升为严格命中
-**🍴 Fork**：8,966
+**🍴 Fork**：9,188
 **💻 主要语言**：JavaScript
 **📅 开源时间**：2026-02-15
 **🔄 最近推送**：2026-08-06 22:45
@@ -104,6 +104,7 @@ npx skills add addyosmani/agent-skills
 - [[Vibe-Coding-2026-07-09|2026-07-09 日报]]
 - [[Vibe-Coding-2026-07-10|2026-07-10 日报]]
 - [[Vibe-Coding-2026-08-08|2026-08-08 日报]]（#3，⭐83.9k / 🔺1,131）
+- [[Vibe-Coding-2026-08-10|2026-08-10 日报]]（#3，⭐85.4k / 🔺680，严格命中 cursor）
 
 ## 三条核心主张（2026-08-08 复核 README）
 

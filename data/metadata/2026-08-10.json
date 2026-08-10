@@ -1,0 +1,181 @@
+[
+  {
+    "project": {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "full": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "stars": 141269,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.8,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Comfy-Org",
+      "name": "ComfyUI",
+      "full": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+      "language": "Python",
+      "stars": 125919,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 8.3,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
+    "install_time": 37.0,
+    "run": "success",
+    "run_log": "usage: main.py [-h] [--listen [IP]] [--port PORT] [--tls-keyfile TLS_KEYFILE]\n               [--tls-certfile TLS_CERTFILE] [--enable-cors-header [ORIGIN]]\n               [--max-upload-size MAX_UPLOAD_SIZE]\n               [--base-directory BASE_DIRECTORY]\n               [--extra-model-paths-config PATH [PATH ...]]\n               [--output-directory OUTPUT_DIRECTORY]\n               [--temp-directory",
+    "run_time": 0.3,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "addyosmani",
+      "name": "agent-skills",
+      "full": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 85405,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.6,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "ZhuLinsen",
+      "name": "daily_stock_analysis",
+      "full": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 61599,
+      "categories": [
+        "AI/LLM/Agent",
+        "Data/ML"
+      ]
+    },
+    "clone": true,
+    "clone_time": 8.7,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.0,
+    "run": "failed",
+    "run_log": "main.py --help 失败: Traceback (most recent call last):\n  File \"D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\ZhuLinsen__daily_stock_analysis\\main.py\", line 75, in <module>\n    from src.brokers.futu.portfolio import FutuPortfolioError\n  File \"D:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\ZhuLinsen__daily_stock_analysis\\src\\brokers\\futu\\portfolio.py\", line 13, in <module>\n    from data_provider.us_i",
+    "run_time": 3.3,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "pranshuparmar",
+      "name": "witr",
+      "full": "pranshuparmar/witr",
+      "url": "https://github.com/pranshuparmar/witr",
+      "description": "Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI.",
+      "language": "Go",
+      "stars": 21094,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "DevTools"
+      ]
+    },
+    "clone": true,
+    "clone_time": 4.2,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": true,
+      "docker": false,
+      "files": [
+        "go.mod"
+      ]
+    },
+    "install": "skipped",
+    "install_log": "Go 项目，未执行 go build（资源/耗时限制）",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  }
+]

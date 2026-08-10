@@ -1,20 +1,20 @@
 ---
 aliases: [Prime Agent, prime-agent, Prime Intellect Agent]
 tags: [AI, Trending, TypeScript, Coding-Agent, RLM, Self-Improving, Long-Running, PrimeIntellect, Vibe-Coding]
-stars: 7346
+stars: 12346
 created_at: 2026-05-08
-today_growth: 2293
-status: 热门（首入榜 #1，今日最佳 🔝）
-date_accessed: 2026-08-08
+today_growth: 2356
+status: 热门（蝉联 #1，二度上榜，今日最佳 🔝）
+date_accessed: 2026-08-10
 ---
 
 # Prime Agent
 
 **项目地址**：https://github.com/PrimeIntellect-ai/prime-agent
 **作者**：PrimeIntellect-ai（Prime Intellect）
-**⭐ 总 Star**：7,346（7.3k）  <!-- 2026-08-08 18:05 API 实时值；当日 08:25 为 6,483 -->
-**📈 今日新增**：🔺2,293 stars（榜面值；**18:00 复核实测 9.7h +863，折算 24h ≈ +2,140，与榜面仅差 6%，#1 位次已独立确认**）
-**🍴 Fork**：516
+**⭐ 总 Star**：12,346（12.3k）  <!-- 2026-08-10 18:1x API 实时值；08-08 为 7,346 -->
+**📈 今日新增**：🔺2,356 stars（榜面值；**48h 净增 +5,000（7,346→12,346，+68%），日均 ≈2,500，与榜面吻合**）
+**🍴 Fork**：1,248
 **💻 主要语言**：TypeScript
 **📅 开源时间**：2026-05-08
 **🔄 最近推送**：2026-08-08 00:24
@@ -117,6 +117,7 @@ prime-agent shutdown [--force]       # 停止全部 Agent、worker 与后台服�
 ## 相关日期
 
 - [[Vibe-Coding-2026-08-08|2026-08-08 日报]]（首入榜 #1，⭐6.5k / 🔺2,293，**今日最佳 🔝**）
+- [[Vibe-Coding-2026-08-10|2026-08-10 日报]]（蝉联 #1，⭐12.3k / 🔺2,356，**今日最佳 🔝**）
 
 ## 备注
 
