@@ -1,0 +1,182 @@
+[
+  {
+    "project": {
+      "owner": "firecrawl",
+      "name": "firecrawl",
+      "full": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "The context API to search, scrape, and interact with the web at scale. 🔥",
+      "language": "TypeScript",
+      "stars": 165484,
+      "categories": [
+        "Frontend/Web",
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 11.1,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "full": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "stars": 142178,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 4.2,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "LadybirdBrowser",
+      "name": "ladybird",
+      "full": "LadybirdBrowser/ladybird",
+      "url": "https://github.com/LadybirdBrowser/ladybird",
+      "description": "Truly independent web browser",
+      "language": "C++",
+      "stars": 65347,
+      "categories": [
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 56.2,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": true,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "Cargo.toml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "scovery.\n      Instead, consider the following options:\n      \n      1. set up custom discovery (`find` directive with `include` or `exclude`)\n      2. use a `src-layout`\n      3. explicitly set `py_modules` or `packages` with a list of names\n      \n      To find more information, look for \"package discovery\" on setuptools docs.\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Failed to build 'file:///E:/Users/Administrator/Desktop/AI%20Project%20Weekly/clones/LadybirdBrowser__ladybird' when getting requirements to build editable\n",
+    "install_time": 8.9,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Comfy-Org",
+      "name": "ComfyUI",
+      "full": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+      "language": "Python",
+      "stars": 126626,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 8.3,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.0,
+    "run": "success",
+    "run_log": "usage: main.py [-h] [--listen [IP]] [--port PORT] [--tls-keyfile TLS_KEYFILE]\n               [--tls-certfile TLS_CERTFILE] [--enable-cors-header [ORIGIN]]\n               [--max-upload-size MAX_UPLOAD_SIZE]\n               [--base-directory BASE_DIRECTORY]\n               [--extra-model-paths-config PATH [PATH ...]]\n               [--output-directory OUTPUT_DIRECTORY]\n               [--temp-directory",
+    "run_time": 0.6,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "TauricResearch",
+      "name": "TradingAgents",
+      "full": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 97469,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 4.9,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.0,
+    "run": "failed",
+    "run_log": "main.py --help 失败: Traceback (most recent call last):\n  File \"E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\TauricResearch__TradingAgents\\main.py\", line 2, in <module>\n    from tradingagents.graph.trading_graph import TradingAgentsGraph\n  File \"E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\TauricResearch__TradingAgents\\tradingagents\\graph\\__init__.py\", line 3, in <module>\n    from .conditional_lo",
+    "run_time": 0.6,
+    "score": 50,
+    "stars": "★★★☆☆"
+  }
+]
