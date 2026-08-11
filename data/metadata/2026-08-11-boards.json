@@ -9,8 +9,9 @@
         "url": "https://github.com/langflow-ai/langflow",
         "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
         "language": "Python",
-        "stars": 153033,
-        "topic": "large-language-models"
+        "stars": 153045,
+        "topic": "large-language-models",
+        "fetch_method": "codeload-tarball"
       },
       {
         "owner": "rasbt",
@@ -19,7 +20,7 @@
         "url": "https://github.com/rasbt/LLMs-from-scratch",
         "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
         "language": "Jupyter Notebook",
-        "stars": 102299,
+        "stars": 102370,
         "topic": "large-language-models"
       },
       {
@@ -29,7 +30,7 @@
         "url": "https://github.com/hiyouga/LlamaFactory",
         "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
         "language": "Python",
-        "stars": 73974,
+        "stars": 73990,
         "topic": "large-language-models"
       },
       {
@@ -39,7 +40,7 @@
         "url": "https://github.com/binary-husky/gpt_academic",
         "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
         "language": "Python",
-        "stars": 71206,
+        "stars": 71207,
         "topic": "large-language-models"
       },
       {
@@ -49,9 +50,8 @@
         "url": "https://github.com/FlowiseAI/Flowise",
         "description": "Build AI Agents, Visually",
         "language": "TypeScript",
-        "stars": 55310,
-        "topic": "large-language-models",
-        "fetch_method": "codeload-tarball"
+        "stars": 55315,
+        "topic": "large-language-models"
       }
     ],
     "results": [
@@ -63,11 +63,12 @@
           "url": "https://github.com/langflow-ai/langflow",
           "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
           "language": "Python",
-          "stars": 153033,
-          "topic": "large-language-models"
+          "stars": 153045,
+          "topic": "large-language-models",
+          "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 71.9,
+        "clone_time": 176.2,
         "clone_err": "",
         "build": {
           "python": true,
@@ -97,11 +98,11 @@
           "url": "https://github.com/rasbt/LLMs-from-scratch",
           "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
           "language": "Jupyter Notebook",
-          "stars": 102299,
+          "stars": 102370,
           "topic": "large-language-models"
         },
         "clone": true,
-        "clone_time": 10.8,
+        "clone_time": 77.1,
         "clone_err": "",
         "build": {
           "python": true,
@@ -131,11 +132,11 @@
           "url": "https://github.com/hiyouga/LlamaFactory",
           "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
           "language": "Python",
-          "stars": 73974,
+          "stars": 73990,
           "topic": "large-language-models"
         },
         "clone": true,
-        "clone_time": 4.2,
+        "clone_time": 2.6,
         "clone_err": "",
         "build": {
           "python": true,
@@ -149,7 +150,7 @@
         },
         "install": "failed",
         "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-        "install_time": 44.6,
+        "install_time": 53.6,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -164,11 +165,11 @@
           "url": "https://github.com/binary-husky/gpt_academic",
           "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
           "language": "Python",
-          "stars": 71206,
+          "stars": 71207,
           "topic": "large-language-models"
         },
         "clone": true,
-        "clone_time": 4.2,
+        "clone_time": 6.0,
         "clone_err": "",
         "build": {
           "python": true,
@@ -183,8 +184,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "   Cython.Compiler.Errors.CompileError: blis\\py.pyx\n                  [end of output]\n      \n              note: This error originates from a subprocess, and is likely not a problem with pip.\n            ERROR: Failed to build 'blis' when getting requirements to build wheel\n            [end of output]\n      \n        note: This error originates from a subprocess, and is likely not a problem with pip.\n      ERROR: Failed to build 'thinc' when installing build dependencies for thinc\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Failed to build 'spacy' when installing build dependencies for spacy\n",
-        "install_time": 37.1,
+        "install_log": "   [end of output]\n      \n              note: This error originates from a subprocess, and is likely not a problem with pip.\n            ERROR: Failed to build 'blis' when getting requirements to build wheel\n            [end of output]\n      \n        note: This error originates from a subprocess, and is likely not a problem with pip.\n      ERROR: Failed to build 'thinc' when installing build dependencies for thinc\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Failed to build 'spacy' when installing build dependencies for spacy\n",
+        "install_time": 48.7,
         "run": "failed",
         "run_log": "main.py --help 失败: Traceback (most recent call last):\n  File \"E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\binary-husky__gpt_academic\\main.py\", line 16, in <module>\n    from loguru import logger\nModuleNotFoundError: No module named 'loguru'\n",
         "run_time": 0.3,
@@ -199,12 +200,11 @@
           "url": "https://github.com/FlowiseAI/Flowise",
           "description": "Build AI Agents, Visually",
           "language": "TypeScript",
-          "stars": 55310,
-          "topic": "large-language-models",
-          "fetch_method": "codeload-tarball"
+          "stars": 55315,
+          "topic": "large-language-models"
         },
         "clone": true,
-        "clone_time": 93.8,
+        "clone_time": 9.2,
         "clone_err": "",
         "build": {
           "python": false,
@@ -218,8 +218,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "modules/flowise-react-json-view\nnpm error   flowise-react-json-view@\"^1.21.7\" from @flowiseai/agentflow@0.0.0-dev.14\nnpm error   packages/agentflow\nnpm error     @flowiseai/agentflow@0.0.0-dev.14\nnpm error     node_modules/@flowiseai/agentflow\nnpm error       workspace packages\\agentflow from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-11T00_13_55_872Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-11T00_13_55_872Z-debug-0.log\n",
-        "install_time": 17.4,
+        "install_log": "modules/flowise-react-json-view\nnpm error   flowise-react-json-view@\"^1.21.7\" from @flowiseai/agentflow@0.0.0-dev.14\nnpm error   packages/agentflow\nnpm error     @flowiseai/agentflow@0.0.0-dev.14\nnpm error     node_modules/@flowiseai/agentflow\nnpm error       workspace packages\\agentflow from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-11T09_58_42_113Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-11T09_58_42_113Z-debug-0.log\n",
+        "install_time": 14.8,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -238,7 +238,7 @@
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
         "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
         "language": "Python",
-        "stars": 186500,
+        "stars": 186510,
         "topic": "artificial-intelligence"
       },
       {
@@ -248,7 +248,7 @@
         "url": "https://github.com/f/prompts.chat",
         "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
         "language": "HTML",
-        "stars": 166965,
+        "stars": 166989,
         "topic": "artificial-intelligence"
       },
       {
@@ -258,7 +258,7 @@
         "url": "https://github.com/rasbt/LLMs-from-scratch",
         "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
         "language": "Jupyter Notebook",
-        "stars": 102300,
+        "stars": 102376,
         "topic": "artificial-intelligence"
       },
       {
@@ -268,8 +268,9 @@
         "url": "https://github.com/hacksider/Deep-Live-Cam",
         "description": "real time face swap and one-click video deepfake with only a single image",
         "language": "Python",
-        "stars": 95853,
-        "topic": "artificial-intelligence"
+        "stars": 95864,
+        "topic": "artificial-intelligence",
+        "fetch_method": "codeload-tarball"
       },
       {
         "owner": "thedotmack",
@@ -278,8 +279,9 @@
         "url": "https://github.com/thedotmack/claude-mem",
         "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
         "language": "JavaScript",
-        "stars": 90335,
-        "topic": "artificial-intelligence"
+        "stars": 90376,
+        "topic": "artificial-intelligence",
+        "fetch_method": "codeload-tarball"
       }
     ],
     "results": [
@@ -291,11 +293,11 @@
           "url": "https://github.com/Significant-Gravitas/AutoGPT",
           "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
           "language": "Python",
-          "stars": 186500,
+          "stars": 186510,
           "topic": "artificial-intelligence"
         },
         "clone": true,
-        "clone_time": 43.8,
+        "clone_time": 2.8,
         "clone_err": "",
         "build": {
           "python": false,
@@ -322,11 +324,11 @@
           "url": "https://github.com/f/prompts.chat",
           "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
           "language": "HTML",
-          "stars": 166965,
+          "stars": 166989,
           "topic": "artificial-intelligence"
         },
         "clone": true,
-        "clone_time": 15.8,
+        "clone_time": 2.3,
         "clone_err": "",
         "build": {
           "python": false,
@@ -340,7 +342,7 @@
         },
         "install": "failed",
         "install_log": "TIMEOUT after 120s",
-        "install_time": 1007.3,
+        "install_time": 120.4,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -355,45 +357,11 @@
           "url": "https://github.com/rasbt/LLMs-from-scratch",
           "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
           "language": "Jupyter Notebook",
-          "stars": 102300,
+          "stars": 102376,
           "topic": "artificial-intelligence"
         },
         "clone": true,
-        "clone_time": 6.3,
-        "clone_err": "",
-        "build": {
-          "python": true,
-          "node": false,
-          "rust": false,
-          "go": false,
-          "docker": false,
-          "files": [
-            "requirements.txt",
-            "pyproject.toml"
-          ]
-        },
-        "install": "failed",
-        "install_log": "TIMEOUT after 120s",
-        "install_time": 120.0,
-        "run": "skipped",
-        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
-        "run_time": 0.0,
-        "score": 44,
-        "stars": "★★★☆☆"
-      },
-      {
-        "project": {
-          "owner": "hacksider",
-          "name": "Deep-Live-Cam",
-          "full": "hacksider/Deep-Live-Cam",
-          "url": "https://github.com/hacksider/Deep-Live-Cam",
-          "description": "real time face swap and one-click video deepfake with only a single image",
-          "language": "Python",
-          "stars": 95853,
-          "topic": "artificial-intelligence"
-        },
-        "clone": true,
-        "clone_time": 8.7,
+        "clone_time": 2.1,
         "clone_err": "",
         "build": {
           "python": true,
@@ -408,10 +376,45 @@
         },
         "install": "failed",
         "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-        "install_time": 11.5,
+        "install_time": 47.8,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "hacksider",
+          "name": "Deep-Live-Cam",
+          "full": "hacksider/Deep-Live-Cam",
+          "url": "https://github.com/hacksider/Deep-Live-Cam",
+          "description": "real time face swap and one-click video deepfake with only a single image",
+          "language": "Python",
+          "stars": 95864,
+          "topic": "artificial-intelligence",
+          "fetch_method": "codeload-tarball"
+        },
+        "clone": true,
+        "clone_time": 104.4,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
+        "install_time": 17.6,
         "run": "failed",
         "run_log": "run.py --help 失败: Traceback (most recent call last):\n  File \"E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\hacksider__Deep-Live-Cam\\run.py\", line 96, in <module>\n    from modules import core\n  File \"E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\hacksider__Deep-Live-Cam\\modules\\core.py\", line 28, in <module>\n    import modules.ui as ui\n  File \"E:\\Users\\Administrator\\Desktop\\AI Proje",
-        "run_time": 2.1,
+        "run_time": 2.4,
         "score": 44,
         "stars": "★★★☆☆"
       },
@@ -423,11 +426,12 @@
           "url": "https://github.com/thedotmack/claude-mem",
           "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
           "language": "JavaScript",
-          "stars": 90335,
-          "topic": "artificial-intelligence"
+          "stars": 90376,
+          "topic": "artificial-intelligence",
+          "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 7.1,
+        "clone_time": 87.9,
         "clone_err": "",
         "build": {
           "python": false,
@@ -442,7 +446,7 @@
         },
         "install": "failed",
         "install_log": "TIMEOUT after 120s",
-        "install_time": 586.3,
+        "install_time": 120.3,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -461,8 +465,9 @@
         "url": "https://github.com/langgenius/dify",
         "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
         "language": "TypeScript",
-        "stars": 152002,
-        "topic": "rag"
+        "stars": 152079,
+        "topic": "rag",
+        "fetch_method": "codeload-tarball"
       },
       {
         "owner": "open-webui",
@@ -471,7 +476,7 @@
         "url": "https://github.com/open-webui/open-webui",
         "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
         "language": "Python",
-        "stars": 148423,
+        "stars": 148457,
         "topic": "rag"
       },
       {
@@ -481,7 +486,7 @@
         "url": "https://github.com/langchain-ai/langchain",
         "description": "The agent engineering platform.",
         "language": "Python",
-        "stars": 143917,
+        "stars": 143964,
         "topic": "rag"
       },
       {
@@ -491,7 +496,7 @@
         "url": "https://github.com/Graphify-Labs/graphify",
         "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
         "language": "Python",
-        "stars": 105006,
+        "stars": 105137,
         "topic": "rag"
       },
       {
@@ -501,7 +506,7 @@
         "url": "https://github.com/thedotmack/claude-mem",
         "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
         "language": "JavaScript",
-        "stars": 90336,
+        "stars": 90376,
         "topic": "rag"
       }
     ],
@@ -514,11 +519,12 @@
           "url": "https://github.com/langgenius/dify",
           "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
           "language": "TypeScript",
-          "stars": 152002,
-          "topic": "rag"
+          "stars": 152079,
+          "topic": "rag",
+          "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 60.8,
+        "clone_time": 213.2,
         "clone_err": "",
         "build": {
           "python": false,
@@ -531,8 +537,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"catalog:\": catalog:\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-11T01_29_07_008Z-debug-0.log\n",
-        "install_time": 4.4,
+        "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"catalog:\": catalog:\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-11T10_49_28_474Z-debug-0.log\n",
+        "install_time": 4.1,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -547,11 +553,11 @@
           "url": "https://github.com/open-webui/open-webui",
           "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
           "language": "Python",
-          "stars": 148423,
+          "stars": 148457,
           "topic": "rag"
         },
         "clone": true,
-        "clone_time": 14.5,
+        "clone_time": 39.0,
         "clone_err": "",
         "build": {
           "python": true,
@@ -567,7 +573,7 @@
         },
         "install": "failed",
         "install_log": "TIMEOUT after 120s",
-        "install_time": 120.0,
+        "install_time": 120.4,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -582,11 +588,11 @@
           "url": "https://github.com/langchain-ai/langchain",
           "description": "The agent engineering platform.",
           "language": "Python",
-          "stars": 143917,
+          "stars": 143964,
           "topic": "rag"
         },
         "clone": true,
-        "clone_time": 49.3,
+        "clone_time": 7.9,
         "clone_err": "",
         "build": {
           "python": false,
@@ -613,11 +619,11 @@
           "url": "https://github.com/Graphify-Labs/graphify",
           "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
           "language": "Python",
-          "stars": 105006,
+          "stars": 105137,
           "topic": "rag"
         },
         "clone": true,
-        "clone_time": 18.2,
+        "clone_time": 3.9,
         "clone_err": "",
         "build": {
           "python": true,
@@ -631,8 +637,8 @@
           ]
         },
         "install": "success",
-        "install_log": "3e60805b64bad85d2f6be28e9a9344e9e83ac15032a227ccebfae0a3c3c\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-ckh1edqy\\wheels\\05\\f0\\6c\\f78979d6e23ffcd4aea7dfb2a1ce5d251a34b4de02bbe3b199\nSuccessfully built graphifyy\nInstalling collected packages: graphifyy\n  Attempting uninstall: graphifyy\n    Found existing installation: graphifyy 0.9.39\n    Uninstalling graphifyy-0.9.39:\n      Successfully uninstalled graphifyy-0.9.39\nSuccessfully installed graphifyy-0.9.39\n",
-        "install_time": 13.1,
+        "install_log": "bbfbbcc07fbba3d76c7e5bcc8e1b6dc0b1878b0583ada3712dcc7bcad58\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-ejx2a58s\\wheels\\05\\f0\\6c\\f78979d6e23ffcd4aea7dfb2a1ce5d251a34b4de02bbe3b199\nSuccessfully built graphifyy\nInstalling collected packages: graphifyy\n  Attempting uninstall: graphifyy\n    Found existing installation: graphifyy 0.9.39\n    Uninstalling graphifyy-0.9.39:\n      Successfully uninstalled graphifyy-0.9.39\nSuccessfully installed graphifyy-0.9.39\n",
+        "install_time": 20.0,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -647,11 +653,11 @@
           "url": "https://github.com/thedotmack/claude-mem",
           "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
           "language": "JavaScript",
-          "stars": 90336,
+          "stars": 90376,
           "topic": "rag"
         },
         "clone": true,
-        "clone_time": 15.8,
+        "clone_time": 7.0,
         "clone_err": "",
         "build": {
           "python": false,
@@ -666,7 +672,7 @@
         },
         "install": "failed",
         "install_log": "TIMEOUT after 120s",
-        "install_time": 179.0,
+        "install_time": 120.3,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -685,8 +691,9 @@
         "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
         "description": "Stable Diffusion web UI",
         "language": "Python",
-        "stars": 164465,
-        "topic": "stable-diffusion"
+        "stars": 164469,
+        "topic": "stable-diffusion",
+        "fetch_method": "codeload-tarball"
       },
       {
         "owner": "Comfy-Org",
@@ -695,7 +702,7 @@
         "url": "https://github.com/Comfy-Org/ComfyUI",
         "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
         "language": "Python",
-        "stars": 126339,
+        "stars": 126671,
         "topic": "stable-diffusion"
       },
       {
@@ -703,9 +710,9 @@
         "name": "unsloth",
         "full": "unslothai/unsloth",
         "url": "https://github.com/unslothai/unsloth",
-        "description": "The local UI to run and train text and diffusion models, including Kimi K3, Gemma 4, Qwen3.6, DeepSeek-V4, FLUX and more.",
+        "description": "Local UI to run and train LLMs and diffusion models, including Kimi K3, MiniMax-H3, Gemma 4, Qwen3.6, DeepSeek-V4, FLUX and more.",
         "language": "Python",
-        "stars": 69860,
+        "stars": 69902,
         "topic": "stable-diffusion"
       },
       {
@@ -715,7 +722,7 @@
         "url": "https://github.com/mudler/LocalAI",
         "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
         "language": "Go",
-        "stars": 48379,
+        "stars": 48387,
         "topic": "stable-diffusion"
       },
       {
@@ -725,7 +732,7 @@
         "url": "https://github.com/calesthio/OpenMontage",
         "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
         "language": "Python",
-        "stars": 46770,
+        "stars": 46944,
         "topic": "stable-diffusion"
       }
     ],
@@ -738,11 +745,12 @@
           "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
           "description": "Stable Diffusion web UI",
           "language": "Python",
-          "stars": 164465,
-          "topic": "stable-diffusion"
+          "stars": 164469,
+          "topic": "stable-diffusion",
+          "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 3.1,
+        "clone_time": 122.8,
         "clone_err": "",
         "build": {
           "python": true,
@@ -758,7 +766,7 @@
         },
         "install": "failed",
         "install_log": "TIMEOUT after 120s",
-        "install_time": 120.0,
+        "install_time": 120.4,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -773,11 +781,11 @@
           "url": "https://github.com/Comfy-Org/ComfyUI",
           "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
           "language": "Python",
-          "stars": 126339,
+          "stars": 126671,
           "topic": "stable-diffusion"
         },
         "clone": true,
-        "clone_time": 6.0,
+        "clone_time": 67.2,
         "clone_err": "",
         "build": {
           "python": true,
@@ -792,10 +800,10 @@
         },
         "install": "failed",
         "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-        "install_time": 30.4,
+        "install_time": 23.6,
         "run": "success",
         "run_log": "usage: main.py [-h] [--listen [IP]] [--port PORT] [--tls-keyfile TLS_KEYFILE]\n               [--tls-certfile TLS_CERTFILE] [--enable-cors-header [ORIGIN]]\n               [--max-upload-size MAX_UPLOAD_SIZE]\n               [--base-directory BASE_DIRECTORY]\n               [--extra-model-paths-config PATH [PATH ...]]\n               [--output-directory OUTPUT_DIRECTORY]\n               [--temp-directory",
-        "run_time": 0.2,
+        "run_time": 0.9,
         "score": 50,
         "stars": "★★★☆☆"
       },
@@ -805,13 +813,13 @@
           "name": "unsloth",
           "full": "unslothai/unsloth",
           "url": "https://github.com/unslothai/unsloth",
-          "description": "The local UI to run and train text and diffusion models, including Kimi K3, Gemma 4, Qwen3.6, DeepSeek-V4, FLUX and more.",
+          "description": "Local UI to run and train LLMs and diffusion models, including Kimi K3, MiniMax-H3, Gemma 4, Qwen3.6, DeepSeek-V4, FLUX and more.",
           "language": "Python",
-          "stars": 69860,
+          "stars": 69902,
           "topic": "stable-diffusion"
         },
         "clone": true,
-        "clone_time": 14.3,
+        "clone_time": 29.4,
         "clone_err": "",
         "build": {
           "python": true,
@@ -824,11 +832,11 @@
           ]
         },
         "install": "success",
-        "install_log": "1a13fca50a92a2b11b8407dc04571e00001e1441594adf0f2e267126c8956\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-zzkr3609\\wheels\\3c\\f8\\da\\b9271efd4d32a61e0926d1cc7eaa79924ee642d09175dbd75d\nSuccessfully built unsloth\nInstalling collected packages: unsloth\n  Attempting uninstall: unsloth\n    Found existing installation: unsloth 2026.8.10\n    Uninstalling unsloth-2026.8.10:\n      Successfully uninstalled unsloth-2026.8.10\nSuccessfully installed unsloth-2026.8.12\n",
-        "install_time": 28.2,
+        "install_log": "4cf7b7e751c45711c5eed9e7c9975b95019f9e363af65e4035306621d285e\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-mlbg1u_h\\wheels\\3c\\f8\\da\\b9271efd4d32a61e0926d1cc7eaa79924ee642d09175dbd75d\nSuccessfully built unsloth\nInstalling collected packages: unsloth\n  Attempting uninstall: unsloth\n    Found existing installation: unsloth 2026.8.12\n    Uninstalling unsloth-2026.8.12:\n      Successfully uninstalled unsloth-2026.8.12\nSuccessfully installed unsloth-2026.8.12\n",
+        "install_time": 51.4,
         "run": "success",
         "run_log": "                                                                               \n Usage: cli.py [OPTIONS] COMMAND [ARGS]...                                     \n                                                                               \n Command-line interface for Unsloth training, inference, and export.           \n                                                                               \n",
-        "run_time": 1.4,
+        "run_time": 2.3,
         "score": 70,
         "stars": "★★★☆☆"
       },
@@ -840,11 +848,11 @@
           "url": "https://github.com/mudler/LocalAI",
           "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
           "language": "Go",
-          "stars": 48379,
+          "stars": 48387,
           "topic": "stable-diffusion"
         },
         "clone": true,
-        "clone_time": 15.0,
+        "clone_time": 20.1,
         "clone_err": "",
         "build": {
           "python": false,
@@ -874,11 +882,11 @@
           "url": "https://github.com/calesthio/OpenMontage",
           "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
           "language": "Python",
-          "stars": 46770,
+          "stars": 46944,
           "topic": "stable-diffusion"
         },
         "clone": true,
-        "clone_time": 18.3,
+        "clone_time": 8.7,
         "clone_err": "",
         "build": {
           "python": true,
@@ -893,7 +901,7 @@
         },
         "install": "success",
         "install_log": "e-auth>=2.0->-r requirements.txt (line 9)) (2.1.1)\nRequirement already satisfied: pycparser in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from cffi>=2.0.0->cryptography>=38.0.3->google-auth>=2.0->-r requirements.txt (line 9)) (3.0)\nRequirement already satisfied: pyasn1<0.7.0,>=0.6.1 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from pyasn1-modules>=0.2.1->google-auth>=2.0->-r requirements.txt (line 9)) (0.6.4)\n",
-        "install_time": 1.7,
+        "install_time": 2.4,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -912,7 +920,7 @@
         "url": "https://github.com/opencv/opencv",
         "description": "Open Source Computer Vision Library",
         "language": "C++",
-        "stars": 90365,
+        "stars": 90370,
         "topic": "computer-vision"
       },
       {
@@ -922,7 +930,7 @@
         "url": "https://github.com/d2l-ai/d2l-zh",
         "description": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
         "language": "Python",
-        "stars": 79565,
+        "stars": 79588,
         "topic": "computer-vision"
       },
       {
@@ -932,7 +940,7 @@
         "url": "https://github.com/microsoft/AI-For-Beginners",
         "description": "12 Weeks, 24 Lessons, AI for All!",
         "language": "Jupyter Notebook",
-        "stars": 64432,
+        "stars": 64547,
         "topic": "computer-vision"
       },
       {
@@ -942,7 +950,7 @@
         "url": "https://github.com/ultralytics/ultralytics",
         "description": "Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking",
         "language": "Python",
-        "stars": 60487,
+        "stars": 60512,
         "topic": "computer-vision"
       },
       {
@@ -952,7 +960,7 @@
         "url": "https://github.com/ultralytics/yolov5",
         "description": "Ultralytics YOLOv5 in PyTorch for object detection, instance segmentation, classification, training, and export.",
         "language": "Python",
-        "stars": 57851,
+        "stars": 57854,
         "topic": "computer-vision"
       }
     ],
@@ -965,11 +973,11 @@
           "url": "https://github.com/opencv/opencv",
           "description": "Open Source Computer Vision Library",
           "language": "C++",
-          "stars": 90365,
+          "stars": 90370,
           "topic": "computer-vision"
         },
         "clone": true,
-        "clone_time": 34.5,
+        "clone_time": 26.5,
         "clone_err": "",
         "build": {
           "python": false,
@@ -996,11 +1004,11 @@
           "url": "https://github.com/d2l-ai/d2l-zh",
           "description": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
           "language": "Python",
-          "stars": 79565,
+          "stars": 79588,
           "topic": "computer-vision"
         },
         "clone": true,
-        "clone_time": 26.2,
+        "clone_time": 13.4,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1013,8 +1021,8 @@
           ]
         },
         "install": "failed",
-        "install_log": ", 1.16.4, 1.16.5, 1.16.6, 1.17.0, 1.17.1, 1.17.2, 1.17.3, 1.17.4, 1.17.5, 1.18.0, 1.18.1, 1.18.2, 1.18.3, 1.18.4, 1.18.5, 1.19.0, 1.19.1, 1.19.2, 1.19.3, 1.19.4, 1.19.5, 1.20.0, 1.20.1, 1.20.2, 1.20.3, 1.21.0, 1.21.1, 1.22.0, 1.22.1, 1.22.2, 1.22.3, 1.22.4, 1.23.0, 1.23.1, 1.23.2, 1.23.3, 1.23.4, 1.23.5, 1.24.0, 1.24.1, 1.24.2, 1.24.3, 1.24.4, 1.25.0, 1.25.1, 1.25.2, 1.26.2, 1.26.3, 1.26.4, 2.0.0, 2.0.1, 2.0.2, 2.1.0, 2.1.1, 2.1.2, 2.1.3, 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.3.0, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5, 2.4.0rc1, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.5.0rc1, 2.5.0, 2.5.1, 2.5.2)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: No matching distribution found for numpy==1.21.5\n",
-        "install_time": 7.7,
+        "install_log": ".17.5, 1.18.0, 1.18.1, 1.18.2, 1.18.3, 1.18.4, 1.18.5, 1.19.0, 1.19.1, 1.19.2, 1.19.3, 1.19.4, 1.19.5, 1.20.0, 1.20.1, 1.20.2, 1.20.3, 1.21.0, 1.21.1, 1.22.0, 1.22.1, 1.22.2, 1.22.3, 1.22.4, 1.23.0, 1.23.1, 1.23.2, 1.23.3, 1.23.4, 1.23.5, 1.24.0, 1.24.1, 1.24.2, 1.24.3, 1.24.4, 1.25.0, 1.25.1, 1.25.2, 1.26.2, 1.26.3, 1.26.4, 2.0.0, 2.0.1, 2.0.2, 2.1.0, 2.1.1, 2.1.2, 2.1.3, 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.3.0, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5, 2.4.0rc1, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.5.0rc1, 2.5.0, 2.5.1, 2.5.2)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: No matching distribution found for numpy==1.21.5\n",
+        "install_time": 11.2,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1029,11 +1037,11 @@
           "url": "https://github.com/microsoft/AI-For-Beginners",
           "description": "12 Weeks, 24 Lessons, AI for All!",
           "language": "Jupyter Notebook",
-          "stars": 64432,
+          "stars": 64547,
           "topic": "computer-vision"
         },
         "clone": true,
-        "clone_time": 155.8,
+        "clone_time": 43.3,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1046,8 +1054,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "\\Administrator\\AppData\\Local\\Temp\\pip-install-qllygjmr\\pandas_c2b10df625c94fc18ca1e7a2f4f2eead\\.mesonpy-6j15sxpj\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
-        "install_time": 54.8,
+        "install_log": "ce84d084bbe98da2f6f7237ff59\\.mesonpy-lp1syjc_\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+        "install_time": 70.7,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1062,11 +1070,11 @@
           "url": "https://github.com/ultralytics/ultralytics",
           "description": "Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking",
           "language": "Python",
-          "stars": 60487,
+          "stars": 60512,
           "topic": "computer-vision"
         },
         "clone": true,
-        "clone_time": 5.0,
+        "clone_time": 10.6,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1080,7 +1088,7 @@
         },
         "install": "failed",
         "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-        "install_time": 14.3,
+        "install_time": 20.4,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1095,11 +1103,11 @@
           "url": "https://github.com/ultralytics/yolov5",
           "description": "Ultralytics YOLOv5 in PyTorch for object detection, instance segmentation, classification, training, and export.",
           "language": "Python",
-          "stars": 57851,
+          "stars": 57854,
           "topic": "computer-vision"
         },
         "clone": true,
-        "clone_time": 3.2,
+        "clone_time": 5.0,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1114,7 +1122,7 @@
         },
         "install": "failed",
         "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-        "install_time": 8.5,
+        "install_time": 6.9,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1133,8 +1141,9 @@
         "url": "https://github.com/huggingface/transformers",
         "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
         "language": "Python",
-        "stars": 163560,
-        "topic": "speech-recognition"
+        "stars": 163586,
+        "topic": "speech-recognition",
+        "fetch_method": "codeload-tarball"
       },
       {
         "owner": "ggml-org",
@@ -1143,8 +1152,9 @@
         "url": "https://github.com/ggml-org/whisper.cpp",
         "description": "Port of OpenAI's Whisper model in C/C++",
         "language": "C++",
-        "stars": 52798,
-        "topic": "speech-recognition"
+        "stars": 52806,
+        "topic": "speech-recognition",
+        "fetch_method": "codeload-tarball"
       },
       {
         "owner": "mozilla",
@@ -1163,7 +1173,7 @@
         "url": "https://github.com/SYSTRAN/faster-whisper",
         "description": "Faster Whisper transcription with CTranslate2",
         "language": "Python",
-        "stars": 24844,
+        "stars": 24853,
         "topic": "speech-recognition"
       },
       {
@@ -1173,7 +1183,7 @@
         "url": "https://github.com/m-bain/whisperX",
         "description": "WhisperX: Automatic Speech Recognition with Word-level Timestamps (& Diarization)",
         "language": "Python",
-        "stars": 23518,
+        "stars": 23525,
         "topic": "speech-recognition"
       }
     ],
@@ -1186,11 +1196,12 @@
           "url": "https://github.com/huggingface/transformers",
           "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
           "language": "Python",
-          "stars": 163560,
-          "topic": "speech-recognition"
+          "stars": 163586,
+          "topic": "speech-recognition",
+          "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 22.9,
+        "clone_time": 143.2,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1204,8 +1215,8 @@
           ]
         },
         "install": "success",
-        "install_log": "cc46fd62186dedf492\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-6_e5z5ce\\wheels\\02\\8e\\85\\df954bfdf493c7e32892635dd2f189dd68ed03e962a9d9f0a3\nSuccessfully built transformers\nInstalling collected packages: transformers\n  Attempting uninstall: transformers\n    Found existing installation: transformers 5.15.0.dev0\n    Uninstalling transformers-5.15.0.dev0:\n      Successfully uninstalled transformers-5.15.0.dev0\nSuccessfully installed transformers-5.16.0.dev0\n",
-        "install_time": 26.5,
+        "install_log": "4ca8d4fe7a815dd4d8\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-mp9isk5k\\wheels\\02\\8e\\85\\df954bfdf493c7e32892635dd2f189dd68ed03e962a9d9f0a3\nSuccessfully built transformers\nInstalling collected packages: transformers\n  Attempting uninstall: transformers\n    Found existing installation: transformers 5.16.0.dev0\n    Uninstalling transformers-5.16.0.dev0:\n      Successfully uninstalled transformers-5.16.0.dev0\nSuccessfully installed transformers-5.16.0.dev0\n",
+        "install_time": 47.9,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1220,11 +1231,12 @@
           "url": "https://github.com/ggml-org/whisper.cpp",
           "description": "Port of OpenAI's Whisper model in C/C++",
           "language": "C++",
-          "stars": 52798,
-          "topic": "speech-recognition"
+          "stars": 52806,
+          "topic": "speech-recognition",
+          "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 7.2,
+        "clone_time": 94.9,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1255,7 +1267,7 @@
           "topic": "speech-recognition"
         },
         "clone": true,
-        "clone_time": 6.6,
+        "clone_time": 77.6,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1268,8 +1280,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-sxb1b36a\\overlay\\Lib\\site-packages\\setuptools\\build_meta.py\", line 317, in run_setup\n          exec(code, locals())  # noqa: S102 # exec is intentional here\n          ~~~~^^^^^^^^^^^^^^^^\n        File \"<string>\", line 6, in <module>\n      ModuleNotFoundError: No module named 'pkg_resources'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Failed to build 'file:///E:/Users/Administrator/Desktop/AI%20Project%20Weekly/clones/boards/mozilla__DeepSpeech' when getting requirements to build editable\n",
-        "install_time": 8.2,
+        "install_log": "ator\\AppData\\Local\\Temp\\pip-build-env-z7gosdc2\\overlay\\Lib\\site-packages\\setuptools\\build_meta.py\", line 317, in run_setup\n          exec(code, locals())  # noqa: S102 # exec is intentional here\n          ~~~~^^^^^^^^^^^^^^^^\n        File \"<string>\", line 6, in <module>\n      ModuleNotFoundError: No module named 'pkg_resources'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Failed to build 'file:///E:/Users/Administrator/Desktop/AI%20Project%20Weekly/clones/boards/mozilla__DeepSpeech' when getting requirements to build editable\n",
+        "install_time": 8.4,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1284,11 +1296,11 @@
           "url": "https://github.com/SYSTRAN/faster-whisper",
           "description": "Faster Whisper transcription with CTranslate2",
           "language": "Python",
-          "stars": 24844,
+          "stars": 24853,
           "topic": "speech-recognition"
         },
         "clone": true,
-        "clone_time": 8.8,
+        "clone_time": 4.9,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1303,7 +1315,7 @@
         },
         "install": "success",
         "install_log": ">huggingface_hub>=0.23->-r requirements.txt (line 2)) (1.0.9)\nRequirement already satisfied: idna in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from httpx<1,>=0.23.0->huggingface_hub>=0.23->-r requirements.txt (line 2)) (3.18)\nRequirement already satisfied: h11>=0.16 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface_hub>=0.23->-r requirements.txt (line 2)) (0.16.0)\n",
-        "install_time": 1.8,
+        "install_time": 2.4,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1318,11 +1330,11 @@
           "url": "https://github.com/m-bain/whisperX",
           "description": "WhisperX: Automatic Speech Recognition with Word-level Timestamps (& Diarization)",
           "language": "Python",
-          "stars": 23518,
+          "stars": 23525,
           "topic": "speech-recognition"
         },
         "clone": true,
-        "clone_time": 5.9,
+        "clone_time": 4.0,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1336,7 +1348,7 @@
         },
         "install": "failed",
         "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-        "install_time": 18.7,
+        "install_time": 23.6,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1366,7 +1378,7 @@
         "url": "https://github.com/NaiboWang/EasySpider",
         "description": "A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化测试/数据采集/网页爬虫软件，可以无代码图形化的设计和执行爬虫任务。别名：ServiceWrapper面向Web应用的智能化服务封装系统。",
         "language": "JavaScript",
-        "stars": 44356,
+        "stars": 44353,
         "topic": "robotics",
         "fetch_method": "codeload-tarball"
       },
@@ -1377,7 +1389,7 @@
         "url": "https://github.com/AtsushiSakai/PythonRobotics",
         "description": "Python sample codes and textbook for robotics algorithms.",
         "language": "Python",
-        "stars": 30278,
+        "stars": 30280,
         "topic": "robotics",
         "fetch_method": "codeload-tarball"
       },
@@ -1417,7 +1429,7 @@
           "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 206.1,
+        "clone_time": 188.9,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1430,8 +1442,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "WARNING: Ignoring invalid distribution ~rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n  WARNING: Ignoring invalid distribution ~rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Package 'openpilot' requires a different Python: 3.13.14 not in '<3.13,>=3.12.3'\n",
-        "install_time": 9.1,
+        "install_log": "WARNING: Ignoring invalid distribution ~rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n  WARNING: Ignoring invalid distribution ~rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Package 'openpilot' requires a different Python: 3.13.14 not in '<3.13,>=3.12.3'\n",
+        "install_time": 16.1,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1446,12 +1458,12 @@
           "url": "https://github.com/NaiboWang/EasySpider",
           "description": "A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化测试/数据采集/网页爬虫软件，可以无代码图形化的设计和执行爬虫任务。别名：ServiceWrapper面向Web应用的智能化服务封装系统。",
           "language": "JavaScript",
-          "stars": 44356,
+          "stars": 44353,
           "topic": "robotics",
           "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 111.2,
+        "clone_time": 93.3,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1478,12 +1490,12 @@
           "url": "https://github.com/AtsushiSakai/PythonRobotics",
           "description": "Python sample codes and textbook for robotics algorithms.",
           "language": "Python",
-          "stars": 30278,
+          "stars": 30280,
           "topic": "robotics",
           "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 86.4,
+        "clone_time": 108.7,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1515,7 +1527,7 @@
           "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 81.9,
+        "clone_time": 83.1,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1530,7 +1542,7 @@
         },
         "install": "failed",
         "install_log": "TIMEOUT after 120s",
-        "install_time": 283.2,
+        "install_time": 120.4,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -1549,7 +1561,7 @@
           "topic": "robotics"
         },
         "clone": true,
-        "clone_time": 8.8,
+        "clone_time": 6.5,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1564,11 +1576,11 @@
           ]
         },
         "install": "success",
-        "install_log": "ored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-pnr1t148\\wheels\\a9\\fa\\a7\\dc88be501df166ec937a216bca47b5ba565a8cb39196086787\nSuccessfully built nicegui\nInstalling collected packages: nicegui\n  Attempting uninstall: nicegui\n    Found existing installation: nicegui 0.0.0.post101.dev0+07939d9\n    Uninstalling nicegui-0.0.0.post101.dev0+07939d9:\n      Successfully uninstalled nicegui-0.0.0.post101.dev0+07939d9\nSuccessfully installed nicegui-0.0.0.post1.dev0+a9121ac\n",
-        "install_time": 14.9,
+        "install_log": "7\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-76enj1ff\\wheels\\a9\\fa\\a7\\dc88be501df166ec937a216bca47b5ba565a8cb39196086787\nSuccessfully built nicegui\nInstalling collected packages: nicegui\n  Attempting uninstall: nicegui\n    Found existing installation: nicegui 0.0.0.post1.dev0+a9121ac\n    Uninstalling nicegui-0.0.0.post1.dev0+a9121ac:\n      Successfully uninstalled nicegui-0.0.0.post1.dev0+a9121ac\nSuccessfully installed nicegui-0.0.0.post1.dev0+78b1e18\n",
+        "install_time": 23.2,
         "run": "failed",
-        "run_log": "main.py --help 失败: Traceback (most recent call last):\n  File \"E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\zauberzeug__nicegui\\main.py\", line 12, in <module>\n    from website import design as d\n  File \"E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\zauberzeug__nicegui\\website\\__init__.py\", line 1, in <module>\n    from . import documentation, examples_page, fly, main_page, svg\n  File",
-        "run_time": 3.5,
+        "run_log": "main.py --help 失败: [safe-delete][SAFE_DELETE_BULK_CONFIRM_REQUIRED] {\"count\":50,\"threshold\":50,\"scope\":\"turn\",\"targets\":[\"C:\\\\Users\\\\Administrator\\\\.matplotlib\\\\fontlist-v390.json.matplotlib-lock\"],\"targetCount\":1}\n",
+        "run_time": 14.1,
         "score": 60,
         "stars": "★★★☆☆"
       }
@@ -1584,7 +1596,7 @@
         "url": "https://github.com/GokuMohandas/Made-With-ML",
         "description": "Learn how to develop, deploy and iterate on production-grade ML applications.",
         "language": "Jupyter Notebook",
-        "stars": 49047,
+        "stars": 49051,
         "topic": "mlops"
       },
       {
@@ -1594,7 +1606,7 @@
         "url": "https://github.com/apache/airflow",
         "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
         "language": "Python",
-        "stars": 46438,
+        "stars": 46442,
         "topic": "mlops"
       },
       {
@@ -1604,7 +1616,7 @@
         "url": "https://github.com/qdrant/qdrant",
         "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
         "language": "Rust",
-        "stars": 33906,
+        "stars": 33917,
         "topic": "mlops"
       },
       {
@@ -1614,7 +1626,7 @@
         "url": "https://github.com/HumanSignal/label-studio",
         "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format",
         "language": "TypeScript",
-        "stars": 28028,
+        "stars": 28029,
         "topic": "mlops"
       },
       {
@@ -1624,7 +1636,7 @@
         "url": "https://github.com/mlflow/mlflow",
         "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
         "language": "Python",
-        "stars": 27455,
+        "stars": 27463,
         "topic": "mlops"
       }
     ],
@@ -1637,11 +1649,11 @@
           "url": "https://github.com/GokuMohandas/Made-With-ML",
           "description": "Learn how to develop, deploy and iterate on production-grade ML applications.",
           "language": "Jupyter Notebook",
-          "stars": 49047,
+          "stars": 49051,
           "topic": "mlops"
         },
         "clone": true,
-        "clone_time": 2.6,
+        "clone_time": 3.6,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1655,8 +1667,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "p\\pip-build-env-zqe4nxzp\\overlay\\Lib\\site-packages\\setuptools\\version.py\", line 1, in <module>\n          import pkg_resources\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-zqe4nxzp\\overlay\\Lib\\site-packages\\pkg_resources\\__init__.py\", line 2172, in <module>\n          register_finder(pkgutil.ImpImporter, find_on_path)\n                          ^^^^^^^^^^^^^^^^^^^\n      AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Failed to build 'numpy' when getting requirements to build wheel\n",
-        "install_time": 49.8,
+        "install_log": "on.py\", line 1, in <module>\n          import pkg_resources\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-n7q4vh56\\overlay\\Lib\\site-packages\\pkg_resources\\__init__.py\", line 2172, in <module>\n          register_finder(pkgutil.ImpImporter, find_on_path)\n                          ^^^^^^^^^^^^^^^^^^^\n      AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Failed to build 'numpy' when getting requirements to build wheel\n",
+        "install_time": 70.9,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1671,11 +1683,11 @@
           "url": "https://github.com/apache/airflow",
           "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
           "language": "Python",
-          "stars": 46438,
+          "stars": 46442,
           "topic": "mlops"
         },
         "clone": true,
-        "clone_time": 37.2,
+        "clone_time": 33.4,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1689,8 +1701,8 @@
           ]
         },
         "install": "failed",
-        "install_log": " Could not find a version that satisfies the requirement apache-airflow-core==3.4.0 (from apache-airflow) (from versions: 3.0.4rc1, 3.0.4rc2, 3.0.4, 3.0.5rc1, 3.0.5rc2, 3.0.5rc3, 3.0.6rc1, 3.0.6rc2, 3.0.6, 3.1.0b1, 3.1.0b2, 3.1.0rc1, 3.1.0rc2, 3.1.0, 3.1.1rc1, 3.1.1rc2, 3.1.1, 3.1.2rc1, 3.1.2rc2, 3.1.2, 3.1.3rc1, 3.1.3, 3.1.4rc1, 3.1.4rc2, 3.1.5rc1, 3.1.5, 3.1.6rc1, 3.1.6, 3.1.7rc1, 3.1.7rc2, 3.1.7, 3.1.8rc1, 3.1.8rc2, 3.1.8, 3.2.0b1, 3.2.0b2, 3.2.0rc1, 3.2.0rc2, 3.2.0, 3.2.1rc1, 3.2.1rc2, 3.2.1rc3, 3.2.1, 3.2.2rc1, 3.2.2rc2, 3.2.2rc3, 3.2.2, 3.3.0b1, 3.3.0b2, 3.3.0rc1, 3.3.0rc2, 3.3.0, 3.3.1rc1)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: No matching distribution found for apache-airflow-core==3.4.0\n",
-        "install_time": 11.5,
+        "install_log": "=3.4.0 (from apache-airflow) (from versions: 3.0.4rc1, 3.0.4rc2, 3.0.4, 3.0.5rc1, 3.0.5rc2, 3.0.5rc3, 3.0.6rc1, 3.0.6rc2, 3.0.6, 3.1.0b1, 3.1.0b2, 3.1.0rc1, 3.1.0rc2, 3.1.0, 3.1.1rc1, 3.1.1rc2, 3.1.1, 3.1.2rc1, 3.1.2rc2, 3.1.2, 3.1.3rc1, 3.1.3, 3.1.4rc1, 3.1.4rc2, 3.1.5rc1, 3.1.5, 3.1.6rc1, 3.1.6, 3.1.7rc1, 3.1.7rc2, 3.1.7, 3.1.8rc1, 3.1.8rc2, 3.1.8, 3.2.0b1, 3.2.0b2, 3.2.0rc1, 3.2.0rc2, 3.2.0, 3.2.1rc1, 3.2.1rc2, 3.2.1rc3, 3.2.1, 3.2.2rc1, 3.2.2rc2, 3.2.2rc3, 3.2.2, 3.3.0b1, 3.3.0b2, 3.3.0rc1, 3.3.0rc2, 3.3.0, 3.3.1rc1, 3.3.1rc2)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: No matching distribution found for apache-airflow-core==3.4.0\n",
+        "install_time": 16.0,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1705,11 +1717,11 @@
           "url": "https://github.com/qdrant/qdrant",
           "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
           "language": "Rust",
-          "stars": 33906,
+          "stars": 33917,
           "topic": "mlops"
         },
         "clone": true,
-        "clone_time": 64.1,
+        "clone_time": 6.7,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1739,11 +1751,11 @@
           "url": "https://github.com/HumanSignal/label-studio",
           "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format",
           "language": "TypeScript",
-          "stars": 28028,
+          "stars": 28029,
           "topic": "mlops"
         },
         "clone": true,
-        "clone_time": 56.9,
+        "clone_time": 20.6,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1758,8 +1770,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "TIMEOUT after 120s",
-        "install_time": 120.0,
+        "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
+        "install_time": 36.2,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1774,11 +1786,11 @@
           "url": "https://github.com/mlflow/mlflow",
           "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
           "language": "Python",
-          "stars": 27455,
+          "stars": 27463,
           "topic": "mlops"
         },
         "clone": true,
-        "clone_time": 39.2,
+        "clone_time": 33.6,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1791,8 +1803,8 @@
           ]
         },
         "install": "success",
-        "install_log": "9a5b9949bd71e3b93a72c4641f27c2078536b182aa8e15ef06e5cf5c1c8d\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-px8wc_xg\\wheels\\27\\3e\\a9\\f735d404fee477a014fa5dfffb405859e5d9ae84b1ae4b9cab\nSuccessfully built mlflow\nInstalling collected packages: mlflow\n  Attempting uninstall: mlflow\n    Found existing installation: mlflow 3.15.2.dev0\n    Uninstalling mlflow-3.15.2.dev0:\n      Successfully uninstalled mlflow-3.15.2.dev0\nSuccessfully installed mlflow-3.15.2.dev0\n",
-        "install_time": 17.0,
+        "install_log": "c88ae07abf6a6b2e8c152b16cba88f6cb3a6f7ee886aa1698871fcdf0020\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-v0ich_8r\\wheels\\27\\3e\\a9\\f735d404fee477a014fa5dfffb405859e5d9ae84b1ae4b9cab\nSuccessfully built mlflow\nInstalling collected packages: mlflow\n  Attempting uninstall: mlflow\n    Found existing installation: mlflow 3.15.2.dev0\n    Uninstalling mlflow-3.15.2.dev0:\n      Successfully uninstalled mlflow-3.15.2.dev0\nSuccessfully installed mlflow-3.15.2.dev0\n",
+        "install_time": 24.5,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1811,7 +1823,7 @@
         "url": "https://github.com/Mintplex-Labs/anything-llm",
         "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience",
         "language": "JavaScript",
-        "stars": 64569,
+        "stars": 64595,
         "topic": "vector-database"
       },
       {
@@ -1821,7 +1833,7 @@
         "url": "https://github.com/pathwaycom/llm-app",
         "description": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.",
         "language": "Jupyter Notebook",
-        "stars": 59079,
+        "stars": 59081,
         "topic": "vector-database"
       },
       {
@@ -1831,7 +1843,7 @@
         "url": "https://github.com/meilisearch/meilisearch",
         "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
         "language": "Rust",
-        "stars": 58926,
+        "stars": 58933,
         "topic": "vector-database"
       },
       {
@@ -1841,7 +1853,7 @@
         "url": "https://github.com/run-llama/llama_index",
         "description": "LlamaIndex is the leading document agent and OCR platform",
         "language": "Python",
-        "stars": 51540,
+        "stars": 51556,
         "topic": "vector-database"
       },
       {
@@ -1851,7 +1863,7 @@
         "url": "https://github.com/milvus-io/milvus",
         "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
         "language": "Go",
-        "stars": 45597,
+        "stars": 45605,
         "topic": "vector-database",
         "fetch_method": "codeload-tarball"
       }
@@ -1865,11 +1877,11 @@
           "url": "https://github.com/Mintplex-Labs/anything-llm",
           "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience",
           "language": "JavaScript",
-          "stars": 64569,
+          "stars": 64595,
           "topic": "vector-database"
         },
         "clone": true,
-        "clone_time": 14.9,
+        "clone_time": 15.0,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1882,8 +1894,8 @@
           ]
         },
         "install": "success",
-        "install_log": "\nadded 273 packages in 40s\n\n34 packages are looking for funding\n  run `npm fund` for details\n",
-        "install_time": 41.2,
+        "install_log": "\nup to date in 5s\n\n34 packages are looking for funding\n  run `npm fund` for details\n",
+        "install_time": 6.3,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -1898,11 +1910,11 @@
           "url": "https://github.com/pathwaycom/llm-app",
           "description": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.",
           "language": "Jupyter Notebook",
-          "stars": 59079,
+          "stars": 59081,
           "topic": "vector-database"
         },
         "clone": true,
-        "clone_time": 7.1,
+        "clone_time": 7.0,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1915,8 +1927,8 @@
           ]
         },
         "install": "failed",
-        "install_log": "Lib\\site-packages\\poetry\\core\\masonry\\builders\\builder.py\", line 40, in __init__\n          raise RuntimeError(\n              \"Building a package is not possible in non-package mode.\"\n          )\n      RuntimeError: Building a package is not possible in non-package mode.\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> from file:///E:/Users/Administrator/Desktop/AI%20Project%20Weekly/clones/boards/pathwaycom__llm-app\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
-        "install_time": 7.1,
+        "install_log": ", in __init__\n          raise RuntimeError(\n              \"Building a package is not possible in non-package mode.\"\n          )\n      RuntimeError: Building a package is not possible in non-package mode.\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> from file:///E:/Users/Administrator/Desktop/AI%20Project%20Weekly/clones/boards/pathwaycom__llm-app\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+        "install_time": 9.0,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1931,11 +1943,11 @@
           "url": "https://github.com/meilisearch/meilisearch",
           "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
           "language": "Rust",
-          "stars": 58926,
+          "stars": 58933,
           "topic": "vector-database"
         },
         "clone": true,
-        "clone_time": 9.9,
+        "clone_time": 5.7,
         "clone_err": "",
         "build": {
           "python": false,
@@ -1965,11 +1977,11 @@
           "url": "https://github.com/run-llama/llama_index",
           "description": "LlamaIndex is the leading document agent and OCR platform",
           "language": "Python",
-          "stars": 51540,
+          "stars": 51556,
           "topic": "vector-database"
         },
         "clone": true,
-        "clone_time": 48.3,
+        "clone_time": 15.0,
         "clone_err": "",
         "build": {
           "python": true,
@@ -1982,8 +1994,8 @@
           ]
         },
         "install": "success",
-        "install_log": "f291ef5b948ecbaa0ed9a24531fa79d8fe3e49462\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-ae_gxrbc\\wheels\\d5\\39\\ca\\cbdfbcd8bc509a183a3aee1a94c0fd8548d940fa4ee34bb465\nSuccessfully built llama-index\nInstalling collected packages: llama-index\n  Attempting uninstall: llama-index\n    Found existing installation: llama-index 0.14.23\n    Uninstalling llama-index-0.14.23:\n      Successfully uninstalled llama-index-0.14.23\nSuccessfully installed llama-index-0.14.23\n",
-        "install_time": 15.7,
+        "install_log": "5bd2170a4fd54ee88658f8903e56dd2891c4c01ca\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-cvwdqsl5\\wheels\\d5\\39\\ca\\cbdfbcd8bc509a183a3aee1a94c0fd8548d940fa4ee34bb465\nSuccessfully built llama-index\nInstalling collected packages: llama-index\n  Attempting uninstall: llama-index\n    Found existing installation: llama-index 0.14.23\n    Uninstalling llama-index-0.14.23:\n      Successfully uninstalled llama-index-0.14.23\nSuccessfully installed llama-index-0.14.23\n",
+        "install_time": 16.2,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -1998,12 +2010,12 @@
           "url": "https://github.com/milvus-io/milvus",
           "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
           "language": "Go",
-          "stars": 45597,
+          "stars": 45605,
           "topic": "vector-database",
           "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 137.4,
+        "clone_time": 224.7,
         "clone_err": "",
         "build": {
           "python": false,
@@ -2037,7 +2049,7 @@
         "url": "https://github.com/f/prompts.chat",
         "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
         "language": "HTML",
-        "stars": 166971,
+        "stars": 166993,
         "topic": "prompt-engineering",
         "fetch_method": "codeload-tarball"
       },
@@ -2048,8 +2060,9 @@
         "url": "https://github.com/microsoft/generative-ai-for-beginners",
         "description": "21 Lessons, Get Started Building with Generative AI",
         "language": "Jupyter Notebook",
-        "stars": 117367,
-        "topic": "prompt-engineering"
+        "stars": 117462,
+        "topic": "prompt-engineering",
+        "fetch_method": "codeload-tarball"
       },
       {
         "owner": "DietrichGebert",
@@ -2058,8 +2071,9 @@
         "url": "https://github.com/DietrichGebert/ponytail",
         "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
         "language": "JavaScript",
-        "stars": 100184,
-        "topic": "prompt-engineering"
+        "stars": 100505,
+        "topic": "prompt-engineering",
+        "fetch_method": "codeload-tarball"
       },
       {
         "owner": "JuliusBrussee",
@@ -2068,8 +2082,9 @@
         "url": "https://github.com/JuliusBrussee/caveman",
         "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
         "language": "JavaScript",
-        "stars": 97316,
-        "topic": "prompt-engineering"
+        "stars": 97413,
+        "topic": "prompt-engineering",
+        "fetch_method": "codeload-tarball"
       },
       {
         "owner": "dair-ai",
@@ -2078,8 +2093,9 @@
         "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
         "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
         "language": "MDX",
-        "stars": 77404,
-        "topic": "prompt-engineering"
+        "stars": 77414,
+        "topic": "prompt-engineering",
+        "fetch_method": "codeload-tarball"
       }
     ],
     "results": [
@@ -2091,12 +2107,12 @@
           "url": "https://github.com/f/prompts.chat",
           "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
           "language": "HTML",
-          "stars": 166971,
+          "stars": 166993,
           "topic": "prompt-engineering",
           "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 114.3,
+        "clone_time": 132.0,
         "clone_err": "",
         "build": {
           "python": false,
@@ -2110,7 +2126,7 @@
         },
         "install": "failed",
         "install_log": "TIMEOUT after 120s",
-        "install_time": 1594.0,
+        "install_time": 120.3,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -2125,11 +2141,12 @@
           "url": "https://github.com/microsoft/generative-ai-for-beginners",
           "description": "21 Lessons, Get Started Building with Generative AI",
           "language": "Jupyter Notebook",
-          "stars": 117367,
-          "topic": "prompt-engineering"
+          "stars": 117462,
+          "topic": "prompt-engineering",
+          "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 113.5,
+        "clone_time": 256.9,
         "clone_err": "",
         "build": {
           "python": true,
@@ -2145,7 +2162,7 @@
         },
         "install": "success",
         "install_log": "ent already satisfied: pure-eval in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from stack_data>=0.6.0->ipython>=6.1.0->ipywidgets==8.1.8->-r requirements.txt (line 1)) (0.2.3)\nUsing cached numpy-2.4.2-cp313-cp313-win_amd64.whl (12.3 MB)\nInstalling collected packages: numpy\n  Attempting uninstall: numpy\n    Found existing installation: numpy 2.2.6\n    Uninstalling numpy-2.2.6:\n      Successfully uninstalled numpy-2.2.6\nSuccessfully installed numpy-2.4.2\n",
-        "install_time": 18.1,
+        "install_time": 24.5,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -2160,11 +2177,12 @@
           "url": "https://github.com/DietrichGebert/ponytail",
           "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
           "language": "JavaScript",
-          "stars": 100184,
-          "topic": "prompt-engineering"
+          "stars": 100505,
+          "topic": "prompt-engineering",
+          "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 5.5,
+        "clone_time": 101.2,
         "clone_err": "",
         "build": {
           "python": false,
@@ -2177,8 +2195,8 @@
           ]
         },
         "install": "success",
-        "install_log": "\nup to date, audited 1 package in 3s\n\nfound 0 vulnerabilities\n",
-        "install_time": 4.1,
+        "install_log": "\nup to date, audited 1 package in 4s\n\nfound 0 vulnerabilities\n",
+        "install_time": 5.5,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -2193,11 +2211,12 @@
           "url": "https://github.com/JuliusBrussee/caveman",
           "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
           "language": "JavaScript",
-          "stars": 97316,
-          "topic": "prompt-engineering"
+          "stars": 97413,
+          "topic": "prompt-engineering",
+          "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 2.9,
+        "clone_time": 82.4,
         "clone_err": "",
         "build": {
           "python": false,
@@ -2210,8 +2229,8 @@
           ]
         },
         "install": "success",
-        "install_log": "\nup to date, audited 1 package in 3s\n\nfound 0 vulnerabilities\n",
-        "install_time": 4.2,
+        "install_log": "\nup to date, audited 1 package in 5s\n\nfound 0 vulnerabilities\n",
+        "install_time": 5.6,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -2226,11 +2245,12 @@
           "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
           "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
           "language": "MDX",
-          "stars": 77404,
-          "topic": "prompt-engineering"
+          "stars": 77414,
+          "topic": "prompt-engineering",
+          "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 20.4,
+        "clone_time": 94.3,
         "clone_err": "",
         "build": {
           "python": false,
@@ -2244,7 +2264,7 @@
         },
         "install": "failed",
         "install_log": "TIMEOUT after 120s",
-        "install_time": 166.3,
+        "install_time": 120.4,
         "run": "skipped",
         "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
         "run_time": 0.0,
@@ -2263,7 +2283,7 @@
         "url": "https://github.com/hiyouga/LlamaFactory",
         "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
         "language": "Python",
-        "stars": 73977,
+        "stars": 73993,
         "topic": "fine-tuning"
       },
       {
@@ -2271,9 +2291,9 @@
         "name": "unsloth",
         "full": "unslothai/unsloth",
         "url": "https://github.com/unslothai/unsloth",
-        "description": "The local UI to run and train text and diffusion models, including Kimi K3, Gemma 4, Qwen3.6, DeepSeek-V4, FLUX and more.",
+        "description": "Local UI to run and train LLMs and diffusion models, including Kimi K3, MiniMax-H3, Gemma 4, Qwen3.6, DeepSeek-V4, FLUX and more.",
         "language": "Python",
-        "stars": 69864,
+        "stars": 69905,
         "topic": "fine-tuning",
         "fetch_method": "codeload-tarball"
       },
@@ -2284,7 +2304,7 @@
         "url": "https://github.com/run-llama/llama_index",
         "description": "LlamaIndex is the leading document agent and OCR platform",
         "language": "Python",
-        "stars": 51541,
+        "stars": 51556,
         "topic": "fine-tuning"
       },
       {
@@ -2294,7 +2314,7 @@
         "url": "https://github.com/QwenAudio/CosyVoice",
         "description": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.",
         "language": "Python",
-        "stars": 22682,
+        "stars": 22700,
         "topic": "fine-tuning"
       },
       {
@@ -2304,7 +2324,7 @@
         "url": "https://github.com/huggingface/peft",
         "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
         "language": "Python",
-        "stars": 21522,
+        "stars": 21527,
         "topic": "fine-tuning"
       }
     ],
@@ -2317,11 +2337,11 @@
           "url": "https://github.com/hiyouga/LlamaFactory",
           "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
           "language": "Python",
-          "stars": 73977,
+          "stars": 73993,
           "topic": "fine-tuning"
         },
         "clone": true,
-        "clone_time": 4.7,
+        "clone_time": 3.6,
         "clone_err": "",
         "build": {
           "python": true,
@@ -2335,7 +2355,7 @@
         },
         "install": "failed",
         "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-        "install_time": 33.0,
+        "install_time": 39.4,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -2348,14 +2368,14 @@
           "name": "unsloth",
           "full": "unslothai/unsloth",
           "url": "https://github.com/unslothai/unsloth",
-          "description": "The local UI to run and train text and diffusion models, including Kimi K3, Gemma 4, Qwen3.6, DeepSeek-V4, FLUX and more.",
+          "description": "Local UI to run and train LLMs and diffusion models, including Kimi K3, MiniMax-H3, Gemma 4, Qwen3.6, DeepSeek-V4, FLUX and more.",
           "language": "Python",
-          "stars": 69864,
+          "stars": 69905,
           "topic": "fine-tuning",
           "fetch_method": "codeload-tarball"
         },
         "clone": true,
-        "clone_time": 118.2,
+        "clone_time": 99.7,
         "clone_err": "",
         "build": {
           "python": true,
@@ -2368,11 +2388,11 @@
           ]
         },
         "install": "success",
-        "install_log": "3aafd1c58278e6e5e8c45ae6a84b46db590431a524abd0a933b71eb9b63fd\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-hood9j1z\\wheels\\3c\\f8\\da\\b9271efd4d32a61e0926d1cc7eaa79924ee642d09175dbd75d\nSuccessfully built unsloth\nInstalling collected packages: unsloth\n  Attempting uninstall: unsloth\n    Found existing installation: unsloth 2026.8.12\n    Uninstalling unsloth-2026.8.12:\n      Successfully uninstalled unsloth-2026.8.12\nSuccessfully installed unsloth-2026.8.12\n",
-        "install_time": 28.2,
+        "install_log": "428083672d3d878cfc7739d203be0545e71863bd09a71ad9f0dc557af59fb\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-3cpiidkg\\wheels\\3c\\f8\\da\\b9271efd4d32a61e0926d1cc7eaa79924ee642d09175dbd75d\nSuccessfully built unsloth\nInstalling collected packages: unsloth\n  Attempting uninstall: unsloth\n    Found existing installation: unsloth 2026.8.12\n    Uninstalling unsloth-2026.8.12:\n      Successfully uninstalled unsloth-2026.8.12\nSuccessfully installed unsloth-2026.8.12\n",
+        "install_time": 29.7,
         "run": "success",
         "run_log": "                                                                               \n Usage: cli.py [OPTIONS] COMMAND [ARGS]...                                     \n                                                                               \n Command-line interface for Unsloth training, inference, and export.           \n                                                                               \n",
-        "run_time": 1.6,
+        "run_time": 2.0,
         "score": 70,
         "stars": "★★★☆☆"
       },
@@ -2384,11 +2404,11 @@
           "url": "https://github.com/run-llama/llama_index",
           "description": "LlamaIndex is the leading document agent and OCR platform",
           "language": "Python",
-          "stars": 51541,
+          "stars": 51556,
           "topic": "fine-tuning"
         },
         "clone": true,
-        "clone_time": 3.7,
+        "clone_time": 11.4,
         "clone_err": "",
         "build": {
           "python": true,
@@ -2401,8 +2421,8 @@
           ]
         },
         "install": "success",
-        "install_log": "f291ef5b948ecbaa0ed9a24531fa79d8fe3e49462\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-vxm67yc0\\wheels\\d5\\39\\ca\\cbdfbcd8bc509a183a3aee1a94c0fd8548d940fa4ee34bb465\nSuccessfully built llama-index\nInstalling collected packages: llama-index\n  Attempting uninstall: llama-index\n    Found existing installation: llama-index 0.14.23\n    Uninstalling llama-index-0.14.23:\n      Successfully uninstalled llama-index-0.14.23\nSuccessfully installed llama-index-0.14.23\n",
-        "install_time": 14.9,
+        "install_log": "5bd2170a4fd54ee88658f8903e56dd2891c4c01ca\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-_o4sd7h2\\wheels\\d5\\39\\ca\\cbdfbcd8bc509a183a3aee1a94c0fd8548d940fa4ee34bb465\nSuccessfully built llama-index\nInstalling collected packages: llama-index\n  Attempting uninstall: llama-index\n    Found existing installation: llama-index 0.14.23\n    Uninstalling llama-index-0.14.23:\n      Successfully uninstalled llama-index-0.14.23\nSuccessfully installed llama-index-0.14.23\n",
+        "install_time": 19.5,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -2417,11 +2437,11 @@
           "url": "https://github.com/QwenAudio/CosyVoice",
           "description": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.",
           "language": "Python",
-          "stars": 22682,
+          "stars": 22700,
           "topic": "fine-tuning"
         },
         "clone": true,
-        "clone_time": 2.8,
+        "clone_time": 6.2,
         "clone_err": "",
         "build": {
           "python": true,
@@ -2434,8 +2454,8 @@
           ]
         },
         "install": "failed",
-        "install_log": ", in run_setup\n          super().run_setup(setup_script=setup_script)\n          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-aesxfbg0\\overlay\\Lib\\site-packages\\setuptools\\build_meta.py\", line 317, in run_setup\n          exec(code, locals())  # noqa: S102 # exec is intentional here\n          ~~~~^^^^^^^^^^^^^^^^\n        File \"<string>\", line 43, in <module>\n      ModuleNotFoundError: No module named 'pkg_resources'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\nERROR: Failed to build 'grpcio' when getting requirements to build wheel\n",
-        "install_time": 48.2,
+        "install_log": "t)\n          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-kzkk1bi6\\overlay\\Lib\\site-packages\\setuptools\\build_meta.py\", line 317, in run_setup\n          exec(code, locals())  # noqa: S102 # exec is intentional here\n          ~~~~^^^^^^^^^^^^^^^^\n        File \"<string>\", line 43, in <module>\n      ModuleNotFoundError: No module named 'pkg_resources'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Failed to build 'grpcio' when getting requirements to build wheel\n",
+        "install_time": 48.4,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,
@@ -2450,11 +2470,11 @@
           "url": "https://github.com/huggingface/peft",
           "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
           "language": "Python",
-          "stars": 21522,
+          "stars": 21527,
           "topic": "fine-tuning"
         },
         "clone": true,
-        "clone_time": 6.0,
+        "clone_time": 20.7,
         "clone_err": "",
         "build": {
           "python": true,
@@ -2470,7 +2490,7 @@
         },
         "install": "failed",
         "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-        "install_time": 8.0,
+        "install_time": 11.9,
         "run": "skipped",
         "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
         "run_time": 0.0,

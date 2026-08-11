@@ -6,6 +6,7 @@ tags: [Index, AI, Trending]
 
 | 日期 | 模式 | 项目数量 | 链接 |
 | --- | --- | --- | --- |
+| 2026-08-11 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-11]] |
 | 2026-08-10 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-10]] |
 | 2026-08-09 | 周末（全赛道 Top 10） | 10 | [[AI-Weekly-2026-08-09]] |
 | 2026-08-08 | 工作日（Vibe Coding） | 5 | [[Vibe-Coding-2026-08-08]] |

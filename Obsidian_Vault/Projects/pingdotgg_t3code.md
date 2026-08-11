@@ -1,19 +1,19 @@
 ---
 aliases: [t3code]
 tags: [AI, Trending, TypeScript, Vibe-Coding, Coding-Agent, Claude, Cursor, Codex]
-stars: 17820
+stars: 18147
 created_at: 2026-02-08
-today_growth: 163
-status: 活跃（控制面，2026-08-10 Vibe Coding #5）
-date_accessed: 2026-08-10
+today_growth: 389
+status: 活跃（控制面，三度上榜，2026-08-11 Vibe Coding #5）
+date_accessed: 2026-08-11
 ---
 
 # t3code
 
 **项目地址**：https://github.com/pingdotgg/t3code
 **作者**：pingdotgg
-**⭐ 总 Star**：17,820（17.8k）
-**📈 今日新增**：🔺163 stars（Vibe Coding #5）
+**⭐ 总 Star**：18,147（18.1k）  <!-- 2026-08-11 17:5x API 实时值；08-10 为 17,820 -->
+**📈 今日新增**：🔺389 stars（Vibe Coding #5，三度上榜）
 **💻 主要语言**：TypeScript
 **🗓 开源时间**：2026-02-08
 
@@ -39,6 +39,7 @@ date_accessed: 2026-08-10
 
 - [[Vibe-Coding-2026-07-27|2026-07-27 日报]]
 - [[Vibe-Coding-2026-08-10|2026-08-10 日报]]（#5，⭐17.8k / 🔺163，控制面回归）
+- [[Vibe-Coding-2026-08-11|2026-08-11 日报]]（#5，⭐18.1k / 🔺389，控制面三度上榜）
 
 ## 备注
 

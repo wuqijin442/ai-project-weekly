@@ -27,6 +27,8 @@ import time
 import shutil
 import datetime
 import subprocess
+import tempfile
+import signal
 import urllib.request
 import urllib.error
 from pathlib import Path
@@ -96,18 +98,66 @@ def log(msg: str):
 
 
 def run_cmd(cmd, cwd=None, timeout=120):
-    """运行命令，返回 (returncode, stdout, stderr)。超时/异常记为失败。"""
+    """运行命令，返回 (returncode, stdout, stderr)。超时/异常记为失败。
+
+    关键修复（2026-08-11）：原实现用 subprocess.run(capture_output=True) 在超时后只能
+    kill 直接子进程（如 npm），但 npm 派生的 node 孙进程会继承 stdout 管道句柄，
+    导致 communicate() 永远阻塞在孙进程持有的管道上 → 进程假死（零子进程、低 CPU、
+    communicate 不死）。改为：① 输出重定向到临时文件（不走 PIPE，wait() 不会读管道，
+    永不被孙进程阻塞）；② 超时后按进程树整体杀死（Windows: taskkill /T /PID；
+    POSIX: killpg），彻底清除孙进程。stdout/stderr 仍分别落盘，调用方 err 语义不变。
+    """
+    out_path = err_path = None
     try:
-        proc = subprocess.run(
-            cmd, cwd=str(cwd) if cwd else None,
-            capture_output=True, text=True, timeout=timeout,
-            shell=isinstance(cmd, str),
-        )
-        return proc.returncode, proc.stdout, proc.stderr
-    except subprocess.TimeoutExpired:
-        return 124, "", f"TIMEOUT after {timeout}s"
+        out_f = tempfile.NamedTemporaryFile(mode="w", suffix=".out", delete=False,
+                                            encoding="utf-8", errors="ignore")
+        err_f = tempfile.NamedTemporaryFile(mode="w", suffix=".err", delete=False,
+                                            encoding="utf-8", errors="ignore")
+        out_path, err_path = out_f.name, err_f.name
+        # with 块结束后父进程关闭句柄，但 Popen 已 dup2 到子进程，子进程句柄独立有效
+        with out_f, err_f:
+            proc = subprocess.Popen(
+                cmd, cwd=str(cwd) if cwd else None,
+                stdout=out_f, stderr=err_f,
+                shell=isinstance(cmd, str),
+                start_new_session=True,
+            )
+        try:
+            proc.wait(timeout=timeout)
+        except subprocess.TimeoutExpired:
+            # 整棵树杀死，避免 npm 派生的 node 孙进程残留（持有文件句柄/占 CPU）
+            try:
+                if os.name == "nt":
+                    subprocess.call(
+                        ["taskkill", "/F", "/T", "/PID", str(proc.pid)],
+                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                else:
+                    os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
+            except Exception:  # noqa
+                try:
+                    proc.kill()
+                except Exception:
+                    pass
+            try:
+                proc.wait(timeout=5)
+            except Exception:
+                pass
+            return 124, "", f"TIMEOUT after {timeout}s"
+        rc = proc.returncode
+        with open(out_path, "r", encoding="utf-8", errors="ignore") as f:
+            out = f.read()
+        with open(err_path, "r", encoding="utf-8", errors="ignore") as f:
+            err = f.read()
+        return rc, out, err
     except Exception as e:  # noqa
         return 1, "", str(e)
+    finally:
+        for p in (out_path, err_path):
+            if p:
+                try:
+                    os.unlink(p)
+                except Exception:
+                    pass
 
 
 def clean_text(s: str) -> str:
