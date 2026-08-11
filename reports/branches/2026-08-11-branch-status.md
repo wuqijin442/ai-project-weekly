@@ -2,7 +2,7 @@
 
 > 自动 `git fetch --prune` 后比对各分支相对 `main` 的领先/落后提交与最近提交，结论基于真实 git 元数据，无推测。
 
-**基准分支**：`main`　**分支总数**：3　**核对时间**：2026-08-11 10:52:10
+**基准分支**：`main`　**分支总数**：3　**核对时间**：2026-08-11 19:55:04
 
 
 ## 各分支总览
@@ -11,7 +11,7 @@
 |---|---|---|---|---|---|
 | `dgx` | 1 | 37 | chore: 每日学习消化+图谱 2026-08-11 [dgx] | wuqijin442 | Tue Aug 11 03:18:11 2026 +0800 |
 | `main` | 0 | 0 | Merge pull request #21 from wuqijin442/w | Worn Quiet Joy | Mon Aug 10 20:00:15 2026 +0800 |
-| `win` | 1 | 36 | [2026-08-10] Daily AI Project Update | wuqijin | Tue Aug 11 10:51:41 2026 +0800 |
+| `win` | 6 | 36 | [2026-08-11] Daily AI Project Update | wuqijin | Tue Aug 11 19:54:07 2026 +0800 |
 
 ## 领先 main 的待归集提交
 
@@ -20,8 +20,13 @@
 
 - 8681045 2026-08-11 wuqijin442 chore: 每日学习消化+图谱 2026-08-11 [dgx]
 
-### `win`（领先 main 1 个提交，待 20:00 归集）
+### `win`（领先 main 6 个提交，待 20:00 归集）
 
+- fef9574 2026-08-11 wuqijin [2026-08-11] Daily AI Project Update
+- 44fa593 2026-08-11 wuqijin [2026-08-11] Fix run_cmd hang: redirect output to file + kill process tree on timeout
+- f23fda9 2026-08-11 wuqijin442 [2026-08-11] Daily AI Project Update
+- 614f8c9 2026-08-11 wuqijin [2026-08-11] Daily AI Project Update
+- aaa361d 2026-08-11 wuqijin [2026-08-11] Daily AI Project Update
 - 98c83f1 2026-08-11 wuqijin [2026-08-10] Daily AI Project Update
 
 ---
