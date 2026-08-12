@@ -1,7 +1,7 @@
 ---
 aliases: ["HKUDS/DeepTutor"]
 tags: [github, ai, vibe-coding, project]
-stars: 34717
+stars: 34796
 today_growth: 812
 created_at: 2025-12-28
 status: 3度上榜

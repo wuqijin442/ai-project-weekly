@@ -1,7 +1,7 @@
 ---
 aliases: [orca]
 tags: [AI, Trending, TypeScript, Agent-IDE, Parallel-Agents, Claude-Code, Codex, Full-Track]
-stars: 42777
+stars: 42886
 weekly_growth: 7327
 created_at: 2026-03-17
 status: 2度上榜

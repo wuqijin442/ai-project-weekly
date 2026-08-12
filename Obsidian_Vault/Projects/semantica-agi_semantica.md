@@ -1,7 +1,7 @@
 ---
 aliases: [semantica, semantica-agi/semantica]
 tags: [AI, Trending, Python, Context-Engineering, Knowledge-Graph, Agent-Memory, Developer-Tools, Vibe-Coding]
-stars: 4888
+stars: 4965
 created_at: 2025-06-25
 today_growth: 893
 status: 4度上榜
