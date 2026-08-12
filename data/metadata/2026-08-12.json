@@ -1,0 +1,177 @@
+[
+  {
+    "project": {
+      "owner": "anthropics",
+      "name": "skills",
+      "full": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 168400,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 19.8,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "huggingface",
+      "name": "transformers",
+      "full": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "language": "Python",
+      "stars": 163955,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 49.7,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "setup.py"
+      ]
+    },
+    "install": "success",
+    "install_log": "6310fe3abd1355eb28\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-ydw_bwch\\wheels\\ac\\f0\\de\\4d4a266cf3cdd1199049d05d1a753956eab70dc61347fb2bc5\nSuccessfully built transformers\nInstalling collected packages: transformers\n  Attempting uninstall: transformers\n    Found existing installation: transformers 5.16.0.dev0\n    Uninstalling transformers-5.16.0.dev0:\n      Successfully uninstalled transformers-5.16.0.dev0\nSuccessfully installed transformers-5.16.0.dev0\n",
+    "install_time": 37.7,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "full": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "stars": 144077,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.2,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "3b1b",
+      "name": "manim",
+      "full": "3b1b/manim",
+      "url": "https://github.com/3b1b/manim",
+      "description": "Animation engine for explanatory math videos",
+      "language": "Python",
+      "stars": 90440,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.5,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml",
+        "setup.py"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.4,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "addyosmani",
+      "name": "agent-skills",
+      "full": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 86416,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 43.3,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  }
+]
