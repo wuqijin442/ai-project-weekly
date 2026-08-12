@@ -1,11 +1,11 @@
 ---
 aliases: [agent-skills, addyosmani/agent-skills]
 tags: [AI, Trending, JavaScript, Claude-Code, Cursor, Codex, Agent, Skills, Vibe-Coding]
-stars: 85991
+stars: 86216
 created_at: 2026-02-15
-today_growth: 659
-status: 热门（技能层，三度上榜，2026-08-11 Vibe Coding #4 · 严格命中 cursor）
-date_accessed: 2026-08-11
+today_growth: 578
+status: 9度上榜
+date_accessed: 2026-08-12
 ---
 
 # agent-skills
@@ -129,3 +129,6 @@ npx skills add addyosmani/agent-skills
 - **成长曲线**：2026-07-14 ⭐77,927 → 2026-08-07 ⭐83,351（🔺593，赛道内落榜，列近失名单） → 2026-08-08 ⭐83,891（🔺1,131，Vibe Coding #3）。**榜面日增从 593 翻到 1,131，一天翻倍后重回榜单。**
 - ⚠️ **口径备注（连续两期）**：本仓库 topics 含 `cursor` `codex` `claude-code`，若 Vibe Coding 严格关键词判定扩展到 topics 字段，则构成**严格命中**（`cursor`）。本归档历史口径仅匹配 `owner/repo` + 简介，故 08-07、08-08 两期均计为「生态扩充」。该分歧建议评估是否调整口径。
 - 2026-08-08 日报（#3）：与 [[mattpocock_skills|mattpocock/skills]]、[[obra_superpowers|obra/superpowers]] 同日占 Top 5 三席。三者定位差异：本项目 = 零件 + 质检表（24 技能 + 8 斜杠命令 + 质量门禁），mattpocock = 只给零件，superpowers = 整条产线。
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-12.md|2026-08-12 收录]]

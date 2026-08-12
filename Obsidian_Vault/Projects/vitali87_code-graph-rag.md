@@ -1,11 +1,11 @@
 ---
 aliases: [code-graph-rag, vitali87/code-graph-rag]
 tags: [AI, Trending, Python, RAG, Code-Understanding, Claude-Code, MCP, Monorepo, Knowledge-Graph, Vibe-Coding, Developer-Tools]
-stars: 3661
+stars: 3810
 created_at: 2025-06-16
-today_growth: 682
-status: 新晋（代码理解底座，2026-08-11 Vibe Coding #3 · 08-10 近失名单晋级）
-date_accessed: 2026-08-11
+today_growth: 341
+status: 4度上榜
+date_accessed: 2026-08-12
 ---
 
 # code-graph-rag
@@ -63,3 +63,6 @@ date_accessed: 2026-08-11
 
 - 由 GitHub Trending 日榜自动归档（Vibe Coding 生态扩充命中：topics 含 `claude-code` `code-understanding` `codebase-search` `mcp` `developer-tools`）。
 - 2025-06-16 开源，约 14 个月 ⭐3.7k；08-10 尚在近失名单（🔺96），今日 🔺682 翻 7 倍冲进 #3，是典型「近失→入榜」跃迁。
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-12.md|2026-08-12 收录]]

@@ -1,11 +1,11 @@
 ---
 aliases: [semantica, semantica-agi/semantica]
 tags: [AI, Trending, Python, Context-Engineering, Knowledge-Graph, Agent-Memory, Developer-Tools, Vibe-Coding]
-stars: 4508
+stars: 4868
 created_at: 2025-06-25
-today_growth: 970
-status: 新晋（上下文底座，2026-08-11 Vibe Coding #2）
-date_accessed: 2026-08-11
+today_growth: 893
+status: 4度上榜
+date_accessed: 2026-08-12
 ---
 
 # semantica
@@ -63,3 +63,6 @@ date_accessed: 2026-08-11
 
 - 由 GitHub Trending 日榜自动归档（Vibe Coding 生态扩充命中：topics 含 `context-engineering` `developer-tools`；定位为 AI Agent 的上下文/知识底座，属 coding agent 的上下文基础设施层）。
 - 2025-06-25 开源，约 14 个月 ⭐4.5k，今日首次进入 Vibe Coding 日榜 #2。
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-12.md|2026-08-12 收录]]

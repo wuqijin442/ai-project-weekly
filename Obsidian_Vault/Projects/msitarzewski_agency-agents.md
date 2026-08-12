@@ -1,11 +1,11 @@
 ---
 aliases: [msitarzewski/agency-agents, agency-agents]
 tags: [AI, Trending, Shell, Vibe-Coding, Role-Agent, Multi-Agent]
-stars: 141304
+stars: 143194
 created_at: 2025-10-13
-today_growth: 858
-status: 活跃（角色/子代理层，2026-08-10 Vibe Coding #2）
-date_accessed: 2026-08-10
+today_growth: 958
+status: 4度上榜
+date_accessed: 2026-08-12
 ---
 
 # msitarzewski/agency-agents
@@ -78,3 +78,6 @@ date_accessed: 2026-08-10
 - 由 GitHub Trending 日榜自动归档（Vibe Coding 生态扩充命中：角色 / 子代理层，属「编码 Agent 配套」细分；严格关键词未命中——topics 为空、简介无关键词，且现行判定不含 README，故即便 README 列出支持 cursor/aider/copilot 也不计严格命中）。
 - 2026-07-05 首次归档为周报索引（当时 ⭐127,033，weekly_growth 10,976）；本期由存根升级为完整页，更新 08-10 实时 star / 今日增量 / 回链。
 - 当前定位：Vibe Coding 分层图「角色层」代表，与 prime-agent（执行体）、agent-skills（技能层）、t3code（控制面）构成四层对照。
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-12.md|2026-08-12 收录]]

@@ -1,12 +1,12 @@
 ---
 aliases: [ECC, affaan-m/ECC]
 tags: [AI, Trending, JavaScript, Vibe-Coding]
-stars: 236721
+stars: 239481
 created_at: 2026-01-18
 daily_growth: 636
 weekly_growth: —
-status: 活跃（Agent harness OS，连续 4 日上榜）
-date_accessed: 2026-08-01
+status: 7度上榜
+date_accessed: 2026-08-12
 ---
 
 # affaan-m/ECC
@@ -35,3 +35,4 @@ date_accessed: 2026-08-01
 - [[Vibe-Coding-2026-07-30]]
 - [[Vibe-Coding-2026-07-31]]
 - [[Vibe-Coding-2026-08-01]]
+- [[Daily/Vibe-Coding-2026-08-12.md|2026-08-12 收录]]
