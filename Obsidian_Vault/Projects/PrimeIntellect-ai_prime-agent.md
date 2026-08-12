@@ -1,11 +1,11 @@
 ---
 aliases: [Prime Agent, prime-agent, Prime Intellect Agent]
 tags: [AI, Trending, TypeScript, Coding-Agent, RLM, Self-Improving, Long-Running, PrimeIntellect, Vibe-Coding]
-stars: 13541
+stars: 14088
 created_at: 2026-05-08
-today_growth: 2642
-status: 热门（三度上榜，蝉联 #1，今日最佳 🔝）
-date_accessed: 2026-08-11
+today_growth: 1138
+status: 5度上榜
+date_accessed: 2026-08-12
 ---
 
 # Prime Agent
@@ -127,3 +127,6 @@ prime-agent shutdown [--force]       # 停止全部 Agent、worker 与后台服�
 - ⚠️ 昨日（08-07）未在榜面，无 API 快照基线，🔺2,293 **仅由榜面支撑，建议下期复核实测增量**
 - 与 [[earendil-works_pi|pi]] 的关系：TUI 与 Agent 层构建于 pi 之上，pi 曾于 2026-07-20 上榜
 - 与今日同榜项目的分层关系：它把**记忆层（Continual Harness）、控制面（goal/heartbeat/autonomous）、运行时（daemon）一并内建**，与 [[cloudflare_computer|cloudflare/computer]]（外置运行时）、[[TencentCloud_TencentDB-Agent-Memory|TencentDB Agent Memory]]（外置记忆）、[[huangruiteng_loopx|loopx]]（外置控制面）构成**「一体化」对「组件化」**的路线对照
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-12.md|2026-08-12 收录]]

@@ -1,11 +1,11 @@
 ---
 aliases: [orca]
 tags: [AI, Trending, TypeScript, Agent-IDE, Parallel-Agents, Claude-Code, Codex, Full-Track]
-stars: 29009
+stars: 42762
 weekly_growth: 7327
 created_at: 2026-03-17
-status: 热门
-date_accessed: 2026-07-26
+status: 2度上榜
+date_accessed: 2026-08-12
 ---
 
 # orca
@@ -47,3 +47,6 @@ Orca 是面向「**并行 Agent 舰队**」的 AI 开发环境（ADE，Agent Dev
 - 2026-07-26 周报（周末全赛道 Top 10，#5）：本周 +7,327，总 Star 29.0k（29,009）。
 
 - 由 GitHub Trending 周榜自动归档（周末全赛道 Top 10，#7）。
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-12.md|2026-08-12 收录]]
