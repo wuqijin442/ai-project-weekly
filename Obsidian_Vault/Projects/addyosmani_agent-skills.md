@@ -1,7 +1,7 @@
 ---
 aliases: [agent-skills, addyosmani/agent-skills]
 tags: [AI, Trending, JavaScript, Claude-Code, Cursor, Codex, Agent, Skills, Vibe-Coding]
-stars: 86216
+stars: 86222
 created_at: 2026-02-15
 today_growth: 578
 status: 9度上榜

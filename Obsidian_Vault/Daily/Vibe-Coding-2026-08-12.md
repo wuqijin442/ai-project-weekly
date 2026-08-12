@@ -27,10 +27,40 @@ source: GitHub Trending 飙升榜 + GitHub REST API
 | 4 | [[Projects/HKUDS_DeepTutor|HKUDS/DeepTutor]] | Python | 34.7k | 🔺812 | 生态扩充(分2) |
 | 5 | [[Projects/addyosmani_agent-skills|addyosmani/agent-skills]] | JavaScript | 86.2k | 🔺578 | ✅ 严格命中 |
 
+
+## 🌐 全赛道爆款 Top10
+
+> GitHub Trending 全局（不限 Vibe Coding 赛道），按当日新增 Star 降序。
+
+| # | 项目 | 语言 | ⭐ | 📈 新增 |
+|---|---|---|---|---|
+| 1 | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | TypeScript | 14.1k | 🔺1,138 |
+| 2 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | Shell | 143.2k | 🔺958 |
+| 3 | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Python | 4.9k | 🔺893 |
+| 4 | [stablyai/orca](https://github.com/stablyai/orca) | TypeScript | 42.8k | 🔺875 |
+| 5 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Python | 34.7k | 🔺812 |
+| 6 | [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | TypeScript | 77.2k | 🔺748 |
+| 7 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | JavaScript | 86.2k | 🔺578 |
+| 8 | [anthropics/skills](https://github.com/anthropics/skills) | Python | 168.1k | 🔺485 |
+| 9 | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | Python | 47.3k | 🔺458 |
+| 10 | [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning) | Python | 278.4k | 🔺401 |
+
+## 💡 爆款小众热门（短视频同款）Top3
+
+> 筛选口径：总 Star < 15,000 且 当日新增 ≥ 100 的项目——这类「小众但爆发」项目正是抖音/快手/B站/视频号等短视频平台开发者账号最常讲解的品类。
+> 数据说明：本自动化暂以 GitHub Trending 增速近似该信号（无公开短视频平台热榜 API）；如需真实平台信号可接入数据源（如 HelloGitHub / 今日热榜）续做。
+
+| # | 项目 | 语言 | ⭐ | 📈 新增 | 一句话亮点 |
+|---|---|---|---|---|---|
+| 1 | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | TypeScript | 14.1k | 🔺1,138 | A self-improving RLM agent for coding workflow |
+| 2 | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Python | 4.9k | 🔺893 | Graph-Native Infrastructure for Context and Ac |
+| 3 | [vitali87/code-graph-rag](https://github.com/vitali87/code-graph-rag) | Python | 3.8k | 🔺341 | The ultimate RAG for your monorepo. Query, und |
+
 ## 趋势解读
 
 - 语言分布：TypeScript×2, Python×2, JavaScript×1
 - 严格关键词命中 2 个，生态扩充 3 个（Vibe Coding 赛道口径）。
+- 全赛道爆款收录 10 个；爆款小众（短视频同款）收录 3 个。
 - 注：机械统计由 src/run_daily.py 生成；深度趋势解读可由 agent 在生成后补充。
 
 ## 详细见 Obsidian 项目页
