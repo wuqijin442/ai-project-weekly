@@ -1,0 +1,183 @@
+[
+  {
+    "project": {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "full": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "stars": 144911,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.1,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "localsend",
+      "name": "localsend",
+      "full": "localsend/localsend",
+      "url": "https://github.com/localsend/localsend",
+      "description": "An open-source cross-platform alternative to AirDrop",
+      "language": "Dart",
+      "stars": 88097,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 48.0,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": true,
+      "go": false,
+      "docker": false,
+      "files": [
+        "Cargo.toml"
+      ]
+    },
+    "install": "skipped",
+    "install_log": "Rust 项目，未执行 cargo build（资源/耗时限制）",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "infiniflow",
+      "name": "ragflow",
+      "full": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "language": "Go",
+      "stars": 87767,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 63.9,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": true,
+      "docker": true,
+      "files": [
+        "pyproject.toml",
+        "go.mod",
+        "Dockerfile"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.4,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "paperclipai",
+      "name": "paperclip",
+      "full": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "language": "TypeScript",
+      "stars": 77944,
+      "categories": [
+        "AI/LLM/Agent",
+        "DevTools"
+      ]
+    },
+    "clone": true,
+    "clone_time": 11.1,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "Dockerfile"
+      ]
+    },
+    "install": "success",
+    "install_log": "\n> postinstall\n> node scripts/link-plugin-dev-sdk.mjs\n\n  ✓ Linked @paperclipai/plugin-sdk into 8 excluded plugin(s) (skipped 0)\n\nadded 58 packages in 1m\n\n17 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 73.3,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "hugohe3",
+      "name": "ppt-master",
+      "full": "hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "language": "Python",
+      "stars": 46227,
+      "categories": [
+        "AI/LLM/Agent",
+        "Data/ML"
+      ]
+    },
+    "clone": true,
+    "clone_time": 58.4,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt"
+      ]
+    },
+    "install": "success",
+    "install_log": "fi, edge-tts, nbformat, nbclient, nbconvert\n\nSuccessfully installed PyMuPDF-1.28.2 XlsxWriter-3.2.9 beautifulsoup4-4.15.0 cobble-0.1.4 curl_cffi-0.16.0 ebooklib-0.20 edge-tts-7.2.8 et-xmlfile-2.0.0 fastjsonschema-2.22.1 jupyter-client-8.9.1 jupyter-core-5.9.1 jupyterlab-pygments-0.3.0 mammoth-1.12.1 markdownify-1.2.3 mistune-3.3.4 nbclient-0.11.0 nbconvert-7.17.1 nbformat-5.11.0 openpyxl-3.1.5 pandocfilters-1.5.1 python-pptx-1.0.2 pyzmq-27.1.0 skia-pathops-0.9.2 tabulate-0.10.0 uharfbuzz-0.56.0\n",
+    "install_time": 24.8,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  }
+]
