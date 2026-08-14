@@ -1,7 +1,7 @@
 ---
 aliases: [Prime Agent, prime-agent, Prime Intellect Agent]
 tags: [AI, Trending, TypeScript, Coding-Agent, RLM, Self-Improving, Long-Running, PrimeIntellect, Vibe-Coding]
-stars: 14088
+stars: 14185
 created_at: 2026-05-08
 today_growth: 1138
 status: 5度上榜
