@@ -1,0 +1,179 @@
+[
+  {
+    "project": {
+      "owner": "anthropics",
+      "name": "skills",
+      "full": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 169306,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.6,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "msitarzewski",
+      "name": "agency-agents",
+      "full": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "stars": 145378,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.0,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "3b1b",
+      "name": "manim",
+      "full": "3b1b/manim",
+      "url": "https://github.com/3b1b/manim",
+      "description": "Animation engine for explanatory math videos",
+      "language": "Python",
+      "stars": 91045,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 3.1,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml",
+        "setup.py"
+      ]
+    },
+    "install": "failed",
+    "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
+    "install_time": 31.1,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "infiniflow",
+      "name": "ragflow",
+      "full": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "language": "Go",
+      "stars": 88235,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 14.1,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": true,
+      "docker": true,
+      "files": [
+        "pyproject.toml",
+        "go.mod",
+        "Dockerfile"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.3,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "unslothai",
+      "name": "unsloth",
+      "full": "unslothai/unsloth",
+      "url": "https://github.com/unslothai/unsloth",
+      "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+      "language": "Python",
+      "stars": 71256,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 18.0,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml"
+      ]
+    },
+    "install": "success",
+    "install_log": "ace10364562e848db12690e5b14d999e6130f23c524452fbc033755335da8\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-t57imzjr\\wheels\\5f\\09\\df\\7d6733f3604bb71dbe3786e83c7c9bab7e5a8e6a71d471a0d0\nSuccessfully built unsloth\nInstalling collected packages: unsloth\n  Attempting uninstall: unsloth\n    Found existing installation: unsloth 2026.8.15\n    Uninstalling unsloth-2026.8.15:\n      Successfully uninstalled unsloth-2026.8.15\nSuccessfully installed unsloth-2026.8.16\n",
+    "install_time": 32.7,
+    "run": "success",
+    "run_log": "                                                                               \n Usage: unsloth [OPTIONS] COMMAND [ARGS]...                                    \n                                                                               \n Command-line interface for Unsloth training, inference, and export.           \n                                                                               \n",
+    "run_time": 1.3,
+    "score": 70,
+    "stars": "★★★☆☆"
+  }
+]
