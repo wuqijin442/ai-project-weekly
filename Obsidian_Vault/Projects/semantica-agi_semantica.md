@@ -1,11 +1,11 @@
 ---
 aliases: [semantica, semantica-agi/semantica]
 tags: [AI, Trending, Python, Context-Engineering, Knowledge-Graph, Agent-Memory, Developer-Tools, Vibe-Coding]
-stars: 6619
+stars: 7176
 created_at: 2025-06-25
-today_growth: 845
-status: 5度上榜
-date_accessed: 2026-08-13
+today_growth: 713
+status: 6度上榜
+date_accessed: 2026-08-14
 ---
 
 # semantica
@@ -67,3 +67,4 @@ date_accessed: 2026-08-13
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-12.md|2026-08-12 收录]]
 - [[Daily/Vibe-Coding-2026-08-13.md|2026-08-13 收录]]
+- [[Daily/Vibe-Coding-2026-08-14.md|2026-08-14 收录]]
