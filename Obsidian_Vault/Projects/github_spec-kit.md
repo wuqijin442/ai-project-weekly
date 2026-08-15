@@ -1,11 +1,11 @@
 ---
 aliases: [spec-kit]
 tags: [AI, Trending, Python, GitHub, Copilot, Spec-Driven, Claude-Code, Vibe-Coding]
-stars: 120576
+stars: 128757
 created_at: 2025-08-21
-today_growth: 508
-status: 待填写
-date_accessed: 2026-07-14
+today_growth: 1160
+status: 3度上榜
+date_accessed: 2026-08-15
 ---
 
 # spec-kit
@@ -51,3 +51,6 @@ GitHub 官方出品的 **Spec-Driven Development（规格驱动开发，SDD）**
 - 数据来源：GitHub Trending 日榜（今日 +508）+ GitHub REST API（WebFetch 兜底获取 created_at / stars）。
 - 命中口径：简介未含严格关键词，但因 topics 含 **copilot** 且属「规格驱动 / AI 编码」生态，按 Vibe Coding 扩充口径入选。
 - 信号意义：GitHub 官方亲自下场推 SDD，与 agent-skills / graphify 等「工程纪律」类项目形成共振。
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-15.md|2026-08-15 收录]]

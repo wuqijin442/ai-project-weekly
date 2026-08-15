@@ -1,11 +1,11 @@
 ---
 aliases: ["cathrynlavery/diagram-design"]
 tags: [github, ai, vibe-coding, project]
-stars: 16094
-today_growth: 4475
+stars: 17839
+today_growth: 3646
 created_at: 2026-04-16
-status: 3度上榜
-date_accessed: 2026-08-14
+status: 4度上榜
+date_accessed: 2026-08-15
 ---
 
 # cathrynlavery/diagram-design
@@ -25,3 +25,4 @@ date_accessed: 2026-08-14
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-13.md|2026-08-13 收录]]
 - [[Daily/Vibe-Coding-2026-08-14.md|2026-08-14 收录]]
+- [[Daily/Vibe-Coding-2026-08-15.md|2026-08-15 收录]]
