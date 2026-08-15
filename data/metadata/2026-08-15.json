@@ -1,0 +1,184 @@
+[
+  {
+    "project": {
+      "owner": "openclaw",
+      "name": "openclaw",
+      "full": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "language": "TypeScript",
+      "stars": 386353,
+      "source": "search-api-fallback",
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 463.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"workspace:\": workspace:*\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-15T09_46_20_591Z-debug-0.log\n",
+    "install_time": 4.6,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "nilbuild",
+      "name": "developer-roadmap",
+      "full": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+      "language": "TypeScript",
+      "stars": 364439,
+      "source": "search-api-fallback",
+      "categories": [
+        "Frontend/Web",
+        "DevTools"
+      ]
+    },
+    "clone": true,
+    "clone_time": 76.5,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nadded 30 packages in 42s\n\n11 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 42.3,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "tensorflow",
+      "name": "tensorflow",
+      "full": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "language": "C++",
+      "stars": 197025,
+      "source": "search-api-fallback",
+      "categories": [
+        "Data/ML"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 530.5,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "microsoft",
+      "name": "vscode",
+      "full": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "description": "Visual Studio Code",
+      "language": "TypeScript",
+      "stars": 188708,
+      "source": "search-api-fallback",
+      "categories": [
+        "DevTools"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 450.3,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.4,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Genymobile",
+      "name": "scrcpy",
+      "full": "Genymobile/scrcpy",
+      "url": "https://github.com/Genymobile/scrcpy",
+      "description": "Display and control your Android device",
+      "language": "C",
+      "stars": 147667,
+      "source": "search-api-fallback",
+      "categories": [
+        "Mobile"
+      ]
+    },
+    "clone": true,
+    "clone_time": 4.1,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  }
+]
