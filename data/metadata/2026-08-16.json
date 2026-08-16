@@ -1,0 +1,377 @@
+[
+  {
+    "project": {
+      "owner": "openclaw",
+      "name": "openclaw",
+      "full": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "language": "TypeScript",
+      "stars": 386429,
+      "source": "search-api-fallback",
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 312.0,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"workspace:\": workspace:*\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-16T09_41_24_362Z-debug-0.log\n",
+    "install_time": 9.9,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "tensorflow",
+      "name": "tensorflow",
+      "full": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "language": "C++",
+      "stars": 197053,
+      "source": "search-api-fallback",
+      "categories": [
+        "Data/ML"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 728.6,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "microsoft",
+      "name": "vscode",
+      "full": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "description": "Visual Studio Code",
+      "language": "TypeScript",
+      "stars": 188752,
+      "source": "search-api-fallback",
+      "categories": [
+        "DevTools"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 378.3,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.4,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "flutter",
+      "name": "flutter",
+      "full": "flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "language": "Dart",
+      "stars": 178406,
+      "source": "search-api-fallback",
+      "categories": [
+        "Frontend/Web",
+        "DevTools",
+        "Mobile"
+      ]
+    },
+    "clone": true,
+    "clone_time": 148.6,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "full": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 240363,
+      "source": "search-api-fallback",
+      "categories": [
+        "AI/LLM/Agent",
+        "Security"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 247.1,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "ction: filename=llm_abstraction-0.1.0-py3-none-any.whl size=41014 sha256=c2946509d658b112a3f64db3a15bef26493b80057fddd890b11aee4f0928f9db\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-gld0x9zv\\wheels\\6f\\31\\39\\bf1b2198813adf23e5d362e1441f3f113d293a555545e12192\nSuccessfully built llm-abstraction\nInstalling collected packages: docstring-parser, anthropic, llm-abstraction\n\nSuccessfully installed anthropic-0.122.0 docstring-parser-0.18.0 llm-abstraction-0.1.0\n",
+    "install_time": 20.7,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "firecrawl",
+      "name": "firecrawl",
+      "full": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "The context API to search, scrape, and interact with the web at scale. 🔥",
+      "language": "TypeScript",
+      "stars": 167940,
+      "source": "search-api-fallback",
+      "categories": [
+        "Frontend/Web",
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 18.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "NousResearch",
+      "name": "hermes-agent",
+      "full": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "stars": 231231,
+      "source": "search-api-fallback",
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 255.0,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "pyproject.toml",
+        "setup.py",
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "success",
+    "install_log": "ttempting uninstall: openai\n    Found existing installation: openai 2.53.0\n    Uninstalling openai-2.53.0:\n      Successfully uninstalled openai-2.53.0\n\nSuccessfully installed Markdown-3.10.2 certifi-2026.5.20 concurrent-log-handler-0.9.29 croniter-6.0.0 fire-0.7.1 hermes-agent-0.20.1 nemo-relay-0.7.3 openai-2.24.0 packaging-26.0 portalocker-4.1.0 prompt_toolkit-3.0.52 pywin32-311 pywinpty-2.0.15 requests-2.33.0 rich-14.3.3 ruamel.yaml-0.18.17 ruamel.yaml.clib-0.2.15 socksio-1.0.0 tzdata-2025.3\n",
+    "install_time": 51.1,
+    "run": "success",
+    "run_log": "INFO: Showing help with the command 'cli.py -- --help'.\n\nNAME\n    cli.py - Hermes Agent CLI - Interactive AI Assistant\n\nSYNOPSIS\n    cli.py <flags>\n\nDESCRIPTION\n    Hermes Agent CLI - Interactive AI Assistant\n\nFLAGS\n    --query=QUERY\n        Type: Optional[str]\n        Default: None\n        Single query to execute (then exit). Alias: -q\n    --q=Q\n        Type: Optional[str]\n        Default: None\n ",
+    "run_time": 2.9,
+    "score": 76,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "vercel",
+      "name": "next.js",
+      "full": "vercel/next.js",
+      "url": "https://github.com/vercel/next.js",
+      "description": "The React Framework",
+      "language": "JavaScript",
+      "stars": 141799,
+      "source": "search-api-fallback",
+      "categories": [
+        "Frontend/Web"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 390.5,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": true,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json",
+        "Cargo.toml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "error node_modules/react\nnpm error   dev react@\"19.0.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer react@\"^18.0.0\" from @testing-library/react@15.0.7\nnpm error node_modules/@testing-library/react\nnpm error   dev @testing-library/react@\"^15.0.5\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-16T10_22_18_891Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-16T10_22_18_891Z-debug-0.log\n",
+    "install_time": 6.7,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "mattpocock",
+      "name": "skills",
+      "full": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 218718,
+      "source": "search-api-fallback",
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.4,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nadded 111 packages in 5s\n\n11 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 5.9,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "n8n-io",
+      "name": "n8n",
+      "full": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "language": "TypeScript",
+      "stars": 200822,
+      "source": "search-api-fallback",
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "DevTools"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 232.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "failed",
+    "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"workspace:\": workspace:*\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-16T10_26_26_658Z-debug-0.log\n",
+    "install_time": 2.8,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  }
+]
