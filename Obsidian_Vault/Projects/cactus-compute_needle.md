@@ -1,11 +1,11 @@
 ---
 aliases: ["cactus-compute/needle"]
 tags: [github, ai, vibe-coding, project]
-stars: 5224
-today_growth: 769
+stars: 6227
+today_growth: 547
 created_at: 2026-02-24
-status: 3度上榜
-date_accessed: 2026-08-14
+status: 5度上榜
+date_accessed: 2026-08-16
 ---
 
 # cactus-compute/needle
@@ -24,4 +24,4 @@ date_accessed: 2026-08-14
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-14.md|2026-08-14 收录]]
-
+- [[Daily/AI-Weekly-2026-08-16.md|2026-08-16 收录]]
