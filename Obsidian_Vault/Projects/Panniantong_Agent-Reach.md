@@ -1,23 +1,23 @@
 ---
 aliases: [Agent-Reach, agent-reach, Agent 联网感官]
 tags: [AI, Trending, Python, CLI, MCP, Agent-Infrastructure, Vibe-Coding]
-stars: 66190
+stars: 72416
 created_at: 2026-02-24
-today_growth: 1057
-status: 热门（首入榜 #3）
-date_accessed: 2026-08-04
+today_growth: null
+status: Vibe Coding Top5 · 2026-08-17
+date_accessed: 2026-08-17
 ---
 
 # Agent Reach
 
 **项目地址**：https://github.com/Panniantong/Agent-Reach
 **作者**：Panniantong
-**⭐ 总 Star**：66,190（66.2k）  <!-- 18:00 复核值；10:22 首采 65,789 -->
-**📈 今日新增**：🔺1,057 stars
-**🍴 Fork**：5,458
+**⭐ 总 Star**：72,416（72.4k）  <!-- 2026-08-17 GitHub REST API 实时值；08-04 为 66,190 -->
+**📈 今日新增**：—（trending 页不可达，以当前总 Star 降序呈现）
+**🍴 Fork**：6,151
 **💻 主要语言**：Python（3.10+）
 **📅 开源时间**：2026-02-24
-**🔄 最近推送**：2026-07-25
+**🔄 最近推送**：2026-08-12（pushed_at 2026-08-12T03:39:49Z）
 **📜 许可证**：MIT
 
 ## 项目定位
@@ -65,10 +65,16 @@ topics 直接标注 `claude-code`、`cursor`、`mcp`、`llm-tools`——定位�
 
 ## 相关日期
 
-- [[Vibe-Coding-2026-08-04|2026-08-04 日报]]（首入榜 #3）
+- [[Vibe-Coding-2026-08-04|2026-08-04 日报]]（首入榜 #3，⭐66.2k / 🔺1,057）
+- [[Vibe-Coding-2026-08-17|2026-08-17 日报]]（Vibe Coding #4，⭐72.4k）
 
 ## 备注
 
-- ⭐66.2k 体量为今日 Top 5 中最大，说明「Agent 联网」是长期高需求缺口
+- ⭐72.4k 体量在今日 Top 5 中位居中段，说明「Agent 联网」是长期高需求缺口
 - 曾获 Trendshift「GitHub Trending #1 Repository of the Day」
 - 与 07-20/07-21 上榜的 wigolo（Agent 检索本地化）同属「Agent 感官/检索层」主线
+- 2026-08-17：总 Star 由 08-04 的 66,190 升至 72,416（区间 +6,226）。当日精确新增因 trending 页不可达标记为 —。
+
+## 反向链接
+- [[Vibe-Coding-2026-08-04|2026-08-04 日报]]
+- [[Vibe-Coding-2026-08-17|2026-08-17 日报]]

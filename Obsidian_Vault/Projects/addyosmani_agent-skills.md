@@ -1,24 +1,24 @@
 ---
 aliases: [agent-skills, addyosmani/agent-skills]
 tags: [AI, Trending, JavaScript, Claude-Code, Cursor, Codex, Agent, Skills, Vibe-Coding]
-stars: 86265
+stars: 87894
 created_at: 2026-02-15
-today_growth: 578
-status: 9度上榜
-date_accessed: 2026-08-12
+today_growth: null
+status: Vibe Coding Top5 · 2026-08-17
+date_accessed: 2026-08-17
 ---
 
 # agent-skills
 
 **项目地址**：https://github.com/addyosmani/agent-skills
 **作者**：addyosmani（Addy Osmani，Google 工程师）
-**⭐ 总 Star**：85,991（86.0k）  <!-- 2026-08-11 17:5x API 实时值；08-10 为 85,426 -->
-**📈 今日新增**：🔺659 stars（榜面值；**48h 净增 +1,854（84,137→85,991），日均 ≈+927，与榜面吻合**）
-**🎯 严格命中**：`cursor`（topics）—— 2026-08-08 起严格命中判定范围扩展至 GitHub topics，本项目由生态扩充升为严格命中
-**🍴 Fork**：9,188
+**⭐ 总 Star**：87,894（87.9k）  <!-- 2026-08-17 GitHub REST API 实时值；08-12 为 86,265 -->
+**📈 今日新增**：—（trending 页不可达，以当前总 Star 降序呈现）
+**🎯 严格命中**：`cursor`（topics）—— 自 2026-08-08 起严格命中判定范围扩展至 GitHub topics
+**🍴 Fork**：9,413
 **💻 主要语言**：JavaScript
 **📅 开源时间**：2026-02-15
-**🔄 最近推送**：2026-08-06 22:45
+**🔄 最近推送**：2026-08-14 18:51
 **🌐 官网**：https://skills.addy.ie
 **🏷 Topics**：agent-skills, antigravity, claude-code, codex, cursor, skills
 **📜 许可证**：MIT
@@ -84,12 +84,6 @@ npx skills add addyosmani/agent-skills
 - CI/CD：GitHub Actions
 - 许可证：MIT
 
-## 评估基线
-
-- 120 项检查通过
-- 72 个正向提示中 85% 触发 rank-1 率
-- 零目录冲突
-
 ## 外部链接
 
 - GitHub：https://github.com/addyosmani/agent-skills
@@ -99,36 +93,28 @@ npx skills add addyosmani/agent-skills
 ## 相关日期
 
 - [[Vibe-Coding-2026-07-14|2026-07-14 日报]]
-- [[Vibe-Coding-2026-07-11|2026-07-11 日报]]
-- [[Vibe-Coding-2026-07-08|2026-07-08 日报]]
-- [[Vibe-Coding-2026-07-09|2026-07-09 日报]]
-- [[Vibe-Coding-2026-07-10|2026-07-10 日报]]
-- [[Vibe-Coding-2026-08-08|2026-08-08 日报]]（#3，⭐83.9k / 🔺1,131）
+- [[Vibe-Coding-2026-08-08|2026-08-08 日报]]（#3，⭐83.9k / 🔺1,131，严格命中 cursor）
 - [[Vibe-Coding-2026-08-10|2026-08-10 日报]]（#3，⭐85.4k / 🔺680，严格命中 cursor）
-- [[Vibe-Coding-2026-08-11|2026-08-11 日报]]（#4，⭐86.0k / 🔺659，严格命中 cursor，三度上榜）
+- [[Vibe-Coding-2026-08-11|2026-08-11 日报]]（#4，⭐86.0k / 🔺659，严格命中 cursor）
+- [[Vibe-Coding-2026-08-17|2026-08-17 日报]]（Vibe Coding #3，⭐87.9k）
 
-## 三条核心主张（2026-08-08 复核 README）
+## 三条核心主张
 
-| 主张 | 原文 | 含义 |
-|------|------|------|
-| **Process, not prose.** | — | 技能是**工作流**，不是参考文档 |
-| **Anti-rationalization.** | — | 每个技能自带借口反驳表，专治「我稍后补测试」 |
-| **Verification is non-negotiable.** | — | 技能结尾必须有证据要求（测试通过等） |
+| 主张 | 含义 |
+|------|------|
+| **Process, not prose.** | 技能是**工作流**，不是参考文档 |
+| **Anti-rationalization.** | 每个技能自带借口反驳表，专治「我稍后补测试」 |
+| **Verification is non-negotiable.** | 技能结尾必须有证据要求（测试通过等） |
 
 > *"AI coding agents default to the shortest path… Agent Skills gives agents structured workflows that enforce the same discipline senior engineers bring."*
-
-补充：`/build auto` 支持一次性审批后自主实现；已接入 Command Code / Antigravity / Kiro 等较新宿主；单技能安装的便携性缺口由 [#361](https://github.com/addyosmani/agent-skills/issues/361) 跟踪。
 
 ## 备注
 
 - 融入了 Google 工程文化的最佳实践（包括《Software Engineering at Google》中的概念）
 - 技能为流程导向（非散文式），包含反合理化机制和验证要求
 - 渐进式披露设计，最小化 token 使用
-- 2026-07-14 更新：总 Star 由 76,816 升至 77,927；今日精确新增因 GitHub Trending 日榜 WebFetch 截断未能直读，frontmatter 曾记 `weekly_growth: 7300`（findarepo 镜像近 7 日动量，约 +7.3k），该仓库已确认位于今日日榜尾段。
-- **格式修复（2026-08-08）**：本页 YAML frontmatter 自建档起缺失闭合 `---`，Obsidian 无法解析属性，本次修复；`weekly_growth` 字段改为 `today_growth`，与其余项目页对齐。
-- **成长曲线**：2026-07-14 ⭐77,927 → 2026-08-07 ⭐83,351（🔺593，赛道内落榜，列近失名单） → 2026-08-08 ⭐83,891（🔺1,131，Vibe Coding #3）。**榜面日增从 593 翻到 1,131，一天翻倍后重回榜单。**
-- ⚠️ **口径备注（连续两期）**：本仓库 topics 含 `cursor` `codex` `claude-code`，若 Vibe Coding 严格关键词判定扩展到 topics 字段，则构成**严格命中**（`cursor`）。本归档历史口径仅匹配 `owner/repo` + 简介，故 08-07、08-08 两期均计为「生态扩充」。该分歧建议评估是否调整口径。
-- 2026-08-08 日报（#3）：与 [[mattpocock_skills|mattpocock/skills]]、[[obra_superpowers|obra/superpowers]] 同日占 Top 5 三席。三者定位差异：本项目 = 零件 + 质检表（24 技能 + 8 斜杠命令 + 质量门禁），mattpocock = 只给零件，superpowers = 整条产线。
+- 2026-08-17：总 Star 由 08-12 的 86,265 升至 87,894（区间 +1,629）。当日精确新增因 trending 页不可达标记为 —。
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-12.md|2026-08-12 收录]]
+- [[Daily/Vibe-Coding-2026-08-17.md|2026-08-17 收录]]

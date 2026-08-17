@@ -1,19 +1,19 @@
 ---
 aliases: [spec-kit]
 tags: [AI, Trending, Python, GitHub, Copilot, Spec-Driven, Claude-Code, Vibe-Coding]
-stars: 129363
+stars: 129655
 created_at: 2025-08-21
-today_growth: 892
-status: 4度上榜
-date_accessed: 2026-08-16
+today_growth: null
+status: Vibe Coding Top5 · 2026-08-17
+date_accessed: 2026-08-17
 ---
 
 # spec-kit
 
 **项目地址**：https://github.com/github/spec-kit
 **作者**：github（GitHub 官方）
-**⭐ 总 Star**：120,576（120.6k）
-**📈 今日新增**：508 stars
+**⭐ 总 Star**：129,655（129.7k）  <!-- 2026-08-17 GitHub REST API 实时值 -->
+**📈 今日新增**：—（trending 页 IP 阻断 + WebFetch 截断，本期以当前总 Star 降序呈现）
 **💻 主要语言**：Python
 **🗓 开源时间**：2025-08-21
 
@@ -45,13 +45,17 @@ GitHub 官方出品的 **Spec-Driven Development（规格驱动开发，SDD）**
 ## 相关日期
 
 - [[Vibe-Coding-2026-07-14|2026-07-14 日报]]
+- [[Vibe-Coding-2026-08-15|2026-08-15 日报]]（#3，⭐128.8k / 🔺1,160）
+- [[Vibe-Coding-2026-08-16|2026-08-16 周报]]
+- [[Vibe-Coding-2026-08-17|2026-08-17 日报]]（Vibe Coding #1，⭐129.7k）
 
 ## 备注
 
-- 数据来源：GitHub Trending 日榜（今日 +508）+ GitHub REST API（WebFetch 兜底获取 created_at / stars）。
-- 命中口径：简介未含严格关键词，但因 topics 含 **copilot** 且属「规格驱动 / AI 编码」生态，按 Vibe Coding 扩充口径入选。
-- 信号意义：GitHub 官方亲自下场推 SDD，与 agent-skills / graphify 等「工程纪律」类项目形成共振。
+- 数据来源：GitHub Search API（Vibe Coding 严格命中 copilot）+ GitHub REST API（2026-08-17 实时 stars）。
+- 命中口径：topics 含 **copilot**，属 Vibe Coding 严格命中。
+- 信号意义：GitHub 官方亲自下场推 SDD，与 agent-skills / 同类「工程纪律」项目形成共振。
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-15.md|2026-08-15 收录]]
 - [[Daily/AI-Weekly-2026-08-16.md|2026-08-16 收录]]
+- [[Daily/Vibe-Coding-2026-08-17.md|2026-08-17 收录]]
