@@ -1,0 +1,145 @@
+[
+  {
+    "project": {
+      "owner": "public-apis",
+      "name": "public-apis",
+      "full": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "language": "Python",
+      "stars": 462569,
+      "categories": [
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.0,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "unslothai",
+      "name": "unsloth",
+      "full": "unslothai/unsloth",
+      "url": "https://github.com/unslothai/unsloth",
+      "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+      "language": "Python",
+      "stars": 72957,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 14.1,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml"
+      ]
+    },
+    "install": "success",
+    "install_log": "a312eb20ba809eb544dfafacbe7342c143f464a87a22a8eb28765819be777\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-qjfeotu7\\wheels\\5f\\09\\df\\7d6733f3604bb71dbe3786e83c7c9bab7e5a8e6a71d471a0d0\nSuccessfully built unsloth\nInstalling collected packages: unsloth\n  Attempting uninstall: unsloth\n    Found existing installation: unsloth 2026.8.18\n    Uninstalling unsloth-2026.8.18:\n      Successfully uninstalled unsloth-2026.8.18\nSuccessfully installed unsloth-2026.8.18\n",
+    "install_time": 36.5,
+    "run": "success",
+    "run_log": "                                                                               \n Usage: unsloth [OPTIONS] COMMAND [ARGS]...                                    \n                                                                               \n Command-line interface for Unsloth training, inference, and export.           \n                                                                               \n",
+    "run_time": 1.4,
+    "score": 70,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "ToolJet",
+      "name": "ToolJet",
+      "full": "ToolJet/ToolJet",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
+      "language": "JavaScript",
+      "stars": 40327,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "DevTools"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 1428.6,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\n> tooljet@1.18.0 prepare\n> husky install\n\n.git can't be found\nadded 331 packages in 30s\n\n71 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 30.8,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "cactus-compute",
+      "name": "needle",
+      "full": "cactus-compute/needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+      "language": "Python",
+      "stars": 6919,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 5.4,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml"
+      ]
+    },
+    "install": "success",
+    "install_log": "whl (137 kB)\nInstalling collected packages: treescope, simplejson, sentencepiece, prometheus-client, opt_einsum, msgpack, ml_dtypes, humanize, etils, absl-py, tensorstore, jaxlib, jax, orbax-checkpoint, optax, flax\n\nSuccessfully installed absl-py-2.5.0 etils-1.14.0 flax-0.12.8 humanize-4.16.0 jax-0.11.0 jaxlib-0.11.0 ml_dtypes-0.6.0 msgpack-1.2.1 opt_einsum-3.4.0 optax-0.2.8 orbax-checkpoint-0.12.4 prometheus-client-0.26.0 sentencepiece-0.2.2 simplejson-4.1.1 tensorstore-0.1.85 treescope-0.1.10\n",
+    "install_time": 37.9,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 53.8,
+    "stars": "★★★☆☆"
+  }
+]
