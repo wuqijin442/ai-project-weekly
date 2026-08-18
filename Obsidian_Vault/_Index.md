@@ -9,6 +9,7 @@ tags: [index, github, ai]
 
 | 日期 | 类型 | 入口 |
 |---|---|---|
+| 2026-08-18 | 日报 | [[Daily/Vibe-Coding-2026-08-18|Vibe-Coding-2026-08-18]] |
 | 2026-08-17 | 日报 | [[Daily/Vibe-Coding-2026-08-17|Vibe-Coding-2026-08-17]] |
 | 2026-08-16 | 周报 | [[Daily/AI-Weekly-2026-08-16|AI-Weekly-2026-08-16]] |
 | 2026-08-15 | 日报 | [[Daily/Vibe-Coding-2026-08-15|Vibe-Coding-2026-08-15]] |
@@ -52,3 +53,6 @@ tags: [index, github, ai]
 ## 项目索引
 
 > 项目页按首字母聚合于 [[Projects]] 目录。
+
+- [[Projects/akitaonrails_ai-memory|akitaonrails/ai-memory]] — Rust · 编码 Agent 长期记忆层 · 2026-08-18 收录
+- [[Projects/mukul975_Anthropic-Cybersecurity-Skills|mukul975/Anthropic-Cybersecurity-Skills]] — Python · 面向 AI Agent 的安全技能库(817) · 2026-08-18 收录
