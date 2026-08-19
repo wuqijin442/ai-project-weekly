@@ -1,0 +1,186 @@
+[
+  {
+    "project": {
+      "owner": "public-apis",
+      "name": "public-apis",
+      "full": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "language": "Python",
+      "stars": 464521,
+      "source": "search-api-fallback",
+      "categories": [
+        "Backend/DevOps"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 33.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "openclaw",
+      "name": "openclaw",
+      "full": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "language": "TypeScript",
+      "stars": 386676,
+      "source": "search-api-fallback",
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 275.5,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"workspace:\": workspace:*\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-08-19T00_16_10_399Z-debug-0.log\n",
+    "install_time": 4.6,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "nilbuild",
+      "name": "developer-roadmap",
+      "full": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+      "language": "TypeScript",
+      "stars": 364864,
+      "source": "search-api-fallback",
+      "categories": [
+        "Frontend/Web",
+        "DevTools"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 58.8,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nadded 30 packages in 46s\n\n11 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 46.5,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "tensorflow",
+      "name": "tensorflow",
+      "full": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "language": "C++",
+      "stars": 197047,
+      "source": "search-api-fallback",
+      "categories": [
+        "Data/ML"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 427.3,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "microsoft",
+      "name": "vscode",
+      "full": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "description": "Visual Studio Code",
+      "language": "TypeScript",
+      "stars": 188912,
+      "source": "search-api-fallback",
+      "categories": [
+        "DevTools"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 174.3,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "failed",
+    "install_log": "26 ms: Scavenge 123.6 (160.7) -> 123.5 (160.7) MB, pooled: 0 MB, 0.75 / 0.00 ms  (average mu = 0.969, current mu = 0.988) external memory pressure; \n[45040:0000026896848000]     7973 ms: Mark-Compact 123.7 (160.7) -> 123.6 (161.0) MB, pooled: 0 MB, 3.29 / 0.00 ms  (+ 10.0 ms in 0 steps since start of marking, biggest step 0.0 ms, walltime since start of marking 44 ms) (average mu = 0.960, current mu =\n\n<--- JS stacktrace --->\n\nFATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory\n----- Native stack trace -----\n\n 1: 00007FF6ADFF3587 \n 2: 00007FF6ADF53A5B \n 3: 00007FF6AEB5CCD1 \n 4: 00007FF6AEB49786 \n 5: 00007FF6AE9A5ED0 \n 6: 00007FF6AE982C50 \n 7: 00007FF6AE9ACB2B \n 8: 00007FF6AE9AF13E \n 9: 00007FF6AE99EF9D \n10: 00007FF6AE99AB55 \n11: 00007FF6AE323F7D \n",
+    "install_time": 8.7,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  }
+]

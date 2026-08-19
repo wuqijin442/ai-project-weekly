@@ -1,11 +1,11 @@
 ---
 aliases: [ai-agent-book]
 tags: [AI, Trending, Python, agent, agent-memory, ai-agent, book, coding-agent, context-engineering, large-language-models, llm]
-stars: 19767
+stars: 39099
 weekly_growth: 16579
 created_at: 2025-09-09
-status: 待填写
-date_accessed: 2026-07-26
+status: 4度上榜
+date_accessed: 2026-08-19
 ---
 
 # ai-agent-book
@@ -40,3 +40,6 @@ date_accessed: 2026-07-26
 ## 备注
 
 - 由 GitHub Trending 周榜自动归档（周末全赛道 Top 10，#1）。本周 +16,579，总 Star 19.8k（19,767）。
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-19.md|2026-08-19 收录]]
