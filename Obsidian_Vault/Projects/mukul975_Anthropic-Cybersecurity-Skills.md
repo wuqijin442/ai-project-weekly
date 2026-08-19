@@ -1,7 +1,7 @@
 ---
 aliases: [Anthropic-Cybersecurity-Skills, mukul975/Anthropic-Cybersecurity-Skills]
 tags: [AI, Trending, Python, Claude-Code, Copilot, Cursor, Codex, Security, Skills, Vibe-Coding]
-stars: 29174
+stars: 29479
 created_at: 2026-02-25
 today_growth: 730
 status: 3度上榜

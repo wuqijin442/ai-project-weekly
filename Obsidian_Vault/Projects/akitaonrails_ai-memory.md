@@ -1,7 +1,7 @@
 ---
 aliases: [ai-memory, akitaonrails/ai-memory]
 tags: [AI, Trending, Rust, Claude-Code, Codex, Agent, Memory, Vibe-Coding]
-stars: 2707
+stars: 3000
 created_at: 2026-05-21
 today_growth: 648
 status: 3度上榜

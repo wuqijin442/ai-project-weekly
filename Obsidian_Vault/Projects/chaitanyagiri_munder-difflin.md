@@ -1,7 +1,7 @@
 ---
 aliases: ["chaitanyagiri/munder-difflin"]
 tags: [github, ai, vibe-coding, project]
-stars: 2015
+stars: 2375
 today_growth: 306
 created_at: 2026-05-31
 status: 2度上榜

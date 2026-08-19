@@ -1,7 +1,7 @@
 ---
 aliases: ["volcengine/OpenViking"]
 tags: [github, ai, vibe-coding, project]
-stars: 29357
+stars: 29765
 today_growth: 213
 created_at: 2026-01-05
 status: 2度上榜
