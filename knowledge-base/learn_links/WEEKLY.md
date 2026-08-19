@@ -1,58 +1,22 @@
 ## 主题图谱（知识图谱视图）
 
-AI/LLM/Agent 领域短视频生成工具 —— 可组合 —— AI/LLM/Agent 与前端 Web 开发融合  
-涉及日期：2026-08-19  
+AI/LLM/Agent 领域本地化部署与训练工具 —— 出现天数：7，趋势：→稳定，关联边：与 AI/LLM/Agent 与前端 Web 开发融合（可组合）、与 AI/LLM/Agent 与数据可视化结合（互补）、与 AI/LLM/Agent 与 Backend/DevOps 工具链整合（互补），涉及日期：2026-08-14 ~ 2026-08-20  
+AI/LLM/Agent 与前端 Web 开发融合 —— 出现天数：7，趋势：→稳定，关联边：与 AI/LLM/Agent 领域本地化部署与训练工具（可组合）、与 AI/LLM/Agent 与 Backend/DevOps 工具链整合（可组合）、与 AI/LLM/Agent 与数据可视化结合（可组合），涉及日期：2026-08-14 ~ 2026-08-20  
+AI/LLM/Agent 与数据可视化结合 —— 出现天数：6，趋势：→稳定，关联边：与 AI/LLM/Agent 领域本地化部署与训练工具（互补）、与 AI/LLM/Agent 与前端 Web 开发融合（可组合）、与 AI/LLM/Agent 与 Backend/DevOps 工具链整合（可组合），涉及日期：2026-08-15 ~ 2026-08-20  
+AI/LLM/Agent 与 Backend/DevOps 工具链整合 —— 出现天数：7，趋势：→稳定，关联边：与 AI/LLM/Agent 领域本地化部署与训练工具（互补）、与 AI/LLM/Agent 与前端 Web 开发融合（可组合）、与 AI/LLM/Agent 与数据可视化结合（可组合），涉及日期：2026-08-14 ~ 2026-08-20  
+AI/LLM/Agent 领域短视频生成工具 —— 出现天数：3，趋势：↑上升，关联边：与 AI/LLM/Agent 与前端 Web 开发融合（可组合）、与 AI/LLM/Agent 与数据可视化结合（可组合），涉及日期：2026-08-18 ~ 2026-08-20  
+AI/LLM/Agent 与轻量级模型部署 —— 出现天数：4，趋势：↑上升，关联边：与 AI/LLM/Agent 领域本地化部署与训练工具（互补）、与 AI/LLM/Agent 与数据可视化结合（可组合），涉及日期：2026-08-17 ~ 2026-08-20  
+AI/LLM/Agent 与知识库融合 —— 出现天数：2，趋势：↑上升，关联边：与 AI/LLM/Agent 领域本地化部署与训练工具（互补），涉及日期：2026-08-19 ~ 2026-08-20  
+AI/LLM/Agent 与低频雷达系统结合 —— 出现天数：2，趋势：↑上升，关联边：与 AI/LLM/Agent 与数据可视化结合（同领域），涉及日期：2026-08-19 ~ 2026-08-20  
 
-AI/LLM/Agent 与低频雷达系统结合 —— 同领域 —— AI/LLM/Agent 与数据可视化结合  
-涉及日期：2026-08-19  
+## 本周趋势聚合（2026-08-14 ~ 2026-08-20）
 
-AI/LLM/Agent 与知识库融合 —— 互补 —— AI/LLM/Agent 领域本地化部署与训练工具  
-涉及日期：2026-08-19  
+上升主题：AI/LLM/Agent 领域短视频生成工具、AI/LLM/Agent 与轻量级模型部署、AI/LLM/Agent 与知识库融合、AI/LLM/Agent 与低频雷达系统结合，这些方向在本周出现频率增加，主要因项目开始探索 AI 在特定硬件或内容场景下的应用。
 
-AI/LLM/Agent 与网络安全技能映射 —— 可组合 —— AI/LLM/Agent 与 Backend/DevOps 工具链整合  
-涉及日期：2026-08-19  
+稳定主线：AI/LLM/Agent 领域本地化部署与训练工具、AI/LLM/Agent 与前端 Web 开发融合、AI/LLM/Agent 与数据可视化结合、AI/LLM/Agent 与 Backend/DevOps 工具链整合，这些方向持续出现，体现 AI 技术在基础设施、交互界面和自动化流程中的全面渗透。
 
-Backend/DevOps 工具链整合 —— 可组合 —— AI/LLM/Agent 与前端 Web 开发融合  
-涉及日期：2026-08-19  
+新出现信号：AI/LLM/Agent 与知识库融合、AI/LLM/Agent 与低频雷达系统结合，首次出现在本周中后期，显示 AI 在系统记忆结构和硬件感知领域的新探索。
 
-AI/LLM/Agent 领域本地化部署与训练工具 —— 同领域 —— AI/LLM/Agent 与前端 Web 开发融合  
-涉及日期：2026-08-18  
+消退 / 风险：无明显消退趋势，但部分方向如“AI/LLM/Agent 与网络安全技能映射”仅出现两次，数据不足，需进一步观察其发展。
 
-AI/LLM/Agent 与前端 Web 开发融合 —— 可组合 —— AI/LLM/Agent 与数据可视化结合  
-涉及日期：2026-08-18  
-
-AI/LLM/Agent 与数据可视化结合 —— 同领域 —— AI/LLM/Agent 与 Backend/DevOps 工具链整合  
-涉及日期：2026-08-18  
-
-AI/LLM/Agent 与轻量级模型部署 —— 竞争/互补 —— AI/LLM/Agent 领域本地化部署与训练工具  
-涉及日期：2026-08-18  
-
-AI/LLM/Agent 领域本地化部署与训练工具 —— 可组合 —— AI/LLM/Agent 与 Backend/DevOps 工具链整合  
-涉及日期：2026-08-17  
-
-AI/LLM/Agent 与前端 Web 开发融合 —— 可组合 —— AI/LLM/Agent 领域本地化部署与训练工具  
-涉及日期：2026-08-17  
-
-AI/LLM/Agent 领域本地化部署与训练工具 —— 同领域 —— AI/LLM/Agent 与 DevOps 工具链整合  
-涉及日期：2026-08-16  
-
-AI/LLM/Agent 与 Frontend/Web 开发 —— 可组合 —— AI/LLM/Agent 与 数据分析  
-涉及日期：2026-08-15  
-
-AI/LLM/Agent 领域 + 可视化界面 —— 同领域 —— AI/LLM/Agent 与 Frontend/Web 开发  
-涉及日期：2026-08-14  
-
-AI/LLM/Agent 领域 + 数据分析 —— 可组合 —— AI/LLM/Agent 与 可视化界面  
-涉及日期：2026-08-13  
-
-## 本周趋势聚合（2026-08-13 ~ 2026-08-19）
-
-上升主题：AI/LLM/Agent 领域本地化部署与训练工具、AI/LLM/Agent 与前端 Web 开发融合，因本地化能力需求增长及前后端集成趋势增强而升温。
-
-稳定主线：AI/LLM/Agent 与数据可视化结合、AI/LLM/Agent 与 Backend/DevOps 工具链整合，持续在多个项目中体现其技术融合深度和应用广度。
-
-新出现信号：AI/LLM/Agent 与轻量级模型部署方向首次出现，关注边缘计算场景下的 AI 应用可行性。
-
-消退 / 风险：无明显消退主题，但部分项目如“AI/LLM/Agent 与低频雷达系统结合”数据不足，需进一步观察其发展路径。
-
-一句话本周结论：本周 AI/LLM/Agent 技术持续向本地化、前端集成和工具链融合方向演进，形成多个稳定技术主线，并出现轻量级部署的新趋势。
+一句话本周结论：本周 AI/LLM/Agent 技术在本地化部署、前端集成和可视化展示方面保持稳定热度，同时短视频生成、轻量模型部署等新兴方向快速升温。
