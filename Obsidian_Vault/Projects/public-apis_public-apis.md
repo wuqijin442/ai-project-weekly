@@ -1,11 +1,11 @@
 ---
 aliases: ["public-apis/public-apis"]
 tags: [github, ai, vibe-coding, project]
-stars: 460696
-today_growth: 2260
+stars: 464521
+today_growth: 1005
 created_at: 2016-03-20
-status: 2度上榜
-date_accessed: 2026-08-16
+status: 4度上榜
+date_accessed: 2026-08-19
 ---
 
 # public-apis/public-apis
@@ -24,4 +24,4 @@ A collective list of free APIs
 
 ## 反向链接
 - [[Daily/AI-Weekly-2026-08-16.md|2026-08-16 收录]]
-
+- [[Daily/Vibe-Coding-2026-08-19.md|2026-08-19 收录]]
