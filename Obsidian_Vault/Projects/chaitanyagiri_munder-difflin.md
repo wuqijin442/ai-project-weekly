@@ -1,11 +1,11 @@
 ---
 aliases: ["chaitanyagiri/munder-difflin"]
 tags: [github, ai, vibe-coding, project]
-stars: 2375
-today_growth: 306
+stars: 2918
+today_growth: 795
 created_at: 2026-05-31
-status: 2度上榜
-date_accessed: 2026-08-19
+status: 3度上榜
+date_accessed: 2026-08-20
 ---
 
 # chaitanyagiri/munder-difflin
@@ -24,4 +24,4 @@ local multi-agent harness
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-19.md|2026-08-19 收录]]
-
+- [[Daily/Vibe-Coding-2026-08-20.md|2026-08-20 收录]]

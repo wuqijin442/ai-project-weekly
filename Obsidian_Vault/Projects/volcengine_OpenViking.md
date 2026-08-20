@@ -1,11 +1,11 @@
 ---
 aliases: ["volcengine/OpenViking"]
 tags: [github, ai, vibe-coding, project]
-stars: 29765
-today_growth: 213
+stars: 30699
+today_growth: 804
 created_at: 2026-01-05
-status: 2度上榜
-date_accessed: 2026-08-19
+status: 3度上榜
+date_accessed: 2026-08-20
 ---
 
 # volcengine/OpenViking
@@ -24,4 +24,4 @@ Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG 
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-19.md|2026-08-19 收录]]
-
+- [[Daily/Vibe-Coding-2026-08-20.md|2026-08-20 收录]]
