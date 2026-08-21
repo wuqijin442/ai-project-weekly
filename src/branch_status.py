@@ -21,6 +21,7 @@ import os
 import sys
 import json
 import datetime
+import argparse
 from pathlib import Path
 
 # 复用 main.py 的真实运行/同步函数（main.py 有 __main__ 守卫，import 不触发其主流程）
@@ -96,7 +97,18 @@ def unique_commits(branch, base="main", limit=10):
 
 
 def main():
-    date = datetime.date.today()
+    parser = argparse.ArgumentParser(description="远程仓库各分支状态核对")
+    parser.add_argument("--date", default=None,
+                        help="目标日期 YYYY-MM-DD（缺省=今天），用于回填历史分支状态报告")
+    args = parser.parse_args()
+    if args.date:
+        try:
+            date = datetime.date.fromisoformat(args.date)
+        except ValueError:
+            log(f"⚠️ --date 格式错误：{args.date}，回退为今天")
+            date = datetime.date.today()
+    else:
+        date = datetime.date.today()
     log(f"=== 远程仓库各分支状态核对 {date.isoformat()} ===")
     # 先拉远端最新，保证本地 win 与远端一致，且 main 引用为最新
     pre_sync_pull()
