@@ -1,11 +1,11 @@
 ---
 aliases: [skills, mattpocock/skills]
 tags: [AI, Trending, Shell, Claude-Code, Skills, Vibe-Coding, Engineering]
-stars: 209330
-today_growth: 2152
+stars: 224593
+today_growth: 1894
 created_at: 2026-02-03
-status: 热门（技能层头部，2026-08-08 Vibe Coding #2）
-date_accessed: 2026-08-08
+status: 8度上榜
+date_accessed: 2026-08-20
 ---
 
 # skills
@@ -60,3 +60,6 @@ Matt Pocock（Total TypeScript 作者）日常在真实工程中使用的 **AI A
 - **成长曲线**：2026-07-26 ⭐188,239 → 2026-08-07 ⭐207,963 → 2026-08-08 ⭐208,799。12 天 +19.7k 跨过 20 万门槛，此后维持日均 ~1.5k 的稳定增速。
 
 - 2026-08-08 日报（Vibe Coding #2）：与 [[addyosmani_agent-skills|addyosmani/agent-skills]]（83.9k / 🔺1,131）、[[obra_superpowers|obra/superpowers]]（268.7k / 🔺782）**同日占据 Top 5 三席，合计 56.1 万星、当日合计 🔺4,065**。三者在「自由度」轴上是三个刻度：本项目给零件不管怎么装，addyosmani 给零件外加质检表，superpowers 直接给整条产线。
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-20.md|2026-08-20 收录]]

@@ -1,0 +1,45 @@
+[
+  {
+    "branch": "dgx",
+    "last": {
+      "hash": "ce18727d5d",
+      "author": "wuqijin442",
+      "date": "Thu Aug 20 03:01:32 2026 +0800",
+      "subject": "chore: 每日学习消化+图谱 2026-08-20 [dgx]"
+    },
+    "behind_main": 96,
+    "ahead_main": 1,
+    "unique_commits": [
+      "ce18727 2026-08-20 wuqijin442 chore: 每日学习消化+图谱 2026-08-20 [dgx]"
+    ]
+  },
+  {
+    "branch": "main",
+    "last": {
+      "hash": "4a7c8b928f",
+      "author": "Worn Quiet Joy",
+      "date": "Wed Aug 19 20:12:13 2026 +0800",
+      "subject": "Merge pull request #39 from wuqijin442/win"
+    },
+    "behind_main": 0,
+    "ahead_main": 0,
+    "unique_commits": []
+  },
+  {
+    "branch": "win",
+    "last": {
+      "hash": "5e28550935",
+      "author": "wuqijin",
+      "date": "Thu Aug 20 19:07:27 2026 +0800",
+      "subject": "[2026-08-20] Daily AI Project Update"
+    },
+    "behind_main": 63,
+    "ahead_main": 4,
+    "unique_commits": [
+      "5e28550 2026-08-20 wuqijin [2026-08-20] Daily AI Project Update",
+      "fc91a14 2026-08-20 wuqijin [2026-08-20] Daily AI Project Update",
+      "308950d 2026-08-20 wuqijin442 [2026-08-20] Daily AI Project Update",
+      "7581330 2026-08-20 WorkBuddy [2026-08-20] Test MoneyPrinterTurbo locally; update project page"
+    ]
+  }
+]

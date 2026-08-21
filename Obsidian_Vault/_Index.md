@@ -9,6 +9,7 @@ tags: [index, github, ai]
 
 | 日期 | 类型 | 入口 |
 |---|---|---|
+| 2026-08-20 | 日报 | [[Daily/Vibe-Coding-2026-08-20|Vibe-Coding-2026-08-20]] |
 | 2026-08-19 | 日报 | [[Daily/Vibe-Coding-2026-08-19|Vibe-Coding-2026-08-19]] |
 | 2026-08-18 | 日报 | [[Daily/Vibe-Coding-2026-08-18|Vibe-Coding-2026-08-18]] |
 | 2026-08-17 | 日报 | [[Daily/Vibe-Coding-2026-08-17|Vibe-Coding-2026-08-17]] |
