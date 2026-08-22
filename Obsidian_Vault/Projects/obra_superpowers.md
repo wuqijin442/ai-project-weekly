@@ -1,11 +1,11 @@
 ---
 aliases: [superpowers]
 tags: [AI, Trending, Shell, AI, Coding, Skills, SDLC, Vibe-Coding, Subagent]
-stars: 268983
+stars: 275691
 created_at: 2025-10-09
-today_growth: 782
-status: 热门（Agentic 技能框架 + 子代理驱动开发，五度上榜 #5）
-date_accessed: 2026-08-08
+today_growth: 790
+status: 9度上榜
+date_accessed: 2026-08-22
 ---
 
 # superpowers
@@ -61,3 +61,6 @@ date_accessed: 2026-08-08
 - **三家在「自由度」轴上的刻度**：mattpocock 给零件不管你怎么装 → addyosmani 给零件外加一张质检表 → superpowers 直接给你整条产线。**三者同时高增长，说明市场尚未选出唯一答案，但已确认「技能」这层要独立于 Agent 本体存在。**
 - ⚡ **大厂开始进场**：同日 [google/skills](https://github.com/google/skills)（🔺327 / ⭐16.2k，Apache-2.0）列生态第 7。技能层此前全是个人开发者，Google 官方带自家产品线下场后，竞争逻辑会分岔——社区库拼通用工程手艺，厂商库拼「我家产品只有我最懂」。
 - **反向样本**：今日 #1 的 [[PrimeIntellect-ai_prime-agent|prime-agent]] 把技能做成**可导入的 Python 包**（而非纯 Markdown），且内置 skill creator 自动沉淀。这是对「技能 = 纯 Markdown、零边际成本」这一主流形态的一次正面挑战。
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-22.md|2026-08-22 收录]]
