@@ -1,11 +1,11 @@
 ---
 aliases: [skills, mattpocock/skills]
 tags: [AI, Trending, Shell, Claude-Code, Skills, Vibe-Coding, Engineering]
-stars: 224593
-today_growth: 1894
+stars: 229693
+today_growth: 3362
 created_at: 2026-02-03
-status: 8度上榜
-date_accessed: 2026-08-20
+status: 9度上榜
+date_accessed: 2026-08-22
 ---
 
 # skills
@@ -63,3 +63,4 @@ Matt Pocock（Total TypeScript 作者）日常在真实工程中使用的 **AI A
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-20.md|2026-08-20 收录]]
+- [[Daily/Vibe-Coding-2026-08-22.md|2026-08-22 收录]]
