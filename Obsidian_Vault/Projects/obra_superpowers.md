@@ -1,11 +1,11 @@
 ---
 aliases: [superpowers]
 tags: [AI, Trending, Shell, AI, Coding, Skills, SDLC, Vibe-Coding, Subagent]
-stars: 275691
+stars: 276425
 created_at: 2025-10-09
-today_growth: 790
-status: 9度上榜
-date_accessed: 2026-08-22
+today_growth: 592
+status: 10度上榜
+date_accessed: 2026-08-23
 ---
 
 # superpowers
@@ -64,3 +64,4 @@ date_accessed: 2026-08-22
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-22.md|2026-08-22 收录]]
+- [[Daily/AI-Weekly-2026-08-23.md|2026-08-23 收录]]
