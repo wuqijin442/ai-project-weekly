@@ -1,11 +1,11 @@
 ---
 aliases: [free-claude-code, FCC, Free Claude Code]
 tags: [AI, Trending, Python, Proxy, Gateway, Claude-Code, Codex, Vibe-Coding]
-stars: 44221
+stars: 48348
 created_at: 2026-01-28
-today_growth: 278
-status: 热门（首入榜 #5）
-date_accessed: 2026-08-04
+today_growth: 1081
+status: 3度上榜
+date_accessed: 2026-08-24
 ---
 
 # free-claude-code
@@ -63,3 +63,6 @@ date_accessed: 2026-08-04
 
 - 与 [[andrewyng_aisuite|aisuite]]（07-29/08-01）、[[diegosouzapw_OmniRoute|OmniRoute]]（07-22~07-24）同属「LLM 接入 / 网关层」稳定赛道，但本项目更偏「**编码 Agent 客户端直连代理**」而非 SDK 抽象
 - Fork 数 7,273 相对 Star 比例偏高，反映大量用户自建部署
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-24.md|2026-08-24 收录]]

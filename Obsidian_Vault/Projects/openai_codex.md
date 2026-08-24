@@ -1,11 +1,11 @@
 ---
 aliases: [codex]
 tags: [AI, Trending, Rust, Coding-Agent, OpenAI, Terminal, Full-Track]
-stars: 114492
+stars: 116513
 weekly_growth: 2250
 created_at: 2025-04-13
-status: 2度上榜
-date_accessed: 2026-08-23
+status: 3度上榜
+date_accessed: 2026-08-24
 ---
 
 # codex
@@ -44,3 +44,4 @@ OpenAI 官方**轻量编码 Agent**，运行于终端——把自然语言转成
 
 ## 反向链接
 - [[Daily/AI-Weekly-2026-08-23.md|2026-08-23 收录]]
+- [[Daily/Vibe-Coding-2026-08-24.md|2026-08-24 收录]]
