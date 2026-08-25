@@ -1,0 +1,2147 @@
+{
+  "large-language-models": {
+    "label": "大语言模型",
+    "top": [
+      {
+        "full": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "language": "Python",
+        "stars": 153600,
+        "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+        "categories": [
+          "大语言模型"
+        ]
+      },
+      {
+        "full": "rasbt/LLMs-from-scratch",
+        "url": "https://github.com/rasbt/LLMs-from-scratch",
+        "language": "Jupyter Notebook",
+        "stars": 103552,
+        "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+        "categories": [
+          "大语言模型"
+        ]
+      },
+      {
+        "full": "hiyouga/LlamaFactory",
+        "url": "https://github.com/hiyouga/LlamaFactory",
+        "language": "Python",
+        "stars": 74302,
+        "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+        "categories": [
+          "大语言模型"
+        ]
+      },
+      {
+        "full": "binary-husky/gpt_academic",
+        "url": "https://github.com/binary-husky/gpt_academic",
+        "language": "Python",
+        "stars": 71221,
+        "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
+        "categories": [
+          "大语言模型"
+        ]
+      },
+      {
+        "full": "FlowiseAI/Flowise",
+        "url": "https://github.com/FlowiseAI/Flowise",
+        "language": "TypeScript",
+        "stars": 55386,
+        "description": "Build AI Agents, Visually",
+        "categories": [
+          "大语言模型"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "langflow-ai/langflow",
+          "url": "https://github.com/langflow-ai/langflow",
+          "language": "Python",
+          "stars": 153600,
+          "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+          "categories": [
+            "大语言模型"
+          ]
+        },
+        "clone": true,
+        "clone_time": 16.9,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml",
+            "package.json"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 10.1,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 153600
+      },
+      {
+        "project": {
+          "full": "rasbt/LLMs-from-scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch",
+          "language": "Jupyter Notebook",
+          "stars": 103552,
+          "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+          "categories": [
+            "大语言模型"
+          ]
+        },
+        "clone": true,
+        "clone_time": 3.0,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 32.2,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 103552
+      },
+      {
+        "project": {
+          "full": "hiyouga/LlamaFactory",
+          "url": "https://github.com/hiyouga/LlamaFactory",
+          "language": "Python",
+          "stars": 74302,
+          "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+          "categories": [
+            "大语言模型"
+          ]
+        },
+        "clone": true,
+        "clone_time": 5.0,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 26.5,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 74302
+      },
+      {
+        "project": {
+          "full": "binary-husky/gpt_academic",
+          "url": "https://github.com/binary-husky/gpt_academic",
+          "language": "Python",
+          "stars": 71221,
+          "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
+          "categories": [
+            "大语言模型"
+          ]
+        },
+        "clone": true,
+        "clone_time": 3.6,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt",
+            "Dockerfile",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 34.0,
+        "run": "failed",
+        "run_log": "",
+        "run_time": 0.2,
+        "score": 50,
+        "stars": 71221
+      },
+      {
+        "project": {
+          "full": "FlowiseAI/Flowise",
+          "url": "https://github.com/FlowiseAI/Flowise",
+          "language": "TypeScript",
+          "stars": 55386,
+          "description": "Build AI Agents, Visually",
+          "categories": [
+            "大语言模型"
+          ]
+        },
+        "clone": true,
+        "clone_time": 11.6,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "package.json",
+            "Dockerfile"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 10.5,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 55386
+      }
+    ]
+  },
+  "artificial-intelligence": {
+    "label": "人工智能",
+    "top": [
+      {
+        "full": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "language": "Python",
+        "stars": 186832,
+        "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "categories": [
+          "人工智能"
+        ]
+      },
+      {
+        "full": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "language": "HTML",
+        "stars": 167820,
+        "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "categories": [
+          "人工智能"
+        ]
+      },
+      {
+        "full": "rasbt/LLMs-from-scratch",
+        "url": "https://github.com/rasbt/LLMs-from-scratch",
+        "language": "Jupyter Notebook",
+        "stars": 103553,
+        "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+        "categories": [
+          "人工智能"
+        ]
+      },
+      {
+        "full": "hacksider/Deep-Live-Cam",
+        "url": "https://github.com/hacksider/Deep-Live-Cam",
+        "language": "Python",
+        "stars": 96093,
+        "description": "real time face swap and one-click video deepfake with only a single image",
+        "categories": [
+          "人工智能"
+        ]
+      },
+      {
+        "full": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "language": "JavaScript",
+        "stars": 91614,
+        "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+        "categories": [
+          "人工智能"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "Significant-Gravitas/AutoGPT",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT",
+          "language": "Python",
+          "stars": 186832,
+          "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+          "categories": [
+            "人工智能"
+          ]
+        },
+        "clone": true,
+        "clone_time": 23.7,
+        "clone_err": "",
+        "build": {},
+        "install": "skipped",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 186832
+      },
+      {
+        "project": {
+          "full": "f/prompts.chat",
+          "url": "https://github.com/f/prompts.chat",
+          "language": "HTML",
+          "stars": 167820,
+          "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+          "categories": [
+            "人工智能"
+          ]
+        },
+        "clone": true,
+        "clone_time": 90.2,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "package.json"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 120.5,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 167820
+      },
+      {
+        "project": {
+          "full": "rasbt/LLMs-from-scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch",
+          "language": "Jupyter Notebook",
+          "stars": 103553,
+          "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+          "categories": [
+            "人工智能"
+          ]
+        },
+        "clone": true,
+        "clone_time": 81.8,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 12.7,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 103553
+      },
+      {
+        "project": {
+          "full": "hacksider/Deep-Live-Cam",
+          "url": "https://github.com/hacksider/Deep-Live-Cam",
+          "language": "Python",
+          "stars": 96093,
+          "description": "real time face swap and one-click video deepfake with only a single image",
+          "categories": [
+            "人工智能"
+          ]
+        },
+        "clone": true,
+        "clone_time": 86.4,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 9.8,
+        "run": "failed",
+        "run_log": "",
+        "run_time": 1.6,
+        "score": 44,
+        "stars": 96093
+      },
+      {
+        "project": {
+          "full": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "language": "JavaScript",
+          "stars": 91614,
+          "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "categories": [
+            "人工智能"
+          ]
+        },
+        "clone": true,
+        "clone_time": 91.0,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "package.json",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 121.1,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 91614
+      }
+    ]
+  },
+  "rag": {
+    "label": "检索增强生成 RAG",
+    "top": [
+      {
+        "full": "langgenius/dify",
+        "url": "https://github.com/langgenius/dify",
+        "language": "TypeScript",
+        "stars": 153291,
+        "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+        "categories": [
+          "检索增强生成 RAG"
+        ]
+      },
+      {
+        "full": "open-webui/open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "language": "Python",
+        "stars": 149689,
+        "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+        "categories": [
+          "检索增强生成 RAG"
+        ]
+      },
+      {
+        "full": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain",
+        "language": "Python",
+        "stars": 144843,
+        "description": "The agent engineering platform.",
+        "categories": [
+          "检索增强生成 RAG"
+        ]
+      },
+      {
+        "full": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "language": "Python",
+        "stars": 109834,
+        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+        "categories": [
+          "检索增强生成 RAG"
+        ]
+      },
+      {
+        "full": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "language": "JavaScript",
+        "stars": 91614,
+        "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+        "categories": [
+          "检索增强生成 RAG"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "langgenius/dify",
+          "url": "https://github.com/langgenius/dify",
+          "language": "TypeScript",
+          "stars": 153291,
+          "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+          "categories": [
+            "检索增强生成 RAG"
+          ]
+        },
+        "clone": true,
+        "clone_time": 31.6,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "package.json"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 3.1,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 153291
+      },
+      {
+        "project": {
+          "full": "open-webui/open-webui",
+          "url": "https://github.com/open-webui/open-webui",
+          "language": "Python",
+          "stars": 149689,
+          "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+          "categories": [
+            "检索增强生成 RAG"
+          ]
+        },
+        "clone": true,
+        "clone_time": 12.6,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml",
+            "package.json",
+            "Dockerfile"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 120.4,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 149689
+      },
+      {
+        "project": {
+          "full": "langchain-ai/langchain",
+          "url": "https://github.com/langchain-ai/langchain",
+          "language": "Python",
+          "stars": 144843,
+          "description": "The agent engineering platform.",
+          "categories": [
+            "检索增强生成 RAG"
+          ]
+        },
+        "clone": true,
+        "clone_time": 5.1,
+        "clone_err": "",
+        "build": {},
+        "install": "skipped",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 144843
+      },
+      {
+        "project": {
+          "full": "Graphify-Labs/graphify",
+          "url": "https://github.com/Graphify-Labs/graphify",
+          "language": "Python",
+          "stars": 109834,
+          "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+          "categories": [
+            "检索增强生成 RAG"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.3,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml",
+            "Dockerfile"
+          ]
+        },
+        "install": "success",
+        "install_log": "",
+        "install_time": 13.5,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": 109834
+      },
+      {
+        "project": {
+          "full": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "language": "JavaScript",
+          "stars": 91614,
+          "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "categories": [
+            "检索增强生成 RAG"
+          ]
+        },
+        "clone": true,
+        "clone_time": 12.1,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "package.json",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 120.4,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 91614
+      }
+    ]
+  },
+  "stable-diffusion": {
+    "label": "扩散模型",
+    "top": [
+      {
+        "full": "AUTOMATIC1111/stable-diffusion-webui",
+        "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+        "language": "Python",
+        "stars": 164628,
+        "description": "Stable Diffusion web UI",
+        "categories": [
+          "扩散模型"
+        ]
+      },
+      {
+        "full": "Comfy-Org/ComfyUI",
+        "url": "https://github.com/Comfy-Org/ComfyUI",
+        "language": "Python",
+        "stars": 129393,
+        "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+        "categories": [
+          "扩散模型"
+        ]
+      },
+      {
+        "full": "unslothai/unsloth",
+        "url": "https://github.com/unslothai/unsloth",
+        "language": "Python",
+        "stars": 74524,
+        "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+        "categories": [
+          "扩散模型"
+        ]
+      },
+      {
+        "full": "calesthio/OpenMontage",
+        "url": "https://github.com/calesthio/OpenMontage",
+        "language": "Python",
+        "stars": 49803,
+        "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+        "categories": [
+          "扩散模型"
+        ]
+      },
+      {
+        "full": "mudler/LocalAI",
+        "url": "https://github.com/mudler/LocalAI",
+        "language": "Go",
+        "stars": 48642,
+        "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+        "categories": [
+          "扩散模型"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "AUTOMATIC1111/stable-diffusion-webui",
+          "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+          "language": "Python",
+          "stars": 164628,
+          "description": "Stable Diffusion web UI",
+          "categories": [
+            "扩散模型"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.2,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt",
+            "pyproject.toml",
+            "package.json"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 120.4,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 164628
+      },
+      {
+        "project": {
+          "full": "Comfy-Org/ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI",
+          "language": "Python",
+          "stars": 129393,
+          "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+          "categories": [
+            "扩散模型"
+          ]
+        },
+        "clone": true,
+        "clone_time": 8.6,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 13.7,
+        "run": "success",
+        "run_log": "",
+        "run_time": 0.3,
+        "score": 50,
+        "stars": 129393
+      },
+      {
+        "project": {
+          "full": "unslothai/unsloth",
+          "url": "https://github.com/unslothai/unsloth",
+          "language": "Python",
+          "stars": 74524,
+          "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+          "categories": [
+            "扩散模型"
+          ]
+        },
+        "clone": true,
+        "clone_time": 8.9,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "",
+        "install_time": 33.9,
+        "run": "success",
+        "run_log": "",
+        "run_time": 1.5,
+        "score": 70,
+        "stars": 74524
+      },
+      {
+        "project": {
+          "full": "calesthio/OpenMontage",
+          "url": "https://github.com/calesthio/OpenMontage",
+          "language": "Python",
+          "stars": 49803,
+          "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+          "categories": [
+            "扩散模型"
+          ]
+        },
+        "clone": true,
+        "clone_time": 10.2,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt",
+            "setup.py"
+          ]
+        },
+        "install": "success",
+        "install_log": "",
+        "install_time": 15.3,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": 49803
+      },
+      {
+        "project": {
+          "full": "mudler/LocalAI",
+          "url": "https://github.com/mudler/LocalAI",
+          "language": "Go",
+          "stars": 48642,
+          "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+          "categories": [
+            "扩散模型"
+          ]
+        },
+        "clone": true,
+        "clone_time": 94.3,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "go.mod",
+            "Dockerfile"
+          ]
+        },
+        "install": "skipped",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 48642
+      }
+    ]
+  },
+  "computer-vision": {
+    "label": "计算机视觉",
+    "top": [
+      {
+        "full": "opencv/opencv",
+        "url": "https://github.com/opencv/opencv",
+        "language": "C++",
+        "stars": 90562,
+        "description": "Open Source Computer Vision Library",
+        "categories": [
+          "计算机视觉"
+        ]
+      },
+      {
+        "full": "d2l-ai/d2l-zh",
+        "url": "https://github.com/d2l-ai/d2l-zh",
+        "language": "Python",
+        "stars": 79890,
+        "description": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
+        "categories": [
+          "计算机视觉"
+        ]
+      },
+      {
+        "full": "microsoft/AI-For-Beginners",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "language": "Jupyter Notebook",
+        "stars": 66542,
+        "description": "12 Weeks, 24 Lessons, AI for All!",
+        "categories": [
+          "计算机视觉"
+        ]
+      },
+      {
+        "full": "ultralytics/ultralytics",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "language": "Python",
+        "stars": 60895,
+        "description": "Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking",
+        "categories": [
+          "计算机视觉"
+        ]
+      },
+      {
+        "full": "ultralytics/yolov5",
+        "url": "https://github.com/ultralytics/yolov5",
+        "language": "Python",
+        "stars": 57919,
+        "description": "Ultralytics YOLOv5 in PyTorch for object detection, instance segmentation, classification, training, and export.",
+        "categories": [
+          "计算机视觉"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "opencv/opencv",
+          "url": "https://github.com/opencv/opencv",
+          "language": "C++",
+          "stars": 90562,
+          "description": "Open Source Computer Vision Library",
+          "categories": [
+            "计算机视觉"
+          ]
+        },
+        "clone": true,
+        "clone_time": 126.8,
+        "clone_err": "",
+        "build": {},
+        "install": "skipped",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 90562
+      },
+      {
+        "project": {
+          "full": "d2l-ai/d2l-zh",
+          "url": "https://github.com/d2l-ai/d2l-zh",
+          "language": "Python",
+          "stars": 79890,
+          "description": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
+          "categories": [
+            "计算机视觉"
+          ]
+        },
+        "clone": true,
+        "clone_time": 91.8,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "setup.py"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 9.8,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 79890
+      },
+      {
+        "project": {
+          "full": "microsoft/AI-For-Beginners",
+          "url": "https://github.com/microsoft/AI-For-Beginners",
+          "language": "Jupyter Notebook",
+          "stars": 66542,
+          "description": "12 Weeks, 24 Lessons, AI for All!",
+          "categories": [
+            "计算机视觉"
+          ]
+        },
+        "clone": true,
+        "clone_time": 293.7,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 57.7,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 66542
+      },
+      {
+        "project": {
+          "full": "ultralytics/ultralytics",
+          "url": "https://github.com/ultralytics/ultralytics",
+          "language": "Python",
+          "stars": 60895,
+          "description": "Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking",
+          "categories": [
+            "计算机视觉"
+          ]
+        },
+        "clone": true,
+        "clone_time": 63.3,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 16.4,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 60895
+      },
+      {
+        "project": {
+          "full": "ultralytics/yolov5",
+          "url": "https://github.com/ultralytics/yolov5",
+          "language": "Python",
+          "stars": 57919,
+          "description": "Ultralytics YOLOv5 in PyTorch for object detection, instance segmentation, classification, training, and export.",
+          "categories": [
+            "计算机视觉"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.1,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 8.8,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 57919
+      }
+    ]
+  },
+  "speech-recognition": {
+    "label": "语音识别",
+    "top": [
+      {
+        "full": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "language": "Python",
+        "stars": 164375,
+        "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+        "categories": [
+          "语音识别"
+        ]
+      },
+      {
+        "full": "ggml-org/whisper.cpp",
+        "url": "https://github.com/ggml-org/whisper.cpp",
+        "language": "C++",
+        "stars": 53121,
+        "description": "Port of OpenAI's Whisper model in C/C++",
+        "categories": [
+          "语音识别"
+        ]
+      },
+      {
+        "full": "mozilla/DeepSpeech",
+        "url": "https://github.com/mozilla/DeepSpeech",
+        "language": "C++",
+        "stars": 26772,
+        "description": "DeepSpeech is an open source embedded (offline, on-device) speech-to-text engine which can run in real time on devices ranging from a Raspberry Pi 4 to high power GPU servers.",
+        "categories": [
+          "语音识别"
+        ]
+      },
+      {
+        "full": "SYSTRAN/faster-whisper",
+        "url": "https://github.com/SYSTRAN/faster-whisper",
+        "language": "Python",
+        "stars": 25054,
+        "description": "Faster Whisper transcription with CTranslate2",
+        "categories": [
+          "语音识别"
+        ]
+      },
+      {
+        "full": "m-bain/whisperX",
+        "url": "https://github.com/m-bain/whisperX",
+        "language": "Python",
+        "stars": 23707,
+        "description": "WhisperX: Automatic Speech Recognition with Word-level Timestamps (& Diarization)",
+        "categories": [
+          "语音识别"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "huggingface/transformers",
+          "url": "https://github.com/huggingface/transformers",
+          "language": "Python",
+          "stars": 164375,
+          "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+          "categories": [
+            "语音识别"
+          ]
+        },
+        "clone": true,
+        "clone_time": 5.5,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml",
+            "setup.py"
+          ]
+        },
+        "install": "success",
+        "install_log": "",
+        "install_time": 29.9,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": 164375
+      },
+      {
+        "project": {
+          "full": "ggml-org/whisper.cpp",
+          "url": "https://github.com/ggml-org/whisper.cpp",
+          "language": "C++",
+          "stars": 53121,
+          "description": "Port of OpenAI's Whisper model in C/C++",
+          "categories": [
+            "语音识别"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.9,
+        "clone_err": "",
+        "build": {},
+        "install": "skipped",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 53121
+      },
+      {
+        "project": {
+          "full": "mozilla/DeepSpeech",
+          "url": "https://github.com/mozilla/DeepSpeech",
+          "language": "C++",
+          "stars": 26772,
+          "description": "DeepSpeech is an open source embedded (offline, on-device) speech-to-text engine which can run in real time on devices ranging from a Raspberry Pi 4 to high power GPU servers.",
+          "categories": [
+            "语音识别"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.6,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "setup.py"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 6.6,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 26772
+      },
+      {
+        "project": {
+          "full": "SYSTRAN/faster-whisper",
+          "url": "https://github.com/SYSTRAN/faster-whisper",
+          "language": "Python",
+          "stars": 25054,
+          "description": "Faster Whisper transcription with CTranslate2",
+          "categories": [
+            "语音识别"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.0,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt",
+            "setup.py"
+          ]
+        },
+        "install": "success",
+        "install_log": "",
+        "install_time": 1.8,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": 25054
+      },
+      {
+        "project": {
+          "full": "m-bain/whisperX",
+          "url": "https://github.com/m-bain/whisperX",
+          "language": "Python",
+          "stars": 23707,
+          "description": "WhisperX: Automatic Speech Recognition with Word-level Timestamps (& Diarization)",
+          "categories": [
+            "语音识别"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.0,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 18.1,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 23707
+      }
+    ]
+  },
+  "robotics": {
+    "label": "机器人",
+    "top": [
+      {
+        "full": "commaai/openpilot",
+        "url": "https://github.com/commaai/openpilot",
+        "language": "Python",
+        "stars": 63477,
+        "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+        "categories": [
+          "机器人"
+        ]
+      },
+      {
+        "full": "NaiboWang/EasySpider",
+        "url": "https://github.com/NaiboWang/EasySpider",
+        "language": "JavaScript",
+        "stars": 44406,
+        "description": "A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化测试/数据采集/网页爬虫软件，可以无代码图形化的设计和执行爬虫任务。别名：ServiceWrapper面向Web应用的智能化服务封装系统。",
+        "categories": [
+          "机器人"
+        ]
+      },
+      {
+        "full": "AtsushiSakai/PythonRobotics",
+        "url": "https://github.com/AtsushiSakai/PythonRobotics",
+        "language": "Python",
+        "stars": 30351,
+        "description": "Python sample codes and textbook for robotics algorithms.",
+        "categories": [
+          "机器人"
+        ]
+      },
+      {
+        "full": "wechaty/wechaty",
+        "url": "https://github.com/wechaty/wechaty",
+        "language": "TypeScript",
+        "stars": 22979,
+        "description": "Conversational RPA SDK for Chatbot Makers. Join our Discord: https://discord.gg/7q8NBZbQzt",
+        "categories": [
+          "机器人"
+        ]
+      },
+      {
+        "full": "zauberzeug/nicegui",
+        "url": "https://github.com/zauberzeug/nicegui",
+        "language": "Python",
+        "stars": 16158,
+        "description": "Create web-based user interfaces with Python. The nice way.",
+        "categories": [
+          "机器人"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "commaai/openpilot",
+          "url": "https://github.com/commaai/openpilot",
+          "language": "Python",
+          "stars": 63477,
+          "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+          "categories": [
+            "机器人"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.5,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 9.8,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 63477
+      },
+      {
+        "project": {
+          "full": "NaiboWang/EasySpider",
+          "url": "https://github.com/NaiboWang/EasySpider",
+          "language": "JavaScript",
+          "stars": 44406,
+          "description": "A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化测试/数据采集/网页爬虫软件，可以无代码图形化的设计和执行爬虫任务。别名：ServiceWrapper面向Web应用的智能化服务封装系统。",
+          "categories": [
+            "机器人"
+          ]
+        },
+        "clone": true,
+        "clone_time": 109.2,
+        "clone_err": "",
+        "build": {},
+        "install": "skipped",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 44406
+      },
+      {
+        "project": {
+          "full": "AtsushiSakai/PythonRobotics",
+          "url": "https://github.com/AtsushiSakai/PythonRobotics",
+          "language": "Python",
+          "stars": 30351,
+          "description": "Python sample codes and textbook for robotics algorithms.",
+          "categories": [
+            "机器人"
+          ]
+        },
+        "clone": true,
+        "clone_time": 83.5,
+        "clone_err": "",
+        "build": {},
+        "install": "skipped",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 30351
+      },
+      {
+        "project": {
+          "full": "wechaty/wechaty",
+          "url": "https://github.com/wechaty/wechaty",
+          "language": "TypeScript",
+          "stars": 22979,
+          "description": "Conversational RPA SDK for Chatbot Makers. Join our Discord: https://discord.gg/7q8NBZbQzt",
+          "categories": [
+            "机器人"
+          ]
+        },
+        "clone": true,
+        "clone_time": 82.1,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "package.json",
+            "Dockerfile"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 35.2,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 22979
+      },
+      {
+        "project": {
+          "full": "zauberzeug/nicegui",
+          "url": "https://github.com/zauberzeug/nicegui",
+          "language": "Python",
+          "stars": 16158,
+          "description": "Create web-based user interfaces with Python. The nice way.",
+          "categories": [
+            "机器人"
+          ]
+        },
+        "clone": true,
+        "clone_time": 60.5,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml",
+            "package.json",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "success",
+        "install_log": "",
+        "install_time": 16.3,
+        "run": "failed",
+        "run_log": "",
+        "run_time": 8.4,
+        "score": 60,
+        "stars": 16158
+      }
+    ]
+  },
+  "mlops": {
+    "label": "MLOps",
+    "top": [
+      {
+        "full": "GokuMohandas/Made-With-ML",
+        "url": "https://github.com/GokuMohandas/Made-With-ML",
+        "language": "Jupyter Notebook",
+        "stars": 49200,
+        "description": "Learn how to develop, deploy and iterate on production-grade ML applications.",
+        "categories": [
+          "MLOps"
+        ]
+      },
+      {
+        "full": "apache/airflow",
+        "url": "https://github.com/apache/airflow",
+        "language": "Python",
+        "stars": 46589,
+        "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
+        "categories": [
+          "MLOps"
+        ]
+      },
+      {
+        "full": "qdrant/qdrant",
+        "url": "https://github.com/qdrant/qdrant",
+        "language": "Rust",
+        "stars": 34148,
+        "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
+        "categories": [
+          "MLOps"
+        ]
+      },
+      {
+        "full": "HumanSignal/label-studio",
+        "url": "https://github.com/HumanSignal/label-studio",
+        "language": "TypeScript",
+        "stars": 28114,
+        "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format",
+        "categories": [
+          "MLOps"
+        ]
+      },
+      {
+        "full": "mlflow/mlflow",
+        "url": "https://github.com/mlflow/mlflow",
+        "language": "Python",
+        "stars": 27633,
+        "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
+        "categories": [
+          "MLOps"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "GokuMohandas/Made-With-ML",
+          "url": "https://github.com/GokuMohandas/Made-With-ML",
+          "language": "Jupyter Notebook",
+          "stars": 49200,
+          "description": "Learn how to develop, deploy and iterate on production-grade ML applications.",
+          "categories": [
+            "MLOps"
+          ]
+        },
+        "clone": true,
+        "clone_time": 1.9,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 47.1,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 49200
+      },
+      {
+        "project": {
+          "full": "apache/airflow",
+          "url": "https://github.com/apache/airflow",
+          "language": "Python",
+          "stars": 46589,
+          "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
+          "categories": [
+            "MLOps"
+          ]
+        },
+        "clone": true,
+        "clone_time": 10.6,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml",
+            "Dockerfile"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 11.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 46589
+      },
+      {
+        "project": {
+          "full": "qdrant/qdrant",
+          "url": "https://github.com/qdrant/qdrant",
+          "language": "Rust",
+          "stars": 34148,
+          "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
+          "categories": [
+            "MLOps"
+          ]
+        },
+        "clone": true,
+        "clone_time": 3.0,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "Cargo.toml",
+            "Dockerfile"
+          ]
+        },
+        "install": "skipped",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 34148
+      },
+      {
+        "project": {
+          "full": "HumanSignal/label-studio",
+          "url": "https://github.com/HumanSignal/label-studio",
+          "language": "TypeScript",
+          "stars": 28114,
+          "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format",
+          "categories": [
+            "MLOps"
+          ]
+        },
+        "clone": true,
+        "clone_time": 5.6,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml",
+            "Dockerfile",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 25.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 28114
+      },
+      {
+        "project": {
+          "full": "mlflow/mlflow",
+          "url": "https://github.com/mlflow/mlflow",
+          "language": "Python",
+          "stars": 27633,
+          "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
+          "categories": [
+            "MLOps"
+          ]
+        },
+        "clone": true,
+        "clone_time": 6.5,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "",
+        "install_time": 17.5,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": 27633
+      }
+    ]
+  },
+  "vector-database": {
+    "label": "向量数据库",
+    "top": [
+      {
+        "full": "Mintplex-Labs/anything-llm",
+        "url": "https://github.com/Mintplex-Labs/anything-llm",
+        "language": "JavaScript",
+        "stars": 65116,
+        "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience",
+        "categories": [
+          "向量数据库"
+        ]
+      },
+      {
+        "full": "meilisearch/meilisearch",
+        "url": "https://github.com/meilisearch/meilisearch",
+        "language": "Rust",
+        "stars": 59064,
+        "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
+        "categories": [
+          "向量数据库"
+        ]
+      },
+      {
+        "full": "pathwaycom/llm-app",
+        "url": "https://github.com/pathwaycom/llm-app",
+        "language": "Jupyter Notebook",
+        "stars": 59004,
+        "description": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.",
+        "categories": [
+          "向量数据库"
+        ]
+      },
+      {
+        "full": "run-llama/llama_index",
+        "url": "https://github.com/run-llama/llama_index",
+        "language": "Python",
+        "stars": 51826,
+        "description": "LlamaIndex is the leading document agent and OCR platform",
+        "categories": [
+          "向量数据库"
+        ]
+      },
+      {
+        "full": "milvus-io/milvus",
+        "url": "https://github.com/milvus-io/milvus",
+        "language": "Go",
+        "stars": 45754,
+        "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+        "categories": [
+          "向量数据库"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "Mintplex-Labs/anything-llm",
+          "url": "https://github.com/Mintplex-Labs/anything-llm",
+          "language": "JavaScript",
+          "stars": 65116,
+          "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience",
+          "categories": [
+            "向量数据库"
+          ]
+        },
+        "clone": true,
+        "clone_time": 3.8,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "package.json"
+          ]
+        },
+        "install": "success",
+        "install_log": "",
+        "install_time": 4.9,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": 65116
+      },
+      {
+        "project": {
+          "full": "meilisearch/meilisearch",
+          "url": "https://github.com/meilisearch/meilisearch",
+          "language": "Rust",
+          "stars": 59064,
+          "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
+          "categories": [
+            "向量数据库"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.8,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "Cargo.toml",
+            "Dockerfile"
+          ]
+        },
+        "install": "skipped",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 59064
+      },
+      {
+        "project": {
+          "full": "pathwaycom/llm-app",
+          "url": "https://github.com/pathwaycom/llm-app",
+          "language": "Jupyter Notebook",
+          "stars": 59004,
+          "description": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.",
+          "categories": [
+            "向量数据库"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.2,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 6.6,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 59004
+      },
+      {
+        "project": {
+          "full": "run-llama/llama_index",
+          "url": "https://github.com/run-llama/llama_index",
+          "language": "Python",
+          "stars": 51826,
+          "description": "LlamaIndex is the leading document agent and OCR platform",
+          "categories": [
+            "向量数据库"
+          ]
+        },
+        "clone": true,
+        "clone_time": 8.7,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "",
+        "install_time": 31.4,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": 51826
+      },
+      {
+        "project": {
+          "full": "milvus-io/milvus",
+          "url": "https://github.com/milvus-io/milvus",
+          "language": "Go",
+          "stars": 45754,
+          "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+          "categories": [
+            "向量数据库"
+          ]
+        },
+        "clone": true,
+        "clone_time": 8.8,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "go.mod",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "skipped",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 45754
+      }
+    ]
+  },
+  "prompt-engineering": {
+    "label": "提示工程",
+    "top": [
+      {
+        "full": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "language": "HTML",
+        "stars": 167822,
+        "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "categories": [
+          "提示工程"
+        ]
+      },
+      {
+        "full": "microsoft/generative-ai-for-beginners",
+        "url": "https://github.com/microsoft/generative-ai-for-beginners",
+        "language": "Jupyter Notebook",
+        "stars": 118409,
+        "description": "21 Lessons, Get Started Building with Generative AI",
+        "categories": [
+          "提示工程"
+        ]
+      },
+      {
+        "full": "DietrichGebert/ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "language": "JavaScript",
+        "stars": 108835,
+        "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+        "categories": [
+          "提示工程"
+        ]
+      },
+      {
+        "full": "JuliusBrussee/caveman",
+        "url": "https://github.com/JuliusBrussee/caveman",
+        "language": "Go",
+        "stars": 100519,
+        "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+        "categories": [
+          "提示工程"
+        ]
+      },
+      {
+        "full": "dair-ai/Prompt-Engineering-Guide",
+        "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+        "language": "MDX",
+        "stars": 77730,
+        "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
+        "categories": [
+          "提示工程"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "f/prompts.chat",
+          "url": "https://github.com/f/prompts.chat",
+          "language": "HTML",
+          "stars": 167822,
+          "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+          "categories": [
+            "提示工程"
+          ]
+        },
+        "clone": true,
+        "clone_time": 13.9,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "package.json"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 120.4,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 167822
+      },
+      {
+        "project": {
+          "full": "microsoft/generative-ai-for-beginners",
+          "url": "https://github.com/microsoft/generative-ai-for-beginners",
+          "language": "Jupyter Notebook",
+          "stars": 118409,
+          "description": "21 Lessons, Get Started Building with Generative AI",
+          "categories": [
+            "提示工程"
+          ]
+        },
+        "clone": false,
+        "clone_time": 0.0,
+        "clone_err": "Cloning into 'E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\microsoft__generative-ai-for-beginners'...",
+        "build": {},
+        "install": "failed",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 118409
+      },
+      {
+        "project": {
+          "full": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "language": "JavaScript",
+          "stars": 108835,
+          "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+          "categories": [
+            "提示工程"
+          ]
+        },
+        "clone": false,
+        "clone_time": 0.0,
+        "clone_err": "fatal: sha1 file 'E:/Users/Administrator/Desktop/AI Project Weekly/clones/boards/DietrichGebert__ponytail/.git/index.loc",
+        "build": {},
+        "install": "failed",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 108835
+      },
+      {
+        "project": {
+          "full": "JuliusBrussee/caveman",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "language": "Go",
+          "stars": 100519,
+          "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+          "categories": [
+            "提示工程"
+          ]
+        },
+        "clone": false,
+        "clone_time": 0.0,
+        "clone_err": "fatal: unable to write loose object file: No space left on device",
+        "build": {},
+        "install": "failed",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 100519
+      },
+      {
+        "project": {
+          "full": "dair-ai/Prompt-Engineering-Guide",
+          "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+          "language": "MDX",
+          "stars": 77730,
+          "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
+          "categories": [
+            "提示工程"
+          ]
+        },
+        "clone": false,
+        "clone_time": 0.0,
+        "clone_err": "fatal: sha1 file 'E:/Users/Administrator/Desktop/AI Project Weekly/clones/boards/dair-ai__Prompt-Engineering-Guide/.git/",
+        "build": {},
+        "install": "failed",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 77730
+      }
+    ]
+  },
+  "fine-tuning": {
+    "label": "微调",
+    "top": [
+      {
+        "full": "unslothai/unsloth",
+        "url": "https://github.com/unslothai/unsloth",
+        "language": "Python",
+        "stars": 74526,
+        "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+        "categories": [
+          "微调"
+        ]
+      },
+      {
+        "full": "hiyouga/LlamaFactory",
+        "url": "https://github.com/hiyouga/LlamaFactory",
+        "language": "Python",
+        "stars": 74302,
+        "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+        "categories": [
+          "微调"
+        ]
+      },
+      {
+        "full": "run-llama/llama_index",
+        "url": "https://github.com/run-llama/llama_index",
+        "language": "Python",
+        "stars": 51826,
+        "description": "LlamaIndex is the leading document agent and OCR platform",
+        "categories": [
+          "微调"
+        ]
+      },
+      {
+        "full": "QwenAudio/CosyVoice",
+        "url": "https://github.com/QwenAudio/CosyVoice",
+        "language": "Python",
+        "stars": 22872,
+        "description": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.",
+        "categories": [
+          "微调"
+        ]
+      },
+      {
+        "full": "huggingface/peft",
+        "url": "https://github.com/huggingface/peft",
+        "language": "Python",
+        "stars": 21587,
+        "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
+        "categories": [
+          "微调"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "full": "unslothai/unsloth",
+          "url": "https://github.com/unslothai/unsloth",
+          "language": "Python",
+          "stars": 74526,
+          "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+          "categories": [
+            "微调"
+          ]
+        },
+        "clone": false,
+        "clone_time": 0.0,
+        "clone_err": "fatal: unable to write loose object file: No space left on device",
+        "build": {},
+        "install": "failed",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 74526
+      },
+      {
+        "project": {
+          "full": "hiyouga/LlamaFactory",
+          "url": "https://github.com/hiyouga/LlamaFactory",
+          "language": "Python",
+          "stars": 74302,
+          "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+          "categories": [
+            "微调"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.2,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 23.9,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 74302
+      },
+      {
+        "project": {
+          "full": "run-llama/llama_index",
+          "url": "https://github.com/run-llama/llama_index",
+          "language": "Python",
+          "stars": 51826,
+          "description": "LlamaIndex is the leading document agent and OCR platform",
+          "categories": [
+            "微调"
+          ]
+        },
+        "clone": false,
+        "clone_time": 0.0,
+        "clone_err": "fatal: sha1 file 'E:/Users/Administrator/Desktop/AI Project Weekly/clones/boards/run-llama__llama_index/.git/index.lock'",
+        "build": {},
+        "install": "failed",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": 51826
+      },
+      {
+        "project": {
+          "full": "QwenAudio/CosyVoice",
+          "url": "https://github.com/QwenAudio/CosyVoice",
+          "language": "Python",
+          "stars": 22872,
+          "description": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.",
+          "categories": [
+            "微调"
+          ]
+        },
+        "clone": true,
+        "clone_time": 2.0,
+        "clone_err": "",
+        "build": {
+          "files": [
+            "requirements.txt"
+          ]
+        },
+        "install": "failed",
+        "install_log": "",
+        "install_time": 38.2,
+        "run": "skipped",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 22872
+      },
+      {
+        "project": {
+          "full": "huggingface/peft",
+          "url": "https://github.com/huggingface/peft",
+          "language": "Python",
+          "stars": 21587,
+          "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
+          "categories": [
+            "微调"
+          ]
+        },
+        "clone": false,
+        "clone_time": 0.0,
+        "clone_err": "fatal: unable to access 'https://github.com/huggingface/peft.git/': Failed to connect to github.com:443 after 21139 ms:",
+        "build": {},
+        "install": "failed",
+        "install_log": "",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": 21587
+      }
+    ]
+  }
+}
