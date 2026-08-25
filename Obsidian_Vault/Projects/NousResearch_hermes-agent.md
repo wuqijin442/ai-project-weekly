@@ -1,11 +1,11 @@
 ---
 aliases: ["NousResearch/hermes-agent"]
 tags: [github, ai, vibe-coding, project]
-stars: 229030
-today_growth: 0
+stars: 236131
+today_growth: 896
 created_at: 2025-07-22
-status: 2度上榜
-date_accessed: 2026-08-12
+status: 3度上榜
+date_accessed: 2026-08-25
 ---
 
 # NousResearch/hermes-agent
@@ -24,4 +24,4 @@ The agent that grows with you
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-12.md|2026-08-12 收录]]
-
+- [[Daily/Vibe-Coding-2026-08-25.md|2026-08-25 收录]]
