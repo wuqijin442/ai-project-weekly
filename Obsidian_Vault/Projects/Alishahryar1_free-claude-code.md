@@ -1,11 +1,11 @@
 ---
 aliases: [free-claude-code, FCC, Free Claude Code]
 tags: [AI, Trending, Python, Proxy, Gateway, Claude-Code, Codex, Vibe-Coding]
-stars: 48348
+stars: 49482
 created_at: 2026-01-28
-today_growth: 1081
-status: 3度上榜
-date_accessed: 2026-08-24
+today_growth: 891
+status: 4度上榜
+date_accessed: 2026-08-25
 ---
 
 # free-claude-code
@@ -66,3 +66,4 @@ date_accessed: 2026-08-24
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-24.md|2026-08-24 收录]]
+- [[Daily/Vibe-Coding-2026-08-25.md|2026-08-25 收录]]
