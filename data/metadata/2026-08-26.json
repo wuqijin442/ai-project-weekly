@@ -1,0 +1,181 @@
+[
+  {
+    "project": {
+      "owner": "multica-ai",
+      "name": "andrej-karpathy-skills",
+      "full": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "Unknown",
+      "stars": 207467,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.5,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "openai",
+      "name": "codex",
+      "full": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "language": "Rust",
+      "stars": 118550,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 23.8,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date in 2s\n\n1 package is looking for funding\n  run `npm fund` for details\n",
+    "install_time": 2.8,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "DietrichGebert",
+      "name": "ponytail",
+      "full": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "stars": 111699,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 24.5,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date, audited 1 package in 2s\n\nfound 0 vulnerabilities\n",
+    "install_time": 2.3,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "TauricResearch",
+      "name": "TradingAgents",
+      "full": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 100582,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 5.7,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "success",
+    "install_log": "al-0.4.2 langchain-google-genai-4.3.5 langchain-openai-1.6.0 langchain-protocol-0.0.18 langchain-text-splitters-1.1.2 langgraph-1.2.11 langgraph-checkpoint-4.2.0 langgraph-checkpoint-sqlite-3.1.1 langgraph-prebuilt-1.1.0 langgraph-sdk-0.4.3 langsmith-0.11.1 multitasking-0.0.13 ormsgpack-1.12.2 parsel-1.11.0 peewee-4.4.0 pydantic-settings-2.15.0 pytz-2026.3.post1 questionary-2.1.1 redis-8.1.0 requests-toolbelt-1.0.0 sqlite-vec-0.1.9 stockstats-0.6.8 tradingagents-0.3.1 w3lib-2.4.1 yfinance-1.6.0\n",
+    "install_time": 60.6,
+    "run": "failed",
+    "run_log": "main.py --help 失败: Traceback (most recent call last):\n  File \"E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\TauricResearch__TradingAgents\\main.py\", line 12, in <module>\n    ta = TradingAgentsGraph(debug=True, config=config)\n  File \"E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\TauricResearch__TradingAgents\\tradingagents\\graph\\trading_graph.py\", line 114, in __init__\n    self.deep_thinking_llm = d",
+    "run_time": 7.6,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "rohitg00",
+      "name": "ai-engineering-from-scratch",
+      "full": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars": 49334,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "DevTools"
+      ]
+    },
+    "clone": true,
+    "clone_time": 21.7,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt"
+      ]
+    },
+    "install": "failed",
+    "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
+    "install_time": 40.8,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  }
+]

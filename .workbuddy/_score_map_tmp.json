@@ -1,0 +1,272 @@
+{
+ "openclaw/openclaw": {
+  "score": 44,
+  "source": "daily",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\openclaw__openclaw"
+ },
+ "react/react": {
+  "score": 44,
+  "source": "daily",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\react__react"
+ },
+ "tensorflow/tensorflow": {
+  "score": 44,
+  "source": "daily",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\tensorflow__tensorflow"
+ },
+ "microsoft/vscode": {
+  "score": 44,
+  "source": "daily",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\microsoft__vscode"
+ },
+ "NousResearch/hermes-agent": {
+  "score": 76,
+  "source": "daily",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\NousResearch__hermes-agent"
+ },
+ "langflow-ai/langflow": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\langflow-ai__langflow"
+ },
+ "rasbt/LLMs-from-scratch": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\rasbt__LLMs-from-scratch"
+ },
+ "hiyouga/LlamaFactory": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\hiyouga__LlamaFactory"
+ },
+ "binary-husky/gpt_academic": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\binary-husky__gpt_academic"
+ },
+ "FlowiseAI/Flowise": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\FlowiseAI__Flowise"
+ },
+ "Significant-Gravitas/AutoGPT": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\Significant-Gravitas__AutoGPT"
+ },
+ "f/prompts.chat": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\f__prompts.chat"
+ },
+ "hacksider/Deep-Live-Cam": {
+  "score": 44,
+  "source": "boards",
+  "path": null
+ },
+ "thedotmack/claude-mem": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\thedotmack__claude-mem"
+ },
+ "langgenius/dify": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\langgenius__dify"
+ },
+ "open-webui/open-webui": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\open-webui__open-webui"
+ },
+ "langchain-ai/langchain": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\langchain-ai__langchain"
+ },
+ "Graphify-Labs/graphify": {
+  "score": 66,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\Graphify-Labs__graphify"
+ },
+ "AUTOMATIC1111/stable-diffusion-webui": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\AUTOMATIC1111__stable-diffusion-webui"
+ },
+ "Comfy-Org/ComfyUI": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\Comfy-Org__ComfyUI"
+ },
+ "unslothai/unsloth": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\unslothai__unsloth"
+ },
+ "calesthio/OpenMontage": {
+  "score": 66,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\calesthio__OpenMontage"
+ },
+ "mudler/LocalAI": {
+  "score": 44,
+  "source": "boards",
+  "path": null
+ },
+ "opencv/opencv": {
+  "score": 44,
+  "source": "boards",
+  "path": null
+ },
+ "d2l-ai/d2l-zh": {
+  "score": 44,
+  "source": "boards",
+  "path": null
+ },
+ "microsoft/AI-For-Beginners": {
+  "score": 44,
+  "source": "boards",
+  "path": null
+ },
+ "ultralytics/ultralytics": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\ultralytics__ultralytics"
+ },
+ "ultralytics/yolov5": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\ultralytics__yolov5"
+ },
+ "huggingface/transformers": {
+  "score": 60,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\huggingface__transformers"
+ },
+ "ggml-org/whisper.cpp": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\ggml-org__whisper.cpp"
+ },
+ "mozilla/DeepSpeech": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\mozilla__DeepSpeech"
+ },
+ "SYSTRAN/faster-whisper": {
+  "score": 60,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\SYSTRAN__faster-whisper"
+ },
+ "m-bain/whisperX": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\m-bain__whisperX"
+ },
+ "commaai/openpilot": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\commaai__openpilot"
+ },
+ "NaiboWang/EasySpider": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\NaiboWang__EasySpider"
+ },
+ "AtsushiSakai/PythonRobotics": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\AtsushiSakai__PythonRobotics"
+ },
+ "wechaty/wechaty": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\wechaty__wechaty"
+ },
+ "zauberzeug/nicegui": {
+  "score": 60,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\zauberzeug__nicegui"
+ },
+ "GokuMohandas/Made-With-ML": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\GokuMohandas__Made-With-ML"
+ },
+ "apache/airflow": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\apache__airflow"
+ },
+ "qdrant/qdrant": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\qdrant__qdrant"
+ },
+ "HumanSignal/label-studio": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\HumanSignal__label-studio"
+ },
+ "mlflow/mlflow": {
+  "score": 66,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\mlflow__mlflow"
+ },
+ "Mintplex-Labs/anything-llm": {
+  "score": 66,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\Mintplex-Labs__anything-llm"
+ },
+ "meilisearch/meilisearch": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\meilisearch__meilisearch"
+ },
+ "pathwaycom/llm-app": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\pathwaycom__llm-app"
+ },
+ "run-llama/llama_index": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\run-llama__llama_index"
+ },
+ "milvus-io/milvus": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\milvus-io__milvus"
+ },
+ "microsoft/generative-ai-for-beginners": {
+  "score": 44,
+  "source": "boards",
+  "path": null
+ },
+ "DietrichGebert/ponytail": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\DietrichGebert__ponytail"
+ },
+ "JuliusBrussee/caveman": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\JuliusBrussee__caveman"
+ },
+ "dair-ai/Prompt-Engineering-Guide": {
+  "score": 50,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\dair-ai__Prompt-Engineering-Guide"
+ },
+ "QwenAudio/CosyVoice": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\QwenAudio__CosyVoice"
+ },
+ "huggingface/peft": {
+  "score": 44,
+  "source": "boards",
+  "path": "E:\\Users\\Administrator\\Desktop\\AI Project Weekly\\clones\\boards\\huggingface__peft"
+ }
+}

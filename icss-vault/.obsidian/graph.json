@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "tag:#难度/初级  ",
+      "color": {
+        "a": 1,
+        "rgb": 7788124
+      }
+    },
+    {
+      "query": "tag:#难度/中级  ",
+      "color": {
+        "a": 1,
+        "rgb": 16749824
+      }
+    },
+    {
+      "query": "tag:#难度/高级  ",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "tag:#moc  ",
+      "color": {
+        "a": 1,
+        "rgb": 52479
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -0.8,
+  "nodeSizeMultiplier": 1.4015625,
+  "lineSizeMultiplier": 1.22291666666667,
+  "collapse-forces": false,
+  "centerStrength": 0.197916666666667,
+  "repelStrength": 8.22916666666667,
+  "linkStrength": 0.8125,
+  "linkDistance": 297,
+  "scale": 0.25883865621816,
+  "close": true
+}
