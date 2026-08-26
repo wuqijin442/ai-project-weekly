@@ -1,11 +1,11 @@
 ---
 aliases: ["multica-ai/andrej-karpathy-skills"]
 tags: [github, ai, vibe-coding, project]
-stars: 206855
-today_growth: 588
+stars: 207477
+today_growth: 830
 created_at: 2026-01-27
-status: 3度上榜
-date_accessed: 2026-08-25
+status: 4度上榜
+date_accessed: 2026-08-26
 ---
 
 # multica-ai/andrej-karpathy-skills
@@ -25,3 +25,4 @@ A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Kar
 ## 反向链接
 - [[Daily/AI-Weekly-2026-08-23.md|2026-08-23 收录]]
 - [[Daily/Vibe-Coding-2026-08-25.md|2026-08-25 收录]]
+- [[Daily/Vibe-Coding-2026-08-26.md|2026-08-26 收录]]

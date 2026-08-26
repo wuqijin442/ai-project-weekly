@@ -1,11 +1,11 @@
 ---
 aliases: [ai-job-search]
 tags: [AI, Trending, TypeScript, Claude-Code, Vibe-Coding]
-stars: 18947
+stars: 35857
 created_at: 2026-03-18
-today_growth: 3716
-status: 热门
-date_accessed: 2026-07-10
+today_growth: 1265
+status: 3度上榜
+date_accessed: 2026-08-26
 ---
 
 # ai-job-search
@@ -71,3 +71,6 @@ date_accessed: 2026-07-10
 - 求职门户搜索技能目前针对丹麦市场构建，但设计上可替换为本地求职板
 - 最新提交：2026-07-09
 - 2026-07-10 以 +3,716 当日新增登顶 Vibe Coding 日榜（总 Star 升至 18.9k）
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-26.md|2026-08-26 收录]]
