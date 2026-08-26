@@ -1,0 +1,44 @@
+[
+  {
+    "branch": "dgx",
+    "last": {
+      "hash": "d52f829df1",
+      "author": "wuqijin442",
+      "date": "Wed Aug 26 03:01:11 2026 +0800",
+      "subject": "chore: 每日学习消化+图谱 2026-08-26 [dgx]"
+    },
+    "behind_main": 127,
+    "ahead_main": 1,
+    "unique_commits": [
+      "d52f829 2026-08-26 wuqijin442 chore: 每日学习消化+图谱 2026-08-26 [dgx]"
+    ]
+  },
+  {
+    "branch": "main",
+    "last": {
+      "hash": "9a831a9925",
+      "author": "Worn Quiet Joy",
+      "date": "Tue Aug 25 20:06:14 2026 +0800",
+      "subject": "Merge pull request #49 from wuqijin442/win"
+    },
+    "behind_main": 0,
+    "ahead_main": 0,
+    "unique_commits": []
+  },
+  {
+    "branch": "win",
+    "last": {
+      "hash": "0b7c7e4cc6",
+      "author": "wuqijin",
+      "date": "Wed Aug 26 18:57:49 2026 +0800",
+      "subject": "[2026-08-26] Daily AI Project Update"
+    },
+    "behind_main": 79,
+    "ahead_main": 3,
+    "unique_commits": [
+      "0b7c7e4 2026-08-26 wuqijin [2026-08-26] Daily AI Project Update",
+      "80b5896 2026-08-26 wuqijin442 [2026-08-26] Daily AI Project Update",
+      "0799102 2026-08-26 wuqijin [2026-08-26] Daily AI Project Update"
+    ]
+  }
+]
