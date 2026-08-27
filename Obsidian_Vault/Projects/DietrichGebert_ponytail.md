@@ -1,11 +1,11 @@
 ---
 aliases: ["DietrichGebert/ponytail"]
 tags: [github, ai, vibe-coding, project]
-stars: 111714
-today_growth: 982
+stars: 113351
+today_growth: 1598
 created_at: 2026-06-12
-status: 2度上榜
-date_accessed: 2026-08-26
+status: 3度上榜
+date_accessed: 2026-08-27
 ---
 
 # DietrichGebert/ponytail
@@ -24,4 +24,4 @@ Makes your AI agent think like the laziest senior dev in the room. The best code
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-26.md|2026-08-26 收录]]
-
+- [[Daily/Vibe-Coding-2026-08-27.md|2026-08-27 收录]]
