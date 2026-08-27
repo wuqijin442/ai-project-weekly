@@ -13,7 +13,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 2.7,
+    "clone_time": 17.6,
     "clone_err": "",
     "build": {
       "python": false,
@@ -26,8 +26,8 @@
       ]
     },
     "install": "success",
-    "install_log": "\nup to date, audited 1 package in 2s\n\nfound 0 vulnerabilities\n",
-    "install_time": 2.9,
+    "install_log": "\nup to date, audited 1 package in 3s\n\nfound 0 vulnerabilities\n",
+    "install_time": 4.5,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
@@ -42,14 +42,15 @@
       "url": "https://github.com/browser-use/browser-use",
       "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
       "language": "Python",
-      "stars": 111309,
+      "stars": 111310,
       "categories": [
         "AI/LLM/Agent",
         "Frontend/Web"
-      ]
+      ],
+      "fetch_method": "codeload-tarball"
     },
     "clone": true,
-    "clone_time": 4.0,
+    "clone_time": 26.7,
     "clone_err": "",
     "build": {
       "python": true,
@@ -64,7 +65,7 @@
     },
     "install": "failed",
     "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-    "install_time": 79.5,
+    "install_time": 62.9,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
@@ -79,13 +80,13 @@
       "url": "https://github.com/Alishahryar1/free-claude-code",
       "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
       "language": "Python",
-      "stars": 50648,
+      "stars": 50649,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 23.8,
+    "clone_time": 2.4,
     "clone_err": "",
     "build": {
       "python": true,
@@ -98,8 +99,8 @@
       ]
     },
     "install": "failed",
-    "install_log": "rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n  WARNING: Ignoring invalid distribution ~lama-index-core (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n  WARNING: Ignoring invalid distribution ~oogle-auth (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n  WARNING: Ignoring invalid distribution ~rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Package 'free-claude-code' requires a different Python: 3.13.14 not in '>=3.14.0'\n",
-    "install_time": 20.4,
+    "install_log": "-index-core (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n  WARNING: Ignoring invalid distribution ~oogle-auth (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n  WARNING: Ignoring invalid distribution ~oogle-genai (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n  WARNING: Ignoring invalid distribution ~rotobuf (C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Package 'free-claude-code' requires a different Python: 3.13.14 not in '>=3.14.0'\n",
+    "install_time": 15.0,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
@@ -114,15 +115,16 @@
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars": 49840,
+      "stars": 49842,
       "categories": [
         "AI/LLM/Agent",
         "Frontend/Web",
         "DevTools"
-      ]
+      ],
+      "fetch_method": "codeload-tarball"
     },
     "clone": true,
-    "clone_time": 28.9,
+    "clone_time": 59.7,
     "clone_err": "",
     "build": {
       "python": true,
@@ -136,7 +138,7 @@
     },
     "install": "failed",
     "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 441, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 359, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 334, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-    "install_time": 44.8,
+    "install_time": 83.2,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
@@ -160,7 +162,7 @@
       "fetch_method": "codeload-tarball"
     },
     "clone": true,
-    "clone_time": 50.7,
+    "clone_time": 202.0,
     "clone_err": "",
     "build": {
       "python": false,
@@ -176,8 +178,8 @@
       ]
     },
     "install": "success",
-    "install_log": "\n> postinstall\n> husky\n\n.git can't be found\n> prepare\n> husky\n\n.git can't be found\nadded 6 packages in 1m\n\n2 packages are looking for funding\n  run `npm fund` for details\n",
-    "install_time": 67.6,
+    "install_log": "\n> postinstall\n> husky\n\n.git can't be found\n> prepare\n> husky\n\n.git can't be found\nadded 6 packages in 45s\n\n2 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 46.2,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
