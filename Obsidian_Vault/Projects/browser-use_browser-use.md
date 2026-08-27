@@ -1,12 +1,12 @@
 ---
 aliases: [browser-use, browser-use/browser-use]
 tags: [AI, Trending, Python, Vibe-Coding, Browser-Automation]
-stars: 109477
+stars: 111362
 created_at: 2024-10-31
 daily_growth: null
 weekly_growth: null
-status: Vibe Coding Top5 · 2026-08-17
-date_accessed: 2026-08-17
+status: 4度上榜
+date_accessed: 2026-08-27
 ---
 
 # browser-use/browser-use
@@ -47,3 +47,4 @@ date_accessed: 2026-08-17
 
 - [[Vibe-Coding-2026-07-03|2026-07-03 日报]]
 - [[Vibe-Coding-2026-08-17|2026-08-17 日报]]
+- [[Daily/Vibe-Coding-2026-08-27.md|2026-08-27 收录]]

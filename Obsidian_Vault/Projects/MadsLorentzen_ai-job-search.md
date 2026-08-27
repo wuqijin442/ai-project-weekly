@@ -1,11 +1,11 @@
 ---
 aliases: [ai-job-search]
 tags: [AI, Trending, TypeScript, Claude-Code, Vibe-Coding]
-stars: 35857
+stars: 36993
 created_at: 2026-03-18
-today_growth: 1265
-status: 3度上榜
-date_accessed: 2026-08-26
+today_growth: 1300
+status: 4度上榜
+date_accessed: 2026-08-27
 ---
 
 # ai-job-search
@@ -74,3 +74,4 @@ date_accessed: 2026-08-26
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-26.md|2026-08-26 收录]]
+- [[Daily/Vibe-Coding-2026-08-27.md|2026-08-27 收录]]
