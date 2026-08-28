@@ -134,26 +134,48 @@ def chunk_text(text, max_chars=1500, overlap=200):
     return [c for c in chunks if c]
 
 
-def iter_sources():
-    """产出待入库知识源：(date, source_name, content_text)。"""
+def _iter_md_dir(subdir, max_chars=700, overlap_lines=3):
+    """遍历 reports/<subdir> 下的 .md，按日分块产出 (date, source, content)。"""
     out = []
-    learn_dir = os.path.join(REPO_ROOT, "reports", "learnings")
-    meta_dir = os.path.join(REPO_ROOT, "data", "metadata")
-    # 学习消化产物（按日，分块）
-    if os.path.isdir(learn_dir):
-        for fn in sorted(os.listdir(learn_dir)):
-            if not fn.endswith(".md"):
-                continue
-            date = fn[:-3]
-            path = os.path.join(learn_dir, fn)
-            try:
-                with open(path, encoding="utf-8") as f:
-                    text = f.read()
-            except Exception:
-                continue
-            for i, ch in enumerate(chunk_markdown(text)):
-                out.append((date, f"reports/learnings/{fn}#{i}", ch))
+    d = os.path.join(REPO_ROOT, "reports", subdir)
+    if not os.path.isdir(d):
+        return out
+    for fn in sorted(os.listdir(d)):
+        if not fn.endswith(".md"):
+            continue
+        date = fn[:-3]
+        path = os.path.join(d, fn)
+        try:
+            with open(path, encoding="utf-8") as f:
+                text = f.read()
+        except Exception:
+            continue
+        for i, ch in enumerate(chunk_markdown(text, max_chars=max_chars, overlap_lines=overlap_lines)):
+            out.append((date, f"reports/{subdir}/{fn}#{i}", ch))
+    return out
+
+
+def iter_sources():
+    """产出待入库知识源：(date, source_name, content_text)。
+
+    覆盖项目全部"已同步到 DGX"的历史数据：
+    - reports/learnings  : 每日学习消化（AI 趋势洞察）
+    - reports/daily      : 每日 GitHub Trending 日报
+    - reports/boards     : 11 板块深潜报告
+    - reports/weekly     : 周报聚合
+    - knowledge-base     : 项目知识库（awesome/projects 等）
+    - data/metadata      : 每日真实运行元数据（clone/install/run 结果，按字符切片避免超 nomic 上下文）
+
+    注：Obsidian_Vault / 储能知识库 被 gitignore，不随仓库同步到 DGX，无法入库。
+    """
+    out = []
+    out += _iter_md_dir("learnings")
+    out += _iter_md_dir("daily")
+    out += _iter_md_dir("boards")
+    out += _iter_md_dir("weekly")
+    out += _iter_md_dir("knowledge-base")
     # 每日元数据（按字符切片，避免整文件超 nomic-embed 上下文上限）
+    meta_dir = os.path.join(REPO_ROOT, "data", "metadata")
     if os.path.isdir(meta_dir):
         for fn in sorted(os.listdir(meta_dir)):
             if not fn.endswith(".json"):
