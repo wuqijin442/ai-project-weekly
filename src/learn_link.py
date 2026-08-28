@@ -31,8 +31,10 @@ OLLAMA_CHAT = "http://localhost:11434/api/chat"
 OLLAMA_TAGS = "http://localhost:11434/api/tags"
 
 # 模型偏好顺序：取本地 /api/tags 里第一个命中的，避免模型被删后 404 静默失败。
-# 排序依据 GB10 实测：MoE 激活参数小者优先（qwen3-coder:30b ~82 tok/s 远快于 dense 32B/72B）。
+# 排序依据 GB10 实测：qwen3.8:27b（Q4_K_M，256K 上下文 + thinking/vision）综合最强，置顶；
+# 其后按激活参数小者优先（qwen3-coder:30b ~82 tok/s 远快于 dense 32B/72B）。
 MODEL_PREFERENCE = [
+    "qwen3.8:27b",
     "qwen3-coder:30b",
     "qwen2.5-coder:32b",
     "qwen2.5-coder:14b",
