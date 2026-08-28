@@ -191,18 +191,25 @@ def rag_retrieve(query, top_k=5, min_date=None):
 
 
 def rag_ingest():
-    """调用 rag_index.py 全量重建（drop+rebuild，保证零重复）。best-effort，不阻断主流程。"""
+    """增量同步 RAG 向量库（默认不传 --force，仅追加 DB 中尚未存在的知识源）。
+
+    best-effort，不阻断主流程。设计要点：
+    - 一次性全量灌库（含 gitignore 的大知识库 Obsidian_Vault / 储能知识库）由
+      `rag_index.py --force` 单独触发（首次部署 / 新增语料时手动执行），不放在每日循环里；
+    - 每日 learn_link 走增量：rag_index 会跳过已在库中的文件（按 source 前缀判断），
+      只把"当日新生成的 learning 等"追加进向量库，实现知识库滚动自进化，且不重复吃满全量历史。
+    """
     if not _rag_available():
         return False
-    cmd = [RAG_VENV_PY, os.path.join(RAG_SCRIPT_DIR, "rag_index.py"), "--force"]
+    cmd = [RAG_VENV_PY, os.path.join(RAG_SCRIPT_DIR, "rag_index.py")]  # 不带 --force = 增量
     try:
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
         if proc.returncode == 0:
-            log("✅ RAG 向量库已全量重建同步（知识库自进化，零重复）")
+            log("✅ RAG 向量库已增量同步（仅追加新知识，知识库自进化）")
             return True
-        log(f"[RAG] 全量重建返回非零（{proc.returncode}），详见 stderr")
+        log(f"[RAG] 增量同步返回非零（{proc.returncode}），详见 stderr")
     except Exception as e:  # noqa
-        log(f"[RAG] 全量重建失败：{e}")
+        log(f"[RAG] 增量同步失败：{e}")
     return False
 
 
