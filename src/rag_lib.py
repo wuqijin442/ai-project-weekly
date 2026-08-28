@@ -13,6 +13,7 @@ import os
 import sys
 import json
 import time
+import subprocess
 import urllib.request
 import urllib.error
 
@@ -134,24 +135,103 @@ def chunk_text(text, max_chars=1500, overlap=200):
     return [c for c in chunks if c]
 
 
-def _iter_md_dir(subdir, max_chars=700, overlap_lines=3):
-    """遍历 reports/<subdir> 下的 .md，按日分块产出 (date, source, content)。"""
-    out = []
-    d = os.path.join(REPO_ROOT, "reports", subdir)
-    if not os.path.isdir(d):
-        return out
-    for fn in sorted(os.listdir(d)):
-        if not fn.endswith(".md"):
-            continue
-        date = fn[:-3]
-        path = os.path.join(d, fn)
+def _git_run(args):
+    """在仓库根执行 git，失败返回 None（不抛异常）。"""
+    try:
+        return subprocess.check_output(
+            ["git"] + args, cwd=REPO_ROOT, stderr=subprocess.DEVNULL
+        ).decode("utf-8")
+    except Exception:
+        return None
+
+
+def _git_ls_tree(ref, subdir):
+    """返回 ref 下 subdir 内的文件路径列表（相对仓库根）。ref 不可用时返回 []。"""
+    out = _git_run(["ls-tree", "-r", "--name-only", ref, "--", subdir])
+    if out is None:
+        return []
+    return [l for l in out.splitlines() if l]
+
+
+def _read_content(relpath):
+    """读文件内容：优先工作树磁盘（含当日新生成/未提交文件），否则从 git ref 取历史版本。"""
+    disk = os.path.join(REPO_ROOT, relpath)
+    if os.path.isfile(disk):
         try:
-            with open(path, encoding="utf-8") as f:
-                text = f.read()
+            with open(disk, encoding="utf-8") as f:
+                return f.read()
         except Exception:
+            pass
+    return _git_run(["show", f"origin/main:{relpath}"])  # 可能为 None
+
+
+def _iter_md_dir(subdir, root_sub="reports", max_chars=700, overlap_lines=3):
+    """遍历 <root_sub>/<subdir> 下的 .md，按日分块产出 (date, source, content)。
+
+    读取来源 = 工作树磁盘 ∪ origin/main（git）：
+    - 工作树覆盖"当日刚生成、尚未合入 main"的文件（如 dgx 03:00 新消化的 learning）；
+    - origin/main 覆盖完整历史（dgx 工作树往往只同步了部分报告）。
+    两者取并集，保证每次重建都吃到全部历史，不会被不完整的工作树截断。
+    """
+    out = []
+    d = os.path.join(REPO_ROOT, root_sub, subdir)
+    prefix = f"{root_sub}/{subdir}"
+    seen = set()
+    # 1) 工作树磁盘文件
+    if os.path.isdir(d):
+        for fn in sorted(os.listdir(d)):
+            if not fn.endswith(".md"):
+                continue
+            rel = f"{prefix}/{fn}"
+            seen.add(rel)
+            text = _read_content(rel) or ""
+            if not text.strip():
+                continue
+            date = fn[:-3]
+            for i, ch in enumerate(chunk_markdown(text, max_chars=max_chars, overlap_lines=overlap_lines)):
+                out.append((date, f"{rel}#{i}", ch))
+    # 2) origin/main 中额外存在的文件（历史，工作树可能缺失）
+    for rel in _git_ls_tree("origin/main", prefix):
+        if rel in seen or not rel.endswith(".md"):
             continue
+        text = _read_content(rel) or ""
+        if not text.strip():
+            continue
+        fn = os.path.basename(rel)
+        date = fn[:-3]
         for i, ch in enumerate(chunk_markdown(text, max_chars=max_chars, overlap_lines=overlap_lines)):
-            out.append((date, f"reports/{subdir}/{fn}#{i}", ch))
+            out.append((date, f"{rel}#{i}", ch))
+    return out
+
+
+def _iter_json_dir(subdir, root_sub="data", max_chars=1500, overlap=200):
+    """遍历 <root_sub>/<subdir> 下的 .json，按字符切片产出 (date, source, content)。读取来源同 _iter_md_dir。"""
+    out = []
+    d = os.path.join(REPO_ROOT, root_sub, subdir)
+    prefix = f"{root_sub}/{subdir}"
+    seen = set()
+    if os.path.isdir(d):
+        for fn in sorted(os.listdir(d)):
+            if not fn.endswith(".json"):
+                continue
+            rel = f"{prefix}/{fn}"
+            seen.add(rel)
+            text = _read_content(rel) or ""
+            if not text.strip():
+                continue
+            date = fn[:-5]
+            for i, ch in enumerate(chunk_text(text, max_chars=max_chars, overlap=overlap)):
+                out.append((date, f"{rel}#{i}", ch))
+    for rel in _git_ls_tree("origin/main", prefix):
+        if rel in seen or not rel.endswith(".json"):
+            continue
+        text = _read_content(rel) or ""
+        if not text.strip():
+            continue
+        fn = os.path.basename(rel)
+        date = fn[:-5]
+        for i, ch in enumerate(chunk_text(text, max_chars=max_chars, overlap=overlap)):
+            out.append((date, f"{rel}#{i}", ch))
     return out
 
 
@@ -166,6 +246,9 @@ def iter_sources():
     - knowledge-base     : 项目知识库（awesome/projects 等）
     - data/metadata      : 每日真实运行元数据（clone/install/run 结果，按字符切片避免超 nomic 上下文）
 
+    读取来源 = 工作树 ∪ origin/main（见 _iter_md_dir / _iter_json_dir），确保每次重建都吃到
+    完整历史（dgx 工作树只同步了部分报告，纯读磁盘会把历史截断）。
+
     注：Obsidian_Vault / 储能知识库 被 gitignore，不随仓库同步到 DGX，无法入库。
     """
     out = []
@@ -173,22 +256,8 @@ def iter_sources():
     out += _iter_md_dir("daily")
     out += _iter_md_dir("boards")
     out += _iter_md_dir("weekly")
-    out += _iter_md_dir("knowledge-base")
-    # 每日元数据（按字符切片，避免整文件超 nomic-embed 上下文上限）
-    meta_dir = os.path.join(REPO_ROOT, "data", "metadata")
-    if os.path.isdir(meta_dir):
-        for fn in sorted(os.listdir(meta_dir)):
-            if not fn.endswith(".json"):
-                continue
-            date = fn[:-5]
-            path = os.path.join(meta_dir, fn)
-            try:
-                with open(path, encoding="utf-8") as f:
-                    text = f.read()
-            except Exception:
-                continue
-            for i, ch in enumerate(chunk_text(text)):
-                out.append((date, f"data/metadata/{fn}#{i}", ch))
+    out += _iter_md_dir("knowledge-base", root_sub="knowledge-base")
+    out += _iter_json_dir("metadata")
     return out
 
 
