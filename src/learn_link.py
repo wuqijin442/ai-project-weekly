@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""learn_link.py — 用 Ollama deepseek-r1:32b 对 GitHub 热门做「学习 + 链接 + 知识图谱」。
+"""learn_link.py — 用本地 Ollama 模型对 GitHub 热门做「学习 + 链接 + 知识图谱」。
 
 流程：
   (a) 每日消化报告  reports/learnings/YYYY-MM-DD.md
@@ -28,6 +28,51 @@ WEEKLY_MD = LINK_DIR / "WEEKLY.md"
 SUMMARY_JSON = LINK_DIR / "summaries.json"
 
 OLLAMA_CHAT = "http://localhost:11434/api/chat"
+OLLAMA_TAGS = "http://localhost:11434/api/tags"
+
+# 模型偏好顺序：取本地 /api/tags 里第一个命中的，避免模型被删后 404 静默失败。
+# 排序依据 GB10 实测：qwen3.8:27b（Q4_K_M，256K 上下文 + thinking/vision）综合最强，置顶；
+# 其后按激活参数小者优先（qwen3-coder:30b ~82 tok/s 远快于 dense 32B/72B）。
+MODEL_PREFERENCE = [
+    "qwen3.8:27b",
+    "qwen3-coder:30b",
+    "qwen2.5-coder:32b",
+    "qwen2.5-coder:14b",
+    "qwen2.5:72b",
+    "deepseek-r1:32b",
+]
+
+
+def _list_local_models():
+    try:
+        with urllib.request.urlopen(OLLAMA_TAGS, timeout=10) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+        return [m.get("name", "") for m in payload.get("models", [])]
+    except Exception as exc:  # noqa
+        print(f"[learn_link] 无法读取 Ollama 模型列表：{exc}", flush=True)
+        return []
+
+
+def _resolve_model():
+    """LEARN_MODEL 显式指定优先；否则按偏好列表挑一个本地真实存在的模型。"""
+    explicit = os.environ.get("LEARN_MODEL")
+    local = _list_local_models()
+    if explicit:
+        if not local or explicit in local:
+            return explicit
+        print(
+            f"[learn_link] LEARN_MODEL={explicit} 不在本地模型列表，回退自动选择",
+            flush=True,
+        )
+    for cand in MODEL_PREFERENCE:
+        if cand in local:
+            return cand
+    if local:
+        return local[0]
+    return explicit or MODEL_PREFERENCE[0]
+
+
+MODEL = _resolve_model()
 HTTP_TIMEOUT = int(os.environ.get("LEARN_TIMEOUT", "600"))
 WEEK_DAYS = int(os.environ.get("LEARN_WEEK_DAYS", "7"))
 
@@ -35,46 +80,6 @@ WEEK_DAYS = int(os.environ.get("LEARN_WEEK_DAYS", "7"))
 def log(msg):
     ts = datetime.datetime.now().strftime("%H:%M:%S")
     print(f"[learn_link {ts}] {msg}", flush=True)
-
-
-# ----------------------------------------------------------------------------
-# 模型选择（消除“硬编码模型被删→静默跳过”的脆弱性；默认首选 qwen3.8:27b）
-# ----------------------------------------------------------------------------
-def _select_model():
-    """选模型优先级：
-    1) 显式 LEARN_MODEL 环境变量（最高优先，便于临时覆盖）；
-    2) 否则查 Ollama /api/tags，按首选顺序自动挑可用模型：
-       qwen3.8:27b > qwen3-coder:30b > deepseek-r1:32b > 首个可用；
-    3) 标签接口不可达时，回退 qwen3.8:27b，由 call_ollama 优雅跳过。
-    说明：Ollama chat 无状态，本任务“学习”=把当日数据+历史图谱作为上下文
-    重新喂给模型生成摘要/图谱（外部记忆），并非权重级微调/自我进化。
-    """
-    explicit = os.environ.get("LEARN_MODEL")
-    if explicit:
-        return explicit
-    preferred = ["qwen3.8:27b", "qwen3-coder:30b", "deepseek-r1:32b"]
-    try:
-        req = urllib.request.Request("http://localhost:11434/api/tags", method="GET")
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            obj = json.loads(resp.read().decode("utf-8"))
-        names = [m.get("name") for m in obj.get("models", [])]
-        for p in preferred:
-            if p in names:
-                return p
-        # 退一步：按 base 名（冒号前）前缀匹配，兼容带量化后缀的变体
-        for p in preferred:
-            base = p.split(":")[0]
-            hit = next((n for n in names if n == base or n.startswith(base + ":")), None)
-            if hit:
-                return hit
-        if names:
-            return names[0]
-    except Exception as e:  # noqa
-        log(f"自动选模型失败（/api/tags 不可达），回退 qwen3.8:27b：{e}")
-    return "qwen3.8:27b"
-
-
-MODEL = _select_model()
 
 
 # ----------------------------------------------------------------------------
@@ -370,7 +375,7 @@ def main():
             date = datetime.date.fromisoformat(sys.argv[1])
         except Exception:  # noqa
             pass
-    log(f"开始学习+链接+图谱：{date.isoformat()}")
+    log(f"开始学习+链接+图谱：{date.isoformat()}（模型={MODEL}）")
 
     main_data, board_data = load_day(date)
     if not main_data and not board_data:
