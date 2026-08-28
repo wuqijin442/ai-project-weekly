@@ -10,6 +10,7 @@ rag_lib.py — RAG 向量库核心 (Milvus Lite + nomic-embed-text via Ollama)
 - 上层 learn_link.py 通过 subprocess 调用 rag_index.py / rag_query.py，不直接 import
 """
 import os
+import re
 import sys
 import json
 import time
@@ -25,6 +26,14 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAG_DIR = os.environ.get("RAG_DIR", "/opt/ragkb")
 DB_PATH = os.path.join(RAG_DIR, "kb.db")
 COLLECTION = "kb"
+
+# 额外语料（不在 git 仓库内、不随仓库同步到 DGX 的大知识库）。
+# 这些目录需由外部（如本机 scp）预先放到 DGX 的 /opt/ragkb/extra/ 下；
+# iter_sources 仅在目录存在时纳入，且只读磁盘（不走 git）。
+EXTRA_CORPORA = [
+    {"dir": "/opt/ragkb/extra/obsidian", "label": "obsidian", "exts": (".md",), "kind": "md"},
+    {"dir": "/opt/ragkb/extra/energy", "label": "energy", "exts": (".md", ".json", ".txt"), "kind": "md"},
+]
 
 EMBED_MODEL = "nomic-embed-text:latest"
 EMBED_DIM = 768
@@ -235,7 +244,66 @@ def _iter_json_dir(subdir, root_sub="data", max_chars=1500, overlap=200):
     return out
 
 
-def iter_sources():
+def _iter_extra_corpora(max_chars=1000, overlap_lines=3):
+    """遍历 EXTRA_CORPORA 配置的本地磁盘目录（不依赖 git，只读磁盘）。
+
+    这些目录由外部（如本机 scp）预先放到 DGX 的 /opt/ragkb/extra/ 下；目录不存在时
+    跳过（Windows/win 分支上默认不存在，自动降级为空）。用于把 gitignore 的大知识库
+    （Obsidian_Vault、储能知识库）也灌入 RAG，实现"知识库自进化"。
+
+    每个文件分块产出 (date, source, content)，source 形如 "<label>/<相对路径>#<块序号>"，
+    与 git 源的 source 命名风格一致（便于增量去重按前缀判断）。
+    """
+    out = []
+    for corp in EXTRA_CORPORA:
+        d = corp["dir"]
+        if not os.path.isdir(d):
+            continue
+        label = corp["label"]
+        exts = tuple(e.lower() for e in corp.get("exts", (".md",)))
+        for root, _dirs, files in os.walk(d):
+            for fn in sorted(files):
+                if not fn.lower().endswith(exts):
+                    continue
+                full = os.path.join(root, fn)
+                relpath = os.path.relpath(full, d).replace(os.sep, "/")
+                src_id = f"{label}/{relpath}"
+                try:
+                    with open(full, encoding="utf-8") as f:
+                        text = f.read()
+                except Exception:
+                    continue
+                if not text.strip():
+                    continue
+                m = re.search(r"(\d{4}-\d{2}-\d{2})", fn)
+                date = m.group(1) if m else label
+                if fn.lower().endswith(".json"):
+                    chunks = chunk_text(text, max_chars=1500, overlap=200)
+                else:
+                    chunks = chunk_markdown(text, max_chars=max_chars, overlap_lines=overlap_lines)
+                for i, ch in enumerate(chunks):
+                    out.append((date, f"{src_id}#{i}", ch))
+    return out
+
+
+def existing_source_prefixes(col, limit=2000000):
+    """返回集合中已存在的知识源"文件前缀"集合（source 去掉 '#<块序号>' 的部分）。
+
+    用于增量入库：某文件只要已有任一 chunk 在库里，就整文件跳过（不重复吃满全量历史）。
+    返回空集合表示集合为空（首次/全量重建场景）。
+    """
+    prefixes = set()
+    try:
+        res = col.query(expr="id >= 0", output_fields=["source"], limit=limit)
+        for r in res or []:
+            s = r.get("source", "") or ""
+            prefixes.add(s.split("#", 1)[0])
+    except Exception:
+        pass
+    return prefixes
+
+
+def iter_sources(include_extra=True):
     """产出待入库知识源：(date, source_name, content_text)。
 
     覆盖项目全部"已同步到 DGX"的历史数据：
@@ -245,11 +313,14 @@ def iter_sources():
     - reports/weekly     : 周报聚合
     - knowledge-base     : 项目知识库（awesome/projects 等）
     - data/metadata      : 每日真实运行元数据（clone/install/run 结果，按字符切片避免超 nomic 上下文）
+    - EXTRA_CORPORA      : 额外大知识库（Obsidian_Vault / 储能知识库），仅当 DGX 上 /opt/ragkb/extra/*
+                            目录存在时纳入（gitignore 不在仓库内，由 scp 预置）
 
     读取来源 = 工作树 ∪ origin/main（见 _iter_md_dir / _iter_json_dir），确保每次重建都吃到
     完整历史（dgx 工作树只同步了部分报告，纯读磁盘会把历史截断）。
 
-    注：Obsidian_Vault / 储能知识库 被 gitignore，不随仓库同步到 DGX，无法入库。
+    增量入库（rag_index 非 --force 调用）时，调用方会用 existing_source_prefixes 过滤掉
+    已在库中的文件，仅追加新文件——既不重复吃满全量历史，又不会因 dgx 工作树不完整而丢失历史。
     """
     out = []
     out += _iter_md_dir("learnings")
@@ -258,6 +329,8 @@ def iter_sources():
     out += _iter_md_dir("weekly")
     out += _iter_md_dir("knowledge-base", root_sub="knowledge-base")
     out += _iter_json_dir("metadata")
+    if include_extra:
+        out += _iter_extra_corpora()
     return out
 
 

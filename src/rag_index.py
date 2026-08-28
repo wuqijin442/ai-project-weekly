@@ -36,8 +36,23 @@ def rebuild(force):
             pass
         c, col = rag_lib.get_collection()
 
-    sources = rag_lib.iter_sources()
-    total, ok, skipped = len(sources), 0, 0
+    sources = rag_lib.iter_sources(include_extra=True)
+    raw_total = len(sources)
+    total = raw_total
+
+    if not force:
+        # 增量：跳过已在集合中的文件（按 source 前缀判断），只追加新文件。
+        # 这样每日 learn_link 不会重复吃满全量历史，也不会因 dgx 工作树不完整而丢失历史
+        # （全量历史已在首次 --force 重建时一次性灌入）。
+        existing = rag_lib.existing_source_prefixes(col)
+        if existing:
+            sources = [s for s in sources if s[1].split("#", 1)[0] not in existing]
+        total = len(sources)
+        if not sources:
+            print(f"DONE (incremental) candidates={raw_total} new=0  nothing to ingest")
+            return
+
+    ok, skipped = 0, 0
     BATCH = 32
     for i in range(0, len(sources), BATCH):
         batch = sources[i:i + BATCH]
@@ -84,7 +99,8 @@ def rebuild(force):
         col.flush()
         print(f"  ingested {min(i + BATCH, total)}/{total}  (rows ok={ok})", flush=True)
 
-    print(f"DONE total={total} inserted={ok} batches_with_skip={skipped} entities={col.num_entities}")
+    mode = "force(full-rebuild)" if force else "incremental"
+    print(f"DONE mode={mode} candidates={raw_total} ingested={total} inserted_rows={ok} batches_with_skip={skipped} entities={col.num_entities}")
 
 
 if __name__ == "__main__":
