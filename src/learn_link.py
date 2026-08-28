@@ -16,6 +16,7 @@ import sys
 import json
 import re
 import datetime
+import subprocess
 import urllib.request
 from pathlib import Path
 
@@ -30,9 +31,17 @@ SUMMARY_JSON = LINK_DIR / "summaries.json"
 OLLAMA_CHAT = "http://localhost:11434/api/chat"
 OLLAMA_TAGS = "http://localhost:11434/api/tags"
 
+# RAG 向量库（Milvus Lite + nomic-embed-text）：由 ~/rag_venv 下的脚本驱动，
+# learn_link 通过 subprocess 调用，避免在主进程依赖 milvus_lite（仅装在该 venv）。
+# Windows(win 分支) 上没有 ~/rag_venv，rag_retrieve/rag_ingest 自动降级为 no-op，不影响主流程。
+RAG_VENV_PY = os.path.expanduser("~/rag_venv/bin/python")
+RAG_SCRIPT_DIR = os.path.join(str(ROOT), "src")
+
 # 模型偏好顺序：取本地 /api/tags 里第一个命中的，避免模型被删后 404 静默失败。
-# 排序依据 GB10 实测：MoE 激活参数小者优先（qwen3-coder:30b ~82 tok/s 远快于 dense 32B/72B）。
+# 排序依据 GB10 实测：qwen3.8:27b（Q4_K_M，256K 上下文 + thinking/vision）综合最强，置顶；
+# 其后按激活参数小者优先（qwen3-coder:30b ~82 tok/s 远快于 dense 32B/72B）。
 MODEL_PREFERENCE = [
+    "qwen3.8:27b",
     "qwen3-coder:30b",
     "qwen2.5-coder:32b",
     "qwen2.5-coder:14b",
@@ -149,6 +158,59 @@ def load_history(max_chars=3500):
     if len(txt) > max_chars:
         txt = "...(更早的历史已截断)...\n" + txt[-max_chars:]
     return txt
+
+
+# ----------------------------------------------------------------------------
+# RAG 向量库（Milvus Lite + nomic-embed-text via Ollama）
+# ----------------------------------------------------------------------------
+def _rag_available():
+    return os.path.exists(RAG_VENV_PY)
+
+
+def rag_retrieve(query, top_k=5, min_date=None):
+    """调用 rag_query.py 做向量检索，返回 [{source,date,content,distance}]。
+    任何失败都返回 []（调用方降级为 load_history）。"""
+    if not query or not query.strip() or not _rag_available():
+        return []
+    cmd = [
+        RAG_VENV_PY,
+        os.path.join(RAG_SCRIPT_DIR, "rag_query.py"),
+        "--query", query[:1500],
+        "--top-k", str(top_k),
+    ]
+    if min_date:
+        cmd += ["--min-date", min_date]
+    try:
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        data = json.loads(proc.stdout)
+        if isinstance(data, list):
+            return data
+    except Exception as e:  # noqa
+        log(f"[RAG] 检索失败，降级为 INDEX.md 历史：{e}")
+    return []
+
+
+def rag_ingest():
+    """增量同步 RAG 向量库（默认不传 --force，仅追加 DB 中尚未存在的知识源）。
+
+    best-effort，不阻断主流程。设计要点：
+    - 一次性全量灌库（含 gitignore 的大知识库 Obsidian_Vault / 储能知识库）由
+      `rag_index.py --force` 单独触发（首次部署 / 新增语料时手动执行），不放在每日循环里；
+    - 每日 learn_link 走增量：rag_index 会跳过已在库中的文件（按 source 前缀判断），
+      只把"当日新生成的 learning 等"追加进向量库，实现知识库滚动自进化，且不重复吃满全量历史。
+    """
+    if not _rag_available():
+        return False
+    cmd = [RAG_VENV_PY, os.path.join(RAG_SCRIPT_DIR, "rag_index.py")]  # 不带 --force = 增量
+    try:
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
+        if proc.returncode == 0:
+            log("✅ RAG 向量库已增量同步（仅追加新知识，知识库自进化）")
+            return True
+        log(f"[RAG] 增量同步返回非零（{proc.returncode}），详见 stderr")
+    except Exception as e:  # noqa
+        log(f"[RAG] 增量同步失败：{e}")
+    return False
 
 
 # ----------------------------------------------------------------------------
@@ -380,10 +442,28 @@ def main():
         log("当日无 metadata（main/boards 均未产出），跳过。")
         seed_summaries()
         rebuild_index()
+        rag_ingest()
         return 0
 
     context = build_context(main_data, board_data)
     history = load_history()
+    # 用 RAG 向量检索替换「截断的 INDEX.md 历史」，让模型拿到更相关的历史知识
+    try:
+        rag_hits = rag_retrieve(
+            context[:1500], top_k=5,
+            min_date=(date - datetime.timedelta(days=45)).isoformat(),
+        )
+        if rag_hits:
+            blocks = []
+            for h in rag_hits:
+                src = h.get("source", "")
+                d = h.get("date", "")
+                c = (h.get("content") or "")[:600].replace("\n", " ")
+                blocks.append(f"- （{d} · {src}）{c}")
+            history = "## 相关历史知识（RAG 向量检索，按相似度排序）\n" + "\n".join(blocks)
+            log(f"✅ RAG 检索到 {len(rag_hits)} 条相关历史，已注入上下文（替代截断的 INDEX.md）")
+    except Exception as e:  # noqa
+        log(f"[RAG] 上下文注入跳过，沿用 INDEX.md 历史：{e}")
     messages = build_daily_messages(context, history)
 
     content = call_ollama(messages)
@@ -391,6 +471,7 @@ def main():
         log("⚠️ Ollama/DeepSeek 不可用，跳过学习步骤（不影响主流程）。")
         seed_summaries()
         rebuild_index()
+        rag_ingest()
         return 0
 
     clean = strip_think(content) or content
@@ -416,6 +497,7 @@ def main():
     seed_summaries()
     rebuild_index(weekly_text)
     log("✅ INDEX.md 已重组为知识图谱优先视图")
+    rag_ingest()
     return 0
 
 
