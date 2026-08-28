@@ -57,15 +57,22 @@ def rebuild(force):
             })
         if not rows:
             continue
-        # 去重：删除本批涉及的旧 source 行，再插入新行
+        # 去重：先按 source 查出主键 id，再按 id 删除旧行，最后插入新行。
+        # 注意 milvus-lite 的 delete 只接受 pks（不接受 expr），故先 query 取 id。
         seen = {}
         for r in rows:
             seen[r["source"]] = True
         for src in seen:
             try:
-                col.delete(expr=f'source == "{safe_source(src)}"')
-            except Exception:
-                pass
+                old = col.query(
+                    expr=f'source == "{safe_source(src)}"',
+                    output_fields=["id"],
+                    limit=100000,
+                )
+                if old:
+                    col.delete(pks=[o["id"] for o in old])
+            except Exception as e:
+                print(f"  [warn] dedup delete failed for {src}: {e}", file=sys.stderr)
         try:
             col.insert(rows)
             ok += len(rows)

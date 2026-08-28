@@ -191,18 +191,23 @@ def rag_retrieve(query, top_k=5, min_date=None):
 
 
 def rag_ingest():
-    """调用 rag_index.py 增量入库（按 source 去重）。best-effort，不阻断主流程。"""
+    """调用 rag_index.py 全量重建（drop+rebuild，保证零重复）。best-effort，不阻断主流程。
+
+    说明：milvus-lite 的 delete 仅支持按主键 pks 删除、不支持 expr，早期增量去重
+    路径长期静默失效，导致每日重跑把 744 条知识重复插入。改为每日 --force 全量重建，
+    既保证零重复，也契合"每日全量重嵌（nomic 快，可接受）"的既定设计。
+    """
     if not _rag_available():
         return False
-    cmd = [RAG_VENV_PY, os.path.join(RAG_SCRIPT_DIR, "rag_index.py")]
+    cmd = [RAG_VENV_PY, os.path.join(RAG_SCRIPT_DIR, "rag_index.py"), "--force"]
     try:
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
         if proc.returncode == 0:
-            log("✅ RAG 向量库已增量同步（知识库自进化）")
+            log("✅ RAG 向量库已全量重建同步（知识库自进化，零重复）")
             return True
-        log(f"[RAG] 增量入库返回非零（{proc.returncode}），详见 stderr")
+        log(f"[RAG] 全量重建返回非零（{proc.returncode}），详见 stderr")
     except Exception as e:  # noqa
-        log(f"[RAG] 增量入库失败：{e}")
+        log(f"[RAG] 全量重建失败：{e}")
     return False
 
 
