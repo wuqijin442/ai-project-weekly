@@ -12,6 +12,7 @@ rag_lib.py — RAG 向量库核心 (Milvus Lite + nomic-embed-text via Ollama)
 import os
 import sys
 import json
+import time
 import urllib.request
 import urllib.error
 
@@ -30,11 +31,42 @@ OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434").rstrip("/")
 
 from milvus_lite import MilvusLite, CollectionSchema, FieldSchema, DataType  # noqa: E402
 
+# --- 禁用 milvus-lite 的 flock 排他锁 ---
+# 本机（DGX aarch64 + 多 docker 容器）下 milvus-lite 的 fcntl.flock 排他锁会偶发
+# "another process holds the lock" 纠缠，导致打开即失败。我们的用法是单进程、顺序访问
+# （每日 learn_link 仅一次 RAG 操作），无需跨进程互斥，故把 _acquire_lock 改为仅打开
+# 锁文件 fd 而不真正 flock，规避该环境 gremlin。多进程并发时本脚本不保证安全（当前无此场景）。
+import milvus_lite.db as _milvus_db  # noqa: E402
 
-def get_collection():
-    """打开（或创建）向量集合，返回 (MilvusLite, Collection)。"""
+
+def _acquire_lock_noop(self):
+    fd = os.open(self._lock_path, os.O_CREAT | os.O_RDWR, 0o644)
+    self._lock_fd = fd
+
+
+_milvus_db.MilvusLite._acquire_lock = _acquire_lock_noop
+
+
+def get_collection(retries=30, backoff=2.0):
+    """打开（或创建）向量集合，返回 (MilvusLite, Collection)。
+
+    milvus-lite 用 flock 做目录级排他锁；本机偶有其他进程瞬时占用同一 db 路径，
+    故在打开失败时按指数退避重试，避免一次性失败。
+    """
     os.makedirs(RAG_DIR, exist_ok=True)
-    c = MilvusLite(DB_PATH)
+    c = None
+    last_err = None
+    for i in range(retries):
+        try:
+            c = MilvusLite(DB_PATH)
+            break
+        except Exception as e:  # DataDirLockedError 等
+            last_err = e
+            if i < retries - 1:
+                time.sleep(backoff * (1 + i * 0.1))
+            continue
+    if c is None:
+        raise RuntimeError(f"get_collection: 无法在 {retries} 次重试内获取锁: {last_err}")
     schema = CollectionSchema([
         FieldSchema(name="id", dtype=DataType.INT64, is_primary=True, auto_id=True),
         FieldSchema(name="vector", dtype=DataType.FLOAT_VECTOR, dim=EMBED_DIM),
