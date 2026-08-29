@@ -1,0 +1,50 @@
+[
+  {
+    "branch": "dgx",
+    "last": {
+      "hash": "acff988f82",
+      "author": "wuqijin442",
+      "date": "Sat Aug 29 03:14:08 2026 +0800",
+      "subject": "chore: 每日学习消化+图谱 2026-08-29 [dgx]"
+    },
+    "behind_main": 141,
+    "ahead_main": 1,
+    "unique_commits": [
+      "acff988 2026-08-29 wuqijin442 chore: 每日学习消化+图谱 2026-08-29 [dgx]"
+    ]
+  },
+  {
+    "branch": "main",
+    "last": {
+      "hash": "548f9abd27",
+      "author": "Worn Quiet Joy",
+      "date": "Fri Aug 28 20:02:20 2026 +0800",
+      "subject": "Merge pull request #54 from wuqijin442/dgx"
+    },
+    "behind_main": 0,
+    "ahead_main": 0,
+    "unique_commits": []
+  },
+  {
+    "branch": "win",
+    "last": {
+      "hash": "523afe0390",
+      "author": "wuqijin442",
+      "date": "Sat Aug 29 11:40:12 2026 +0800",
+      "subject": "[2026-08-29] Daily AI Project Update"
+    },
+    "behind_main": 94,
+    "ahead_main": 9,
+    "unique_commits": [
+      "523afe0 2026-08-29 wuqijin442 [2026-08-29] Daily AI Project Update",
+      "8689deb 2026-08-29 wuqijin442 [2026-08-29] Daily AI Project Update",
+      "6f641e0 2026-08-28 wuqijin442 [2026-08-28] RAG 增量入库：每日仅追加新文件(不重吃全量历史)，--force 一次性灌全量+Obsidian/储能大库；learn_link 改走增量",
+      "255a571 2026-08-28 wuqijin442 fix(rag): iter_sources 改为 工作树 ∪ origin/main 取并集，保证每日重建都吃满全量历史（不被不完整工作树截断）",
+      "b5d2036 2026-08-28 wuqijin442 feat(rag): iter_sources 扩展纳入 daily/boards/weekly/knowledge-base 历史数据",
+      "1eeeba7 2026-08-28 wuqijin442 fix(rag): 修正 milvus-lite 去重（按 pks 删除）+ 每日 --force 全量重建杜绝重复插入",
+      "0ce4cd0 2026-08-28 wuqijin442 [2026-08-28] feat: 接入 Milvus Lite RAG 向量库，learn_link 每日自进化",
+      "69f5f55 2026-08-28 wuqijin442 [2026-08-28] refactor(learn_link): 对齐 dgx，模型偏好置顶 qwen3.8:27b",
+      "4598ccc 2026-08-28 wuqijin442 [2026-08-28] refactor(learn_link): 默认模型改 qwen3.8:27b + /api/tags 自动选模型韧性"
+    ]
+  }
+]
