@@ -1,0 +1,183 @@
+[
+  {
+    "project": {
+      "owner": "DietrichGebert",
+      "name": "ponytail",
+      "full": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "stars": 115357,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.5,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date, audited 1 package in 955ms\n\nfound 0 vulnerabilities\n",
+    "install_time": 1.4,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "NationalSecurityAgency",
+      "name": "ghidra",
+      "full": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 73331,
+      "categories": [
+        "Security"
+      ]
+    },
+    "clone": true,
+    "clone_time": 138.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "bilawalsidhu",
+      "name": "gods-eye-view",
+      "full": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars": 11054,
+      "categories": [
+        "Frontend/Web",
+        "Data/ML"
+      ]
+    },
+    "clone": true,
+    "clone_time": 6.6,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date in 12s\n\n18 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 12.3,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "abi",
+      "name": "screenshot-to-code",
+      "full": "abi/screenshot-to-code",
+      "url": "https://github.com/abi/screenshot-to-code",
+      "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
+      "language": "Python",
+      "stars": 75550,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "Data/ML"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 25.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.4,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "calesthio",
+      "name": "OpenMontage",
+      "full": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "language": "Python",
+      "stars": 53299,
+      "categories": [
+        "AI/LLM/Agent",
+        "DevTools"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 42.4,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt",
+        "setup.py"
+      ]
+    },
+    "install": "success",
+    "install_log": ".37.0-py3-none-any.whl (26 kB)\nUsing cached rpds_py-2026.6.3-cp313-cp313-win_amd64.whl (219 kB)\nUsing cached starlette-1.6.0-py3-none-any.whl (75 kB)\nInstalling collected packages: rpds-py, Pillow, click, watchfiles, uvicorn, starlette, referencing, jsonschema-specifications, fastapi, jsonschema\n\nSuccessfully installed Pillow-12.3.0 click-8.5.0 fastapi-0.141.1 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 referencing-0.37.0 rpds-py-2026.6.3 starlette-1.6.0 uvicorn-0.52.4 watchfiles-1.2.0\n",
+    "install_time": 10.6,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  }
+]
