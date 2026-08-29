@@ -1,11 +1,11 @@
 ---
 aliases: ["tt-a1i/archify"]
 tags: [github, ai, vibe-coding, project]
-stars: 20746
-today_growth: 1035
+stars: 29128
+today_growth: 4562
 created_at: 2026-04-15
-status: 2度上榜
-date_accessed: 2026-08-27
+status: 3度上榜
+date_accessed: 2026-08-29
 ---
 
 # tt-a1i/archify
@@ -24,4 +24,4 @@ Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flo
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-27.md|2026-08-27 收录]]
-
+- [[Daily/Vibe-Coding-2026-08-29.md|2026-08-29 收录]]

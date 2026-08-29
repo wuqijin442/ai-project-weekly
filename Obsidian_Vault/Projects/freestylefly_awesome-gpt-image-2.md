@@ -1,11 +1,11 @@
 ---
 aliases: ["freestylefly/awesome-gpt-image-2"]
 tags: [github, ai, vibe-coding, project]
-stars: 22424
-today_growth: 4050
+stars: 24659
+today_growth: 1687
 created_at: 2026-04-25
-status: 4度上榜
-date_accessed: 2026-08-27
+status: 5度上榜
+date_accessed: 2026-08-29
 ---
 
 # freestylefly/awesome-gpt-image-2
@@ -25,3 +25,4 @@ Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案�
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-26.md|2026-08-26 收录]]
 - [[Daily/Vibe-Coding-2026-08-27.md|2026-08-27 收录]]
+- [[Daily/Vibe-Coding-2026-08-29.md|2026-08-29 收录]]

@@ -1,11 +1,11 @@
 ---
 aliases: ["cursor/plugins"]
 tags: [github, ai, vibe-coding, project]
-stars: 4735
-today_growth: 286
+stars: 6059
+today_growth: 246
 created_at: 2026-01-23
-status: 5度上榜
-date_accessed: 2026-08-23
+status: 6度上榜
+date_accessed: 2026-08-29
 ---
 
 # cursor/plugins
@@ -26,3 +26,4 @@ Cursor plugin specification and official plugins
 - [[Daily/Vibe-Coding-2026-08-15.md|2026-08-15 收录]]
 - [[Daily/Vibe-Coding-2026-08-22.md|2026-08-22 收录]]
 - [[Daily/AI-Weekly-2026-08-23.md|2026-08-23 收录]]
+- [[Daily/Vibe-Coding-2026-08-29.md|2026-08-29 收录]]
