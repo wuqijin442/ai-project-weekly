@@ -1,0 +1,51 @@
+[
+  {
+    "branch": "dgx",
+    "last": {
+      "hash": "acff988f82",
+      "author": "wuqijin442",
+      "date": "Sat Aug 29 03:14:08 2026 +0800",
+      "subject": "chore: 每日学习消化+图谱 2026-08-29 [dgx]"
+    },
+    "behind_main": 141,
+    "ahead_main": 1,
+    "unique_commits": [
+      "acff988 2026-08-29 wuqijin442 chore: 每日学习消化+图谱 2026-08-29 [dgx]"
+    ]
+  },
+  {
+    "branch": "main",
+    "last": {
+      "hash": "548f9abd27",
+      "author": "Worn Quiet Joy",
+      "date": "Fri Aug 28 20:02:20 2026 +0800",
+      "subject": "Merge pull request #54 from wuqijin442/dgx"
+    },
+    "behind_main": 0,
+    "ahead_main": 0,
+    "unique_commits": []
+  },
+  {
+    "branch": "win",
+    "last": {
+      "hash": "2d92e9aca9",
+      "author": "wuqijin442",
+      "date": "Mon Aug 31 09:34:18 2026 +0800",
+      "subject": "[2026-08-31] Daily AI Project Update"
+    },
+    "behind_main": 94,
+    "ahead_main": 15,
+    "unique_commits": [
+      "2d92e9a 2026-08-31 wuqijin442 [2026-08-31] Daily AI Project Update",
+      "314804a 2026-08-31 wuqijin442 [2026-08-31] Add src/ask.py — RAG-based private knowledge Q&A CLI",
+      "0d95005 2026-08-31 wuqijin442 [2026-08-31] Daily AI Project Update",
+      "f434c58 2026-08-31 wuqijin442 [2026-08-31] Daily AI Project Update",
+      "8c5f7aa 2026-08-29 wuqijin442 [2026-08-29] Daily AI Project Update",
+      "267431d 2026-08-29 wuqijin442 [2026-08-29] Daily AI Project Update",
+      "523afe0 2026-08-29 wuqijin442 [2026-08-29] Daily AI Project Update",
+      "8689deb 2026-08-29 wuqijin442 [2026-08-29] Daily AI Project Update",
+      "6f641e0 2026-08-28 wuqijin442 [2026-08-28] RAG 增量入库：每日仅追加新文件(不重吃全量历史)，--force 一次性灌全量+Obsidian/储能大库；learn_link 改走增量",
+      "255a571 2026-08-28 wuqijin442 fix(rag): iter_sources 改为 工作树 ∪ origin/main 取并集，保证每日重建都吃满全量历史（不被不完整工作树截断）"
+    ]
+  }
+]
