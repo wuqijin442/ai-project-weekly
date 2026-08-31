@@ -31,8 +31,13 @@ COLLECTION = "kb"
 # 这些目录需由外部（如本机 scp）预先放到 DGX 的 /opt/ragkb/extra/ 下；
 # iter_sources 仅在目录存在时纳入，且只读磁盘（不走 git）。
 EXTRA_CORPORA = [
-    {"dir": "/opt/ragkb/extra/obsidian", "label": "obsidian", "exts": (".md",), "kind": "md"},
-    {"dir": "/opt/ragkb/extra/energy", "label": "energy", "exts": (".md", ".json", ".txt"), "kind": "md"},
+    {"dir": "/opt/ragkb/extra/obsidian", "label": "obsidian", "exts": (".md",), "kind": "md",
+     # Obsidian 库自身的配置目录（含 app/workspace 等噪声 json），不进 RAG
+     "exclude": [".obsidian/"]},
+    {"dir": "/opt/ragkb/extra/energy", "label": "energy", "exts": (".md", ".json", ".txt"), "kind": "md",
+     # 排除：① 储能库自带的向量索引导出（非可读知识，且与原 RAG 向量冗余）；
+     #       ② 储能库自身的 .obsidian/ 配置噪声
+     "exclude": [".obsidian/", "08-模型训练/vector_index"]},
 ]
 
 EMBED_MODEL = "nomic-embed-text:latest"
@@ -267,6 +272,10 @@ def _iter_extra_corpora(max_chars=1000, overlap_lines=3):
                     continue
                 full = os.path.join(root, fn)
                 relpath = os.path.relpath(full, d).replace(os.sep, "/")
+                # 应用各语料的 exclude 规则（子串匹配相对路径，如 .obsidian/ 或 08-模型训练/vector_index）
+                excl = corp.get("exclude")
+                if excl and any(pat in relpath for pat in excl):
+                    continue
                 src_id = f"{label}/{relpath}"
                 try:
                     with open(full, encoding="utf-8") as f:
