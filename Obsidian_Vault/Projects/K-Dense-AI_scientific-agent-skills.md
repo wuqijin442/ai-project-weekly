@@ -1,11 +1,11 @@
 ---
 aliases: ["K-Dense-AI/scientific-agent-skills"]
 tags: [github, ai, vibe-coding, project]
-stars: 37227
-today_growth: 720
+stars: 39200
+today_growth: 1113
 created_at: 2025-10-19
-status: 2度上榜
-date_accessed: 2026-08-29
+status: 3度上榜
+date_accessed: 2026-08-31
 ---
 
 # K-Dense-AI/scientific-agent-skills
@@ -24,4 +24,4 @@ Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science,
 
 ## 反向链接
 - [[Daily/Vibe-Coding-2026-08-29.md|2026-08-29 收录]]
-
+- [[Daily/Vibe-Coding-2026-08-31.md|2026-08-31 收录]]
