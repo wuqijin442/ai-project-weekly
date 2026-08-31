@@ -260,7 +260,16 @@ def download_tarball(full, dest, timeout=240):
             #（clones/ 已 gitignore，残留仅占磁盘，不影响提交）
             if not safe_displace(dest):
                 return False, "目标目录已存在且无法腾挪，跳过 tarball 回退"
-            shutil.move(str(tops[0]), str(dest))
+            # ⛔ 必须用 os.rename，绝不能用 shutil.move（2026-08-31 实测）：
+            # shutil.move 在 os.rename 抛 OSError 时会静默退化为「copytree + rmtree(源)」，
+            # 删除上千文件触发工作区批量删除保护，直接杀死整个 Python 进程
+            # （步骤2 在 AUTOMATIC1111/stable-diffusion-webui 处中断，EXIT=1，无异常可捕获）。
+            # 此处改用显式 rename：失败就换下一个分支候选重试，全程零删除。
+            try:
+                os.rename(str(tops[0]), str(dest))
+            except OSError as e:
+                err = f"tarball 落位失败(rename): {str(e)[:120]}"
+                continue
             # 不清理 tmp_dir / tmp_gz：任何删除都会累加到批量删除保护计数。
             # clones/*/_tmp 已随 clones/ 被 gitignore，可在运行间隙人工清理。
             return True, ""
