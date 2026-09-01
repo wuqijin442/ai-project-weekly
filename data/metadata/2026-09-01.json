@@ -7,14 +7,14 @@
       "url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 245466,
+      "stars": 245468,
       "categories": [
         "AI/LLM/Agent",
         "Security"
       ]
     },
     "clone": true,
-    "clone_time": 8.6,
+    "clone_time": 2.0,
     "clone_err": "",
     "build": {
       "python": true,
@@ -28,8 +28,8 @@
       ]
     },
     "install": "success",
-    "install_log": "roject.toml): finished with status 'done'\n  Created wheel for llm-abstraction: filename=llm_abstraction-0.1.0-py3-none-any.whl size=41449 sha256=5cecd2bd57ec8eed3d889b614ef6695820baf5ad0c0e756a344191ee07b878b5\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-31ns0f7m\\wheels\\95\\1e\\27\\e45fd48aa55cb47bef38245bac45a64fee97f0ab1e14a30ef5\nSuccessfully built llm-abstraction\nInstalling collected packages: llm-abstraction\nSuccessfully installed llm-abstraction-0.1.0\n",
-    "install_time": 11.2,
+    "install_log": "e756a344191ee07b878b5\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-2qdkt6pl\\wheels\\95\\1e\\27\\e45fd48aa55cb47bef38245bac45a64fee97f0ab1e14a30ef5\nSuccessfully built llm-abstraction\nInstalling collected packages: llm-abstraction\n  Attempting uninstall: llm-abstraction\n    Found existing installation: llm-abstraction 0.1.0\n    Uninstalling llm-abstraction-0.1.0:\n      Successfully uninstalled llm-abstraction-0.1.0\nSuccessfully installed llm-abstraction-0.1.0\n",
+    "install_time": 27.1,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
@@ -44,13 +44,13 @@
       "url": "https://github.com/k1tbyte/Wand-Enhancer",
       "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
       "language": "C#",
-      "stars": 23535,
+      "stars": 23536,
       "categories": [
         "DevTools"
       ]
     },
     "clone": true,
-    "clone_time": 2.5,
+    "clone_time": 4.9,
     "clone_err": "",
     "build": {
       "python": false,
@@ -77,13 +77,13 @@
       "url": "https://github.com/jingyaogong/minimind",
       "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
       "language": "Python",
-      "stars": 56640,
+      "stars": 56643,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 6.9,
+    "clone_time": 4.9,
     "clone_err": "",
     "build": {
       "python": true,
@@ -97,7 +97,7 @@
     },
     "install": "failed",
     "install_log": "TIMEOUT after 200s",
-    "install_time": 201.1,
+    "install_time": 200.7,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
@@ -112,7 +112,7 @@
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "language": "Python",
-      "stars": 41162,
+      "stars": 41170,
       "categories": [
         "AI/LLM/Agent",
         "Database",
@@ -120,7 +120,7 @@
       ]
     },
     "clone": true,
-    "clone_time": 35.1,
+    "clone_time": 2.9,
     "clone_err": "",
     "build": {
       "python": true,
@@ -132,13 +132,13 @@
         "pyproject.toml"
       ]
     },
-    "install": "failed",
-    "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 953, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 837, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 812, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
-    "install_time": 188.2,
+    "install": "success",
+    "install_log": "=32904 sha256=58845a85b3deee230adf5ca638844a8deecdcc97e2414eb81f0afb6410cae1aa\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-rwxz6kl4\\wheels\\cd\\6a\\3a\\dd5d32d2483df5b79fa9e6d58b3f4f9ba0579fe6e4c39bb263\nSuccessfully built scientific-agent-skills\nInstalling collected packages: pcodedmp, oletools, cisco-ai-skill-scanner, scientific-agent-skills\n\nSuccessfully installed cisco-ai-skill-scanner-2.0.13 oletools-0.60.2 pcodedmp-1.2.6 scientific-agent-skills-2.65.0\n",
+    "install_time": 12.3,
     "run": "skipped",
     "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
-    "score": 50,
+    "score": 66,
     "stars": "★★★☆☆"
   },
   {
@@ -149,15 +149,16 @@
       "url": "https://github.com/tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "JavaScript",
-      "stars": 40537,
+      "stars": 40562,
       "categories": [
         "AI/LLM/Agent",
         "Frontend/Web",
         "Data/ML"
-      ]
+      ],
+      "fetch_method": "codeload-tarball"
     },
     "clone": true,
-    "clone_time": 4.8,
+    "clone_time": 51.3,
     "clone_err": "",
     "build": {
       "python": false,
