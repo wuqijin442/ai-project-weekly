@@ -1,11 +1,11 @@
 ---
 aliases: [last30days, last30days-skill]
 tags: [AI, Trending, Python, Agent-Skill, Research, Vibe-Coding]
-stars: 55816
+stars: 60497
 created_at: 2026-01-23
-today_growth: 378
-status: 活跃（AI Agent 研究/搜索技能，三度上榜 #3）
-date_accessed: 2026-07-31
+today_growth: 271
+status: 4度上榜
+date_accessed: 2026-08-31
 ---
 
 # /last30days
@@ -69,3 +69,6 @@ npx skills add mvanhorn/last30days-skill -g
 
 - 曾登上 GitHub Trending "Repository of the Day" #1
 - 强调"搜索人，而非编辑"——填补各 AI 平台因平台围墙而无法跨源检索的空白
+
+## 反向链接
+- [[Daily/Vibe-Coding-2026-08-31.md|2026-08-31 收录]]
