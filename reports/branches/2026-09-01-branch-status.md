@@ -34,6 +34,12 @@
 - 0d95005 2026-08-31 wuqijin442 [2026-08-31] Daily AI Project Update
 - …（其余 12 条未列出）
 
+### 【09-02 更新】根因已定位并修复 ✅
+
+- **根因**：08-31 09:22/09:23 同一份 RAG 提交（Add src/ask.py）被双推 win(314804a) 与 main侧(b6ac214) → src/ask.py/rag_index.py/rag_lib.py/rag_query.py 形成 add/add 冲突（内容同仅文件模式 100755vs100644；rag_lib 有 13 行 exclude 增强漂移）→ PR#55(win→main, 08-28 起 open) 每日被 GitHub 拒自动合 → 现役 main 版 merge_branches.sh 的 api_pr_merge 失败后转本地兜底合并，但兜底前不 rebase（同轮 dgx 已走 API 合入致本地 main 过期）→ 推送必非快进失败，日复一日静默。
+- **处置（09-02 15:13）**：本地 merge main→win 逐文件裁决（merge_branches/push_retry 取 main 现役 PR 版；main.py 取 win 的 os.rename 版；rag_lib 保留 win 的 exclude 增强并补回 100755）→ 提交 28601f6 推送 win → PR#55 经 API 合并成功（merge commit c160ecf），win 已归集进 main，领先归零。
+- **防复发**：① DGX 侧 RAG 代码只推 dgx 分支，禁止双推 win；② merge_branches.sh 兜底路径应补 pull --rebase（待下轮由 dgx 侧合入 main）。
+
 ---
 
 ### 说明
