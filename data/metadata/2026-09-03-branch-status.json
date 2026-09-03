@@ -1,0 +1,44 @@
+[
+  {
+    "branch": "dgx",
+    "last": {
+      "hash": "408a6e678b",
+      "author": "wuqijin442",
+      "date": "Wed Sep 2 03:03:30 2026 +0800",
+      "subject": "chore: 每日学习消化+图谱 2026-09-02 [dgx]"
+    },
+    "behind_main": 171,
+    "ahead_main": 1,
+    "unique_commits": [
+      "408a6e6 2026-09-02 wuqijin442 chore: 每日学习消化+图谱 2026-09-02 [dgx]"
+    ]
+  },
+  {
+    "branch": "main",
+    "last": {
+      "hash": "c160ecf261",
+      "author": "Worn Quiet Joy",
+      "date": "Wed Sep 2 15:13:48 2026 +0800",
+      "subject": "Merge pull request #55 from wuqijin442/win"
+    },
+    "behind_main": 0,
+    "ahead_main": 0,
+    "unique_commits": []
+  },
+  {
+    "branch": "win",
+    "last": {
+      "hash": "e2b86980bd",
+      "author": "wuqijin442",
+      "date": "Wed Sep 2 19:03:02 2026 +0800",
+      "subject": "[2026-09-02] Daily AI Project Update"
+    },
+    "behind_main": 1,
+    "ahead_main": 3,
+    "unique_commits": [
+      "e2b8698 2026-09-02 wuqijin442 [2026-09-02] Daily AI Project Update",
+      "ded3704 2026-09-02 wuqijin442 [2026-09-02] Daily AI Project Update",
+      "187be3a 2026-09-02 wuqijin442 [2026-09-02] branch report 追加 win 未归集根因修复留档(PR#55 c160ecf)"
+    ]
+  }
+]
