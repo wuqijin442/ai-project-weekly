@@ -190,6 +190,10 @@ def main():
 
     rows = None
     data_source = "本地 git fetch"
+    force_api = os.environ.get("GH_BRANCH_API") == "1"
+    if force_api:
+        log("🔧 GH_BRANCH_API=1：强制走 api.github.com 权威接口核算（忽略本地 fetch）")
+        fetch_ok = False
     if not fetch_ok:
         # 主站被 IP 阻断 → 改走 api.github.com 取可信数据（working-memory 约定）
         slug = get_repo_slug()
