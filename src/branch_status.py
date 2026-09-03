@@ -20,8 +20,11 @@
 import os
 import sys
 import json
+import re
 import datetime
 import argparse
+import urllib.request
+import urllib.error
 from pathlib import Path
 
 # 复用 main.py 的真实运行/同步函数（main.py 有 __main__ 守卫，import 不触发其主流程）
@@ -37,14 +40,85 @@ META_DIR.mkdir(exist_ok=True)
 
 def fetch_all():
     """拉取所有远端分支引用（--prune 清理已删除远端分支的本地跟踪引用）。
-    fetch 走 run_git_retry：18:1x–19:0x 窗口 GitHub 连接重置时自动退避重试。"""
+    fetch 走 run_git_retry：18:1x–19:0x 窗口 GitHub 连接重置时自动退避重试。
+    返回 True 表示取得可信远端引用；False 表示主站被 IP 阻断，须改走 api.github.com 复核。"""
     rc, _, err = run_git_retry(
         ["git", "fetch", "origin", "--prune"], cwd=ROOT, timeout=120,
         max_attempts=4, op_label="fetch --prune")
     if rc != 0:
-        log(f"⚠️ git fetch --prune 失败：{err[:200]}（沿用本地已有引用继续）")
-    else:
-        log("✅ 已 fetch --prune 更新全部远端分支引用")
+        log(f"⚠️ git fetch --prune 失败：{err[:200]}（主站疑似 IP 层阻断）")
+        return False
+    log("✅ 已 fetch --prune 更新全部远端分支引用")
+    return True
+
+
+def _api_get(url, token=None):
+    """访问 api.github.com，返回 dict；失败抛异常。"""
+    headers = {"User-Agent": "branch-status-script",
+               "Accept": "application/vnd.github+json"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def get_repo_slug():
+    """从 origin remote URL 解析 owner/repo。"""
+    rc, out, _ = run_cmd(["git", "remote", "get-url", "origin"], cwd=ROOT, timeout=20)
+    if rc == 0:
+        m = re.search(r"github\.com[:/]([^/]+)/(.+?)(?:\.git)?$", out.strip())
+        if m:
+            return f"{m.group(1)}/{m.group(2)}"
+    return None
+
+
+def api_branch_rows(repo_slug, base="main"):
+    """回退路径：主站被 IP 阻断、git fetch 失败时，经 api.github.com 取可信分支元数据。
+    返回 rows 列表（结构与 git 路径一致），失败返回 None。"""
+    try:
+        branches = _api_get(
+            f"https://api.github.com/repos/{repo_slug}/branches?per_page=100")
+    except Exception as e:  # noqa
+        log(f"⚠️ api.github.com /branches 请求失败：{e}")
+        return None
+    rows = []
+    for b in branches:
+        name = b["name"]
+        head_sha = b["commit"]["sha"]
+        last = None
+        try:
+            c = _api_get(f"https://api.github.com/repos/{repo_slug}/commits/{head_sha}")
+            cm = c.get("commit", {})
+            last = {
+                "hash": head_sha[:10],
+                "author": cm.get("author", {}).get("name", "")
+                          or c.get("author", {}).get("login", ""),
+                "date": (cm.get("author", {}).get("date") or "")[:10],
+                "subject": cm.get("message", "").split("\n")[0][:80],
+            }
+        except Exception:  # noqa
+            last = {"hash": head_sha[:10], "author": "", "date": "", "subject": ""}
+        if name == base:
+            rows.append({"branch": name, "last": last, "behind_main": 0,
+                         "ahead_main": 0, "unique_commits": []})
+            continue
+        try:
+            cmp = _api_get(
+                f"https://api.github.com/repos/{repo_slug}/compare/{base}...{name}")
+            ahead = cmp.get("ahead_by", 0)
+            behind = cmp.get("behind_by", 0)
+        except Exception:  # noqa
+            ahead, behind = 0, 0
+        uniq = []
+        for c in cmp.get("commits", [])[:10]:
+            cm = c.get("commit", {})
+            uniq.append(
+                f"{c.get('sha', '')[:10]} {(cm.get('author', {}).get('date') or '')[:10]} "
+                f"{cm.get('author', {}).get('name', '')} {cm.get('message', '').split(chr(10))[0][:60]}")
+        rows.append({"branch": name, "last": last, "behind_main": behind,
+                     "ahead_main": ahead, "unique_commits": uniq})
+    return rows
 
 
 def list_remote_branches():
@@ -112,27 +186,44 @@ def main():
     log(f"=== 远程仓库各分支状态核对 {date.isoformat()} ===")
     # 先拉远端最新，保证本地 win 与远端一致，且 main 引用为最新
     pre_sync_pull()
-    fetch_all()
+    fetch_ok = fetch_all()
 
-    branches = list_remote_branches()
-    base = "main"
-    if base not in branches:
-        base = branches[0] if branches else "main"
-    log(f"基准分支：{base}；检测到分支：{', '.join(branches)}")
-
-    rows = []
-    for b in branches:
-        last = branch_last_commit(b)
-        if b == base:
-            behind, ahead = 0, 0
-            uniq = []
-        else:
-            behind, ahead = ahead_behind(b, base)
-            uniq = unique_commits(b, base) if ahead > 0 else []
-        rows.append({
-            "branch": b, "last": last, "behind_main": behind,
-            "ahead_main": ahead, "unique_commits": uniq,
-        })
+    rows = None
+    data_source = "本地 git fetch"
+    force_api = os.environ.get("GH_BRANCH_API") == "1"
+    if force_api:
+        log("🔧 GH_BRANCH_API=1：强制走 api.github.com 权威接口核算（忽略本地 fetch）")
+        fetch_ok = False
+    if not fetch_ok:
+        # 主站被 IP 阻断 → 改走 api.github.com 取可信数据（working-memory 约定）
+        slug = get_repo_slug()
+        if slug:
+            log(f"🔄 主站不可达，改走 api.github.com 复核分支元数据（repo={slug}）")
+            rows = api_branch_rows(slug, base="main")
+            if rows is not None:
+                data_source = f"api.github.com（github.com 主站 IP 阻断，本地引用不可信）"
+                branches = [r["branch"] for r in rows]
+                base = "main" if any(r["branch"] == "main" for r in rows) else branches[0]
+                log(f"基准分支：{base}；检测到分支：{', '.join(branches)}（数据源：{data_source}）")
+    if rows is None:
+        branches = list_remote_branches()
+        base = "main"
+        if base not in branches:
+            base = branches[0] if branches else "main"
+        log(f"基准分支：{base}；检测到分支：{', '.join(branches)}")
+        rows = []
+        for b in branches:
+            last = branch_last_commit(b)
+            if b == base:
+                behind, ahead = 0, 0
+                uniq = []
+            else:
+                behind, ahead = ahead_behind(b, base)
+                uniq = unique_commits(b, base) if ahead > 0 else []
+            rows.append({
+                "branch": b, "last": last, "behind_main": behind,
+                "ahead_main": ahead, "unique_commits": uniq,
+            })
 
     # ---- 生成报告 ----
     md = []
@@ -141,6 +232,7 @@ def main():
               "结论基于真实 git 元数据，无推测。\n")
     md.append(f"**基准分支**：`{base}`　**分支总数**：{len(branches)}　"
               f"**核对时间**：{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+    md.append(f"**数据来源**：{data_source}\n")
 
     md.append("\n## 各分支总览\n")
     md.append("| 分支 | 领先 main | 落后 main | 最近提交 | 作者 | 日期 |")
@@ -170,6 +262,10 @@ def main():
     md.append("\n---\n")
     md.append("### 说明\n")
     md.append("- 本核对仅读取 git 元数据，不克隆任何项目，耗时极短。")
+    if data_source.startswith("api.github.com"):
+        md.append("- ⚠️ **数据来源说明**：本次 `git fetch --prune` 因 github.com 主站 IP 层阻断失败，"
+                  "本地 `origin/*` 引用不可信，故领先/落后数字改由 **api.github.com** 的 `/branches` 与 `/compare` "
+                  "接口实时核算（服务端权威引用），结论可靠。待主站恢复后下轮将自动回到本地 fetch 路径。")
     md.append("- 当前多机分支模型：`win`=Windows 端每日数据、`dgx`=dgx 端学习消化产物，"
               "二者由每日 20:00 归集任务（src/merge_branches.sh）经 GitHub PR 合并进 `main`。")
     md.append("- Windows 自动化 17:30 运行时，`win`/`dgx` 通常领先 `main`，属**正常的待归集状态**；"
