@@ -1,0 +1,181 @@
+[
+  {
+    "project": {
+      "owner": "obra",
+      "name": "superpowers",
+      "full": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "language": "Shell",
+      "stars": 281580,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 3.2,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date, audited 1 package in 1s\n\nfound 0 vulnerabilities\n",
+    "install_time": 1.7,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "bannedbook",
+      "name": "fanqiang",
+      "full": "bannedbook/fanqiang",
+      "url": "https://github.com/bannedbook/fanqiang",
+      "description": "翻墙-科学上网",
+      "language": "Kotlin",
+      "stars": 52550,
+      "categories": [
+        "Mobile"
+      ]
+    },
+    "clone": true,
+    "clone_time": 11.9,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "mattpocock",
+      "name": "skills",
+      "full": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 248516,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 1.9,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nadded 111 packages in 8s\n\n11 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 8.3,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "full": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 247639,
+      "categories": [
+        "AI/LLM/Agent",
+        "Security"
+      ]
+    },
+    "clone": true,
+    "clone_time": 3.5,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "e756a344191ee07b878b5\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-phk2w40s\\wheels\\95\\1e\\27\\e45fd48aa55cb47bef38245bac45a64fee97f0ab1e14a30ef5\nSuccessfully built llm-abstraction\nInstalling collected packages: llm-abstraction\n  Attempting uninstall: llm-abstraction\n    Found existing installation: llm-abstraction 0.1.0\n    Uninstalling llm-abstraction-0.1.0:\n      Successfully uninstalled llm-abstraction-0.1.0\nSuccessfully installed llm-abstraction-0.1.0\n",
+    "install_time": 28.0,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "NousResearch",
+      "name": "hermes-agent",
+      "full": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "stars": 241143,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 25.4,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "pyproject.toml",
+        "setup.py",
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "success",
+    "install_log": "fully uninstalled openai-2.54.0\n\nSuccessfully installed Markdown-3.10.2 Pillow-12.3.0 certifi-2026.5.20 concurrent-log-handler-0.9.29 croniter-6.0.0 cryptography-50.0.0 firecrawl-anydoc-0.2.4 hermes-agent-0.21.0 nemo-relay-0.8.3 openai-2.24.0 packaging-26.0 portalocker-4.3.0 prompt_toolkit-3.0.52 pydantic-2.13.4 pydantic-core-2.46.4 pywin32-311 pywinpty-2.0.15 requests-2.33.0 rich-14.3.3 ruamel.yaml-0.18.17 ruamel.yaml.clib-0.2.15 snowballstemmer-3.1.1 socksio-1.0.0 tenacity-9.1.4 tzdata-2025.3\n",
+    "install_time": 68.5,
+    "run": "success",
+    "run_log": "INFO: Showing help with the command 'cli.py -- --help'.\n\nNAME\n    cli.py - Hermes Agent CLI - Interactive AI Assistant\n\nSYNOPSIS\n    cli.py <flags>\n\nDESCRIPTION\n    Hermes Agent CLI - Interactive AI Assistant\n\nFLAGS\n    --query=QUERY\n        Type: Optional[str]\n        Default: None\n        Query to run. On a real TTY this seeds an interactive session (submitted literally as the first turn); with ",
+    "run_time": 2.3,
+    "score": 76,
+    "stars": "★★★☆☆"
+  }
+]
