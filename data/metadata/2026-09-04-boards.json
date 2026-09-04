@@ -1,0 +1,2472 @@
+{
+  "large-language-models": {
+    "label": "大语言模型",
+    "top": [
+      {
+        "owner": "langflow-ai",
+        "name": "langflow",
+        "full": "langflow-ai/langflow",
+        "url": "https://github.com/langflow-ai/langflow",
+        "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+        "language": "Python",
+        "stars": 154233,
+        "topic": "large-language-models"
+      },
+      {
+        "owner": "rasbt",
+        "name": "LLMs-from-scratch",
+        "full": "rasbt/LLMs-from-scratch",
+        "url": "https://github.com/rasbt/LLMs-from-scratch",
+        "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+        "language": "Jupyter Notebook",
+        "stars": 104320,
+        "topic": "large-language-models"
+      },
+      {
+        "owner": "hiyouga",
+        "name": "LlamaFactory",
+        "full": "hiyouga/LlamaFactory",
+        "url": "https://github.com/hiyouga/LlamaFactory",
+        "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+        "language": "Python",
+        "stars": 74574,
+        "topic": "large-language-models"
+      },
+      {
+        "owner": "binary-husky",
+        "name": "gpt_academic",
+        "full": "binary-husky/gpt_academic",
+        "url": "https://github.com/binary-husky/gpt_academic",
+        "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
+        "language": "Python",
+        "stars": 71291,
+        "topic": "large-language-models"
+      },
+      {
+        "owner": "FlowiseAI",
+        "name": "Flowise",
+        "full": "FlowiseAI/Flowise",
+        "url": "https://github.com/FlowiseAI/Flowise",
+        "description": "Build AI Agents, Visually",
+        "language": "TypeScript",
+        "stars": 55412,
+        "topic": "large-language-models"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "langflow-ai",
+          "name": "langflow",
+          "full": "langflow-ai/langflow",
+          "url": "https://github.com/langflow-ai/langflow",
+          "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+          "language": "Python",
+          "stars": 154233,
+          "topic": "large-language-models"
+        },
+        "clone": true,
+        "clone_time": 35.3,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml",
+            "package.json"
+          ]
+        },
+        "install": "failed",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.3,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "rasbt",
+          "name": "LLMs-from-scratch",
+          "full": "rasbt/LLMs-from-scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch",
+          "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+          "language": "Jupyter Notebook",
+          "stars": 104320,
+          "topic": "large-language-models"
+        },
+        "clone": true,
+        "clone_time": 2.3,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": " requirements.txt (line 3)) (1.4.0)\nRequirement already satisfied: markdown-it-py>=2.2.0 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from rich->keras>=3.12.0->tensorflow>=2.18.0->-r requirements.txt (line 7)) (4.2.0)\nRequirement already satisfied: mdurl~=0.1 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from markdown-it-py>=2.2.0->rich->keras>=3.12.0->tensorflow>=2.18.0->-r requirements.txt (line 7)) (0.1.2)\n",
+        "install_time": 2.2,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "hiyouga",
+          "name": "LlamaFactory",
+          "full": "hiyouga/LlamaFactory",
+          "url": "https://github.com/hiyouga/LlamaFactory",
+          "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+          "language": "Python",
+          "stars": 74574,
+          "topic": "large-language-models"
+        },
+        "clone": true,
+        "clone_time": 2.2,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": ":\n      Successfully uninstalled pillow-12.3.0\n  Attempting uninstall: pydantic\n    Found existing installation: pydantic 2.13.4\n    Uninstalling pydantic-2.13.4:\n      Successfully uninstalled pydantic-2.13.4\n  Attempting uninstall: llamafactory\n    Found existing installation: llamafactory 0.9.6.dev0\n    Uninstalling llamafactory-0.9.6.dev0:\n      Successfully uninstalled llamafactory-0.9.6.dev0\n\nSuccessfully installed llamafactory-0.9.6.dev0 pillow-11.3.0 pydantic-2.12.3 pydantic-core-2.41.4\n",
+        "install_time": 22.7,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "binary-husky",
+          "name": "gpt_academic",
+          "full": "binary-husky/gpt_academic",
+          "url": "https://github.com/binary-husky/gpt_academic",
+          "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
+          "language": "Python",
+          "stars": 71291,
+          "topic": "large-language-models"
+        },
+        "clone": true,
+        "clone_time": 2.2,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "requirements.txt",
+            "Dockerfile",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "   [end of output]\n      \n              note: This error originates from a subprocess, and is likely not a problem with pip.\n            ERROR: Failed to build 'blis' when getting requirements to build wheel\n            [end of output]\n      \n        note: This error originates from a subprocess, and is likely not a problem with pip.\n      ERROR: Failed to build 'thinc' when installing build dependencies for thinc\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Failed to build 'spacy' when installing build dependencies for spacy\n",
+        "install_time": 32.3,
+        "run": "failed",
+        "run_log": "main.py --help 失败: Traceback (most recent call last):\n  File \"E:\\AI_Project_Weekly\\clones\\boards\\binary-husky__gpt_academic\\main.py\", line 16, in <module>\n    from loguru import logger\nModuleNotFoundError: No module named 'loguru'\n",
+        "run_time": 0.2,
+        "score": 50,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "FlowiseAI",
+          "name": "Flowise",
+          "full": "FlowiseAI/Flowise",
+          "url": "https://github.com/FlowiseAI/Flowise",
+          "description": "Build AI Agents, Visually",
+          "language": "TypeScript",
+          "stars": 55412,
+          "topic": "large-language-models"
+        },
+        "clone": true,
+        "clone_time": 2.1,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "package.json",
+            "Dockerfile"
+          ]
+        },
+        "install": "failed",
+        "install_log": "modules/flowise-react-json-view\nnpm error   flowise-react-json-view@\"^1.21.7\" from @flowiseai/agentflow@0.0.0-dev.14\nnpm error   packages/agentflow\nnpm error     @flowiseai/agentflow@0.0.0-dev.14\nnpm error     node_modules/@flowiseai/agentflow\nnpm error       workspace packages\\agentflow from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-09-04T09_49_44_674Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-09-04T09_49_44_674Z-debug-0.log\n",
+        "install_time": 10.5,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": "★★★☆☆"
+      }
+    ]
+  },
+  "artificial-intelligence": {
+    "label": "人工智能",
+    "top": [
+      {
+        "owner": "Significant-Gravitas",
+        "name": "AutoGPT",
+        "full": "Significant-Gravitas/AutoGPT",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "language": "Python",
+        "stars": 187114,
+        "topic": "artificial-intelligence"
+      },
+      {
+        "owner": "f",
+        "name": "prompts.chat",
+        "full": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "language": "HTML",
+        "stars": 169241,
+        "topic": "artificial-intelligence"
+      },
+      {
+        "owner": "rasbt",
+        "name": "LLMs-from-scratch",
+        "full": "rasbt/LLMs-from-scratch",
+        "url": "https://github.com/rasbt/LLMs-from-scratch",
+        "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+        "language": "Jupyter Notebook",
+        "stars": 104321,
+        "topic": "artificial-intelligence"
+      },
+      {
+        "owner": "hacksider",
+        "name": "Deep-Live-Cam",
+        "full": "hacksider/Deep-Live-Cam",
+        "url": "https://github.com/hacksider/Deep-Live-Cam",
+        "description": "real time face swap and one-click video deepfake with only a single image",
+        "language": "Python",
+        "stars": 96481,
+        "topic": "artificial-intelligence"
+      },
+      {
+        "owner": "thedotmack",
+        "name": "claude-mem",
+        "full": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+        "language": "JavaScript",
+        "stars": 93134,
+        "topic": "artificial-intelligence"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "Significant-Gravitas",
+          "name": "AutoGPT",
+          "full": "Significant-Gravitas/AutoGPT",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT",
+          "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+          "language": "Python",
+          "stars": 187114,
+          "topic": "artificial-intelligence"
+        },
+        "clone": true,
+        "clone_time": 3.3,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": []
+        },
+        "install": "skipped",
+        "install_log": "未识别到可自动安装的构建系统",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "f",
+          "name": "prompts.chat",
+          "full": "f/prompts.chat",
+          "url": "https://github.com/f/prompts.chat",
+          "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+          "language": "HTML",
+          "stars": 169241,
+          "topic": "artificial-intelligence"
+        },
+        "clone": true,
+        "clone_time": 3.6,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "package.json"
+          ]
+        },
+        "install": "failed",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.5,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "rasbt",
+          "name": "LLMs-from-scratch",
+          "full": "rasbt/LLMs-from-scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch",
+          "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+          "language": "Jupyter Notebook",
+          "stars": 104321,
+          "topic": "artificial-intelligence"
+        },
+        "clone": true,
+        "clone_time": 1.7,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": " requirements.txt (line 3)) (1.4.0)\nRequirement already satisfied: markdown-it-py>=2.2.0 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from rich->keras>=3.12.0->tensorflow>=2.18.0->-r requirements.txt (line 7)) (4.2.0)\nRequirement already satisfied: mdurl~=0.1 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from markdown-it-py>=2.2.0->rich->keras>=3.12.0->tensorflow>=2.18.0->-r requirements.txt (line 7)) (0.1.2)\n",
+        "install_time": 2.3,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "hacksider",
+          "name": "Deep-Live-Cam",
+          "full": "hacksider/Deep-Live-Cam",
+          "url": "https://github.com/hacksider/Deep-Live-Cam",
+          "description": "real time face swap and one-click video deepfake with only a single image",
+          "language": "Python",
+          "stars": 96481,
+          "topic": "artificial-intelligence"
+        },
+        "clone": true,
+        "clone_time": 4.0,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 967, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 851, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 826, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
+        "install_time": 47.5,
+        "run": "failed",
+        "run_log": "run.py --help 失败: WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\nI0000 00:00:1788515591.071038   18316 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\nWARNING: All log messages before",
+        "run_time": 16.3,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "thedotmack",
+          "name": "claude-mem",
+          "full": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "language": "JavaScript",
+          "stars": 93134,
+          "topic": "artificial-intelligence"
+        },
+        "clone": true,
+        "clone_time": 2.2,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "package.json",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.3,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": "★★★☆☆"
+      }
+    ]
+  },
+  "rag": {
+    "label": "检索增强生成 RAG",
+    "top": [
+      {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "full": "open-webui/open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+        "language": "Python",
+        "stars": 150894,
+        "topic": "rag",
+        "fetch_method": "codeload-tarball"
+      },
+      {
+        "owner": "langchain-ai",
+        "name": "langchain",
+        "full": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain",
+        "description": "The agent engineering platform.",
+        "language": "Python",
+        "stars": 145623,
+        "topic": "rag"
+      },
+      {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "full": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+        "language": "Python",
+        "stars": 114573,
+        "topic": "rag"
+      },
+      {
+        "owner": "thedotmack",
+        "name": "claude-mem",
+        "full": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+        "language": "JavaScript",
+        "stars": 93134,
+        "topic": "rag"
+      },
+      {
+        "owner": "infiniflow",
+        "name": "ragflow",
+        "full": "infiniflow/ragflow",
+        "url": "https://github.com/infiniflow/ragflow",
+        "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+        "language": "Go",
+        "stars": 90037,
+        "topic": "rag"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "open-webui",
+          "name": "open-webui",
+          "full": "open-webui/open-webui",
+          "url": "https://github.com/open-webui/open-webui",
+          "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+          "language": "Python",
+          "stars": 150894,
+          "topic": "rag",
+          "fetch_method": "codeload-tarball"
+        },
+        "clone": true,
+        "clone_time": 115.1,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "pyproject.toml",
+            "package.json",
+            "Dockerfile"
+          ]
+        },
+        "install": "failed",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.5,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "langchain-ai",
+          "name": "langchain",
+          "full": "langchain-ai/langchain",
+          "url": "https://github.com/langchain-ai/langchain",
+          "description": "The agent engineering platform.",
+          "language": "Python",
+          "stars": 145623,
+          "topic": "rag"
+        },
+        "clone": true,
+        "clone_time": 4.9,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": []
+        },
+        "install": "skipped",
+        "install_log": "未识别到可自动安装的构建系统",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "Graphify-Labs",
+          "name": "graphify",
+          "full": "Graphify-Labs/graphify",
+          "url": "https://github.com/Graphify-Labs/graphify",
+          "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+          "language": "Python",
+          "stars": 114573,
+          "topic": "rag"
+        },
+        "clone": true,
+        "clone_time": 2.2,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "pyproject.toml",
+            "Dockerfile"
+          ]
+        },
+        "install": "success",
+        "install_log": "cbf999ac3e4108f38f54c14b63225e86b942048838641802c55198110f4\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-vdt4th4u\\wheels\\22\\63\\f1\\f6032155d097159cfaa0e0ff8971c346f0740a1304dea39166\nSuccessfully built graphifyy\nInstalling collected packages: graphifyy\n  Attempting uninstall: graphifyy\n    Found existing installation: graphifyy 0.9.53\n    Uninstalling graphifyy-0.9.53:\n      Successfully uninstalled graphifyy-0.9.53\nSuccessfully installed graphifyy-0.9.53\n",
+        "install_time": 17.9,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "thedotmack",
+          "name": "claude-mem",
+          "full": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "language": "JavaScript",
+          "stars": 93134,
+          "topic": "rag"
+        },
+        "clone": true,
+        "clone_time": 1.7,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "package.json",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.8,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "infiniflow",
+          "name": "ragflow",
+          "full": "infiniflow/ragflow",
+          "url": "https://github.com/infiniflow/ragflow",
+          "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+          "language": "Go",
+          "stars": 90037,
+          "topic": "rag"
+        },
+        "clone": true,
+        "clone_time": 40.6,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": true,
+          "docker": true,
+          "files": [
+            "pyproject.toml",
+            "go.mod",
+            "Dockerfile"
+          ]
+        },
+        "install": "failed",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.5,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": "★★★☆☆"
+      }
+    ]
+  },
+  "stable-diffusion": {
+    "label": "扩散模型",
+    "top": [
+      {
+        "owner": "AUTOMATIC1111",
+        "name": "stable-diffusion-webui",
+        "full": "AUTOMATIC1111/stable-diffusion-webui",
+        "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+        "description": "Stable Diffusion web UI",
+        "language": "Python",
+        "stars": 164797,
+        "topic": "stable-diffusion",
+        "fetch_method": "codeload-tarball"
+      },
+      {
+        "owner": "Comfy-Org",
+        "name": "ComfyUI",
+        "full": "Comfy-Org/ComfyUI",
+        "url": "https://github.com/Comfy-Org/ComfyUI",
+        "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+        "language": "Python",
+        "stars": 131444,
+        "topic": "stable-diffusion"
+      },
+      {
+        "owner": "unslothai",
+        "name": "unsloth",
+        "full": "unslothai/unsloth",
+        "url": "https://github.com/unslothai/unsloth",
+        "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
+        "language": "Python",
+        "stars": 75595,
+        "topic": "stable-diffusion",
+        "fetch_method": "codeload-tarball"
+      },
+      {
+        "owner": "calesthio",
+        "name": "OpenMontage",
+        "full": "calesthio/OpenMontage",
+        "url": "https://github.com/calesthio/OpenMontage",
+        "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+        "language": "Python",
+        "stars": 56066,
+        "topic": "stable-diffusion"
+      },
+      {
+        "owner": "mudler",
+        "name": "LocalAI",
+        "full": "mudler/LocalAI",
+        "url": "https://github.com/mudler/LocalAI",
+        "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+        "language": "Go",
+        "stars": 48853,
+        "topic": "stable-diffusion"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "AUTOMATIC1111",
+          "name": "stable-diffusion-webui",
+          "full": "AUTOMATIC1111/stable-diffusion-webui",
+          "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+          "description": "Stable Diffusion web UI",
+          "language": "Python",
+          "stars": 164797,
+          "topic": "stable-diffusion",
+          "fetch_method": "codeload-tarball"
+        },
+        "clone": true,
+        "clone_time": 83.2,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml",
+            "package.json"
+          ]
+        },
+        "install": "failed",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.5,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "Comfy-Org",
+          "name": "ComfyUI",
+          "full": "Comfy-Org/ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI",
+          "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+          "language": "Python",
+          "stars": 131444,
+          "topic": "stable-diffusion"
+        },
+        "clone": true,
+        "clone_time": 5.6,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "rement already satisfied: mdurl~=0.1 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers>=4.50.3->-r requirements.txt (line 10)) (0.1.2)\nUsing cached av-18.1.0-cp311-abi3-win_amd64.whl (27.6 MB)\nInstalling collected packages: av\n  Attempting uninstall: av\n    Found existing installation: av 16.0.0\n    Uninstalling av-16.0.0:\n      Successfully uninstalled av-16.0.0\nSuccessfully installed av-18.1.0\n",
+        "install_time": 5.9,
+        "run": "success",
+        "run_log": "usage: main.py [-h] [--listen [IP]] [--port PORT] [--tls-keyfile TLS_KEYFILE]\n               [--tls-certfile TLS_CERTFILE] [--enable-cors-header [ORIGIN]]\n               [--max-upload-size MAX_UPLOAD_SIZE]\n               [--base-directory BASE_DIRECTORY]\n               [--extra-model-paths-config PATH [PATH ...]]\n               [--output-directory OUTPUT_DIRECTORY]\n               [--temp-directory",
+        "run_time": 0.3,
+        "score": 70,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "unslothai",
+          "name": "unsloth",
+          "full": "unslothai/unsloth",
+          "url": "https://github.com/unslothai/unsloth",
+          "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
+          "language": "Python",
+          "stars": 75595,
+          "topic": "stable-diffusion",
+          "fetch_method": "codeload-tarball"
+        },
+        "clone": true,
+        "clone_time": 102.8,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "=b7e79151bfb0b77b3197cabef8049fb733a3a403b56e8371f05c991904c527e2\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-vuovl7i4\\wheels\\25\\bd\\dc\\c1a83b9ac4e991b41a497e4bf5d9658106eff6d0e3180e3016\nSuccessfully built unsloth\nInstalling collected packages: unsloth\n  Attempting uninstall: unsloth\n    Found existing installation: unsloth 2026.9.2\n    Uninstalling unsloth-2026.9.2:\n      Successfully uninstalled unsloth-2026.9.2\nSuccessfully installed unsloth-2026.9.2\n",
+        "install_time": 32.4,
+        "run": "success",
+        "run_log": "                                                                               \n Usage: unsloth [OPTIONS] COMMAND [ARGS]...                                    \n                                                                               \n Command-line interface for Unsloth training, inference, and export.           \n                                                                               \n",
+        "run_time": 1.5,
+        "score": 70,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "calesthio",
+          "name": "OpenMontage",
+          "full": "calesthio/OpenMontage",
+          "url": "https://github.com/calesthio/OpenMontage",
+          "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+          "language": "Python",
+          "stars": 56066,
+          "topic": "stable-diffusion"
+        },
+        "clone": true,
+        "clone_time": 25.3,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "setup.py"
+          ]
+        },
+        "install": "success",
+        "install_log": "ntic_core 2.41.4\n    Uninstalling pydantic_core-2.41.4:\n      Successfully uninstalled pydantic_core-2.41.4\n  Attempting uninstall: pydantic\n    Found existing installation: pydantic 2.12.3\n    Uninstalling pydantic-2.12.3:\n      Successfully uninstalled pydantic-2.12.3\n  Attempting uninstall: openai\n    Found existing installation: openai 2.24.0\n    Uninstalling openai-2.24.0:\n      Successfully uninstalled openai-2.24.0\n\nSuccessfully installed openai-3.8.0 pydantic-2.13.5 pydantic-core-2.46.5\n",
+        "install_time": 22.8,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "mudler",
+          "name": "LocalAI",
+          "full": "mudler/LocalAI",
+          "url": "https://github.com/mudler/LocalAI",
+          "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+          "language": "Go",
+          "stars": 48853,
+          "topic": "stable-diffusion"
+        },
+        "clone": true,
+        "clone_time": 6.1,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": true,
+          "docker": true,
+          "files": [
+            "go.mod",
+            "Dockerfile"
+          ]
+        },
+        "install": "skipped",
+        "install_log": "Go 项目，未执行 go build（资源/耗时限制）",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      }
+    ]
+  },
+  "computer-vision": {
+    "label": "计算机视觉",
+    "top": [
+      {
+        "owner": "opencv",
+        "name": "opencv",
+        "full": "opencv/opencv",
+        "url": "https://github.com/opencv/opencv",
+        "description": "Open Source Computer Vision Library",
+        "language": "C++",
+        "stars": 90711,
+        "topic": "computer-vision"
+      },
+      {
+        "owner": "d2l-ai",
+        "name": "d2l-zh",
+        "full": "d2l-ai/d2l-zh",
+        "url": "https://github.com/d2l-ai/d2l-zh",
+        "description": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
+        "language": "Python",
+        "stars": 80270,
+        "topic": "computer-vision"
+      },
+      {
+        "owner": "microsoft",
+        "name": "AI-For-Beginners",
+        "full": "microsoft/AI-For-Beginners",
+        "url": "https://github.com/microsoft/AI-For-Beginners",
+        "description": "12 Weeks, 24 Lessons, AI for All!",
+        "language": "Jupyter Notebook",
+        "stars": 68056,
+        "topic": "computer-vision"
+      },
+      {
+        "owner": "ultralytics",
+        "name": "ultralytics",
+        "full": "ultralytics/ultralytics",
+        "url": "https://github.com/ultralytics/ultralytics",
+        "description": "Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking",
+        "language": "Python",
+        "stars": 61282,
+        "topic": "computer-vision"
+      },
+      {
+        "owner": "ultralytics",
+        "name": "yolov5",
+        "full": "ultralytics/yolov5",
+        "url": "https://github.com/ultralytics/yolov5",
+        "description": "Ultralytics YOLOv5 in PyTorch for object detection, instance segmentation, classification, training, and export.",
+        "language": "Python",
+        "stars": 57964,
+        "topic": "computer-vision"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "opencv",
+          "name": "opencv",
+          "full": "opencv/opencv",
+          "url": "https://github.com/opencv/opencv",
+          "description": "Open Source Computer Vision Library",
+          "language": "C++",
+          "stars": 90711,
+          "topic": "computer-vision"
+        },
+        "clone": true,
+        "clone_time": 24.8,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": []
+        },
+        "install": "skipped",
+        "install_log": "未识别到可自动安装的构建系统",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "d2l-ai",
+          "name": "d2l-zh",
+          "full": "d2l-ai/d2l-zh",
+          "url": "https://github.com/d2l-ai/d2l-zh",
+          "description": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
+          "language": "Python",
+          "stars": 80270,
+          "topic": "computer-vision"
+        },
+        "clone": true,
+        "clone_time": 2.8,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "setup.py"
+          ]
+        },
+        "install": "failed",
+        "install_log": ".17.5, 1.18.0, 1.18.1, 1.18.2, 1.18.3, 1.18.4, 1.18.5, 1.19.0, 1.19.1, 1.19.2, 1.19.3, 1.19.4, 1.19.5, 1.20.0, 1.20.1, 1.20.2, 1.20.3, 1.21.0, 1.21.1, 1.22.0, 1.22.1, 1.22.2, 1.22.3, 1.22.4, 1.23.0, 1.23.1, 1.23.2, 1.23.3, 1.23.4, 1.23.5, 1.24.0, 1.24.1, 1.24.2, 1.24.3, 1.24.4, 1.25.0, 1.25.1, 1.25.2, 1.26.2, 1.26.3, 1.26.4, 2.0.0, 2.0.1, 2.0.2, 2.1.0, 2.1.1, 2.1.2, 2.1.3, 2.2.0, 2.2.1, 2.2.2, 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.3.0, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5, 2.4.0rc1, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.5.0rc1, 2.5.0, 2.5.1, 2.5.2)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: No matching distribution found for numpy==1.21.5\n",
+        "install_time": 8.3,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "microsoft",
+          "name": "AI-For-Beginners",
+          "full": "microsoft/AI-For-Beginners",
+          "url": "https://github.com/microsoft/AI-For-Beginners",
+          "description": "12 Weeks, 24 Lessons, AI for All!",
+          "language": "Jupyter Notebook",
+          "stars": 68056,
+          "topic": "computer-vision"
+        },
+        "clone": true,
+        "clone_time": 7.5,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt"
+          ]
+        },
+        "install": "failed",
+        "install_log": "810a55649f7bc4ad5e45e6770a2\\.mesonpy-chbsvg_s\\build\n      Build type: native build\n      Project name: pandas\n      Project version: 2.2.2\n      Activating VS 18.6.1\n      \n      ..\\..\\meson.build:2:0: ERROR: Unhandled python exception\n      \n          This is a Meson bug and should be reported!\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> pandas\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+        "install_time": 44.3,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "ultralytics",
+          "name": "ultralytics",
+          "full": "ultralytics/ultralytics",
+          "url": "https://github.com/ultralytics/ultralytics",
+          "description": "Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking",
+          "language": "Python",
+          "stars": 61282,
+          "topic": "computer-vision"
+        },
+        "clone": true,
+        "clone_time": 3.5,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "4e85b713bf262f6c25ac7f52e614d84f3d02bb78f\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-vsiodo2t\\wheels\\4a\\80\\7f\\5d1dff81332d707a13cee46603f70d27873e6cfff865bb9909\nSuccessfully built ultralytics\nInstalling collected packages: ultralytics\n  Attempting uninstall: ultralytics\n    Found existing installation: ultralytics 8.4.138\n    Uninstalling ultralytics-8.4.138:\n      Successfully uninstalled ultralytics-8.4.138\nSuccessfully installed ultralytics-8.4.138\n",
+        "install_time": 19.6,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "ultralytics",
+          "name": "yolov5",
+          "full": "ultralytics/yolov5",
+          "url": "https://github.com/ultralytics/yolov5",
+          "description": "Ultralytics YOLOv5 in PyTorch for object detection, instance segmentation, classification, training, and export.",
+          "language": "Python",
+          "stars": 57964,
+          "topic": "computer-vision"
+        },
+        "clone": true,
+        "clone_time": 1.9,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "->-r requirements.txt (line 16)) (1.0.9)\nRequirement already satisfied: h11>=0.16 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from httpcore==1.*->httpx<1,>=0.28->ultralytics-platform>=0.1.3->ultralytics>=8.4.132->-r requirements.txt (line 16)) (0.16.0)\nRequirement already satisfied: MarkupSafe>=2.0 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from jinja2->torch>=1.8.0->-r requirements.txt (line 14)) (3.0.3)\n",
+        "install_time": 2.2,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": "★★★☆☆"
+      }
+    ]
+  },
+  "speech-recognition": {
+    "label": "语音识别",
+    "top": [
+      {
+        "owner": "huggingface",
+        "name": "transformers",
+        "full": "huggingface/transformers",
+        "url": "https://github.com/huggingface/transformers",
+        "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+        "language": "Python",
+        "stars": 164774,
+        "topic": "speech-recognition"
+      },
+      {
+        "owner": "ggml-org",
+        "name": "whisper.cpp",
+        "full": "ggml-org/whisper.cpp",
+        "url": "https://github.com/ggml-org/whisper.cpp",
+        "description": "Port of OpenAI's Whisper model in C/C++",
+        "language": "C++",
+        "stars": 53432,
+        "topic": "speech-recognition"
+      },
+      {
+        "owner": "mozilla",
+        "name": "DeepSpeech",
+        "full": "mozilla/DeepSpeech",
+        "url": "https://github.com/mozilla/DeepSpeech",
+        "description": "DeepSpeech is an open source embedded (offline, on-device) speech-to-text engine which can run in real time on devices ranging from a Raspberry Pi 4 to high power GPU servers.",
+        "language": "C++",
+        "stars": 26780,
+        "topic": "speech-recognition"
+      },
+      {
+        "owner": "SYSTRAN",
+        "name": "faster-whisper",
+        "full": "SYSTRAN/faster-whisper",
+        "url": "https://github.com/SYSTRAN/faster-whisper",
+        "description": "Faster Whisper transcription with CTranslate2",
+        "language": "Python",
+        "stars": 25223,
+        "topic": "speech-recognition"
+      },
+      {
+        "owner": "m-bain",
+        "name": "whisperX",
+        "full": "m-bain/whisperX",
+        "url": "https://github.com/m-bain/whisperX",
+        "description": "WhisperX: Automatic Speech Recognition with Word-level Timestamps (& Diarization)",
+        "language": "Python",
+        "stars": 23890,
+        "topic": "speech-recognition"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "huggingface",
+          "name": "transformers",
+          "full": "huggingface/transformers",
+          "url": "https://github.com/huggingface/transformers",
+          "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+          "language": "Python",
+          "stars": 164774,
+          "topic": "speech-recognition"
+        },
+        "clone": true,
+        "clone_time": 8.2,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml",
+            "setup.py"
+          ]
+        },
+        "install": "success",
+        "install_log": "ccessfully built transformers\nInstalling collected packages: tokenizers, transformers\n  Attempting uninstall: tokenizers\n    Found existing installation: tokenizers 0.22.2\n    Uninstalling tokenizers-0.22.2:\n      Successfully uninstalled tokenizers-0.22.2\n  Attempting uninstall: transformers\n    Found existing installation: transformers 5.8.0\n    Uninstalling transformers-5.8.0:\n      Successfully uninstalled transformers-5.8.0\n\nSuccessfully installed tokenizers-0.23.2 transformers-5.17.0.dev0\n",
+        "install_time": 34.8,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "ggml-org",
+          "name": "whisper.cpp",
+          "full": "ggml-org/whisper.cpp",
+          "url": "https://github.com/ggml-org/whisper.cpp",
+          "description": "Port of OpenAI's Whisper model in C/C++",
+          "language": "C++",
+          "stars": 53432,
+          "topic": "speech-recognition"
+        },
+        "clone": true,
+        "clone_time": 3.0,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": []
+        },
+        "install": "skipped",
+        "install_log": "未识别到可自动安装的构建系统",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "mozilla",
+          "name": "DeepSpeech",
+          "full": "mozilla/DeepSpeech",
+          "url": "https://github.com/mozilla/DeepSpeech",
+          "description": "DeepSpeech is an open source embedded (offline, on-device) speech-to-text engine which can run in real time on devices ranging from a Raspberry Pi 4 to high power GPU servers.",
+          "language": "C++",
+          "stars": 26780,
+          "topic": "speech-recognition"
+        },
+        "clone": true,
+        "clone_time": 2.7,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "setup.py"
+          ]
+        },
+        "install": "failed",
+        "install_log": "        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-fxn2x5lg\\overlay\\Lib\\site-packages\\setuptools\\build_meta.py\", line 317, in run_setup\n          exec(code, locals())  # noqa: S102 # exec is intentional here\n          ~~~~^^^^^^^^^^^^^^^^\n        File \"<string>\", line 6, in <module>\n      ModuleNotFoundError: No module named 'pkg_resources'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Failed to build 'file:///E:/AI_Project_Weekly/clones/boards/mozilla__DeepSpeech' when getting requirements to build editable\n",
+        "install_time": 5.9,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "SYSTRAN",
+          "name": "faster-whisper",
+          "full": "SYSTRAN/faster-whisper",
+          "url": "https://github.com/SYSTRAN/faster-whisper",
+          "description": "Faster Whisper transcription with CTranslate2",
+          "language": "Python",
+          "stars": 25223,
+          "topic": "speech-recognition"
+        },
+        "clone": true,
+        "clone_time": 1.7,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "setup.py"
+          ]
+        },
+        "install": "success",
+        "install_log": "ackages (from httpx<1,>=0.23.0->huggingface_hub>=0.23->-r requirements.txt (line 2)) (3.19)\nRequirement already satisfied: h11>=0.16 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface_hub>=0.23->-r requirements.txt (line 2)) (0.16.0)\nRequirement already satisfied: colorama in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from tqdm->-r requirements.txt (line 6)) (0.4.6)\n",
+        "install_time": 2.1,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "m-bain",
+          "name": "whisperX",
+          "full": "m-bain/whisperX",
+          "url": "https://github.com/m-bain/whisperX",
+          "description": "WhisperX: Automatic Speech Recognition with Word-level Timestamps (& Diarization)",
+          "language": "Python",
+          "stars": 23890,
+          "topic": "speech-recognition"
+        },
+        "clone": true,
+        "clone_time": 1.7,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "ddcf30984015f3a50b5b046b1bd16ac21efedab33247e4f8027ef797e4\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-fdoxp8a2\\wheels\\f6\\5e\\ed\\acffa7c5ee2012af6998e12eb93b602d414f0eb3e51aed63e1\nSuccessfully built whisperx\nInstalling collected packages: whisperx\n  Attempting uninstall: whisperx\n    Found existing installation: whisperx 3.8.7rc1\n    Uninstalling whisperx-3.8.7rc1:\n      Successfully uninstalled whisperx-3.8.7rc1\nSuccessfully installed whisperx-3.8.7rc1\n",
+        "install_time": 17.7,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": "★★★☆☆"
+      }
+    ]
+  },
+  "robotics": {
+    "label": "机器人",
+    "top": [
+      {
+        "owner": "commaai",
+        "name": "openpilot",
+        "full": "commaai/openpilot",
+        "url": "https://github.com/commaai/openpilot",
+        "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+        "language": "Python",
+        "stars": 63570,
+        "topic": "robotics"
+      },
+      {
+        "owner": "NaiboWang",
+        "name": "EasySpider",
+        "full": "NaiboWang/EasySpider",
+        "url": "https://github.com/NaiboWang/EasySpider",
+        "description": "A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化测试/数据采集/网页爬虫软件，可以无代码图形化的设计和执行爬虫任务。别名：ServiceWrapper面向Web应用的智能化服务封装系统。",
+        "language": "JavaScript",
+        "stars": 44500,
+        "topic": "robotics"
+      },
+      {
+        "owner": "AtsushiSakai",
+        "name": "PythonRobotics",
+        "full": "AtsushiSakai/PythonRobotics",
+        "url": "https://github.com/AtsushiSakai/PythonRobotics",
+        "description": "Python sample codes and textbook for robotics algorithms.",
+        "language": "Python",
+        "stars": 30442,
+        "topic": "robotics"
+      },
+      {
+        "owner": "wechaty",
+        "name": "wechaty",
+        "full": "wechaty/wechaty",
+        "url": "https://github.com/wechaty/wechaty",
+        "description": "Conversational RPA SDK for Chatbot Makers. Join our Discord: https://discord.gg/7q8NBZbQzt",
+        "language": "TypeScript",
+        "stars": 22996,
+        "topic": "robotics"
+      },
+      {
+        "owner": "questdb",
+        "name": "questdb",
+        "full": "questdb/questdb",
+        "url": "https://github.com/questdb/questdb",
+        "description": "QuestDB is a high performance, open-source, time-series database",
+        "language": "Java",
+        "stars": 17299,
+        "topic": "robotics"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "commaai",
+          "name": "openpilot",
+          "full": "commaai/openpilot",
+          "url": "https://github.com/commaai/openpilot",
+          "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+          "language": "Python",
+          "stars": 63570,
+          "topic": "robotics"
+        },
+        "clone": false,
+        "clone_time": 2.0,
+        "clone_err": "fatal: Unable to create 'E:/AI_Project_Weekly/clones/boards/commaai__openpilot/.git/index.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
+        "build": {
+          "files": []
+        },
+        "install": "failed",
+        "install_log": "fatal: Unable to create 'E:/AI_Project_Weekly/clones/boards/commaai__openpilot/.git/index.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
+        "install_time": 0.0,
+        "run": "failed",
+        "run_log": "fatal: Unable to create 'E:/AI_Project_Weekly/clones/boards/commaai__openpilot/.git/index.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\n",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "NaiboWang",
+          "name": "EasySpider",
+          "full": "NaiboWang/EasySpider",
+          "url": "https://github.com/NaiboWang/EasySpider",
+          "description": "A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化测试/数据采集/网页爬虫软件，可以无代码图形化的设计和执行爬虫任务。别名：ServiceWrapper面向Web应用的智能化服务封装系统。",
+          "language": "JavaScript",
+          "stars": 44500,
+          "topic": "robotics"
+        },
+        "clone": true,
+        "clone_time": 2.2,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": []
+        },
+        "install": "skipped",
+        "install_log": "未识别到可自动安装的构建系统",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "AtsushiSakai",
+          "name": "PythonRobotics",
+          "full": "AtsushiSakai/PythonRobotics",
+          "url": "https://github.com/AtsushiSakai/PythonRobotics",
+          "description": "Python sample codes and textbook for robotics algorithms.",
+          "language": "Python",
+          "stars": 30442,
+          "topic": "robotics"
+        },
+        "clone": true,
+        "clone_time": 2.2,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": []
+        },
+        "install": "skipped",
+        "install_log": "未识别到可自动安装的构建系统",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "wechaty",
+          "name": "wechaty",
+          "full": "wechaty/wechaty",
+          "url": "https://github.com/wechaty/wechaty",
+          "description": "Conversational RPA SDK for Chatbot Makers. Join our Discord: https://discord.gg/7q8NBZbQzt",
+          "language": "TypeScript",
+          "stars": 22996,
+          "topic": "robotics"
+        },
+        "clone": true,
+        "clone_time": 1.9,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "package.json",
+            "Dockerfile"
+          ]
+        },
+        "install": "failed",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.3,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "questdb",
+          "name": "questdb",
+          "full": "questdb/questdb",
+          "url": "https://github.com/questdb/questdb",
+          "description": "QuestDB is a high performance, open-source, time-series database",
+          "language": "Java",
+          "stars": 17299,
+          "topic": "robotics"
+        },
+        "clone": true,
+        "clone_time": 8.0,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": []
+        },
+        "install": "skipped",
+        "install_log": "未识别到可自动安装的构建系统",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      }
+    ]
+  },
+  "mlops": {
+    "label": "MLOps",
+    "top": [
+      {
+        "owner": "GokuMohandas",
+        "name": "Made-With-ML",
+        "full": "GokuMohandas/Made-With-ML",
+        "url": "https://github.com/GokuMohandas/Made-With-ML",
+        "description": "Learn how to develop, deploy and iterate on production-grade ML applications.",
+        "language": "Jupyter Notebook",
+        "stars": 49346,
+        "topic": "mlops",
+        "fetch_method": "codeload-tarball"
+      },
+      {
+        "owner": "apache",
+        "name": "airflow",
+        "full": "apache/airflow",
+        "url": "https://github.com/apache/airflow",
+        "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
+        "language": "Python",
+        "stars": 46724,
+        "topic": "mlops"
+      },
+      {
+        "owner": "qdrant",
+        "name": "qdrant",
+        "full": "qdrant/qdrant",
+        "url": "https://github.com/qdrant/qdrant",
+        "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
+        "language": "Rust",
+        "stars": 34379,
+        "topic": "mlops",
+        "fetch_method": "codeload-tarball"
+      },
+      {
+        "owner": "HumanSignal",
+        "name": "label-studio",
+        "full": "HumanSignal/label-studio",
+        "url": "https://github.com/HumanSignal/label-studio",
+        "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format",
+        "language": "TypeScript",
+        "stars": 28202,
+        "topic": "mlops",
+        "fetch_method": "codeload-tarball"
+      },
+      {
+        "owner": "mlflow",
+        "name": "mlflow",
+        "full": "mlflow/mlflow",
+        "url": "https://github.com/mlflow/mlflow",
+        "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
+        "language": "Python",
+        "stars": 27805,
+        "topic": "mlops"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "GokuMohandas",
+          "name": "Made-With-ML",
+          "full": "GokuMohandas/Made-With-ML",
+          "url": "https://github.com/GokuMohandas/Made-With-ML",
+          "description": "Learn how to develop, deploy and iterate on production-grade ML applications.",
+          "language": "Jupyter Notebook",
+          "stars": 49346,
+          "topic": "mlops",
+          "fetch_method": "codeload-tarball"
+        },
+        "clone": true,
+        "clone_time": 79.3,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "on.py\", line 1, in <module>\n          import pkg_resources\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-okx4wrxt\\overlay\\Lib\\site-packages\\pkg_resources\\__init__.py\", line 2172, in <module>\n          register_finder(pkgutil.ImpImporter, find_on_path)\n                          ^^^^^^^^^^^^^^^^^^^\n      AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Failed to build 'numpy' when getting requirements to build wheel\n",
+        "install_time": 49.0,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "apache",
+          "name": "airflow",
+          "full": "apache/airflow",
+          "url": "https://github.com/apache/airflow",
+          "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
+          "language": "Python",
+          "stars": 46724,
+          "topic": "mlops"
+        },
+        "clone": true,
+        "clone_time": 35.1,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "pyproject.toml",
+            "Dockerfile"
+          ]
+        },
+        "install": "failed",
+        "install_log": "(from apache-airflow) (from versions: 3.0.4rc1, 3.0.4rc2, 3.0.4, 3.0.5rc1, 3.0.5rc2, 3.0.5rc3, 3.0.6rc1, 3.0.6rc2, 3.0.6, 3.1.0b1, 3.1.0b2, 3.1.0rc1, 3.1.0rc2, 3.1.0, 3.1.1rc1, 3.1.1rc2, 3.1.1, 3.1.2rc1, 3.1.2rc2, 3.1.2, 3.1.3rc1, 3.1.3, 3.1.4rc1, 3.1.4rc2, 3.1.5rc1, 3.1.5, 3.1.6rc1, 3.1.6, 3.1.7rc1, 3.1.7rc2, 3.1.7, 3.1.8rc1, 3.1.8rc2, 3.1.8, 3.2.0b1, 3.2.0b2, 3.2.0rc1, 3.2.0rc2, 3.2.0, 3.2.1rc1, 3.2.1rc2, 3.2.1rc3, 3.2.1, 3.2.2rc1, 3.2.2rc2, 3.2.2rc3, 3.2.2, 3.3.0b1, 3.3.0b2, 3.3.0rc1, 3.3.0rc2, 3.3.0, 3.3.1rc1, 3.3.1rc2, 3.3.1)\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: No matching distribution found for apache-airflow-core==3.4.0\n",
+        "install_time": 12.3,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "qdrant",
+          "name": "qdrant",
+          "full": "qdrant/qdrant",
+          "url": "https://github.com/qdrant/qdrant",
+          "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
+          "language": "Rust",
+          "stars": 34379,
+          "topic": "mlops",
+          "fetch_method": "codeload-tarball"
+        },
+        "clone": true,
+        "clone_time": 90.8,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": true,
+          "go": false,
+          "docker": true,
+          "files": [
+            "Cargo.toml",
+            "Dockerfile"
+          ]
+        },
+        "install": "skipped",
+        "install_log": "Rust 项目，未执行 cargo build（资源/耗时限制）",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "HumanSignal",
+          "name": "label-studio",
+          "full": "HumanSignal/label-studio",
+          "url": "https://github.com/HumanSignal/label-studio",
+          "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format",
+          "language": "TypeScript",
+          "stars": 28202,
+          "topic": "mlops",
+          "fetch_method": "codeload-tarball"
+        },
+        "clone": true,
+        "clone_time": 160.1,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": true,
+          "files": [
+            "pyproject.toml",
+            "Dockerfile",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 967, in _try_trash\n    _check_bulk_delete_guard(abs_path)\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 851, in _check_bulk_delete_guard\n    _exit_bulk_guard_control(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        result.stderr.strip()\n        ^^^^^^^^^^^^^^^^^^^^^\n        or \"[safe-delete][SAFE_DELETE_BULK_GUARD_ERROR] exit %d\" % result.returncode\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\Ksoftware\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim\\sitecustomize.py\", line 826, in _exit_bulk_guard_control\n    raise SystemExit(1)\nSystemExit: 1\n",
+        "install_time": 45.4,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "mlflow",
+          "name": "mlflow",
+          "full": "mlflow/mlflow",
+          "url": "https://github.com/mlflow/mlflow",
+          "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
+          "language": "Python",
+          "stars": 27805,
+          "topic": "mlops"
+        },
+        "clone": true,
+        "clone_time": 45.2,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "252d6e555019ed2f11719ae14710a488e36bee9e8b9bb4beac5cc11d4cdc\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-jsieun5g\\wheels\\12\\ac\\a9\\641aad56af1f17d3ba481c3566eb34e1acea4105b51bd50957\nSuccessfully built mlflow\nInstalling collected packages: mlflow\n  Attempting uninstall: mlflow\n    Found existing installation: mlflow 3.15.3.dev0\n    Uninstalling mlflow-3.15.3.dev0:\n      Successfully uninstalled mlflow-3.15.3.dev0\nSuccessfully installed mlflow-3.16.1.dev0\n",
+        "install_time": 21.7,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": "★★★☆☆"
+      }
+    ]
+  },
+  "vector-database": {
+    "label": "向量数据库",
+    "top": [
+      {
+        "owner": "Mintplex-Labs",
+        "name": "anything-llm",
+        "full": "Mintplex-Labs/anything-llm",
+        "url": "https://github.com/Mintplex-Labs/anything-llm",
+        "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience",
+        "language": "JavaScript",
+        "stars": 65604,
+        "topic": "vector-database"
+      },
+      {
+        "owner": "meilisearch",
+        "name": "meilisearch",
+        "full": "meilisearch/meilisearch",
+        "url": "https://github.com/meilisearch/meilisearch",
+        "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
+        "language": "Rust",
+        "stars": 59176,
+        "topic": "vector-database"
+      },
+      {
+        "owner": "pathwaycom",
+        "name": "llm-app",
+        "full": "pathwaycom/llm-app",
+        "url": "https://github.com/pathwaycom/llm-app",
+        "description": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.",
+        "language": "Jupyter Notebook",
+        "stars": 58937,
+        "topic": "vector-database"
+      },
+      {
+        "owner": "run-llama",
+        "name": "llama_index",
+        "full": "run-llama/llama_index",
+        "url": "https://github.com/run-llama/llama_index",
+        "description": "LlamaIndex is the leading document agent and OCR platform",
+        "language": "Python",
+        "stars": 52013,
+        "topic": "vector-database"
+      },
+      {
+        "owner": "milvus-io",
+        "name": "milvus",
+        "full": "milvus-io/milvus",
+        "url": "https://github.com/milvus-io/milvus",
+        "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+        "language": "Go",
+        "stars": 45967,
+        "topic": "vector-database"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "Mintplex-Labs",
+          "name": "anything-llm",
+          "full": "Mintplex-Labs/anything-llm",
+          "url": "https://github.com/Mintplex-Labs/anything-llm",
+          "description": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience",
+          "language": "JavaScript",
+          "stars": 65604,
+          "topic": "vector-database"
+        },
+        "clone": true,
+        "clone_time": 4.0,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "package.json"
+          ]
+        },
+        "install": "success",
+        "install_log": "\nup to date in 3s\n\n34 packages are looking for funding\n  run `npm fund` for details\n",
+        "install_time": 3.8,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "meilisearch",
+          "name": "meilisearch",
+          "full": "meilisearch/meilisearch",
+          "url": "https://github.com/meilisearch/meilisearch",
+          "description": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.",
+          "language": "Rust",
+          "stars": 59176,
+          "topic": "vector-database"
+        },
+        "clone": true,
+        "clone_time": 3.9,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": true,
+          "go": false,
+          "docker": true,
+          "files": [
+            "Cargo.toml",
+            "Dockerfile"
+          ]
+        },
+        "install": "skipped",
+        "install_log": "Rust 项目，未执行 cargo build（资源/耗时限制）",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "pathwaycom",
+          "name": "llm-app",
+          "full": "pathwaycom/llm-app",
+          "url": "https://github.com/pathwaycom/llm-app",
+          "description": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.",
+          "language": "Jupyter Notebook",
+          "stars": 58937,
+          "topic": "vector-database"
+        },
+        "clone": true,
+        "clone_time": 1.8,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "failed",
+        "install_log": "ry\\builders\\builder.py\", line 40, in __init__\n          raise RuntimeError(\n              \"Building a package is not possible in non-package mode.\"\n          )\n      RuntimeError: Building a package is not possible in non-package mode.\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nerror: metadata-generation-failed\n\n× Encountered error while generating package metadata.\n╰─> from file:///E:/AI_Project_Weekly/clones/boards/pathwaycom__llm-app\n\nnote: This is an issue with the package mentioned above, not pip.\nhint: See above for details.\n",
+        "install_time": 6.1,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 50,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "run-llama",
+          "name": "llama_index",
+          "full": "run-llama/llama_index",
+          "url": "https://github.com/run-llama/llama_index",
+          "description": "LlamaIndex is the leading document agent and OCR platform",
+          "language": "Python",
+          "stars": 52013,
+          "topic": "vector-database"
+        },
+        "clone": true,
+        "clone_time": 13.8,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "d5d650bb46fd29fad1775d07fea65\nSuccessfully built llama-index\nInstalling collected packages: openai, llama-index\n  Attempting uninstall: openai\n    Found existing installation: openai 3.8.0\n    Uninstalling openai-3.8.0:\n      Successfully uninstalled openai-3.8.0\n  Attempting uninstall: llama-index\n    Found existing installation: llama-index 0.14.24\n    Uninstalling llama-index-0.14.24:\n      Successfully uninstalled llama-index-0.14.24\n\nSuccessfully installed llama-index-0.14.24 openai-2.54.0\n",
+        "install_time": 27.2,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "milvus-io",
+          "name": "milvus",
+          "full": "milvus-io/milvus",
+          "url": "https://github.com/milvus-io/milvus",
+          "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+          "language": "Go",
+          "stars": 45967,
+          "topic": "vector-database"
+        },
+        "clone": true,
+        "clone_time": 10.0,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": false,
+          "rust": false,
+          "go": true,
+          "docker": true,
+          "files": [
+            "go.mod",
+            "docker-compose.yml"
+          ]
+        },
+        "install": "skipped",
+        "install_log": "Go 项目，未执行 go build（资源/耗时限制）",
+        "install_time": 0.0,
+        "run": "skipped",
+        "run_log": "无自动可运行入口",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      }
+    ]
+  },
+  "prompt-engineering": {
+    "label": "提示工程",
+    "top": [
+      {
+        "owner": "f",
+        "name": "prompts.chat",
+        "full": "f/prompts.chat",
+        "url": "https://github.com/f/prompts.chat",
+        "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+        "language": "HTML",
+        "stars": 169256,
+        "topic": "prompt-engineering"
+      },
+      {
+        "owner": "DietrichGebert",
+        "name": "ponytail",
+        "full": "DietrichGebert/ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+        "language": "JavaScript",
+        "stars": 124192,
+        "topic": "prompt-engineering"
+      },
+      {
+        "owner": "microsoft",
+        "name": "generative-ai-for-beginners",
+        "full": "microsoft/generative-ai-for-beginners",
+        "url": "https://github.com/microsoft/generative-ai-for-beginners",
+        "description": "21 Lessons, Get Started Building with Generative AI",
+        "language": "Jupyter Notebook",
+        "stars": 119131,
+        "topic": "prompt-engineering",
+        "fetch_method": "codeload-tarball"
+      },
+      {
+        "owner": "JuliusBrussee",
+        "name": "caveman",
+        "full": "JuliusBrussee/caveman",
+        "url": "https://github.com/JuliusBrussee/caveman",
+        "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+        "language": "Go",
+        "stars": 103325,
+        "topic": "prompt-engineering"
+      },
+      {
+        "owner": "dair-ai",
+        "name": "Prompt-Engineering-Guide",
+        "full": "dair-ai/Prompt-Engineering-Guide",
+        "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+        "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
+        "language": "MDX",
+        "stars": 78009,
+        "topic": "prompt-engineering"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "f",
+          "name": "prompts.chat",
+          "full": "f/prompts.chat",
+          "url": "https://github.com/f/prompts.chat",
+          "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+          "language": "HTML",
+          "stars": 169256,
+          "topic": "prompt-engineering"
+        },
+        "clone": true,
+        "clone_time": 2.0,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "package.json"
+          ]
+        },
+        "install": "failed",
+        "install_log": "TIMEOUT after 120s",
+        "install_time": 120.4,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "DietrichGebert",
+          "name": "ponytail",
+          "full": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+          "language": "JavaScript",
+          "stars": 124192,
+          "topic": "prompt-engineering"
+        },
+        "clone": true,
+        "clone_time": 1.9,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "package.json"
+          ]
+        },
+        "install": "success",
+        "install_log": "\nup to date, audited 1 package in 2s\n\nfound 0 vulnerabilities\n",
+        "install_time": 2.0,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "microsoft",
+          "name": "generative-ai-for-beginners",
+          "full": "microsoft/generative-ai-for-beginners",
+          "url": "https://github.com/microsoft/generative-ai-for-beginners",
+          "description": "21 Lessons, Get Started Building with Generative AI",
+          "language": "Jupyter Notebook",
+          "stars": 119131,
+          "topic": "prompt-engineering",
+          "fetch_method": "codeload-tarball"
+        },
+        "clone": true,
+        "clone_time": 257.5,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml",
+            "package.json"
+          ]
+        },
+        "install": "failed",
+        "install_log": "kbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages)\n  WARNING: The scripts f2py.exe and numpy-config.exe are installed in 'C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Scripts' which is not on PATH.\n  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nerror: uninstall-no-record-file\n\n× Cannot uninstall matplotlib 3.11.1\n╰─> The package's contents are unknown: no RECORD file was found for matplotlib.\n\nhint: You might be able to recover from this via: pip install --ignore-installed --no-deps matplotlib==3.11.1\n",
+        "install_time": 35.3,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "JuliusBrussee",
+          "name": "caveman",
+          "full": "JuliusBrussee/caveman",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+          "language": "Go",
+          "stars": 103325,
+          "topic": "prompt-engineering"
+        },
+        "clone": true,
+        "clone_time": 63.9,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": true,
+          "docker": false,
+          "files": [
+            "package.json",
+            "go.mod"
+          ]
+        },
+        "install": "success",
+        "install_log": "\nup to date in 2s\n",
+        "install_time": 2.3,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "dair-ai",
+          "name": "Prompt-Engineering-Guide",
+          "full": "dair-ai/Prompt-Engineering-Guide",
+          "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+          "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
+          "language": "MDX",
+          "stars": 78009,
+          "topic": "prompt-engineering"
+        },
+        "clone": true,
+        "clone_time": 7.3,
+        "clone_err": "",
+        "build": {
+          "python": false,
+          "node": true,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "package.json"
+          ]
+        },
+        "install": "success",
+        "install_log": "\nup to date in 27s\n\n190 packages are looking for funding\n  run `npm fund` for details\n",
+        "install_time": 27.3,
+        "run": "skipped",
+        "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": "★★★☆☆"
+      }
+    ]
+  },
+  "fine-tuning": {
+    "label": "微调",
+    "top": [
+      {
+        "owner": "unslothai",
+        "name": "unsloth",
+        "full": "unslothai/unsloth",
+        "url": "https://github.com/unslothai/unsloth",
+        "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
+        "language": "Python",
+        "stars": 75597,
+        "topic": "fine-tuning"
+      },
+      {
+        "owner": "hiyouga",
+        "name": "LlamaFactory",
+        "full": "hiyouga/LlamaFactory",
+        "url": "https://github.com/hiyouga/LlamaFactory",
+        "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+        "language": "Python",
+        "stars": 74574,
+        "topic": "fine-tuning"
+      },
+      {
+        "owner": "run-llama",
+        "name": "llama_index",
+        "full": "run-llama/llama_index",
+        "url": "https://github.com/run-llama/llama_index",
+        "description": "LlamaIndex is the leading document agent and OCR platform",
+        "language": "Python",
+        "stars": 52013,
+        "topic": "fine-tuning"
+      },
+      {
+        "owner": "QwenAudio",
+        "name": "CosyVoice",
+        "full": "QwenAudio/CosyVoice",
+        "url": "https://github.com/QwenAudio/CosyVoice",
+        "description": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.",
+        "language": "Python",
+        "stars": 23456,
+        "topic": "fine-tuning"
+      },
+      {
+        "owner": "huggingface",
+        "name": "peft",
+        "full": "huggingface/peft",
+        "url": "https://github.com/huggingface/peft",
+        "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
+        "language": "Python",
+        "stars": 21633,
+        "topic": "fine-tuning"
+      }
+    ],
+    "results": [
+      {
+        "project": {
+          "owner": "unslothai",
+          "name": "unsloth",
+          "full": "unslothai/unsloth",
+          "url": "https://github.com/unslothai/unsloth",
+          "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
+          "language": "Python",
+          "stars": 75597,
+          "topic": "fine-tuning"
+        },
+        "clone": true,
+        "clone_time": 25.7,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "=29b72f0187a57a00b5b896505d0029dc5dea14bee8def677de9c7ece9f7958c4\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-0cnjhv3m\\wheels\\25\\bd\\dc\\c1a83b9ac4e991b41a497e4bf5d9658106eff6d0e3180e3016\nSuccessfully built unsloth\nInstalling collected packages: unsloth\n  Attempting uninstall: unsloth\n    Found existing installation: unsloth 2026.9.2\n    Uninstalling unsloth-2026.9.2:\n      Successfully uninstalled unsloth-2026.9.2\nSuccessfully installed unsloth-2026.9.2\n",
+        "install_time": 45.1,
+        "run": "success",
+        "run_log": "                                                                               \n Usage: unsloth [OPTIONS] COMMAND [ARGS]...                                    \n                                                                               \n Command-line interface for Unsloth training, inference, and export.           \n                                                                               \n",
+        "run_time": 1.4,
+        "score": 70,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "hiyouga",
+          "name": "LlamaFactory",
+          "full": "hiyouga/LlamaFactory",
+          "url": "https://github.com/hiyouga/LlamaFactory",
+          "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+          "language": "Python",
+          "stars": 74574,
+          "topic": "fine-tuning"
+        },
+        "clone": true,
+        "clone_time": 2.9,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "nd existing installation: transformers 5.17.0.dev0\n    Uninstalling transformers-5.17.0.dev0:\n      Successfully uninstalled transformers-5.17.0.dev0\n  Attempting uninstall: llamafactory\n    Found existing installation: llamafactory 0.9.6.dev0\n    Uninstalling llamafactory-0.9.6.dev0:\n      Successfully uninstalled llamafactory-0.9.6.dev0\n\nSuccessfully installed av-16.0.0 llamafactory-0.9.6.dev0 pandas-2.3.3 pillow-11.3.0 pydantic-2.12.3 pydantic-core-2.41.4 tokenizers-0.22.2 transformers-5.8.0\n",
+        "install_time": 72.2,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "run-llama",
+          "name": "llama_index",
+          "full": "run-llama/llama_index",
+          "url": "https://github.com/run-llama/llama_index",
+          "description": "LlamaIndex is the leading document agent and OCR platform",
+          "language": "Python",
+          "stars": 52013,
+          "topic": "fine-tuning"
+        },
+        "clone": true,
+        "clone_time": 2.8,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "pyproject.toml"
+          ]
+        },
+        "install": "success",
+        "install_log": "784a5a1fbb12e9587a8944d4a946f3be261acb685\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-15is297t\\wheels\\50\\61\\4c\\4827998931ed8f10cd17fd5d650bb46fd29fad1775d07fea65\nSuccessfully built llama-index\nInstalling collected packages: llama-index\n  Attempting uninstall: llama-index\n    Found existing installation: llama-index 0.14.24\n    Uninstalling llama-index-0.14.24:\n      Successfully uninstalled llama-index-0.14.24\nSuccessfully installed llama-index-0.14.24\n",
+        "install_time": 12.9,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 66,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "QwenAudio",
+          "name": "CosyVoice",
+          "full": "QwenAudio/CosyVoice",
+          "url": "https://github.com/QwenAudio/CosyVoice",
+          "description": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability.",
+          "language": "Python",
+          "stars": 23456,
+          "topic": "fine-tuning"
+        },
+        "clone": true,
+        "clone_time": 3.0,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt"
+          ]
+        },
+        "install": "failed",
+        "install_log": "t)\n          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        File \"C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-build-env-v4vrdzvd\\overlay\\Lib\\site-packages\\setuptools\\build_meta.py\", line 317, in run_setup\n          exec(code, locals())  # noqa: S102 # exec is intentional here\n          ~~~~^^^^^^^^^^^^^^^^\n        File \"<string>\", line 43, in <module>\n      ModuleNotFoundError: No module named 'pkg_resources'\n      [end of output]\n  \n  note: This error originates from a subprocess, and is likely not a problem with pip.\n\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python.exe -m pip install --upgrade pip\nERROR: Failed to build 'grpcio' when getting requirements to build wheel\n",
+        "install_time": 37.8,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 44,
+        "stars": "★★★☆☆"
+      },
+      {
+        "project": {
+          "owner": "huggingface",
+          "name": "peft",
+          "full": "huggingface/peft",
+          "url": "https://github.com/huggingface/peft",
+          "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
+          "language": "Python",
+          "stars": 21633,
+          "topic": "fine-tuning"
+        },
+        "clone": true,
+        "clone_time": 6.6,
+        "clone_err": "",
+        "build": {
+          "python": true,
+          "node": false,
+          "rust": false,
+          "go": false,
+          "docker": false,
+          "files": [
+            "requirements.txt",
+            "pyproject.toml",
+            "setup.py"
+          ]
+        },
+        "install": "success",
+        "install_log": "sformers->-r requirements.txt (line 7)) (0.0.5)\nRequirement already satisfied: markdown-it-py>=2.2.0 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from rich>=13.8.0->typer->transformers->-r requirements.txt (line 7)) (4.2.0)\nRequirement already satisfied: mdurl~=0.1 in C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib\\site-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers->-r requirements.txt (line 7)) (0.1.2)\n",
+        "install_time": 2.5,
+        "run": "skipped",
+        "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+        "run_time": 0.0,
+        "score": 60,
+        "stars": "★★★☆☆"
+      }
+    ]
+  }
+}
