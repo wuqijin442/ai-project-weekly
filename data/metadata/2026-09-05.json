@@ -1,61 +1,19 @@
 [
   {
     "project": {
-      "owner": "openclaw",
-      "name": "openclaw",
-      "full": "openclaw/openclaw",
-      "url": "https://github.com/openclaw/openclaw",
-      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
-      "language": "TypeScript",
-      "stars": 388913,
-      "source": "search-api-fallback",
+      "owner": "mattpocock",
+      "name": "skills",
+      "full": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 251236,
       "categories": [
         "AI/LLM/Agent"
-      ],
-      "fetch_method": "codeload-tarball"
-    },
-    "clone": true,
-    "clone_time": 203.8,
-    "clone_err": "",
-    "build": {
-      "python": false,
-      "node": true,
-      "rust": false,
-      "go": false,
-      "docker": true,
-      "files": [
-        "package.json",
-        "Dockerfile",
-        "docker-compose.yml"
       ]
     },
-    "install": "failed",
-    "install_log": "npm error code EUNSUPPORTEDPROTOCOL\nnpm error Unsupported URL Type \"workspace:\": workspace:*\nnpm error A complete log of this run can be found in: G:\\codeConfig\\nvm\\nodejs\\node_cahce\\_logs\\2026-09-05T09_53_01_828Z-debug-0.log\n",
-    "install_time": 5.7,
-    "run": "skipped",
-    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
-    "run_time": 0.0,
-    "score": 44,
-    "stars": "★★★☆☆"
-  },
-  {
-    "project": {
-      "owner": "nilbuild",
-      "name": "developer-roadmap",
-      "full": "nilbuild/developer-roadmap",
-      "url": "https://github.com/nilbuild/developer-roadmap",
-      "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
-      "language": "TypeScript",
-      "stars": 366334,
-      "source": "search-api-fallback",
-      "categories": [
-        "Frontend/Web",
-        "DevTools"
-      ],
-      "fetch_method": "codeload-tarball"
-    },
     "clone": true,
-    "clone_time": 69.3,
+    "clone_time": 2.1,
     "clone_err": "",
     "build": {
       "python": false,
@@ -68,30 +26,29 @@
       ]
     },
     "install": "success",
-    "install_log": "\nadded 30 packages in 1m\n\n11 packages are looking for funding\n  run `npm fund` for details\n",
-    "install_time": 67.6,
+    "install_log": "\nup to date in 2s\n\n11 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 3.3,
     "run": "skipped",
     "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
     "run_time": 0.0,
-    "score": 60,
+    "score": 66,
     "stars": "★★★☆☆"
   },
   {
     "project": {
-      "owner": "tensorflow",
-      "name": "tensorflow",
-      "full": "tensorflow/tensorflow",
-      "url": "https://github.com/tensorflow/tensorflow",
-      "description": "An Open Source Machine Learning Framework for Everyone",
-      "language": "C++",
-      "stars": 198838,
-      "source": "search-api-fallback",
+      "owner": "bannedbook",
+      "name": "fanqiang",
+      "full": "bannedbook/fanqiang",
+      "url": "https://github.com/bannedbook/fanqiang",
+      "description": "翻墙-科学上网",
+      "language": "Kotlin",
+      "stars": 52971,
       "categories": [
-        "Data/ML"
+        "Mobile"
       ]
     },
     "clone": true,
-    "clone_time": 14.1,
+    "clone_time": 3.1,
     "clone_err": "",
     "build": {
       "python": false,
@@ -112,74 +69,111 @@
   },
   {
     "project": {
-      "owner": "microsoft",
-      "name": "vscode",
-      "full": "microsoft/vscode",
-      "url": "https://github.com/microsoft/vscode",
-      "description": "Visual Studio Code",
-      "language": "TypeScript",
-      "stars": 190877,
-      "source": "search-api-fallback",
+      "owner": "bikini",
+      "name": "exploitarium",
+      "full": "bikini/exploitarium",
+      "url": "https://github.com/bikini/exploitarium",
+      "description": "A single archive of public exploit PoCs and vulnerability research writeups. At the time I post these, none have been reported. Feel free to report them yourself and take credit for the CVE if handed out lulz. Please do not abuse these. I do this so to allure people into the field, and I've always found this is the most efficient way.",
+      "language": "Python",
+      "stars": 4592,
       "categories": [
-        "DevTools"
+        "Security"
       ]
     },
     "clone": true,
-    "clone_time": 17.6,
+    "clone_time": 2.6,
     "clone_err": "",
     "build": {
       "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 33.2,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "full": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 248909,
+      "categories": [
+        "AI/LLM/Agent",
+        "Security"
+      ]
+    },
+    "clone": true,
+    "clone_time": 3.1,
+    "clone_err": "",
+    "build": {
+      "python": true,
       "node": true,
       "rust": false,
       "go": false,
       "docker": false,
       "files": [
+        "pyproject.toml",
         "package.json"
       ]
     },
-    "install": "failed",
-    "install_log": "TIMEOUT after 200s",
-    "install_time": 200.9,
+    "install": "success",
+    "install_log": "e756a344191ee07b878b5\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-6uwy7psv\\wheels\\95\\1e\\27\\e45fd48aa55cb47bef38245bac45a64fee97f0ab1e14a30ef5\nSuccessfully built llm-abstraction\nInstalling collected packages: llm-abstraction\n  Attempting uninstall: llm-abstraction\n    Found existing installation: llm-abstraction 0.1.0\n    Uninstalling llm-abstraction-0.1.0:\n      Successfully uninstalled llm-abstraction-0.1.0\nSuccessfully installed llm-abstraction-0.1.0\n",
+    "install_time": 53.8,
     "run": "skipped",
-    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
     "run_time": 0.0,
-    "score": 44,
+    "score": 66,
     "stars": "★★★☆☆"
   },
   {
     "project": {
-      "owner": "obra",
-      "name": "superpowers",
-      "full": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars": 281908,
-      "source": "search-api-fallback",
+      "owner": "NousResearch",
+      "name": "hermes-agent",
+      "full": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "stars": 241696,
       "categories": [
         "AI/LLM/Agent"
       ]
     },
     "clone": true,
-    "clone_time": 3.2,
+    "clone_time": 24.2,
     "clone_err": "",
     "build": {
-      "python": false,
+      "python": true,
       "node": true,
       "rust": false,
       "go": false,
-      "docker": false,
+      "docker": true,
       "files": [
-        "package.json"
+        "pyproject.toml",
+        "setup.py",
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml"
       ]
     },
     "install": "success",
-    "install_log": "\nup to date, audited 1 package in 2s\n\nfound 0 vulnerabilities\n",
-    "install_time": 3.5,
-    "run": "skipped",
-    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
-    "run_time": 0.0,
-    "score": 66,
+    "install_log": "Successfully uninstalled pydantic-2.12.3\n  Attempting uninstall: openai\n    Found existing installation: openai 2.54.0\n    Uninstalling openai-2.54.0:\n      Successfully uninstalled openai-2.54.0\n  Attempting uninstall: hermes-agent\n    Found existing installation: hermes-agent 0.21.0\n    Uninstalling hermes-agent-0.21.0:\n      Successfully uninstalled hermes-agent-0.21.0\n\nSuccessfully installed Pillow-12.3.0 hermes-agent-0.21.0 openai-2.24.0 pydantic-2.13.4 pydantic-core-2.46.4 requests-2.33.0\n",
+    "install_time": 93.2,
+    "run": "success",
+    "run_log": "INFO: Showing help with the command 'cli.py -- --help'.\n\nNAME\n    cli.py - Hermes Agent CLI - Interactive AI Assistant\n\nSYNOPSIS\n    cli.py <flags>\n\nDESCRIPTION\n    Hermes Agent CLI - Interactive AI Assistant\n\nFLAGS\n    --query=QUERY\n        Type: Optional[str]\n        Default: None\n        Query to run. On a real TTY this seeds an interactive session (submitted literally as the first turn); with ",
+    "run_time": 5.1,
+    "score": 76,
     "stars": "★★★☆☆"
   }
 ]
