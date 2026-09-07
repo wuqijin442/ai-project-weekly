@@ -1,0 +1,186 @@
+[
+  {
+    "project": {
+      "owner": "mattpocock",
+      "name": "skills",
+      "full": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 255521,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 24.0,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nadded 111 packages in 9s\n\n11 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 10.5,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Stremio",
+      "name": "stremio-web",
+      "full": "Stremio/stremio-web",
+      "url": "https://github.com/Stremio/stremio-web",
+      "description": "Stremio - Freedom to Stream",
+      "language": "JavaScript",
+      "stars": 13639,
+      "categories": [
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 4.2,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "Dockerfile"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.4,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "full": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 252134,
+      "categories": [
+        "AI/LLM/Agent",
+        "Security"
+      ]
+    },
+    "clone": true,
+    "clone_time": 9.4,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "e756a344191ee07b878b5\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-adch1n4g\\wheels\\95\\1e\\27\\e45fd48aa55cb47bef38245bac45a64fee97f0ab1e14a30ef5\nSuccessfully built llm-abstraction\nInstalling collected packages: llm-abstraction\n  Attempting uninstall: llm-abstraction\n    Found existing installation: llm-abstraction 0.1.0\n    Uninstalling llm-abstraction-0.1.0:\n      Successfully uninstalled llm-abstraction-0.1.0\nSuccessfully installed llm-abstraction-0.1.0\n",
+    "install_time": 33.7,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "BraveOPotato",
+      "name": "FckSignups",
+      "full": "BraveOPotato/FckSignups",
+      "url": "https://github.com/BraveOPotato/FckSignups",
+      "description": "A list of tools that are open-source, in-browser, and require no-signups!",
+      "language": "TypeScript",
+      "stars": 3531,
+      "categories": [
+        "Frontend/Web",
+        "DevTools"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.4,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nadded 103 packages in 1m\n\n21 packages are looking for funding\n  run `npm fund` for details\n",
+    "install_time": 66.5,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 47.1,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "NousResearch",
+      "name": "hermes-agent",
+      "full": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "stars": 242796,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 9.4,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "pyproject.toml",
+        "setup.py",
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "success",
+    "install_log": "cessfully uninstalled pydantic-2.12.3\n  Attempting uninstall: openai\n    Found existing installation: openai 1.109.1\n    Uninstalling openai-1.109.1:\n      Successfully uninstalled openai-1.109.1\n  Attempting uninstall: hermes-agent\n    Found existing installation: hermes-agent 0.21.0\n    Uninstalling hermes-agent-0.21.0:\n      Successfully uninstalled hermes-agent-0.21.0\n\nSuccessfully installed Pillow-12.3.0 hermes-agent-0.21.0 openai-2.24.0 pydantic-2.13.4 pydantic-core-2.46.4 requests-2.33.0\n",
+    "install_time": 43.2,
+    "run": "success",
+    "run_log": "INFO: Showing help with the command 'cli.py -- --help'.\n\nNAME\n    cli.py - Hermes Agent CLI - Interactive AI Assistant\n\nSYNOPSIS\n    cli.py <flags>\n\nDESCRIPTION\n    Hermes Agent CLI - Interactive AI Assistant\n\nFLAGS\n    --query=QUERY\n        Type: Optional[str]\n        Default: None\n        Query to run. On a real TTY this seeds an interactive session (submitted literally as the first turn); with ",
+    "run_time": 3.0,
+    "score": 76,
+    "stars": "★★★☆☆"
+  }
+]
