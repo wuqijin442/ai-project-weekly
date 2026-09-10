@@ -1,0 +1,183 @@
+[
+  {
+    "project": {
+      "owner": "obra",
+      "name": "superpowers",
+      "full": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework &amp; software development methodology that works.",
+      "language": "Shell",
+      "stars": 284319,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 1.9,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date, audited 1 package in 1s\n\nfound 0 vulnerabilities\n",
+    "install_time": 1.9,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "liquidslr",
+      "name": "system-design-notes",
+      "full": "liquidslr/system-design-notes",
+      "url": "https://github.com/liquidslr/system-design-notes",
+      "description": "Notes of the book System Desgin Interview - An Insider's Guide",
+      "language": "Unknown",
+      "stars": 18358,
+      "categories": [
+        "Frontend/Web"
+      ]
+    },
+    "clone": true,
+    "clone_time": 8.4,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "affaan-m",
+      "name": "ECC",
+      "full": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 255464,
+      "categories": [
+        "AI/LLM/Agent",
+        "Security"
+      ]
+    },
+    "clone": true,
+    "clone_time": 3.1,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "f07bd5912711de8f593c4\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-iudhhj7o\\wheels\\95\\1e\\27\\e45fd48aa55cb47bef38245bac45a64fee97f0ab1e14a30ef5\nSuccessfully built llm-abstraction\nInstalling collected packages: llm-abstraction\n  Attempting uninstall: llm-abstraction\n    Found existing installation: llm-abstraction 0.1.0\n    Uninstalling llm-abstraction-0.1.0:\n      Successfully uninstalled llm-abstraction-0.1.0\nSuccessfully installed llm-abstraction-0.1.0\n",
+    "install_time": 22.6,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "TauricResearch",
+      "name": "TradingAgents",
+      "full": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 104332,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 3.7,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "success",
+    "install_log": "Successfully uninstalled pydantic_core-2.41.4\n  Attempting uninstall: pydantic\n    Found existing installation: pydantic 2.12.3\n    Uninstalling pydantic-2.12.3:\n      Successfully uninstalled pydantic-2.12.3\n  Attempting uninstall: tradingagents\n    Found existing installation: tradingagents 0.3.1\n    Uninstalling tradingagents-0.3.1:\n      Successfully uninstalled tradingagents-0.3.1\n\nSuccessfully installed pydantic-2.13.5 pydantic-core-2.46.5 pytz-2026.3.post1 redis-8.1.0 tradingagents-0.4.0\n",
+    "install_time": 22.8,
+    "run": "failed",
+    "run_log": "main.py --help 失败: Traceback (most recent call last):\n  File \"E:\\AI_Project_Weekly\\clones\\TauricResearch__TradingAgents\\main.py\", line 12, in <module>\n    ta = TradingAgentsGraph(debug=True, config=config)\n  File \"E:\\AI_Project_Weekly\\clones\\TauricResearch__TradingAgents\\tradingagents\\graph\\trading_graph.py\", line 128, in __init__\n    self.deep_thinking_llm = deep_client.get_llm()\n                             ~~~~~~",
+    "run_time": 7.8,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "rohitg00",
+      "name": "ai-engineering-from-scratch",
+      "full": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars": 53997,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "DevTools"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 62.4,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt"
+      ]
+    },
+    "install": "success",
+    "install_log": "kB)\nUsing cached jupyter_console-6.6.3-py3-none-any.whl (24 kB)\nUsing cached notebook-7.6.2-py3-none-any.whl (5.5 MB)\nInstalling collected packages: soxr, msgpack, llvmlite, lazy_loader, decorator, soundfile, pooch, numba, librosa, ipywidgets, jupyter-console, notebook, jupyter\n\nSuccessfully installed decorator-5.3.1 ipywidgets-8.1.9 jupyter-1.1.1 jupyter-console-6.6.3 lazy_loader-0.5 librosa-1.0.0 llvmlite-0.49.0 msgpack-1.2.2 notebook-7.6.2 numba-0.67.0 pooch-1.9.0 soundfile-0.14.0 soxr-1.1.0\n",
+    "install_time": 19.7,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  }
+]
