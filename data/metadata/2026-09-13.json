@@ -1,0 +1,365 @@
+[
+  {
+    "project": {
+      "owner": "huggingface",
+      "name": "transformers",
+      "full": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "language": "Python",
+      "stars": 165259,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 18.0,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "setup.py"
+      ]
+    },
+    "install": "success",
+    "install_log": "ransformers\nInstalling collected packages: tokenizers, transformers\n  Attempting uninstall: tokenizers\n    Found existing installation: tokenizers 0.22.2\n    Uninstalling tokenizers-0.22.2:\n      Successfully uninstalled tokenizers-0.22.2\n  Attempting uninstall: transformers\n    Found existing installation: transformers 5.15.0.dev0\n    Uninstalling transformers-5.15.0.dev0:\n      Successfully uninstalled transformers-5.15.0.dev0\n\nSuccessfully installed tokenizers-0.23.2 transformers-5.18.0.dev0\n",
+    "install_time": 31.7,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "yuliskov",
+      "name": "SmartTube",
+      "full": "yuliskov/SmartTube",
+      "url": "https://github.com/yuliskov/SmartTube",
+      "description": "Browse media content with your own rules on Android TV",
+      "language": "Java",
+      "stars": 33304,
+      "categories": [
+        "Mobile"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 12.5,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "bilawalsidhu",
+      "name": "gods-eye-view",
+      "full": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars": 30922,
+      "categories": [
+        "Frontend/Web",
+        "Data/ML"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 10.0,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nadded 125 packages, and audited 126 packages in 1m\n\n20 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n",
+    "install_time": 76.3,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Swordfish90",
+      "name": "cool-retro-term",
+      "full": "Swordfish90/cool-retro-term",
+      "url": "https://github.com/Swordfish90/cool-retro-term",
+      "description": "A good looking terminal emulator which mimics the old cathode display...",
+      "language": "QML",
+      "stars": 26129,
+      "categories": [
+        "Data/ML"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 7.6,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "asgeirtj",
+      "name": "system_prompts_leaks",
+      "full": "asgeirtj/system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
+      "language": "JavaScript",
+      "stars": 65705,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 3.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "jiji262",
+      "name": "douyin-downloader",
+      "full": "jiji262/douyin-downloader",
+      "url": "https://github.com/jiji262/douyin-downloader",
+      "description": "A practical Douyin downloader for both single-item and profile batch downloads, with progress display, retries, SQLite deduplication, and browser fallback support. 抖音批量下载工具，去水印，支持视频、图集、合集、音乐(原声)。",
+      "language": "Python",
+      "stars": 11199,
+      "categories": [
+        "Frontend/Web",
+        "Database"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 2.5,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "requirements.txt",
+        "pyproject.toml",
+        "Dockerfile"
+      ]
+    },
+    "install": "success",
+    "install_log": "64.whl.metadata (3.5 kB)\nRequirement already satisfied: mdurl~=0.1 in G:\\codeConfig\\python\\python3.11.1\\Lib\\site-packages (from markdown-it-py>=2.2.0->rich>=13.7.0->-r requirements.txt (line 5)) (0.1.2)\nDownloading gmssl-3.2.2-py3-none-any.whl (10 kB)\nDownloading pycryptodomex-3.23.0-cp37-abi3-win_amd64.whl (1.8 MB)\n   ---------------------------------------- 1.8/1.8 MB 2.8 MB/s  0:00:01\nInstalling collected packages: pycryptodomex, gmssl\n\nSuccessfully installed gmssl-3.2.2 pycryptodomex-3.23.0\n",
+    "install_time": 6.7,
+    "run": "success",
+    "run_log": "usage: run.py [-h] [-u URL] [-c CONFIG] [-p PATH] [-t THREAD]\n              [--show-warnings] [-v] [--hot-board [N]] [--search KEYWORD]\n              [--search-max SEARCH_MAX] [--serve] [--serve-host SERVE_HOST]\n              [--serve-port SERVE_PORT] [--version]\n\nDouyin Downloader - 抖音批量下载工具\n\noptions:\n  -h, --help            show this help message and exit\n  -u URL, --url URL     Download URL(s)\n",
+    "run_time": 1.1,
+    "score": 70,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "calesthio",
+      "name": "OpenMontage",
+      "full": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "language": "Python",
+      "stars": 58057,
+      "categories": [
+        "AI/LLM/Agent",
+        "DevTools"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 13.8,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "requirements.txt",
+        "setup.py"
+      ]
+    },
+    "install": "success",
+    "install_log": "n\\python3.11.1\\Lib\\site-packages (from cryptography>=38.0.3->google-auth>=2.0->-r requirements.txt (line 9)) (2.0.0)\nRequirement already satisfied: pycparser in G:\\codeConfig\\python\\python3.11.1\\Lib\\site-packages (from cffi>=2.0.0->cryptography>=38.0.3->google-auth>=2.0->-r requirements.txt (line 9)) (3.0)\nRequirement already satisfied: pyasn1<0.7.0,>=0.6.1 in G:\\codeConfig\\python\\python3.11.1\\Lib\\site-packages (from pyasn1-modules>=0.2.1->google-auth>=2.0->-r requirements.txt (line 9)) (0.6.4)\n",
+    "install_time": 1.6,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "JustVugg",
+      "name": "colibri",
+      "full": "JustVugg/colibri",
+      "url": "https://github.com/JustVugg/colibri",
+      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "language": "C",
+      "stars": 28867,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 3.2,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml"
+      ]
+    },
+    "install": "success",
+    "install_log": "oml): finished with status 'done'\n  Created wheel for colibri-engine: filename=colibri_engine-1.10.2-0.editable-py3-none-any.whl size=24356 sha256=6100ead3ee994d0344a239d32dc236ca4f6c9a24374f0795d58345aa26e489c0\n  Stored in directory: C:\\Users\\Administrator\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-g2891vkd\\wheels\\98\\f7\\65\\6d1887be0e4ca96660d78924ccecf9cfbff367a63b0ca4666f\nSuccessfully built colibri-engine\nInstalling collected packages: colibri-engine\nSuccessfully installed colibri-engine-1.10.2\n",
+    "install_time": 8.1,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "debpalash",
+      "name": "VoiceStudio",
+      "full": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 25320,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 8.9,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "pyproject.toml",
+        "package.json"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.6,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "vxcontrol",
+      "name": "pentagi",
+      "full": "vxcontrol/pentagi",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "language": "Go",
+      "stars": 23667,
+      "categories": [
+        "AI/LLM/Agent"
+      ],
+      "fetch_method": "codeload-tarball"
+    },
+    "clone": true,
+    "clone_time": 8.7,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  }
+]
