@@ -1,0 +1,178 @@
+[
+  {
+    "project": {
+      "owner": "earendil-works",
+      "name": "pi",
+      "full": "earendil-works/pi",
+      "url": "https://github.com/earendil-works/pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "language": "TypeScript",
+      "stars": 105582,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "Backend/DevOps",
+        "DevTools"
+      ]
+    },
+    "clone": true,
+    "clone_time": 5.9,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": [
+        "package.json"
+      ]
+    },
+    "install": "success",
+    "install_log": "\n> pi-monorepo@0.0.3 prepare\n> husky\n\n\nadded 308 packages, and audited 329 packages in 3m\n\n47 packages are looking for funding\n  run `npm fund` for details\n\n3 moderate severity vulnerabilities\n\nTo address all issues, run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n",
+    "install_time": 161.6,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 66,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "NationalSecurityAgency",
+      "name": "ghidra",
+      "full": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 76542,
+      "categories": [
+        "Security"
+      ]
+    },
+    "clone": true,
+    "clone_time": 21.0,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Homebrew",
+      "name": "BrewUI",
+      "full": "Homebrew/BrewUI",
+      "url": "https://github.com/Homebrew/BrewUI",
+      "description": "📺 Homebrew's official macOS GUI",
+      "language": "Swift",
+      "stars": 1229,
+      "categories": [
+        "Frontend/Web",
+        "Mobile"
+      ]
+    },
+    "clone": true,
+    "clone_time": 7.6,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 26.5,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "addyosmani",
+      "name": "agent-skills",
+      "full": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 94648,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": true,
+    "clone_time": 2.4,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": false,
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "未识别到可自动安装的构建系统",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "无自动可运行入口",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "danny-avila",
+      "name": "LibreChat",
+      "full": "danny-avila/LibreChat",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
+      "language": "TypeScript",
+      "stars": 43721,
+      "categories": [
+        "AI/LLM/Agent",
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 12.2,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "Dockerfile",
+        "docker-compose.yml"
+      ]
+    },
+    "install": "failed",
+    "install_log": "TIMEOUT after 200s",
+    "install_time": 200.6,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 50,
+    "stars": "★★★☆☆"
+  }
+]
