@@ -1,0 +1,165 @@
+[
+  {
+    "project": {
+      "owner": "Crosstalk-Solutions",
+      "name": "project-nomad",
+      "full": "Crosstalk-Solutions/project-nomad",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
+      "language": "TypeScript",
+      "stars": 37732,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "Backend/DevOps"
+      ]
+    },
+    "clone": true,
+    "clone_time": 4.4,
+    "clone_err": "",
+    "build": {
+      "python": false,
+      "node": true,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "package.json",
+        "Dockerfile"
+      ]
+    },
+    "install": "success",
+    "install_log": "\nup to date, audited 1 package in 925ms\n\nfound 0 vulnerabilities\n",
+    "install_time": 1.3,
+    "run": "skipped",
+    "run_log": "Web/Server 项目，需手动启动 demo（不自动拉起服务）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "mvt-project",
+      "name": "mvt",
+      "full": "mvt-project/mvt",
+      "url": "https://github.com/mvt-project/mvt",
+      "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
+      "language": "Python",
+      "stars": 13479,
+      "categories": [
+        "DevTools",
+        "Security",
+        "Mobile"
+      ]
+    },
+    "clone": true,
+    "clone_time": 4.0,
+    "clone_err": "",
+    "build": {
+      "python": true,
+      "node": false,
+      "rust": false,
+      "go": false,
+      "docker": true,
+      "files": [
+        "pyproject.toml",
+        "Dockerfile"
+      ]
+    },
+    "install": "success",
+    "install_log": "g installation: click 8.5.0\n    Uninstalling click-8.5.0:\n      Successfully uninstalled click-8.5.0\n  Attempting uninstall: rich\n    Found existing installation: rich 14.3.3\n    Uninstalling rich-14.3.3:\n      Successfully uninstalled rich-14.3.3\n\nSuccessfully installed NSKeyedUnArchiver-1.5.2 adb-shell-0.4.4 betterproto2-0.10.0 click-8.4.2 iphone_backup_decrypt-0.10.0 libusb1-3.4.0 mvt-2026.9.21 packaging-26.3 pyahocorasick-2.3.1 rich-15.0.0 rsa-4.9.1 simplejson-4.1.1 tld-0.13.2 tzdata-2026.3\n",
+    "install_time": 41.3,
+    "run": "skipped",
+    "run_log": "无可自动检测的 CLI 入口（需手动 demo）",
+    "run_time": 0.0,
+    "score": 60,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "cloudflare",
+      "name": "quiche",
+      "full": "cloudflare/quiche",
+      "url": "https://github.com/cloudflare/quiche",
+      "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3",
+      "language": "Rust",
+      "stars": 12266,
+      "categories": [
+        "Frontend/Web"
+      ]
+    },
+    "clone": false,
+    "clone_time": 39.4,
+    "clone_err": "Cloning into 'E:\\AI_Project_Weekly\\clones\\cloudflare__quiche'...\nwarning: templates not found in C:/Users/Administrator/.workbuddy/binaries/PortableGit/versions/1.2.0/mingw64/share/git-core/templates\nerror: RPC failed; curl 56 Recv failure: Connection was reset\nfatal: expected flush after ref listing\n",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "Cloning into 'E:\\AI_Project_Weekly\\clones\\cloudflare__quiche'...\nwarning: templates not found in C:/Users/Administrator/.workbuddy/binaries/PortableGit/versions/1.2.0/mingw64/share/git-core/templates\nerror: RPC failed; curl 56 Recv failure: Connection was reset\nfatal: expected flush after ref listing\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "Cloning into 'E:\\AI_Project_Weekly\\clones\\cloudflare__quiche'...\nwarning: templates not found in C:/Users/Administrator/.workbuddy/binaries/PortableGit/versions/1.2.0/mingw64/share/git-core/templates\nerror: RPC failed; curl 56 Recv failure: Connection was reset\nfatal: expected flush after ref listing\n",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "trycua",
+      "name": "cua",
+      "full": "trycua/cua",
+      "url": "https://github.com/trycua/cua",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "language": "HTML",
+      "stars": 25597,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web",
+        "Data/ML"
+      ]
+    },
+    "clone": false,
+    "clone_time": 22.1,
+    "clone_err": "fatal: unable to access 'https://github.com/trycua/cua.git/': Failed to connect to github.com:443 after 21106 ms: Could not connect to server\n",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "fatal: unable to access 'https://github.com/trycua/cua.git/': Failed to connect to github.com:443 after 21106 ms: Could not connect to server\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "fatal: unable to access 'https://github.com/trycua/cua.git/': Failed to connect to github.com:443 after 21106 ms: Could not connect to server\n",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  },
+  {
+    "project": {
+      "owner": "Open-Dev-Society",
+      "name": "OpenStock",
+      "full": "Open-Dev-Society/OpenStock",
+      "url": "https://github.com/Open-Dev-Society/OpenStock",
+      "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
+      "language": "TypeScript",
+      "stars": 17515,
+      "categories": [
+        "AI/LLM/Agent",
+        "Frontend/Web"
+      ]
+    },
+    "clone": false,
+    "clone_time": 21.2,
+    "clone_err": "Cloning into 'E:\\AI_Project_Weekly\\clones\\Open-Dev-Society__OpenStock'...\nwarning: templates not found in C:/Users/Administrator/.workbuddy/binaries/PortableGit/versions/1.2.0/mingw64/share/git-core/templates\nfatal: unable to access 'https://github.com/Open-Dev-Society/OpenStock.git/': Failed to connect to github.com:443 after 21064 ms: Could not connect to server\n",
+    "build": {
+      "files": []
+    },
+    "install": "failed",
+    "install_log": "Cloning into 'E:\\AI_Project_Weekly\\clones\\Open-Dev-Society__OpenStock'...\nwarning: templates not found in C:/Users/Administrator/.workbuddy/binaries/PortableGit/versions/1.2.0/mingw64/share/git-core/templates\nfatal: unable to access 'https://github.com/Open-Dev-Society/OpenStock.git/': Failed to connect to github.com:443 after 21064 ms: Could not connect to server\n",
+    "install_time": 0.0,
+    "run": "failed",
+    "run_log": "Cloning into 'E:\\AI_Project_Weekly\\clones\\Open-Dev-Society__OpenStock'...\nwarning: templates not found in C:/Users/Administrator/.workbuddy/binaries/PortableGit/versions/1.2.0/mingw64/share/git-core/templates\nfatal: unable to access 'https://github.com/Open-Dev-Society/OpenStock.git/': Failed to connect to github.com:443 after 21064 ms: Could not connect to server\n",
+    "run_time": 0.0,
+    "score": 44,
+    "stars": "★★★☆☆"
+  }
+]
