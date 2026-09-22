@@ -209,7 +209,8 @@ def render(day, days, agg, daily_stats, board_stat, smoke_ok, boards_days):
     L.append(f"# GitHub 开源项目周报 — {iso_year}-W{iso_week:02d}"
              f"（{monday.isoformat()} ~ {sunday.isoformat()}）")
     L.append("")
-    L.append("> 本周报**不做任何新的网络抓取**，只聚合本周已落盘的真实 Clone/安装/冒烟运行结果；"
+    L.append("> 本周报**不做任何新的网络抓取**，只聚合本周已落盘的真实结果"
+             "（元数据评分，以及 NO_CLONE=0 时的 Clone/安装/冒烟）；"
              "缺失日期如实标注，未运行项不计入成功数。")
     L.append("")
     L.append(f"**统计口径**：自然周（周一~周日）　**有数据天数**：{len(have)}/7　"
@@ -230,6 +231,13 @@ def render(day, days, agg, daily_stats, board_stat, smoke_ok, boards_days):
     bi = sum(b["install"] for b in board_stat.values())
     br = sum(b["run"] for b in board_stat.values())
 
+    # 本地落地停用期（2026-09-22 起 NO_CLONE=1）：Clone/安装/冒烟全为 0，
+    # 如实说明这是配置停用所致，而非全部失败，避免周报读成「无一项目可跑」。
+    if (tot_c + bc) == 0 and (tot_t + bt) > 0:
+        L.append("> ⚙️ **本地落地已停用**（`NO_CLONE=1`，2026-09-22 起）：本周不再 clone 任何"
+                 "仓库到本地，故 Clone / 安装 / 冒烟三列恒为 0 —— 属**配置停用**，"
+                 "不代表项目不可用。项目价值评估请参考各日日报/板块报告的「元数据评分」。")
+        L.append("")
     L.append("## 一、本周真实执行汇总")
     L.append("")
     L.append("| 来源 | 测试项目 | Clone 成功 | 安装成功 | 冒烟运行成功 |")

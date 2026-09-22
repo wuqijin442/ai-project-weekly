@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-GitHub 热门项目每日工作流（多维分类真实运行版）
+GitHub 热门项目每日工作流（多维分类 · 默认元数据版）
+
+⚙️ 2026-09-22 起：默认 **不再 clone 到本地**（NO_CLONE=1），流程精简为
+「抓取 → 分类过滤 → 元数据评分 → 出报告」，不在本地下载任何仓库。
+报告中的「本地验证」一律如实标注为「未执行」。设 NO_CLONE=0 可恢复
+完整的真实 Clone/安装/冒烟路径（相关代码完整保留）。
 
 设计原则：
-- 所有结论必须基于真实运行结果，禁止根据 README 推测或编造数据。
+- 所有结论必须基于真实数据（API 元数据或真实运行结果），禁止根据 README 推测或编造。
 - 任意步骤失败 -> 记录日志，继续处理下一个项目，不中断整个流程。
 - 仅追加，不覆盖已有内容。
 
@@ -12,12 +17,13 @@ GitHub 热门项目每日工作流（多维分类真实运行版）
   1. 抓取 GitHub Trending（每日）真实页面
   2. 按多维度类别（AI/前端/后端/数据库/工具/安全/移动/数据）分类，排除 Awesome/Tutorial/Course/Demo/Fork
   3. 按类别轮询选 TOP5（周一~周六）/ TOP10（周日），保证多样性
-  4. 对每个项目：真实 Clone -> 检测构建系统 -> 真实安装 -> 真实冒烟运行
-  5. AI 评分（热度/创新/完整度/运行成功/价值）
+  4. [NO_CLONE=0 时] 对每个项目：真实 Clone -> 检测构建系统 -> 真实安装 -> 真实冒烟运行
+  5. 评分：默认元数据评分（热度/创新信号/描述完整度/类别覆盖）；NO_CLONE=0 时
+     为含本地验证的 AI 评分（热度/创新/完整度/运行成功/价值）
   6. 生成 reports/daily/YYYY-MM-DD.md（中文，真实数据）
-  7. 本地 git 提交，并尝试推送到 wuqijin442/main（需 GITHUB_TOKEN 或 SSH）
+  7. 本地 git 提交，并尝试推送到 wuqijin442（分支由 GITHUB_TARGET_BRANCH 指定，默认 main）
 
-依赖：仅 Python 3 标准库 + 系统 git。安装/运行使用系统 python/node/npm（按需）。
+依赖：仅 Python 3 标准库 + 系统 git。
 """
 import os
 import re
@@ -51,6 +57,12 @@ GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 INSTALL_TIMEOUT = int(os.environ.get("INSTALL_TIMEOUT", "200"))
 RUN_TIMEOUT = int(os.environ.get("RUN_TIMEOUT", "45"))
 CLONE_DEPTH = int(os.environ.get("CLONE_DEPTH", "1"))
+# ⚙️ 本地落地开关（2026-09-22 用户指令「不再进行项目的 clone 到本地」）：
+#   默认 NO_CLONE=1 —— 停用 clone / 安装 / 冒烟运行，不向本地下载任何仓库，
+#   报告改为基于 Trending / Search API 返回的**真实元数据**（star/语言/简介/类别）
+#   做趋势分析，并在报告中显式标注「本地验证未执行」。
+#   如需恢复旧行为（真实 Clone→安装→冒烟），设 NO_CLONE=0 即可，代码路径完整保留。
+NO_CLONE = os.environ.get("NO_CLONE", "1") == "1"
 # 主站 github.com 被阻断时，是否启用官方备用通道（api.github.com / codeload.github.com）
 FALLBACK_ENABLED = os.environ.get("GH_FALLBACK", "1") == "1"
 TRENDING_ROUNDS = int(os.environ.get("TRENDING_ROUNDS", "8"))
@@ -556,6 +568,37 @@ def smoke_run(p, path, build):
 # ----------------------------------------------------------------------------
 # 步骤5：AI 评分
 # ----------------------------------------------------------------------------
+def score_project_meta(p):
+    """无本地落地时的**元数据评分**（满分 100，全部来自 API/Trending 真实字段）。
+
+    维度（与含本地验证的 score_project 不可直接横向对比，报告须标注口径）：
+      - 热度 35：stars，约 10.5k 封顶
+      - 创新信号 20：名称/简介命中 agent/mcp/rag/claude/cursor/vibe/local-ai
+      - 描述完整度 15：是否有简介
+      - 类别覆盖 30：命中 1 个类别 15 分，2 个及以上 30 分
+    注意：本评分**不含**安装/运行验证，属趋势参考分，不代表可用性。
+    """
+    heat = min(35.0, p["stars"] / 300.0)
+    innovation = 20 if any(k in (p["name"] + p["description"]).lower()
+                           for k in ["agent", "mcp", "rag", "claude", "cursor",
+                                     "vibe", "local-ai"]) else 10
+    completeness = 15 if p["description"] else 5
+    coverage = min(30.0, 15.0 * len(p.get("categories", [])))
+    total = round(heat + innovation + completeness + coverage, 1)
+    stars = "★★★☆☆"
+    if total >= 90:
+        stars = "★★★★★"
+    elif total >= 80:
+        stars = "★★★★☆"
+    elif total >= 70:
+        stars = "★★★★☆"
+    elif total >= 55:
+        stars = "★★★☆☆"
+    else:
+        stars = "★★☆☆☆"
+    return total, stars
+
+
 def score_project(p, install_status, run_status):
     heat = min(20, p["stars"] / 500.0)  # star 越多越高，封顶20
     innovation = 12 if any(k in (p["name"]+p["description"]).lower()
@@ -581,7 +624,15 @@ def score_project(p, install_status, run_status):
 def write_report(date, top, results, scanned, filtered):
     md = []
     md.append(f"# GitHub 热门项目日报 — {date.isoformat()}\n")
-    md.append("> 本报告所有结论基于真实 Clone/安装/运行结果，未根据 README 推测。\n")
+    if NO_CLONE:
+        md.append("> ⚙️ **本地落地已停用**（`NO_CLONE=1`，2026-09-22 起）：不再将任何仓库 "
+                  "clone 到本地，因此**本期不含安装 / 冒烟运行验证**。\n"
+                  "> 报告结论全部基于 GitHub Trending / Search API 返回的**真实元数据**"
+                  "（star、语言、简介、类别、排名），未根据 README 推测功能；"
+                  "评分口径亦调整为「元数据评分」，不含可用性验证，请勿与历史期"
+                  "含本地验证的评分直接对比。\n")
+    else:
+        md.append("> 本报告所有结论基于真实 Clone/安装/运行结果，未根据 README 推测。\n")
     weekday = "周日" if date.weekday() == 6 else "平日"
     fb_list = [p for p in top if p.get("source") == "search-api-fallback"]
     if fb_list:
@@ -589,17 +640,24 @@ def write_report(date, top, results, scanned, filtered):
                   "已回退至官方 api.github.com Search API，口径为"
                   "「近 1 日有推送 + star≥200，按 star 降序」，与官方 trending 的"
                   "「当日新增 star」算法不同，排名不可与历史期直接对比。\n")
+    if NO_CLONE:
+        md.append(f"> ℹ️ **统计口径**：本期仅执行「抓取 → 分类过滤 → 元数据评分」三步，"
+                  "本地落地（clone/安装/冒烟）计数恒为 0，不再列示。\n")
     tb_list = [r for r in results if r["project"].get("fetch_method") == "codeload-tarball"]
-    if tb_list:
+    if tb_list and not NO_CLONE:
         md.append(f"> ℹ️ **代码获取方式**：{len(tb_list)} 个项目因主站阻断改用官方 "
                   "codeload.github.com 源码归档下载（真实代码，无 .git 历史），"
                   "安装与冒烟运行均为真实执行。\n")
     md.append(f"**模式**：{weekday}（TOP{len(top)}）  ")
     md.append(f"**扫描数**：{scanned}  **AI 过滤后**：{filtered}  "
-              f"**Clone 成功**：{sum(1 for r in results if r['clone'])}  "
-              f"**安装成功**：{sum(1 for r in results if r['install']=='success')}  "
-              f"**运行成功(冒烟)**：{sum(1 for r in results if r['run']=='success')}  "
-              f"**推荐(≥90分)**：{sum(1 for r in results if r['score']>=90)}\n")
+              f"**入榜项目**：{len(results)}  ")
+    if NO_CLONE:
+        md.append(f"**本地落地**：未执行（NO_CLONE=1）  ")
+    else:
+        md.append(f"**Clone 成功**：{sum(1 for r in results if r['clone'])}  "
+                  f"**安装成功**：{sum(1 for r in results if r['install']=='success')}  "
+                  f"**运行成功(冒烟)**：{sum(1 for r in results if r['run']=='success')}  ")
+    md.append(f"**高分项目(≥90分)**：{sum(1 for r in results if r['score']>=90)}\n")
 
     for i, r in enumerate(results, 1):
         p = r["project"]
@@ -608,20 +666,29 @@ def write_report(date, top, results, scanned, filtered):
         md.append(f"- **语言**：{p['language']}  **Star**：{p['stars']}")
         md.append(f"- **类别**：{', '.join(p.get('categories', []))}")
         md.append(f"- **简介**：{p['description'] or '（无描述）'}")
-        md.append(f"- **Clone**：{'✅ '+str(r['clone_time'])+'s' if r['clone'] else '❌ '+r['clone_err'][:120]}")
-        md.append(f"- **构建系统**：{', '.join(r['build']['files']) or '未识别'}")
-        md.append(f"- **安装**：{r['install']}（{r['install_time']}s）")
-        if r["install_log"]:
-            md.append(f"  - 安装日志：{r['install_log'][:300]}")
-        md.append(f"- **冒烟运行**：{r['run']}（{r['run_time']}s）")
-        if r["run_log"]:
-            md.append(f"  - 运行日志：{r['run_log'][:300]}")
-        md.append(f"- **AI 评分**：{r['score']}/100  {r['stars']}")
-        md.append(f"- **推荐指数**：{'✅ 进入知识库' if r['score']>=90 and r['install']=='success' else '— 未达 90 分门槛'}")
+        if NO_CLONE:
+            md.append("- **本地验证**：— 未执行（`NO_CLONE=1`，不 clone 到本地）")
+            md.append(f"- **元数据评分**：{r['score']}/100  {r['stars']}"
+                      "（热度 + 创新信号 + 描述完整度 + 类别覆盖，不含可用性验证）")
+            md.append(f"- **推荐指数**：{'✅ 值得关注' if r['score']>=90 else '— 未达 90 分门槛'}"
+                      "（趋势参考，未经本地运行验证）")
+        else:
+            md.append(f"- **Clone**：{'✅ '+str(r['clone_time'])+'s' if r['clone'] else '❌ '+r['clone_err'][:120]}")
+            md.append(f"- **构建系统**：{', '.join(r['build']['files']) or '未识别'}")
+            md.append(f"- **安装**：{r['install']}（{r['install_time']}s）")
+            if r["install_log"]:
+                md.append(f"  - 安装日志：{r['install_log'][:300]}")
+            md.append(f"- **冒烟运行**：{r['run']}（{r['run_time']}s）")
+            if r["run_log"]:
+                md.append(f"  - 运行日志：{r['run_log'][:300]}")
+            md.append(f"- **AI 评分**：{r['score']}/100  {r['stars']}")
+            md.append(f"- **推荐指数**：{'✅ 进入知识库' if r['score']>=90 and r['install']=='success' else '— 未达 90 分门槛'}")
         md.append("")
 
     md.append("\n---\n")
-    md.append("### 多维度趋势观察（基于今日真实落地项目）\n")
+    md.append("### 多维度趋势观察"
+              + ("（基于今日入榜项目的 API 元数据）" if NO_CLONE else "（基于今日真实落地项目）")
+              + "\n")
     langs = {}
     cats = {}
     for r in results:
@@ -831,6 +898,18 @@ def main():
     results = []
     for p in top:
         log(f"--- 处理 {p['full']} ---")
+        if NO_CLONE:
+            # 本地落地已停用：不 clone、不安装、不冒烟，仅用真实元数据评分
+            log("  本地落地已停用（NO_CLONE=1），跳过 clone/安装/冒烟")
+            score, stars = score_project_meta(p)
+            results.append({
+                "project": p, "clone": None, "clone_time": 0.0, "clone_err": "",
+                "build": {"files": []}, "install": "skipped", "install_log": "",
+                "install_time": 0.0, "run": "skipped", "run_log": "",
+                "run_time": 0.0, "score": score, "stars": stars,
+                "score_mode": "metadata-only",
+            })
+            continue
         ok, path, ct, cerr = clone_repo(p)
         build = detect_build(path) if ok else {"files": []}
         if ok:
@@ -843,7 +922,7 @@ def main():
             "project": p, "clone": ok, "clone_time": ct, "clone_err": cerr,
             "build": build, "install": istatus, "install_log": ilog, "install_time": it,
             "run": rstatus, "run_log": rlog, "run_time": rt,
-            "score": score, "stars": stars,
+            "score": score, "stars": stars, "score_mode": "with-local-verify",
         })
 
     report = write_report(date, top, results, scanned, filtered)

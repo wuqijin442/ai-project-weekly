@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-AI 开源项目 11 板块测试工作流（真实运行版）
+AI 开源项目 11 板块工作流（默认元数据版）
 
-与 main.py 同源：所有结论基于真实运行结果，不根据 README 推测，失败记日志继续。
+⚙️ 2026-09-22 起：本脚本默认 **不再 clone 到本地**（NO_CLONE=1），仅通过 GitHub
+Search API 抓取真实元数据并做趋势评分，不执行安装 / 冒烟运行。设 NO_CLONE=0
+可恢复「真实 Clone → 安装 → 冒烟」的完整落地路径（代码完整保留）。
+
+无论哪种模式：所有结论均来自真实 API 返回或真实运行结果，不根据 README 推测，
+失败记日志继续。
 
 概念：
 - "板块" = 11 个 AI 相关的 GitHub topic（大语言模型 / Agent / RAG / 扩散模型 / 视觉 /
@@ -14,9 +19,11 @@ AI 开源项目 11 板块测试工作流（真实运行版）
 - 汇总到 reports/boards/YYYY-MM-DD-boards.md 与 data/metadata/YYYY-MM-DD-boards.json。
 
 说明：
-- 11×5=55 个项目，整体耗时较长；脚本对单个项目失败不中断，且克隆落在 clones/boards/
-  （已 gitignore）。建议由自动化或手动触发，无需每日强跑。
-- 复用 main.py 的纯函数，保持真实运行逻辑完全一致。
+- 默认（NO_CLONE=1）不下任何仓库，11 板块 × TOP5 仅需数分钟即可完成；每个板块结果
+  仍逐板落检查点，中断可续跑。
+- NO_CLONE=0 时恢复真实落地：11×5=55 个项目需 clone 到 clones/boards/（已 gitignore），
+  整体耗时 30~90 分钟，单个项目失败不中断。
+- 复用 main.py 的纯函数，保证两种模式口径一致。
 
 运行：python src/board_workflow.py [--date YYYY-MM-DD]
 """
@@ -37,9 +44,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import main as _main  # noqa
 from main import (  # noqa
     log, run_cmd, clean_text, detect_build, install_project,
-    smoke_run, score_project, sync_to_github, pre_sync_pull, EXCLUDE_KEYWORDS,
-    is_transient_git_err, run_git_retry,
+    smoke_run, score_project, score_project_meta, sync_to_github, pre_sync_pull,
+    EXCLUDE_KEYWORDS, is_transient_git_err, run_git_retry,
 )
+
+# ⚙️ 本地落地开关：与 main.py 共用 NO_CLONE（默认 1 = 停用 clone/安装/冒烟）。
+# 由 main 模块统一读取环境变量，此处引用同一常量，保证两个步骤口径一致。
+NO_CLONE = _main.NO_CLONE
 
 # 板块运行使用更短的超时，避免 55 个项目时整体过长
 BOARD_INSTALL_TIMEOUT = int(os.environ.get("BOARD_INSTALL_TIMEOUT", "120"))
@@ -219,12 +230,24 @@ def clone_board_repo(p):
 # ----------------------------------------------------------------------------
 def write_board_report(date, all_results, totals):
     md = []
-    md.append(f"# AI 开源项目 11 板块测试报告 — {date.isoformat()}\n")
-    md.append("> 本报告所有结论基于真实 Clone/安装/运行结果，未根据 README 推测。\n")
+    md.append(f"# AI 开源项目 11 板块报告 — {date.isoformat()}\n")
+    if NO_CLONE:
+        md.append("> ⚙️ **本地落地已停用**（`NO_CLONE=1`，2026-09-22 起）：不再将任何仓库 "
+                  "clone 到本地，**本期不含安装 / 冒烟运行验证**。\n"
+                  "> 结论全部基于 GitHub Search API 返回的**真实元数据**"
+                  "（star、语言、简介、topic），评分口径为「元数据评分」，"
+                  "不含可用性验证，请勿与历史期含本地验证的评分直接对比。\n")
+    else:
+        md.append("> 本报告所有结论基于真实 Clone/安装/运行结果，未根据 README 推测。\n")
     md.append(f"**板块数**：{totals['boards']}  **扫描仓库**：{totals['scanned']}  "
-              f"**测试项目**：{totals['tested']}  **Clone 成功**：{totals['clone_ok']}  "
-              f"**安装成功**：{totals['install_ok']}  **运行成功(冒烟)**：{totals['run_ok']}  "
-              f"**推荐(≥90分)**：{totals['recommended']}\n")
+              f"**入榜项目**：{totals['tested']}  ")
+    if NO_CLONE:
+        md.append("**本地落地**：未执行（NO_CLONE=1）  ")
+    else:
+        md.append(f"**Clone 成功**：{totals['clone_ok']}  "
+                  f"**安装成功**：{totals['install_ok']}  "
+                  f"**运行成功(冒烟)**：{totals['run_ok']}  ")
+    md.append(f"**高分项目(≥90分)**：{totals['recommended']}\n")
 
     for slug, info in all_results.items():
         label = info["label"]
@@ -238,18 +261,32 @@ def write_board_report(date, all_results, totals):
             md.append(f"- **地址**：{p['url']}")
             md.append(f"- **语言**：{p['language']}  **Star**：{p['stars']}")
             md.append(f"- **简介**：{p['description'] or '（无描述）'}")
-            md.append(f"- **Clone**：{'✅ ' + str(r['clone_time']) + 's' if r['clone'] else '❌ ' + r['clone_err'][:120]}")
-            md.append(f"- **构建系统**：{', '.join(r['build']['files']) or '未识别'}")
-            md.append(f"- **安装**：{r['install']}（{r['install_time']}s）")
-            md.append(f"- **冒烟运行**：{r['run']}（{r['run_time']}s）")
-            md.append(f"- **AI 评分**：{r['score']}/100  {r['stars']}")
-            md.append(f"- **推荐**：{'✅ 进入知识库' if r['score'] >= 90 and r['install'] == 'success' else '— 未达门槛'}")
+            if NO_CLONE:
+                md.append("- **本地验证**：— 未执行（`NO_CLONE=1`，不 clone 到本地）")
+                md.append(f"- **元数据评分**：{r['score']}/100  {r['stars']}"
+                          "（热度 + 创新信号 + 描述完整度 + 类别覆盖，不含可用性验证）")
+                md.append(f"- **推荐**：{'✅ 值得关注' if r['score'] >= 90 else '— 未达门槛'}"
+                          "（趋势参考，未经本地运行验证）")
+            else:
+                md.append(f"- **Clone**：{'✅ ' + str(r['clone_time']) + 's' if r['clone'] else '❌ ' + r['clone_err'][:120]}")
+                md.append(f"- **构建系统**：{', '.join(r['build']['files']) or '未识别'}")
+                md.append(f"- **安装**：{r['install']}（{r['install_time']}s）")
+                md.append(f"- **冒烟运行**：{r['run']}（{r['run_time']}s）")
+                md.append(f"- **AI 评分**：{r['score']}/100  {r['stars']}")
+                md.append(f"- **推荐**：{'✅ 进入知识库' if r['score'] >= 90 and r['install'] == 'success' else '— 未达门槛'}")
             md.append("")
 
     md.append("\n---\n")
-    md.append("### 各板块测试概览（基于真实落地）\n")
+    md.append("### 各板块概览"
+              + ("（基于 API 元数据）\n" if NO_CLONE else "（基于真实落地）\n"))
     for slug, info in all_results.items():
         res = info["results"]
+        if NO_CLONE:
+            scores = [r["score"] for r in res] or [0]
+            avg = round(sum(scores) / len(scores), 1)
+            md.append(f"- **{info['label']}**：入榜 {len(res)} 个 / "
+                      f"平均分 {avg} / 最高分 {max(scores)}")
+            continue
         ok_clone = sum(1 for r in res if r["clone"])
         ok_install = sum(1 for r in res if r["install"] == "success")
         ok_run = sum(1 for r in res if r["run"] == "success")
@@ -332,6 +369,18 @@ def main():
         for p in top:
             totals["tested"] += 1
             log(f"  处理 {p['full']} (★{p['stars']})")
+            if NO_CLONE:
+                # 本地落地已停用：仅用 Search API 真实元数据评分，不下载仓库
+                score, stars = score_project_meta(p)
+                results.append({
+                    "project": p, "clone": None, "clone_time": 0.0, "clone_err": "",
+                    "build": {"files": []}, "install": "skipped", "install_log": "",
+                    "install_time": 0.0, "run": "skipped", "run_log": "",
+                    "run_time": 0.0, "score": score, "stars": stars,
+                    "score_mode": "metadata-only",
+                })
+                totals["recommended"] += 1 if score >= 90 else 0
+                continue
             ok, path, ct, cerr = clone_board_repo(p)
             build = detect_build(path) if ok else {"files": []}
             if ok:
@@ -358,9 +407,14 @@ def main():
         json.dumps(all_results, ensure_ascii=False, indent=2), encoding="utf-8")
 
     pushed, perr = sync_to_github(date)
-    log(f"=== 完成 | 板块 {totals['boards']} / 扫描 {totals['scanned']} / 测试 {totals['tested']} "
-        f"/ clone {totals['clone_ok']} / 安装 {totals['install_ok']} / 运行 {totals['run_ok']} "
-        f"/ 推荐 {totals['recommended']} / 推送 {'OK' if pushed else 'FAIL'} ===")
+    if NO_CLONE:
+        log(f"=== 完成 | 板块 {totals['boards']} / 扫描 {totals['scanned']} / 入榜 {totals['tested']} "
+            f"/ 本地落地 未执行（NO_CLONE=1） / 高分 {totals['recommended']} "
+            f"/ 推送 {'OK' if pushed else 'FAIL'} ===")
+    else:
+        log(f"=== 完成 | 板块 {totals['boards']} / 扫描 {totals['scanned']} / 测试 {totals['tested']} "
+            f"/ clone {totals['clone_ok']} / 安装 {totals['install_ok']} / 运行 {totals['run_ok']} "
+            f"/ 推荐 {totals['recommended']} / 推送 {'OK' if pushed else 'FAIL'} ===")
     return report
 
 
