@@ -1,0 +1,150 @@
+[
+  {
+    "project": {
+      "owner": "davila7",
+      "name": "claude-code-templates",
+      "full": "davila7/claude-code-templates",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "description": "CLI tool for configuring and monitoring Claude Code",
+      "language": "Python",
+      "stars": 31016,
+      "categories": [
+        "AI/LLM/Agent",
+        "DevTools"
+      ]
+    },
+    "clone": null,
+    "clone_time": 0.0,
+    "clone_err": "",
+    "build": {
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "",
+    "run_time": 0.0,
+    "score": 100.0,
+    "stars": "★★★★★",
+    "score_mode": "metadata-only"
+  },
+  {
+    "project": {
+      "owner": "mvt-project",
+      "name": "mvt",
+      "full": "mvt-project/mvt",
+      "url": "https://github.com/mvt-project/mvt",
+      "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
+      "language": "Python",
+      "stars": 13912,
+      "categories": [
+        "DevTools",
+        "Security",
+        "Mobile"
+      ]
+    },
+    "clone": null,
+    "clone_time": 0.0,
+    "clone_err": "",
+    "build": {
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "",
+    "run_time": 0.0,
+    "score": 90.0,
+    "stars": "★★★★★",
+    "score_mode": "metadata-only"
+  },
+  {
+    "project": {
+      "owner": "browser-use",
+      "name": "video-use",
+      "full": "browser-use/video-use",
+      "url": "https://github.com/browser-use/video-use",
+      "description": "Edit videos with coding agents",
+      "language": "Python",
+      "stars": 25681,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": null,
+    "clone_time": 0.0,
+    "clone_err": "",
+    "build": {
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "",
+    "run_time": 0.0,
+    "score": 85.0,
+    "stars": "★★★★☆",
+    "score_mode": "metadata-only"
+  },
+  {
+    "project": {
+      "owner": "dream-num",
+      "name": "univer",
+      "full": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "language": "TypeScript",
+      "stars": 15186,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": null,
+    "clone_time": 0.0,
+    "clone_err": "",
+    "build": {
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "",
+    "run_time": 0.0,
+    "score": 85.0,
+    "stars": "★★★★☆",
+    "score_mode": "metadata-only"
+  },
+  {
+    "project": {
+      "owner": "google",
+      "name": "ax",
+      "full": "google/ax",
+      "url": "https://github.com/google/ax",
+      "description": "Google's open agentic orchestration runtime",
+      "language": "Go",
+      "stars": 7286,
+      "categories": [
+        "AI/LLM/Agent"
+      ]
+    },
+    "clone": null,
+    "clone_time": 0.0,
+    "clone_err": "",
+    "build": {
+      "files": []
+    },
+    "install": "skipped",
+    "install_log": "",
+    "install_time": 0.0,
+    "run": "skipped",
+    "run_log": "",
+    "run_time": 0.0,
+    "score": 74.3,
+    "stars": "★★★★☆",
+    "score_mode": "metadata-only"
+  }
+]
