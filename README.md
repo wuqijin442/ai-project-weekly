@@ -48,6 +48,13 @@ clones/                当日克隆的仓库（gitignore，不纳入同步）
 cloned_projects/       历史落地的项目（gitignore）
 ```
 
+> ⚙️ **本地落地开关（2026-09-22 起默认关闭）**：两个工作流默认 `NO_CLONE=1`，
+> **不再把任何项目 clone 到本地**，也不执行安装 / 冒烟运行。报告改为基于
+> GitHub Trending / Search API 的**真实元数据**（star、语言、简介、类别）做趋势
+> 分析与评分，并在报告头部如实标注「本地验证未执行」。
+> 需要恢复完整的「真实 Clone → 安装 → 冒烟」链路时，设 `NO_CLONE=0` 即可
+> （相关代码完整保留）。因此 `clones/` 目录在默认模式下不再产生新内容。
+
 ## 运行
 
 ```bash
@@ -58,6 +65,7 @@ bash src/run_daily.sh              # 一键跑完上面两步（推荐用于 cro
 ```
 
 环境变量：`GITHUB_TOKEN`（**推送必填**，有 `repo` 写权限的 token，优先用其注入 HTTPS 推送）、`GITHUB_REPO`（默认 wuqijin442/ai-project-weekly）、
+`NO_CLONE`（**默认 1 = 停用本地 clone/安装/冒烟**，设 0 恢复完整落地）、
 `INSTALL_TIMEOUT`（默认 200s）、`RUN_TIMEOUT`（默认 45s）、`CLONE_DEPTH`（默认 1）、
 `BOARD_INSTALL_TIMEOUT`（默认 120s）、`BOARD_RUN_TIMEOUT`（默认 40s）、`BOARD_API_PACE`（默认 7s，板间间隔）、`BOARD_MIN_STARS`（默认 50）。
 
