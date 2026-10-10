@@ -6,16 +6,10 @@
 ## 主题图谱（知识图谱视图）
 
 **节点 ① AI Agent Skills 生态**
-- 出现天数：3 / 4（10-02、10-04、10-08）
-- 趋势：↑上升
-- 涉及日期：2026-10-02、2026-10-04、2026-10-08
-- 核心项目：obra/superpowers、mattpocock/skills、addyosmani/agent-skills、ponytail、caveman、affaan-m/ECC
-- 关联边：
-  - ① —[互补 / 可组合]→ ②（skills 是技能层，运行时/编排是执行层，构成上下游依赖）
-  - ① —[同领域 / 竞争]→ ③（ponytail、caveman 既属 skills 生态又代表 token 效率子方向，定位重叠）
-  - ① —[互补]→ ⑥（e2e 作为 agent 工作流中的"质量门禁"环节）
-
-**节点 ② Agent 运行时 / 编排 /
+- 出现天数：4 天（10-08 / 10-09 / 10-10 / 10-11）
+- 趋势：↑ 上升（参与者从 2 个扩至 3 个，定位从"双雄并立"分化为"多源竞争"）
+- 涉及项目：mattpocock/skills（⭐284K）、addyosmani/agent-skills（⭐103K）、andrej-karpathy-skills（⭐218K）
+- 涉及日期：2
 
 ---
 
@@ -300,4 +294,8 @@
 ### 2026-10-10
 - 
 - 🔗 详情：reports/learnings/2026-10-10.md
+
+### 2026-10-11
+- 
+- 🔗 详情：reports/learnings/2026-10-11.md
 
